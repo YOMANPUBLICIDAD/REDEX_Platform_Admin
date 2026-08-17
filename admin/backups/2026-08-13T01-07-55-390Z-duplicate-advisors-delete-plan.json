@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-08-13T01:07:55.400Z",
+  "plan": [
+    {
+      "phone": "8293584800",
+      "keep": {
+        "id": "53cdcbd7-0524-451a-8dc5-ea815068ed5d",
+        "nombre": "José armando Valerio Batista",
+        "email": "armandovalerio45@gmail.com",
+        "created_at": "2026-08-11T00:24:15.216271+00:00",
+        "user_id": "befa6fd2-cd1f-4b30-89f1-d04e12fb3da7"
+      },
+      "remove": {
+        "id": "f658ad3d-b046-4f44-9f71-eb780250bd37",
+        "nombre": "Armando Valerio",
+        "email": "armando-valerio@redexasesores.com",
+        "created_at": "2026-07-28T15:50:15.550876+00:00",
+        "user_id": "da5b0495-eb99-4b44-98c1-a4ceee4787bd"
+      },
+      "refs": {
+        "solicitudes": 0,
+        "ventas": 0,
+        "ventas_reportadas": 0
+      }
+    },
+    {
+      "phone": "8295914170",
+      "keep": {
+        "id": "459d1681-b8ab-4e6d-bd54-9c516a429c82",
+        "nombre": "Juan Jose Santana Colon",
+        "email": "juanjosesc6@gmail.com",
+        "created_at": "2026-08-11T12:25:05.810972+00:00",
+        "user_id": "531b4140-6a97-4f2a-a3e7-a8758d922e81"
+      },
+      "remove": {
+        "id": "a560c5c1-a96e-493e-9971-fc13bc3219e1",
+        "nombre": "Juan José Santana",
+        "email": "juan-jose-santana@redexasesores.com",
+        "created_at": "2026-07-28T15:50:15.550876+00:00",
+        "user_id": "90cefcd9-9cd9-407d-9607-c133f95576a0"
+      },
+      "refs": {
+        "solicitudes": 0,
+        "ventas": 0,
+        "ventas_reportadas": 0
+      }
+    },
+    {
+      "phone": "8099185915",
+      "keep": {
+        "id": "1c7cf8e4-f682-4780-9e92-81602cb88eca",
+        "nombre": "Yonelvy Moices Gómez Bonilla",
+        "email": "jonelvis100@gmail.com",
+        "created_at": "2026-08-11T12:23:25.417008+00:00",
+        "user_id": "58e386fa-f0fd-4d64-b954-b087c1fa9cb6"
+      },
+      "remove": {
+        "id": "e6fd8595-35d1-4ee7-b081-fc2adc54b7cd",
+        "nombre": "Yonelvi Moises",
+        "email": "jonelvi-moises@redexasesores.com",
+        "created_at": "2026-07-28T15:50:15.550876+00:00",
+        "user_id": "81c28e9f-112c-49a6-8a1c-3c4803136f86"
+      },
+      "refs": {
+        "solicitudes": 0,
+        "ventas": 0,
+        "ventas_reportadas": 0
+      }
+    }
+  ]
+}

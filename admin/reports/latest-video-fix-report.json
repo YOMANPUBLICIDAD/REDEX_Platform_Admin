@@ -1,0 +1,13 @@
+{
+  "checked": 37,
+  "already_public": 7,
+  "uploaded": 29,
+  "missing_local": 0,
+  "failed": [
+    {
+      "nombre": "Casa De Dos Niveles Y Un Solar En Las Maras",
+      "url": "https://uwcxkwwtvvsplcnlncfd.supabase.co/storage/v1/object/public/propiedades/121-casa-de-dos-niveles-y-un-solar-en-las-maras/017-265c69562e67.mov",
+      "error": "fetch failed"
+    }
+  ]
+}

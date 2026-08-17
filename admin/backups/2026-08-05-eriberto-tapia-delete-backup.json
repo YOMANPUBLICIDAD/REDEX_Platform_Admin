@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-08-05T13:38:37.123Z",
+  "action": "delete exact advisor and exact auth user for recreation from CMS",
+  "advisorRows": [
+    {
+      "id": "6468147b-1f53-4d65-b7d5-0c8956cac94d",
+      "user_id": "53a2f2a0-cbf5-481d-bf60-a047bd4a852b",
+      "nombre": "Eriberto Tapia",
+      "slug": "eriberto-tapia",
+      "rol": "Asesor de Ventas",
+      "telefono": "+1 (809) 479-4032",
+      "whatsapp": "18094794032",
+      "email": "eriberto-tapia@redexasesores.com",
+      "foto_url": "https://redexinmobiliaria.com/images/asesores/c_2.jpg",
+      "bio": null,
+      "ciudad": null,
+      "sector": null,
+      "codigo_referido": "eriberto-tapia",
+      "porcentaje_comision": null,
+      "meta_mensual": 0,
+      "estado": "activo",
+      "visible_publico": true,
+      "aprobado_por": null,
+      "aprobado_at": null,
+      "datos": {},
+      "created_at": "2026-07-28T15:50:15.550876+00:00",
+      "updated_at": "2026-07-28T17:12:52.252278+00:00"
+    }
+  ],
+  "authUser": {
+    "id": "53a2f2a0-cbf5-481d-bf60-a047bd4a852b",
+    "email": "eriberto-tapia@redexasesores.com",
+    "phone": "",
+    "created_at": "2026-07-28T17:12:52.142947Z",
+    "app_metadata": {
+      "provider": "email",
+      "providers": [
+        "email"
+      ]
+    },
+    "user_metadata": {
+      "advisor_id": "6468147b-1f53-4d65-b7d5-0c8956cac94d",
+      "advisor_name": "Eriberto Tapia",
+      "advisor_slug": "eriberto-tapia",
+      "email_verified": true,
+      "role": "asesor"
+    }
+  }
+}

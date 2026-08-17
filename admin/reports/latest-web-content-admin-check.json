@@ -1,0 +1,11 @@
+{
+  "login": true,
+  "editar_texto": true,
+  "publicar_marca": true,
+  "visibilidad": true,
+  "orden": true,
+  "restaurado": true,
+  "storage_upload": true,
+  "storage_public_url": true,
+  "storage_delete": true
+}

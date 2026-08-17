@@ -1,0 +1,18 @@
+{
+  "propiedades": {
+    "auth_upload": true,
+    "auth_upload_status": 200,
+    "public_read": true,
+    "public_read_status": 200,
+    "auth_delete": true,
+    "auth_delete_status": 200
+  },
+  "proyectos": {
+    "auth_upload": true,
+    "auth_upload_status": 200,
+    "public_read": true,
+    "public_read_status": 200,
+    "auth_delete": true,
+    "auth_delete_status": 200
+  }
+}

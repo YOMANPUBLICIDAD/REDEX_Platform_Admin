@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar venta | REDEX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin/css/admin.css">
+  <style>
+    .seller-page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .seller-shell {
+      width: min(100%, 980px);
+    }
+
+    .seller-card {
+      background: var(--panel-soft);
+      border: 1px solid rgba(200, 164, 74, 0.24);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      backdrop-filter: blur(18px);
+    }
+
+    .seller-hero {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.15fr);
+      gap: 24px;
+      padding: 26px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .seller-hero img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 8px;
+      object-fit: cover;
+      background: var(--deep);
+    }
+
+    .seller-hero h1 {
+      margin-top: 8px;
+      font-family: var(--serif);
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1;
+    }
+
+    .seller-hero p {
+      color: var(--cream-70);
+      line-height: 1.6;
+    }
+
+    .seller-message {
+      padding: 24px;
+      color: var(--cream-70);
+    }
+
+    @media (max-width: 760px) {
+      .seller-hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="seller-page">
+    <div class="seller-shell">
+      <div class="brand">
+        <img src="logo-redex-blanco.png" alt="REDEX Inmobiliaria">
+        <div>
+          <div class="eyebrow">Registro de venta</div>
+          <strong>REDEX Platform</strong>
+        </div>
+      </div>
+
+      <section class="seller-card" id="seller-card" hidden>
+        <div class="seller-hero">
+          <img id="asset-image" src="hero_bg.png" alt="Inmueble REDEX">
+          <div>
+            <div class="eyebrow" id="asset-type">Inmueble</div>
+            <h1 id="asset-name">Cargando...</h1>
+            <p id="asset-location"></p>
+            <div class="publish-flags">
+              <span class="flag featured" id="asset-price">Consultar</span>
+              <span class="flag" id="asset-meterage">Metraje por confirmar</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="modal-body admin-form" id="seller-sale-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="seller-name">Nombre vendedor</label>
+              <input id="seller-name" name="vendedor_nombre" required>
+            </div>
+            <div class="field">
+              <label for="seller-phone">Teléfono vendedor</label>
+              <input id="seller-phone" name="vendedor_telefono">
+            </div>
+            <div class="field full">
+              <label for="seller-email">Correo vendedor</label>
+              <input id="seller-email" name="vendedor_correo" type="email">
+            </div>
+            <div class="field">
+              <label for="client-name">Nombre cliente</label>
+              <input id="client-name" name="cliente_nombre" required>
+            </div>
+            <div class="field">
+              <label for="client-phone">Teléfono cliente</label>
+              <input id="client-phone" name="cliente_telefono" required>
+            </div>
+            <div class="field">
+              <label for="client-email">Correo cliente</label>
+              <input id="client-email" name="cliente_correo" type="email">
+            </div>
+            <div class="field">
+              <label for="client-location">Ubicación cliente</label>
+              <input id="client-location" name="cliente_ubicacion">
+            </div>
+            <div class="field">
+              <label for="sale-date-public">Fecha de venta</label>
+              <input id="sale-date-public" name="fecha_venta" type="date" required>
+            </div>
+            <div class="field">
+              <label for="sale-final-price">Precio final</label>
+              <input id="sale-final-price" name="precio_final" inputmode="decimal" required>
+            </div>
+            <div class="field">
+              <label for="sale-down-payment">Monto inicial</label>
+              <input id="sale-down-payment" name="monto_inicial" inputmode="decimal">
+            </div>
+            <div class="field">
+              <label for="payment-method">Forma de pago</label>
+              <select id="payment-method" name="forma_pago">
+                <option value="contado">Contado</option>
+                <option value="prestamo">Préstamo</option>
+                <option value="financiamiento">Financiamiento</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bank-name">Banco o entidad</label>
+              <input id="bank-name" name="banco_entidad">
+            </div>
+            <div class="field">
+              <label for="interest-rate">Interés %</label>
+              <input id="interest-rate" name="porcentaje_interes" inputmode="decimal">
+            </div>
+            <div class="field">
+              <label for="finance-term">Plazo</label>
+              <input id="finance-term" name="plazo_financiamiento">
+            </div>
+            <div class="field">
+              <label for="sold-meterage">Tamaño vendido</label>
+              <input id="sold-meterage" name="metraje">
+            </div>
+            <div class="field">
+              <label for="sold-location">Ubicación inmueble</label>
+              <input id="sold-location" name="ubicacion_inmueble">
+            </div>
+            <div class="field full">
+              <label for="asset-extra-details">Otros detalles del inmueble o proyecto</label>
+              <textarea id="asset-extra-details" name="detalles_activo" placeholder="Ejemplo: manzana, solar, unidad, nivel, entrega, condición especial o cualquier dato importante para REDEX."></textarea>
+            </div>
+            <div class="field full">
+              <label for="seller-notes">Observaciones</label>
+              <textarea id="seller-notes" name="notas"></textarea>
+            </div>
+          </div>
+          <p class="admin-status" id="seller-status"></p>
+          <div class="modal-actions">
+            <button class="primary-btn" type="submit">Enviar reporte</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="seller-card seller-message" id="seller-message">
+        Validando link de venta...
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="registrar-venta.js"></script>
+</body>
+</html>

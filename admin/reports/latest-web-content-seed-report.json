@@ -1,0 +1,38 @@
+{
+  "pages": 8,
+  "sections": 92,
+  "files": [
+    {
+      "file": "index.html",
+      "sections": 17
+    },
+    {
+      "file": "inmuebles.html",
+      "sections": 3
+    },
+    {
+      "file": "proyectos-activos.html",
+      "sections": 7
+    },
+    {
+      "file": "calculadora.html",
+      "sections": 4
+    },
+    {
+      "file": "portal-asesor.html",
+      "sections": 10
+    },
+    {
+      "file": "quiero-vender.html",
+      "sections": 17
+    },
+    {
+      "file": "quiero-ser-asesor.html",
+      "sections": 17
+    },
+    {
+      "file": "precalificate.html",
+      "sections": 17
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-07-22T20:23:41.089Z",
+  "local_pages": {
+    "index.html": 200,
+    "inmuebles.html": 200,
+    "proyectos-activos.html?proyecto=vista-del-atlantico": 200,
+    "admin/login.html": 200,
+    "admin/dashboard.html": 200
+  },
+  "anon_public_read": {
+    "propiedades": true,
+    "proyectos": true
+  },
+  "anon_write_blocked": {
+    "propiedades": true,
+    "status_propiedades": 401,
+    "proyectos": true,
+    "status_proyectos": 401
+  },
+  "auth_login_temp": true,
+  "authenticated_crud": {
+    "propiedades": {
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "inventoryRestored": true,
+      "createStatus": 201,
+      "editStatus": 200,
+      "deleteStatus": 204
+    },
+    "proyectos": {
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "inventoryRestored": true,
+      "createStatus": 201,
+      "editStatus": 200,
+      "deleteStatus": 204
+    }
+  },
+  "storage": {
+    "propiedades": {
+      "anon_upload_blocked": true,
+      "anon_upload_status": 400,
+      "auth_upload": false,
+      "public_read": false,
+      "auth_delete": false,
+      "auth_delete_status": 400
+    },
+    "proyectos": {
+      "anon_upload_blocked": true,
+      "anon_upload_status": 400,
+      "auth_upload": false,
+      "public_read": false,
+      "auth_delete": false,
+      "auth_delete_status": 400
+    }
+  },
+  "final_counts": {
+    "propiedades": 148,
+    "proyectos": 8
+  }
+}

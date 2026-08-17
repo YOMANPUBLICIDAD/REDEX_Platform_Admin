@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-07-22T11:51:03.068Z",
+  "mode": "dry-run",
+  "table": "propiedades",
+  "bucket": "propiedades",
+  "properties_in_inventory": 148,
+  "properties_prepared": 148,
+  "properties_migrated": 0,
+  "unique_files_prepared_or_uploaded": 1503,
+  "skipped_existing_storage_objects": 0,
+  "media_urls_generated": 1503,
+  "errors": []
+}

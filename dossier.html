@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dossier Corporativo REDEX</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --g-dark: #060912;
+      --g-deep: #0a0f1d;
+      --gold: #c8a44a;
+      --wine: #8b1e2f;
+      --navy: #07246b;
+      --ww: #f5f2ee;
+      --ww80: rgba(245,242,238,0.8);
+      --sans: 'Plus Jakarta Sans', sans-serif;
+      --display: 'Playfair Display', serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: var(--sans);
+      background-color: var(--g-dark);
+      color: var(--ww);
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      position: relative;
+      background: var(--g-dark);
+      overflow: hidden;
+      page-break-after: always;
+    }
+    
+    .bg-image {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.25;
+      z-index: 1;
+    }
+
+    .bg-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(6,9,18,0.95) 0%, rgba(10,15,29,0.85) 100%);
+      z-index: 2;
+    }
+
+    .content {
+      position: relative;
+      z-index: 3;
+      padding: 40px 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Cover Page */
+    .cover .content {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .cover .logo { width: 220px; margin-bottom: 40px; }
+    .cover h1 { font-family: var(--display); font-size: 54px; color: var(--gold); margin-bottom: 20px; line-height: 1.1; }
+    .cover h2 { font-size: 22px; font-weight: 300; letter-spacing: 2px; color: var(--ww80); margin-bottom: 60px; text-transform: uppercase; }
+    .cover .accent-line { width: 100px; height: 2px; background: var(--gold); margin: 0 auto; }
+    .cover .year { margin-top: auto; font-size: 14px; letter-spacing: 4px; color: var(--ww60); }
+    
+    /* Header/Footer inside pages */
+    .page-header {
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid rgba(200,164,74,0.3);
+      padding-bottom: 15px; margin-bottom: 40px;
+    }
+    .page-header .small-logo { width: 120px; }
+    .page-header .section-title { font-family: var(--display); font-size: 16px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
+    
+    .page-footer {
+      position: absolute; bottom: 30px; left: 50px; right: 50px;
+      display: flex; justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 15px; font-size: 10px; color: var(--ww60); text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    /* Typography */
+    h3 { font-family: var(--display); font-size: 42px; color: #fff; line-height: 1.2; margin-bottom: 25px; }
+    h3 em { color: var(--gold); font-style: italic; }
+    p { font-size: 16px; line-height: 1.8; color: var(--ww80); margin-bottom: 20px; }
+    
+    /* Grid for "Quienes Somos" */
+    .split-col { display: flex; gap: 40px; align-items: stretch; height: 100%; }
+    .split-col > div { flex: 1; }
+    .img-box { border-radius: 8px; overflow: hidden; height: 100%; position: relative; border: 1px solid rgba(200,164,74,0.2); }
+    .img-box img { width: 100%; height: 100%; object-fit: cover; }
+    
+    /* Metrics Grid */
+    .metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+    .metric-card {
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(200,164,74,0.2);
+      padding: 30px; border-radius: 8px; text-align: center;
+    }
+    .metric-num { font-family: var(--display); font-size: 48px; color: var(--gold); margin-bottom: 10px; line-height: 1; }
+    .metric-lbl { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--ww); font-weight: 600; }
+    
+    /* Projects Grid */
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .proj-card { background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; }
+    .proj-img { height: 200px; overflow: hidden; }
+    .proj-img img { width: 100%; height: 100%; object-fit: cover; }
+    .proj-body { padding: 20px; }
+    .proj-loc { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; font-weight: 600; }
+    .proj-name { font-family: var(--display); font-size: 20px; color: #fff; margin-bottom: 10px; line-height: 1.2; }
+    .proj-desc { font-size: 12px; color: var(--ww80); line-height: 1.6; margin-bottom: 10px; }
+    .proj-price { font-size: 13px; color: #fff; }
+    
+    /* Pillars */
+    .pillars { display: flex; flex-direction: column; gap: 25px; margin-top: 20px; }
+    .pillar { display: flex; gap: 20px; align-items: center; background: rgba(255,255,255,0.03); padding: 25px; border-radius: 8px; border-left: 3px solid var(--gold); }
+    .pillar-icon { width: 50px; height: 50px; border-radius: 50%; background: rgba(200,164,74,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .pillar-icon svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+    .pillar h4 { font-size: 18px; color: #fff; margin-bottom: 5px; }
+    .pillar p { font-size: 14px; margin: 0; }
+
+    /* Contact Page */
+    .contact-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(200,164,74,0.3); padding: 50px; border-radius: 8px; margin-top: 40px; text-align: center; }
+    .contact-item { margin-bottom: 20px; font-size: 18px; color: var(--ww); display: flex; align-items: center; justify-content: center; gap: 15px; }
+    
+    @page { margin: 0; size: A4; }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: COVER -->
+  <div class="page cover">
+    <img src="images/proyectos/vista-del-atlantico/main.jpg" class="bg-image" alt="BG">
+    <div class="bg-gradient"></div>
+    <div class="content">
+      <img src="logo_redex.png" class="logo" alt="REDEX">
+      <h1>La Plataforma<br>que <em>Transforma</em><br>Inversiones</h1>
+      <div class="accent-line"></div>
+      <h2 style="margin-top: 40px;">Dossier Corporativo</h2>
+      <div class="year">REPÚBLICA DOMINICANA</div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: QUIENES SOMOS -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="logo_redex.png" class="small-logo" alt="REDEX">
+        <div class="section-title">Sobre Nosotros</div>
+      </div>
+      
+      <div class="split-col">
+        <div style="padding-right: 20px; display:flex; flex-direction:column; justify-content:center;">
+          <h3>Liderazgo y<br><em>Visión</em> Estratégica</h3>
+          <p><strong>REDEX Inmobiliaria</strong> es la red de bienes raíces más dinámica, tecnológica y humana de República Dominicana.</p>
+          <p>Nuestra misión es conectar a familias e inversionistas con propiedades exclusivas y de alta rentabilidad, combinando proyectos de clase mundial con un equipo de asesores altamente capacitados.</p>
+          <p>Con <strong>8 años de liderazgo</strong> continuo en el mercado, hemos rediseñado la experiencia de inversión en el Caribe, garantizando transparencia, rentabilidad y plusvalía en cada transacción.</p>
+        </div>
+        <div class="img-box">
+          <img src="images/proyectos/palmaretto/main.jpg" alt="Interior">
+        </div>
+      </div>
+      
+      <div class="page-footer">
+        <span>REDEX Inmobiliaria</span>
+        <span>Página 02</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: METRICS -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="logo_redex.png" class="small-logo" alt="REDEX">
+        <div class="section-title">Trayectoria</div>
+      </div>
+      
+      <div style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
+        <h3>Nuestro Impacto en <em>Números</em></h3>
+        <p style="max-width: 600px; margin: 0 auto;">Cifras que respaldan nuestro compromiso con la excelencia y la confianza de miles de clientes satisfechos.</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-num">1000+</div>
+          <div class="metric-lbl">Viviendas Vendidas</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">320+</div>
+          <div class="metric-lbl">Asesores Certificados</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">530+</div>
+          <div class="metric-lbl">Cierres al Año</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">18</div>
+          <div class="metric-lbl">Proyectos Activos</div>
+        </div>
+      </div>
+      
+      <div class="page-footer">
+        <span>REDEX Inmobiliaria</span>
+        <span>Página 03</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 4: PILARES -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="logo_redex.png" class="small-logo" alt="REDEX">
+        <div class="section-title">Nuestros Pilares</div>
+      </div>
+      
+      <div style="margin-top: 10px;">
+        <h3>¿Por qué elegir <em>REDEX</em>?</h3>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+          <div>
+            <h4>Proyectos Premium</h4>
+            <p>Una selección rigurosamente curada de las mejores oportunidades inmobiliarias en las zonas de mayor desarrollo y plusvalía del país.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-7 8-7s8 3 8 7"/></svg></div>
+          <div>
+            <h4>Equipo Certificado</h4>
+            <p>Más de 320 expertos inmobiliarios listos para acompañarle en cada etapa de su decisión, ofreciendo asesoría legal y financiera.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/></svg></div>
+          <div>
+            <h4>Tecnología Avanzada</h4>
+            <p>Un robusto portal digital con herramientas de gestión en tiempo real, seguimiento de expedientes y análisis de mercado.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg></div>
+          <div>
+            <h4>Presencia Nacional</h4>
+            <p>Infraestructura establecida en La Vega, Santiago, Santo Domingo, Punta Cana y Puerto Plata.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="page-footer">
+        <span>REDEX Inmobiliaria</span>
+        <span>Página 04</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 5: PROYECTOS -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="logo_redex.png" class="small-logo" alt="REDEX">
+        <div class="section-title">Portafolio Exclusivo</div>
+      </div>
+      
+      <h3 style="margin-bottom: 30px;">Proyectos <em>Seleccionados</em></h3>
+
+      <div class="proj-grid">
+        <!-- 1 -->
+        <div class="proj-card">
+          <div class="proj-img"><img src="images/proyectos/vista-del-atlantico/main.jpg" alt="Vista"></div>
+          <div class="proj-body">
+            <div class="proj-loc">Punta Cana · La Altagracia</div>
+            <div class="proj-name">Vista del Atlántico Residence</div>
+            <div class="proj-desc">Residencias de lujo frente al Atlántico con piscina infinita y retorno garantizado para inversionistas.</div>
+            <div class="proj-price">Desde <strong>USD $185,000</strong></div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="proj-card">
+          <div class="proj-img"><img src="images/proyectos/palmaretto/main.jpg" alt="Palmaretto"></div>
+          <div class="proj-body">
+            <div class="proj-loc">La Vega</div>
+            <div class="proj-name">Palmaretto Golden Village</div>
+            <div class="proj-desc">Comunidad cerrada con arquitectura mediterránea, áreas sociales exclusivas y seguridad 24/7.</div>
+            <div class="proj-price">Desde <strong>USD $148,000</strong></div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="proj-card">
+          <div class="proj-img"><img src="images/proyectos/don-martin/main.jpg" alt="Don Martin"></div>
+          <div class="proj-body">
+            <div class="proj-loc">Santiago</div>
+            <div class="proj-name">Residencial Don Martín</div>
+            <div class="proj-desc">Townhouses modernos en el corazón de Santiago, con acabados de primera y estacionamiento techado.</div>
+            <div class="proj-price">Desde <strong>USD $95,000</strong></div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="proj-card">
+          <div class="proj-img"><img src="images/proyectos/el-molino/main.jpg" alt="El Molino"></div>
+          <div class="proj-body">
+            <div class="proj-loc">La Vega · Zona Norte</div>
+            <div class="proj-name">Residencial El Molino</div>
+            <div class="proj-desc">Villas familiares con jardines privativos, piscina comunitaria y acceso controlado.</div>
+            <div class="proj-price">Desde <strong>USD $78,000</strong></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="page-footer">
+        <span>REDEX Inmobiliaria</span>
+        <span>Página 05</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 6: CONTACT -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="logo_redex.png" class="small-logo" alt="REDEX">
+        <div class="section-title">Contacto</div>
+      </div>
+      
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        <img src="logo_redex.png" style="width: 250px; margin-bottom: 40px; opacity: 0.9;" alt="REDEX">
+        <h3 style="text-align: center;">Transforma tu visión<br>en una <em>realidad tangible</em></h3>
+        
+        <div class="contact-box">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <strong>+1 (849) 518-0024</strong>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <strong>info@redexinmobiliaria.com</strong>
+          </div>
+          <div class="contact-item" style="margin-bottom: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <strong>www.redexinmobiliaria.com</strong>
+          </div>
+        </div>
+      </div>
+      
+      <div class="page-footer">
+        <span>REDEX Inmobiliaria</span>
+        <span>Página 06</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

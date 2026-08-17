@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Asesor | REDEX Inmobiliaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --g-deep: #030508;
+      --g-dark: #060912;
+      --black: #0B0E16;
+      --panel: #111621;
+      --panel-soft: rgba(255,255,255,0.035);
+      --panel-glass: rgba(17,22,33,.74);
+      --wine: #8B1E2F;
+      --wine-lt: #A12538;
+      --gold: #C4A04A;
+      --cream: #FDFBF7;
+      --ww: #FFFFFF;
+      --ww70: rgba(255,255,255,0.7);
+      --ww60: rgba(255,255,255,0.6);
+      --line: rgba(255,255,255,0.08);
+      --font-display: 'Montserrat', sans-serif;
+      --font-body: 'Barlow', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: radial-gradient(circle at top right, rgba(196,160,74,.08), transparent 28%), var(--g-dark);
+      color: var(--ww);
+      min-height: 100vh;
+    }
+    body.locked { display: grid; place-items: center; padding: 22px; }
+    body.ready { display: flex; height: 100vh; overflow: hidden; }
+    [hidden] { display: none !important; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+
+    .login-shell {
+      width: min(100%, 440px);
+      background: rgba(11,14,22,.92);
+      border: 1px solid rgba(196,160,74,.22);
+      border-radius: 14px;
+      box-shadow: 0 28px 90px rgba(0,0,0,.45);
+      padding: 30px;
+    }
+    .login-shell img { height: 42px; margin-bottom: 24px; }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .login-shell h1, .topbar h2, .table-wrap h3, .profile-card h3 {
+      font-family: var(--font-display);
+      letter-spacing: .01em;
+    }
+    .login-shell h1 { font-size: 30px; margin: 8px 0 10px; }
+    .muted { color: var(--ww60); line-height: 1.55; }
+    .form-grid { display: grid; gap: 14px; margin-top: 22px; }
+    label { display: block; color: var(--ww70); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 7px; }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 8px;
+      background: rgba(255,255,255,.055);
+      color: var(--ww);
+      padding: 13px 14px;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: rgba(196,160,74,.7); }
+    .btn-primary, .btn-ghost, .copy-btn {
+      border: 1px solid rgba(196,160,74,.28);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 12px;
+      transition: .25s ease;
+    }
+    .btn-primary { background: linear-gradient(135deg, #d1ad52, #9f7c28); color: #080b12; }
+    .btn-primary:disabled { opacity: .55; cursor: wait; }
+    .btn-ghost, .copy-btn { background: rgba(255,255,255,.04); color: var(--ww); }
+    .btn-ghost:hover, .copy-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .status { min-height: 20px; color: var(--ww60); font-size: 13px; margin-top: 12px; }
+    .status.error { color: #ff9ca9; }
+    .status.success { color: #75e6a1; }
+
+    .sidebar {
+      width: 280px;
+      background:
+        radial-gradient(circle at 0 0, rgba(196,160,74,.10), transparent 32%),
+        linear-gradient(180deg, rgba(3,5,8,.98), rgba(3,5,8,.94));
+      border-right: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+      box-shadow: 18px 0 60px rgba(0,0,0,.22);
+    }
+    .sb-logo { padding: 30px 22px; border-bottom: 1px solid var(--line); }
+    .sb-logo img { height: 35px; opacity: .95; }
+    .sb-user { padding: 25px 20px; display: flex; align-items: center; gap: 15px; border-bottom: 1px solid var(--line); }
+    .sb-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--wine); display: flex; align-items: center; justify-content: center;
+      overflow: hidden; color: #fff; font-weight: 800;
+    }
+    .sb-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .sb-info h4 { font-family: var(--font-display); font-size: 15px; margin-bottom: 4px; }
+    .sb-info span { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 800; }
+    .sb-nav { padding: 18px 0; flex: 1; overflow-y: auto; }
+    .sb-link {
+      display: flex; align-items: center; gap: 12px;
+      width: 100%; border: 0; background: transparent; text-align: left;
+      padding: 13px 20px; color: var(--ww60); text-decoration: none;
+      font-size: 14px; font-weight: 600; transition: all .25s;
+    }
+    .nav-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.035);
+      color: var(--ww70);
+      font-size: 0;
+      flex: 0 0 auto;
+    }
+    .nav-icon svg { width: 17px; height: 17px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .sb-link:hover { background: rgba(255,255,255,.03); color: var(--ww); }
+    .sb-link:hover .nav-icon { color: var(--gold); border-color: rgba(196,160,74,.35); }
+    .sb-link.active { color: var(--gold); background: rgba(196,160,74,.08); border-left: 3px solid var(--gold); }
+    .sb-link.active .nav-icon { color: #080b12; background: linear-gradient(135deg, #d5b45b, #9e7d2c); border-color: transparent; box-shadow: 0 10px 24px rgba(196,160,74,.20); }
+    .sb-footer { padding: 20px; border-top: 1px solid var(--line); }
+
+    .main-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(circle at 82% -10%, rgba(196,160,74,.13), transparent 30%),
+        radial-gradient(circle at 10% 8%, rgba(161,37,56,.08), transparent 28%),
+        var(--black);
+      overflow-y: auto;
+    }
+    .topbar {
+      min-height: 86px; padding: 0 38px; display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--line); gap: 18px;
+      background: rgba(11,14,22,.68);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      position: sticky;
+      top: 0;
+      z-index: 8;
+    }
+    .topbar-main { display: flex; align-items: center; gap: 18px; min-width: 0; }
+    .topbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-right: 18px;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+    .topbar-brand img { height: 34px; width: auto; display: block; }
+    .topbar-title { min-width: 0; }
+    .topbar-title .eyebrow { font-size: 9px; letter-spacing: 1.6px; margin-bottom: 3px; }
+    .topbar-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .topbar h2 { font-size: 22px; font-weight: 800; line-height: 1; }
+    .topbar-user {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 190px;
+      padding: 9px 12px;
+      border: 1px solid rgba(196,160,74,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.035);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    .topbar-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--wine), #401018);
+      color: var(--ww);
+      font-weight: 900;
+      border: 1px solid rgba(196,160,74,.42);
+      flex: 0 0 auto;
+    }
+    .topbar-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .topbar-user strong { display: block; font-family: var(--font-display); font-size: 13px; line-height: 1.1; max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .topbar-user span { display: block; color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+    .content { padding: 34px 38px 48px; }
+    .mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 24px; }
+    .panel { display: none; animation: fadeIn .35s ease forwards; }
+    .panel.active { display: block; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
+    .stat-card, .table-wrap, .profile-card, .tool-card {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025)),
+        var(--panel-glass);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    .stat-card { position: relative; overflow: hidden; min-height: 118px; }
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 85% 12%, rgba(196,160,74,.18), transparent 34%);
+      pointer-events: none;
+    }
+    .stat-card::after {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      border: 1px solid rgba(196,160,74,.22);
+      background: rgba(196,160,74,.08);
+      font-size: 17px;
+    }
+    .grid-3 .stat-card:nth-child(1)::after { content: '↗'; }
+    .grid-3 .stat-card:nth-child(2)::after { content: '✓'; }
+    .grid-3 .stat-card:nth-child(3)::after { content: '$'; }
+    .stat-card h5 { position: relative; color: var(--ww60); font-size: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 16px; }
+    .stat-card .val { font-family: var(--font-display); font-size: 34px; font-weight: 800; color: var(--gold); line-height: 1; }
+    .toolbar { display: grid; grid-template-columns: minmax(220px, 1fr) 170px 170px; gap: 12px; margin: 18px 0 20px; }
+    .lead-toolbar { grid-template-columns: minmax(220px, 1fr) 170px 170px auto; }
+    .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .asset-card {
+      background: rgba(4,7,14,.58);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .asset-card img { width: 100%; height: 160px; object-fit: cover; background: var(--g-deep); display: block; }
+    .asset-body { padding: 15px; }
+    .asset-body h4 { font-size: 16px; margin-bottom: 6px; line-height: 1.2; }
+    .asset-meta { color: var(--ww60); font-size: 13px; line-height: 1.45; margin-bottom: 12px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 9px; border-radius: 999px;
+      background: rgba(196,160,74,.13); color: var(--gold);
+      font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
+    }
+    .asset-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+    .copy-btn { padding: 10px 12px; font-size: 11px; text-align: center; text-decoration: none; }
+    .lead-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .quick-action {
+      position: relative;
+      display: flex;
+      min-height: 84px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      padding: 18px 18px 18px 64px;
+      border: 1px solid rgba(196,160,74,.22);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.025)),
+        rgba(17,22,33,.78);
+      color: var(--ww);
+      text-decoration: none;
+      text-align: left;
+      box-shadow: 0 14px 42px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.04);
+      transition: transform .25s ease, border-color .25s ease, background .25s ease;
+    }
+    .quick-action:hover { transform: translateY(-2px); border-color: rgba(196,160,74,.48); background: rgba(196,160,74,.07); }
+    .quick-action::before {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(196,160,74,.28), rgba(139,30,47,.18));
+      border: 1px solid rgba(196,160,74,.28);
+      color: var(--gold);
+      font-size: 16px;
+    }
+    .quick-actions .quick-action:nth-child(1)::before { content: '□'; }
+    .quick-actions .quick-action:nth-child(2)::before { content: '↗'; }
+    .quick-actions .quick-action:nth-child(3)::before { content: '☎'; }
+    .quick-action strong { color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+    .quick-action span { color: var(--ww60); font-size: 13px; line-height: 1.35; }
+    .lead-detail {
+      margin-top: 18px;
+      background: rgba(4,7,14,.55);
+      border: 1px solid rgba(196,160,74,.18);
+      border-radius: 10px;
+      padding: 18px;
+    }
+    .lead-detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 16px 0; }
+    .lead-detail-item span { display: block; color: var(--ww60); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .lead-detail-item strong, .lead-detail-item a { color: var(--ww); font-size: 15px; text-decoration: none; word-break: break-word; }
+    .lead-note-form { display: grid; grid-template-columns: 190px 1fr auto; gap: 12px; align-items: end; margin-top: 16px; }
+    .lead-note-form.expanded { grid-template-columns: 170px 170px 1fr auto; }
+    .lead-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .lead-tag { display: inline-flex; align-items: center; border-radius: 999px; padding: 5px 9px; background: rgba(196,160,74,.16); color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
+    .lead-history { margin-top: 16px; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px; display: grid; gap: 10px; }
+    .lead-history-item { border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 10px; background: rgba(255,255,255,.03); }
+    .lead-history-item strong { display: block; color: var(--ww); font-size: 13px; margin-bottom: 4px; }
+    .lead-history-item span { color: var(--ww60); font-size: 11px; }
+    .star-card {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 18px;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(196,160,74,.18), rgba(139,30,47,.12));
+      border: 1px solid rgba(196,160,74,.32);
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+    .star-card img, .rank-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--g-deep);
+      border: 1px solid rgba(196,160,74,.35);
+    }
+    .rank-list { display: grid; gap: 12px; }
+    .rank-row {
+      display: grid;
+      grid-template-columns: 54px 62px minmax(180px, 1fr) repeat(3, minmax(100px, .4fr));
+      gap: 12px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px;
+      background: rgba(4,7,14,.5);
+    }
+    .rank-row.current { border-color: rgba(196,160,74,.55); background: rgba(196,160,74,.08); }
+    .rank-pos { font-family: var(--font-display); font-size: 24px; font-weight: 900; color: var(--gold); }
+    .rank-name strong { display: block; }
+    .rank-name span, .rank-metric span { color: var(--ww60); font-size: 12px; }
+    .rank-metric strong { display: block; font-size: 15px; }
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; padding: 12px 10px; color: var(--ww60); font-size: 11px; font-weight: 800; border-bottom: 1px solid var(--line); letter-spacing: 1px; text-transform: uppercase; }
+    td { padding: 14px 10px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,.04); color: var(--ww70); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .status-ok, .status-pend, .status-off {
+      padding: 4px 8px; border-radius: 999px; font-size: 11px; font-weight: 800; text-transform: uppercase;
+    }
+    .status-ok { background: rgba(30,130,70,.2); color: #75e6a1; }
+    .status-pend { background: rgba(196,160,74,.2); color: var(--gold); }
+    .status-off { background: rgba(161,37,56,.18); color: #ff9ca9; }
+    .profile-grid { display: grid; grid-template-columns: 260px 1fr; gap: 20px; }
+    .profile-photo { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; background: var(--g-deep); }
+    .profile-photo-actions { margin-top: 12px; display: grid; gap: 10px; }
+    .profile-photo-actions input[type="file"] { padding: 10px; font-size: 13px; }
+    .profile-crop-current-btn {
+      border-color: rgba(196,160,74,.6) !important;
+      background: rgba(196,160,74,.14) !important;
+      color: var(--gold) !important;
+      min-height: 46px;
+      width: 100%;
+      justify-content: center;
+    }
+    .photo-crop-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: rgba(3,5,9,.82);
+      backdrop-filter: blur(14px);
+    }
+    .photo-crop-modal.open { display: flex; }
+    .photo-crop-card {
+      width: min(94vw, 470px);
+      border: 1px solid rgba(196,160,74,.28);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(17,22,34,.98), rgba(8,11,18,.98));
+      box-shadow: 0 30px 90px rgba(0,0,0,.5);
+      padding: 20px;
+    }
+    .photo-crop-card h3 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 24px;
+    }
+    .photo-crop-card p {
+      margin: 8px 0 16px;
+      color: var(--ww60);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .photo-crop-stage {
+      position: relative;
+      width: min(76vw, 320px);
+      aspect-ratio: 1;
+      margin: 0 auto 18px;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #03050a;
+      border: 1px solid rgba(255,255,255,.12);
+      touch-action: none;
+      user-select: none;
+    }
+    .photo-crop-stage img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: none;
+      transform-origin: 0 0;
+      cursor: grab;
+    }
+    .photo-crop-stage.dragging img { cursor: grabbing; }
+    .photo-crop-guide {
+      position: absolute;
+      inset: 8%;
+      border: 2px solid rgba(196,160,74,.95);
+      border-radius: 50%;
+      box-shadow: 0 0 0 999px rgba(0,0,0,.32);
+      pointer-events: none;
+    }
+    .photo-crop-controls {
+      display: grid;
+      gap: 12px;
+    }
+    .photo-crop-controls label {
+      display: grid;
+      gap: 8px;
+      color: var(--ww70);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .photo-crop-controls input[type="range"] {
+      width: 100%;
+      accent-color: var(--gold);
+    }
+    .photo-crop-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .photo-crop-actions button { flex: 1 1 150px; }
+    .profile-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; margin-top: 18px; }
+    .profile-item span { display: block; color: var(--ww60); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .profile-item strong { font-size: 16px; }
+    .profile-socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .profile-socials a {
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(196,160,74,.24);
+      background: rgba(196,160,74,.07);
+      color: var(--ww);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all .25s ease;
+    }
+    .profile-socials a:hover {
+      border-color: rgba(196,160,74,.58);
+      color: var(--gold);
+      transform: translateY(-1px);
+    }
+    .profile-socials-empty {
+      margin-top: 18px;
+      color: var(--ww50);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .profile-info-editor,
+    .profile-social-editor {
+      margin-top: 22px;
+      padding: 18px;
+      border: 1px solid rgba(196,160,74,.18);
+      border-radius: 18px;
+      background: rgba(255,255,255,.035);
+    }
+    .profile-info-editor h4,
+    .profile-social-editor h4 {
+      margin: 0 0 4px;
+      font-size: 16px;
+      color: var(--ww);
+    }
+    .profile-info-editor p,
+    .profile-social-editor p {
+      margin: 0 0 14px;
+      color: var(--ww55);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .profile-info-grid,
+    .social-edit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+    }
+    .profile-info-grid label,
+    .social-edit-grid label {
+      display: grid;
+      gap: 6px;
+      color: var(--ww70);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .profile-info-grid input,
+    .profile-info-grid textarea,
+    .social-edit-grid input {
+      min-height: 42px;
+      border: 1px solid rgba(245,242,238,.12);
+      border-radius: 10px;
+      background: rgba(255,255,255,.06);
+      color: var(--ww);
+      outline: none;
+      padding: 0 12px;
+      font: inherit;
+    }
+    .profile-info-grid textarea {
+      min-height: 94px;
+      padding: 12px;
+      resize: vertical;
+    }
+    .profile-info-grid .full {
+      grid-column: 1 / -1;
+    }
+    .profile-info-grid input:focus,
+    .profile-info-grid textarea:focus,
+    .social-edit-grid input:focus {
+      border-color: rgba(196,160,74,.52);
+      box-shadow: 0 0 0 3px rgba(196,160,74,.12);
+    }
+    .profile-info-actions,
+    .profile-social-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .calc-grid, .sale-form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .calc-grid .wide { grid-column: span 2; }
+    .sale-form-grid .wide { grid-column: span 2; }
+    .sale-form-grid .full { grid-column: 1 / -1; }
+    .calc-result { margin-top: 18px; font-family: var(--font-display); font-size: 30px; color: #75e6a1; font-weight: 800; }
+    .empty { color: var(--ww60); padding: 24px; text-align: center; border: 1px dashed rgba(255,255,255,.12); border-radius: 10px; }
+
+    @media(max-width: 920px) {
+      body.ready { display: block; height: auto; overflow: auto; padding-bottom: 82px; }
+      .sidebar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 76px;
+        border-right: 0;
+        border-top: 1px solid rgba(196,160,74,.18);
+        box-shadow: 0 -16px 50px rgba(0,0,0,.45);
+      }
+      .sb-logo, .sb-user, .sb-footer { display: none; }
+      .sb-nav {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(76px, 1fr);
+        overflow-x: auto;
+        padding: 8px;
+        gap: 6px;
+        scrollbar-width: none;
+      }
+      .sb-nav::-webkit-scrollbar { display: none; }
+      .sb-link {
+        min-height: 64px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        padding: 7px 6px;
+        border-radius: 16px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 1.05;
+      }
+      .nav-icon { width: 32px; height: 28px; border-radius: 11px; }
+      .nav-icon svg { width: 16px; height: 16px; }
+      .sb-link.active { border-left: 0; background: rgba(196,160,74,.12); }
+      .mobile-menu-btn { display: none; }
+      .main-area { min-height: 100vh; overflow: visible; }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        min-height: auto;
+        padding: 14px 16px 16px;
+        align-items: stretch;
+        flex-direction: column;
+        background:
+          radial-gradient(circle at 90% 0, rgba(196,160,74,.13), transparent 32%),
+          rgba(11,14,22,.96);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+      .topbar-main { width: 100%; justify-content: space-between; gap: 12px; }
+      .topbar-brand { border-right: 0; padding-right: 0; }
+      .topbar-brand img { height: 28px; }
+      .topbar-title .eyebrow { font-size: 8px; }
+      .topbar h2 { font-size: 24px; }
+      .topbar-user { min-width: 0; padding: 7px 9px; gap: 8px; }
+      .topbar-avatar { width: 36px; height: 36px; }
+      .topbar-user strong { max-width: 92px; font-size: 12px; }
+      .topbar-user span { font-size: 8px; }
+      .topbar-actions { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .topbar-actions .btn-ghost { width: 100%; min-width: 0; min-height: 48px; padding: 11px 8px; font-size: 10px; letter-spacing: .9px; }
+      .content { padding: 18px 14px 24px; }
+      .quick-actions { grid-template-columns: 1fr; gap: 10px; }
+      .quick-action { min-height: 76px; padding: 16px 16px 16px 62px; }
+      .grid-3, .toolbar, .profile-grid, .calc-grid, .sale-form-grid, .profile-list, .profile-info-grid, .social-edit-grid { grid-template-columns: 1fr; }
+      .profile-info-grid .full { grid-column: auto; }
+      .calc-grid .wide, .sale-form-grid .wide, .sale-form-grid .full { grid-column: auto; }
+      .lead-detail-grid, .lead-note-form, .lead-note-form.expanded, .star-card, .rank-row { grid-template-columns: 1fr; }
+      .catalog-grid { grid-template-columns: 1fr; }
+      .stat-card, .table-wrap, .profile-card, .tool-card { padding: 18px; border-radius: 18px; }
+      .stat-card .val { font-size: 28px; }
+      input, select, textarea { min-height: 48px; font-size: 16px; }
+      .btn-primary, .btn-ghost, .copy-btn { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; text-align: center; }
+      .asset-card img { height: 190px; }
+      .asset-actions { grid-template-columns: 1fr; }
+      .lead-actions { display: grid; grid-template-columns: 1fr; }
+      .profile-photo { max-width: 220px; margin: 0 auto; }
+      .table-wrap { overflow: visible; }
+      table, thead, tbody, tr, th, td { display: block; width: 100%; }
+      thead { display: none; }
+      tr {
+        margin-bottom: 12px;
+        padding: 14px;
+        border: 1px solid rgba(255,255,255,.08);
+        border-radius: 10px;
+        background: rgba(4,7,14,.48);
+      }
+      td {
+        display: grid;
+        grid-template-columns: 104px 1fr;
+        gap: 12px;
+        padding: 9px 0;
+        border-bottom: 1px solid rgba(255,255,255,.05);
+        word-break: break-word;
+      }
+      td:last-child { border-bottom: 0; }
+      td::before {
+        content: attr(data-label);
+        color: var(--gold);
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      td:empty { display: none; }
+    }
+  </style>
+</head>
+<body class="locked">
+  <section class="login-shell" id="login-shell">
+    <img src="logo-redex-blanco.png" alt="REDEX Inmobiliaria">
+    <div class="eyebrow">Portal Asesor</div>
+    <h1>Acceso privado</h1>
+    <p class="muted">Entra con el usuario aprobado por REDEX para ver tu catálogo, leads y ventas asociadas.</p>
+    <form id="advisor-login-form" class="form-grid">
+      <div>
+        <label for="advisor-email">Correo electrónico</label>
+        <input id="advisor-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div>
+        <label for="advisor-password">Contraseña</label>
+        <input id="advisor-password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn-primary" type="submit">Entrar al portal</button>
+      <p class="status" id="login-status"></p>
+    </form>
+  </section>
+
+  <aside class="sidebar" id="sidebar" hidden>
+    <div class="sb-logo">
+      <img src="logo-redex-blanco.png" alt="REDEX">
+    </div>
+    <div class="sb-user">
+      <div class="sb-avatar" id="u-avatar">RD</div>
+      <div class="sb-info">
+        <h4 id="u-name">Asesor REDEX</h4>
+        <span id="u-role">Asesor</span>
+      </div>
+    </div>
+    <div class="sb-nav">
+      <button class="sb-link active" type="button" data-panel="dashboard"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 13h6v7H4zM14 4h6v16h-6zM4 4h6v5H4z"/></svg></span> Dashboard</button>
+      <button class="sb-link" type="button" data-panel="perfil"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></span> Mi perfil</button>
+      <button class="sb-link" type="button" data-panel="catalogo"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></span> Catálogo</button>
+      <button class="sb-link" type="button" data-panel="leads"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></span> Mis leads</button>
+      <button class="sb-link" type="button" data-panel="ventas"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v13H4z"/><path d="M9 7V4h6v3"/><path d="M4 12h16"/></svg></span> Ventas</button>
+      <button class="sb-link" type="button" data-panel="comisiones"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"/></svg></span> Comisiones</button>
+      <button class="sb-link" type="button" data-panel="ranking"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M5 6H3a4 4 0 0 0 4 4"/><path d="M19 6h2a4 4 0 0 1-4 4"/></svg></span> Ranking</button>
+      <button class="sb-link" type="button" data-panel="calculadora"><span class="nav-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h.01M8 15h2M12 15h2M16 15h.01"/></svg></span> Calculadora</button>
+    </div>
+    <div class="sb-footer">
+      <button class="btn-ghost" type="button" id="logout-btn" style="width:100%;">Cerrar sesión</button>
+    </div>
+  </aside>
+
+  <main class="main-area" id="portal-shell" hidden>
+    <header class="topbar">
+      <div class="topbar-main">
+        <div class="topbar-brand">
+          <img src="logo-redex-blanco.png" alt="REDEX Inmobiliaria">
+        </div>
+        <div class="topbar-title">
+          <div class="eyebrow">Portal asesor</div>
+          <h2 id="page-title">Dashboard</h2>
+        </div>
+        <div class="topbar-user">
+          <div class="topbar-avatar" id="topbar-avatar">RD</div>
+          <div>
+            <strong id="topbar-name">Asesor REDEX</strong>
+            <span id="topbar-role">Asesor</span>
+          </div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn-ghost" type="button" id="copy-kyc-link">Copiar Conoce tu cliente</button>
+        <button class="btn-ghost" type="button" id="copy-main-link">Copiar mi link</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <div id="panel-dashboard" class="panel active">
+        <div class="quick-actions">
+          <button class="quick-action" type="button" id="dashboard-copy-kyc">
+            <strong>Conoce tu cliente</strong>
+            <span>Copiar formulario para enviarlo por WhatsApp.</span>
+          </button>
+          <button class="quick-action" type="button" id="dashboard-copy-main">
+            <strong>Mi link personal</strong>
+            <span>Compartir tu espacio comercial REDEX.</span>
+          </button>
+          <a class="quick-action" id="dashboard-whatsapp-link" href="#" target="_blank" rel="noopener">
+            <strong>Enviar WhatsApp</strong>
+            <span>Mensaje listo con tu link de asesor.</span>
+          </a>
+        </div>
+        <div class="grid-3">
+          <div class="stat-card"><h5>Leads recibidos</h5><div class="val" id="stat-leads">0</div></div>
+          <div class="stat-card"><h5>Ventas aprobadas</h5><div class="val" id="stat-sales">0</div></div>
+          <div class="stat-card"><h5>Comisiones</h5><div class="val" id="stat-commission">RD$0</div></div>
+        </div>
+        <div class="table-wrap">
+          <h3>Actividad reciente</h3>
+          <div id="recent-activity" class="empty">Cargando actividad...</div>
+        </div>
+      </div>
+
+      <div id="panel-perfil" class="panel">
+        <div class="profile-card">
+          <div class="profile-grid">
+            <div>
+              <img class="profile-photo" id="profile-photo" src="logo-redex-color.png" alt="Foto del asesor">
+              <form class="profile-photo-actions" id="profile-photo-form">
+                <label for="profile-photo-file">Cambiar fotografía</label>
+                <input id="profile-photo-file" name="foto" type="file" accept="image/jpeg,image/png,image/webp">
+                <button class="copy-btn profile-crop-current-btn" type="button" id="profile-photo-crop-current">Recortar foto actual</button>
+                <button class="copy-btn" type="submit">Actualizar foto</button>
+                <p class="status" id="profile-photo-status"></p>
+              </form>
+            </div>
+            <div>
+              <div class="eyebrow">Perfil comercial</div>
+              <h3 id="profile-name">Asesor REDEX</h3>
+              <p class="muted" id="profile-bio">Información del asesor.</p>
+              <div class="profile-list">
+                <div class="profile-item"><span>Estado</span><strong id="profile-status">Activo</strong></div>
+                <div class="profile-item"><span>Comisión</span><strong id="profile-percent">0%</strong></div>
+                <div class="profile-item"><span>Teléfono</span><strong id="profile-phone">Consultar</strong></div>
+                <div class="profile-item"><span>WhatsApp</span><strong id="profile-whatsapp">Consultar</strong></div>
+                <div class="profile-item"><span>Correo</span><strong id="profile-email">Consultar</strong></div>
+                <div class="profile-item"><span>Link</span><strong id="profile-slug">asesor</strong></div>
+              </div>
+              <form class="profile-info-editor" id="profile-info-form">
+                <h4>Editar información de perfil</h4>
+                <p>Actualiza tus datos comerciales. Esta información se verá en tu portal y en los enlaces que compartas con clientes.</p>
+                <div class="profile-info-grid">
+                  <label>Nombre público
+                    <input name="nombre" type="text" placeholder="Nombre del asesor">
+                  </label>
+                  <label>Teléfono
+                    <input name="telefono" type="tel" placeholder="809-000-0000">
+                  </label>
+                  <label>WhatsApp
+                    <input name="whatsapp" type="tel" placeholder="809-000-0000">
+                  </label>
+                  <label>Ciudad
+                    <input name="ciudad" type="text" placeholder="Ciudad">
+                  </label>
+                  <label>Sector
+                    <input name="sector" type="text" placeholder="Sector o zona">
+                  </label>
+                  <label class="full">Biografía comercial
+                    <textarea name="bio" rows="4" placeholder="Breve descripción profesional para tus clientes."></textarea>
+                  </label>
+                </div>
+                <div class="profile-info-actions">
+                  <button class="copy-btn" type="submit">Guardar perfil</button>
+                  <p class="status" id="profile-info-status"></p>
+                </div>
+              </form>
+              <div class="profile-socials" id="profile-socials" aria-label="Redes sociales del asesor"></div>
+              <form class="profile-social-editor" id="profile-social-form">
+                <h4>Editar redes sociales</h4>
+                <p>Coloca el enlace completo o tu usuario. Estos enlaces se mostrarán en tu perfil público y en los enlaces que compartas con clientes.</p>
+                <div class="social-edit-grid">
+                  <label>Instagram
+                    <input name="instagram_url" type="text" placeholder="@usuario o https://instagram.com/usuario">
+                  </label>
+                  <label>Facebook
+                    <input name="facebook_url" type="text" placeholder="usuario o enlace de Facebook">
+                  </label>
+                  <label>TikTok
+                    <input name="tiktok_url" type="text" placeholder="@usuario o enlace de TikTok">
+                  </label>
+                  <label>LinkedIn
+                    <input name="linkedin_url" type="text" placeholder="usuario o enlace de LinkedIn">
+                  </label>
+                  <label>YouTube
+                    <input name="youtube_url" type="text" placeholder="@canal o enlace de YouTube">
+                  </label>
+                  <label>Página web
+                    <input name="web_url" type="text" placeholder="https://tusitio.com">
+                  </label>
+                </div>
+                <div class="profile-social-actions">
+                  <button class="copy-btn" type="submit">Guardar redes</button>
+                  <p class="status" id="profile-social-status"></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-catalogo" class="panel">
+        <div class="table-wrap">
+          <h3>Catálogo para compartir</h3>
+          <div class="toolbar">
+            <input id="catalog-search" placeholder="Buscar por nombre, ciudad o sector">
+            <select id="catalog-type">
+              <option value="todos">Propiedades y proyectos</option>
+              <option value="propiedad">Solo propiedades</option>
+              <option value="proyecto">Solo proyectos</option>
+            </select>
+            <select id="catalog-city">
+              <option value="todos">Todas las ciudades</option>
+            </select>
+          </div>
+          <div class="catalog-grid" id="catalog-grid"></div>
+        </div>
+      </div>
+
+      <div id="panel-leads" class="panel">
+        <div class="table-wrap">
+          <h3>Mis leads</h3>
+          <div class="toolbar lead-toolbar">
+            <input id="lead-search" placeholder="Buscar cliente, teléfono, correo o interés">
+            <select id="lead-status-filter">
+              <option value="todos">Todos los estados</option>
+              <option value="Nuevo">Nuevo</option>
+              <option value="En proceso">En proceso</option>
+              <option value="Atendida">Atendida</option>
+              <option value="Descartada">Descartada</option>
+            </select>
+            <select id="lead-date-filter">
+              <option value="todos">Todas las fechas</option>
+              <option value="hoy">Hoy</option>
+              <option value="7">Últimos 7 días</option>
+              <option value="30">Últimos 30 días</option>
+            </select>
+            <button class="copy-btn" id="export-leads-btn" type="button">Descargar Excel</button>
+          </div>
+          <div id="leads-wrap"></div>
+          <div id="lead-detail" class="lead-detail" hidden></div>
+        </div>
+      </div>
+
+      <div id="panel-ventas" class="panel">
+        <div class="tool-card" style="margin-bottom:20px;">
+          <h3>Registrar venta</h3>
+          <p class="muted">Envía la venta al CMS para revisión. REDEX la aprobará antes de marcar comisión o cambiar disponibilidad.</p>
+          <form id="advisor-sale-form" style="margin-top:18px;">
+            <div class="sale-form-grid">
+              <div class="wide">
+                <label for="advisor-sale-asset">Propiedad o proyecto</label>
+                <select id="advisor-sale-asset" name="asset" required></select>
+              </div>
+              <div>
+                <label for="advisor-sale-date">Fecha</label>
+                <input id="advisor-sale-date" name="fecha_venta" type="date" required>
+              </div>
+              <div>
+                <label for="advisor-sale-price">Precio final</label>
+                <input id="advisor-sale-price" name="precio_final" inputmode="decimal" required>
+              </div>
+              <div>
+                <label for="advisor-client-name">Cliente</label>
+                <input id="advisor-client-name" name="cliente_nombre" required>
+              </div>
+              <div>
+                <label for="advisor-client-phone">Teléfono cliente</label>
+                <input id="advisor-client-phone" name="cliente_telefono" required>
+              </div>
+              <div>
+                <label for="advisor-client-email">Correo cliente</label>
+                <input id="advisor-client-email" name="cliente_correo" type="email">
+              </div>
+              <div>
+                <label for="advisor-client-location">Ubicación cliente</label>
+                <input id="advisor-client-location" name="cliente_ubicacion">
+              </div>
+              <div>
+                <label for="advisor-down-payment">Inicial</label>
+                <input id="advisor-down-payment" name="monto_inicial" inputmode="decimal">
+              </div>
+              <div>
+                <label for="advisor-payment-method">Forma de pago</label>
+                <select id="advisor-payment-method" name="forma_pago">
+                  <option value="contado">Contado</option>
+                  <option value="prestamo">Préstamo</option>
+                  <option value="financiamiento">Financiamiento</option>
+                </select>
+              </div>
+              <div>
+                <label for="advisor-bank">Banco o entidad</label>
+                <input id="advisor-bank" name="banco_entidad">
+              </div>
+              <div>
+                <label for="advisor-interest">Interés %</label>
+                <input id="advisor-interest" name="porcentaje_interes" inputmode="decimal">
+              </div>
+              <div>
+                <label for="advisor-term">Plazo</label>
+                <input id="advisor-term" name="plazo_financiamiento">
+              </div>
+              <div class="full">
+                <label for="advisor-asset-details">Otros detalles del inmueble o proyecto</label>
+                <textarea id="advisor-asset-details" name="detalles_activo" rows="3" placeholder="Ejemplo: manzana, solar, unidad, nivel, entrega, condición especial o cualquier dato importante para REDEX."></textarea>
+              </div>
+              <div class="full">
+                <label for="advisor-sale-notes">Observaciones</label>
+                <textarea id="advisor-sale-notes" name="notas" rows="3"></textarea>
+              </div>
+            </div>
+            <p class="status" id="advisor-sale-status"></p>
+            <button class="btn-primary" type="submit">Enviar venta para aprobación</button>
+          </form>
+        </div>
+        <div class="table-wrap">
+          <h3>Ventas asociadas</h3>
+          <div id="sales-wrap"></div>
+        </div>
+      </div>
+
+      <div id="panel-comisiones" class="panel">
+        <div class="grid-3">
+          <div class="stat-card"><h5>Mes actual</h5><div class="val" id="commission-month">RD$0</div></div>
+          <div class="stat-card"><h5>Pendiente</h5><div class="val" id="commission-pending">RD$0</div></div>
+          <div class="stat-card"><h5>Liquidada</h5><div class="val" id="commission-paid">RD$0</div></div>
+        </div>
+        <div class="grid-3">
+          <div class="stat-card"><h5>En revisión</h5><div class="val" id="commission-review">RD$0</div></div>
+          <div class="stat-card"><h5>Parcial</h5><div class="val" id="commission-partial">RD$0</div></div>
+          <div class="stat-card"><h5>Total histórico</h5><div class="val" id="commission-total">RD$0</div></div>
+        </div>
+        <div class="table-wrap">
+          <h3>Detalle de comisiones</h3>
+          <div id="commissions-wrap"></div>
+        </div>
+      </div>
+
+      <div id="panel-ranking" class="panel">
+        <div class="star-card">
+          <img id="ranking-star-photo" src="logo-redex-color.png" alt="Vendedor estrella">
+          <div>
+            <div class="eyebrow">Vendedor estrella del mes</div>
+            <h3 id="ranking-star-name">Sin ventas registradas</h3>
+            <p class="muted" id="ranking-star-summary">El ranking se actualiza con ventas aprobadas y comisiones registradas por el CMS.</p>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="stat-card"><h5>Tu posición</h5><div class="val" id="ranking-my-position">-</div></div>
+          <div class="stat-card"><h5>Tus ventas del mes</h5><div class="val" id="ranking-my-sales">0</div></div>
+          <div class="stat-card"><h5>Tu comisión del mes</h5><div class="val" id="ranking-my-commission">RD$0</div></div>
+        </div>
+        <div class="table-wrap">
+          <h3>Top 3 mensual</h3>
+          <div class="rank-list" id="ranking-list"></div>
+        </div>
+      </div>
+
+      <div id="panel-calculadora" class="panel">
+        <div class="tool-card">
+          <h3>Calculadora de propuesta</h3>
+          <p class="muted">Calcula una cuota, guarda la propuesta y genera un resumen listo para enviar al cliente.</p>
+          <div class="calc-grid" style="margin-top:18px;">
+            <div><label for="calc-client-name">Cliente</label><input id="calc-client-name" placeholder="Nombre del cliente"></div>
+            <div><label for="calc-client-phone">Teléfono</label><input id="calc-client-phone" placeholder="WhatsApp del cliente"></div>
+            <div class="wide"><label for="calc-asset">Propiedad o proyecto</label><select id="calc-asset"></select></div>
+            <div><label for="calc-price">Precio</label><input id="calc-price" inputmode="decimal" value="5000000"></div>
+            <div><label for="calc-down">Inicial</label><input id="calc-down" inputmode="decimal" value="1000000"></div>
+            <div><label for="calc-rate">Interés anual %</label><input id="calc-rate" inputmode="decimal" value="12"></div>
+            <div><label for="calc-years">Años</label><input id="calc-years" inputmode="numeric" value="20"></div>
+          </div>
+          <div class="calc-result" id="calc-result">RD$0</div>
+          <textarea id="proposal-summary" rows="8" style="margin-top:16px;" readonly></textarea>
+          <p class="status" id="proposal-status"></p>
+          <div class="lead-actions" style="margin-top:14px;">
+            <button class="btn-primary" type="button" id="save-proposal-btn">Guardar propuesta</button>
+            <button class="btn-ghost" type="button" id="copy-proposal-btn">Copiar resumen</button>
+            <a class="btn-ghost" id="send-proposal-whatsapp" href="#" target="_blank" rel="noopener">Enviar WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="photo-crop-modal" id="photo-crop-modal" role="dialog" aria-modal="true" aria-labelledby="photo-crop-title">
+    <div class="photo-crop-card">
+      <h3 id="photo-crop-title">Ajustar fotografía</h3>
+      <p>Mueve la foto y usa el zoom para que el rostro quede centrado, con un poco de hombros y espacio arriba de la cabeza.</p>
+      <div class="photo-crop-stage" id="photo-crop-stage">
+        <img id="photo-crop-image" src="" alt="Foto para recortar">
+        <div class="photo-crop-guide"></div>
+      </div>
+      <div class="photo-crop-controls">
+        <label for="photo-crop-zoom">Zoom
+          <input id="photo-crop-zoom" type="range" min="100" max="300" value="110">
+        </label>
+      </div>
+      <div class="photo-crop-actions">
+        <button class="copy-btn" type="button" id="photo-crop-cancel">Cancelar</button>
+        <button class="btn-primary" type="button" id="photo-crop-confirm">Usar esta foto</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="portal-asesor.js"></script>
+</body>
+</html>

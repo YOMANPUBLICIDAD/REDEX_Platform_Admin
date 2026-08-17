@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REDEX Admin | Dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="admin-app">
+    <header class="topbar">
+      <div class="brand">
+        <img src="../logo-redex-blanco.png" alt="REDEX Inmobiliaria">
+        <div>
+          <div class="eyebrow">Administración</div>
+          <strong>REDEX Platform</strong>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="ghost-btn" id="refresh-btn" type="button">Actualizar</button>
+        <button class="primary-btn" id="logout-btn" type="button">Cerrar sesión</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="page-title">
+        <div>
+          <div class="eyebrow">Dashboard</div>
+          <h1><em>Invierte en lo nuestro</em><span class="title-flag" aria-hidden="true">🇩🇴</span></h1>
+          <p class="muted">Gestión administrativa.</p>
+        </div>
+        <div class="page-actions">
+          <button class="secondary-btn" id="manage-properties-btn" type="button">Administrar propiedades</button>
+          <button class="ghost-btn" id="manage-projects-btn" type="button">Administrar proyectos</button>
+          <button class="ghost-btn" id="manage-web-content-btn" type="button">Contenido web</button>
+          <button class="ghost-btn" id="manage-sales-btn" type="button">Ventas</button>
+          <button class="ghost-btn" id="manage-leads-btn" type="button">Solicitudes</button>
+          <button class="ghost-btn" id="manage-advisors-btn" type="button">Asesores</button>
+        </div>
+      </section>
+
+      <p class="admin-status error" id="guard-message" hidden></p>
+
+      <div class="module-tabs" aria-label="Módulos administrativos">
+        <button class="module-tab active" type="button" data-module-tab="properties">Propiedades</button>
+        <button class="module-tab" type="button" data-module-tab="projects">Proyectos</button>
+        <button class="module-tab" type="button" data-module-tab="web-content">Contenido web</button>
+        <button class="module-tab" type="button" data-module-tab="sales">Ventas</button>
+        <button class="module-tab" type="button" data-module-tab="leads">Solicitudes</button>
+        <button class="module-tab" type="button" data-module-tab="advisors">Asesores</button>
+      </div>
+
+      <section class="metrics-grid" aria-label="Resumen de propiedades">
+        <article class="metric-card gold">
+          <span>Total propiedades</span>
+          <strong id="metric-total">0</strong>
+        </article>
+        <article class="metric-card green">
+          <span>Disponibles</span>
+          <strong id="metric-disponibles">0</strong>
+        </article>
+        <article class="metric-card gold">
+          <span>Reservadas</span>
+          <strong id="metric-reservadas">0</strong>
+        </article>
+        <article class="metric-card red">
+          <span>Vendidas</span>
+          <strong id="metric-vendidas">0</strong>
+        </article>
+      </section>
+
+      <section class="metrics-grid module-panel" id="projects-metrics" aria-label="Resumen de proyectos" hidden>
+        <article class="metric-card gold">
+          <span>Total proyectos</span>
+          <strong id="metric-project-total">0</strong>
+        </article>
+        <article class="metric-card green">
+          <span>Disponibles</span>
+          <strong id="metric-project-disponibles">0</strong>
+        </article>
+        <article class="metric-card gold">
+          <span>Reservados</span>
+          <strong id="metric-project-reservados">0</strong>
+        </article>
+        <article class="metric-card red">
+          <span>Vendidos</span>
+          <strong id="metric-project-vendidos">0</strong>
+        </article>
+      </section>
+
+      <section class="metrics-grid module-panel" id="sales-metrics" aria-label="Resumen de ventas" hidden>
+        <article class="metric-card gold">
+          <span>Total vendido</span>
+          <strong id="metric-sales-total">RD$0</strong>
+        </article>
+        <article class="metric-card green">
+          <span>Beneficio REDEX</span>
+          <strong id="metric-sales-company">RD$0</strong>
+        </article>
+        <article class="metric-card gold">
+          <span>Vendedores</span>
+          <strong id="metric-sales-sellers">RD$0</strong>
+        </article>
+        <article class="metric-card red">
+          <span>Impuestos y gastos</span>
+          <strong id="metric-sales-costs">RD$0</strong>
+        </article>
+        <article class="metric-card star">
+          <span>Vendedor estrella del mes</span>
+          <strong id="metric-sales-top-seller">Sin ventas</strong>
+          <small id="metric-sales-top-seller-amount">RD$0</small>
+        </article>
+      </section>
+
+      <section class="admin-panel" id="properties-section">
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Listado</div>
+            <h2>Propiedades</h2>
+          </div>
+          <div class="panel-actions">
+            <input class="admin-search" id="property-search" type="search" aria-label="Buscar propiedades">
+            <select class="admin-filter" id="city-filter" aria-label="Filtrar por ciudad">
+              <option value="todos">Todas las ciudades</option>
+            </select>
+            <select class="admin-filter" id="type-filter" aria-label="Filtrar por tipo">
+              <option value="todos">Todos los tipos</option>
+            </select>
+            <select class="admin-filter" id="status-filter" aria-label="Filtrar por estado">
+              <option value="todos">Todos los estados</option>
+              <option value="Disponible">Disponible</option>
+              <option value="Reservado">Reservado</option>
+              <option value="Vendido">Vendido</option>
+            </select>
+            <select class="admin-filter" id="visibility-filter" aria-label="Filtrar por visibilidad">
+              <option value="todos">Visibilidad</option>
+              <option value="visible">Visible</option>
+              <option value="oculta">Oculta</option>
+              <option value="destacada">Destacada</option>
+            </select>
+            <button class="secondary-btn" id="create-property-btn" type="button">Crear propiedad</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Propiedad</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th>Estado</th>
+                <th>Publicación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="properties-table-body"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>No hay propiedades registradas todavía.</div>
+      </section>
+
+      <section class="admin-panel module-panel" id="projects-section" hidden>
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Listado</div>
+            <h2>Proyectos</h2>
+          </div>
+          <div class="panel-actions">
+            <input class="admin-search" id="project-search" type="search" aria-label="Buscar proyectos">
+            <select class="admin-filter" id="project-status-filter" aria-label="Filtrar proyectos por estado">
+              <option value="todos">Todos los estados</option>
+              <option value="Disponible">Disponible</option>
+              <option value="Reservado">Reservado</option>
+              <option value="Vendido">Vendido</option>
+              <option value="En Construcción">En Construcción</option>
+            </select>
+            <select class="admin-filter" id="project-visibility-filter" aria-label="Filtrar proyectos por visibilidad">
+              <option value="todos">Visibilidad</option>
+              <option value="visible">Visible</option>
+              <option value="oculta">Oculta</option>
+              <option value="destacada">Destacada</option>
+            </select>
+            <button class="secondary-btn" id="create-project-btn" type="button">Crear proyecto</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Proyecto</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th>Estado</th>
+                <th>Publicación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="projects-table-body"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="projects-empty-state" hidden>No hay proyectos registrados todavía.</div>
+      </section>
+
+      <section class="admin-panel module-panel" id="web-content-section" hidden>
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">CMS</div>
+            <h2>Contenido web</h2>
+          </div>
+          <div class="panel-actions">
+            <input class="admin-search" id="web-content-search" type="search" aria-label="Buscar secciones">
+            <select class="admin-filter" id="web-page-filter" aria-label="Filtrar por página">
+              <option value="todas">Todas las páginas</option>
+            </select>
+            <select class="admin-filter" id="web-visibility-filter" aria-label="Filtrar por visibilidad">
+              <option value="todas">Visibilidad</option>
+              <option value="visible">Visible</option>
+              <option value="oculta">Oculta</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Sección</th>
+                <th>Página</th>
+                <th>Selector</th>
+                <th>Orden</th>
+                <th>Publicación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="web-content-table-body"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="web-content-empty-state" hidden>No hay secciones registradas todavía.</div>
+      </section>
+
+      <section class="admin-panel module-panel" id="sales-section" hidden>
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Beneficios</div>
+            <h2>Ventas</h2>
+          </div>
+          <div class="panel-actions">
+            <input class="admin-search" id="sales-search" type="search" aria-label="Buscar ventas">
+            <select class="admin-filter" id="sales-type-filter" aria-label="Filtrar ventas por tipo">
+              <option value="todos">Todos los tipos</option>
+              <option value="propiedad">Propiedades</option>
+              <option value="proyecto">Proyectos</option>
+            </select>
+            <select class="admin-filter" id="sales-settlement-filter" aria-label="Filtrar por liquidación">
+              <option value="todos">Liquidación</option>
+              <option value="Pendiente">Pendiente</option>
+              <option value="Parcial">Parcial</option>
+              <option value="Liquidada">Liquidada</option>
+            </select>
+            <label class="admin-date-control">
+              <span>Desde</span>
+              <input class="admin-filter admin-date-filter" id="sales-date-from" type="date" aria-label="Ventas desde">
+            </label>
+            <label class="admin-date-control">
+              <span>Hasta</span>
+              <input class="admin-filter admin-date-filter" id="sales-date-to" type="date" aria-label="Ventas hasta">
+            </label>
+            <select class="admin-filter" id="sales-order-filter" aria-label="Ordenar ventas por fecha">
+              <option value="desc">Más recientes</option>
+              <option value="asc">Más antiguas</option>
+            </select>
+            <button class="ghost-btn" id="download-sales-report-btn" type="button">Descargar ventas</button>
+            <button class="ghost-btn" id="generate-sale-link-btn" type="button">Generar link</button>
+            <button class="secondary-btn" id="create-sale-btn" type="button">Registrar venta</button>
+          </div>
+        </div>
+        <div class="sales-day-report" aria-label="Reporte por fecha de ventas">
+          <div>
+            <div class="eyebrow">Reporte por fecha</div>
+            <h3 id="sales-day-title">Ventas filtradas</h3>
+          </div>
+          <div class="sales-day-grid">
+            <div class="sales-day-card">
+              <span>Total ventas</span>
+              <strong id="sales-day-count">0</strong>
+            </div>
+            <div class="sales-day-card">
+              <span>Propiedades</span>
+              <strong id="sales-day-properties">0</strong>
+            </div>
+            <div class="sales-day-card">
+              <span>Proyectos</span>
+              <strong id="sales-day-projects">0</strong>
+            </div>
+            <div class="sales-day-card">
+              <span>Total vendido</span>
+              <strong id="sales-day-amount">RD$0</strong>
+            </div>
+            <div class="sales-day-card accent">
+              <span>Beneficio REDEX</span>
+              <strong id="sales-day-company">RD$0</strong>
+            </div>
+            <div class="sales-day-card">
+              <span>Comisión asesores</span>
+              <strong id="sales-day-sellers">RD$0</strong>
+            </div>
+          </div>
+        </div>
+        <div class="sales-report-box">
+          <div class="panel-head compact">
+            <div>
+              <div class="eyebrow">Vendedores</div>
+              <h2>Reportes pendientes</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Inmueble</th>
+                  <th>Vendedor</th>
+                  <th>Cliente</th>
+                  <th>Precio</th>
+                  <th>Pago</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="sales-reports-table-body"></tbody>
+            </table>
+          </div>
+          <div class="empty-state" id="sales-reports-empty-state" hidden>No hay reportes pendientes.</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Inmueble</th>
+                <th>Venta</th>
+                <th>Beneficio REDEX</th>
+                <th>Vendedor</th>
+                <th>Liquidación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="sales-table-body"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="sales-empty-state" hidden>No hay ventas registradas todavía.</div>
+      </section>
+
+      <section class="admin-panel module-panel" id="leads-section" hidden>
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Formularios</div>
+            <h2>Solicitudes</h2>
+          </div>
+          <div class="panel-actions">
+            <input class="admin-search" id="leads-search" type="search" aria-label="Buscar solicitudes">
+            <select class="admin-filter" id="leads-type-filter" aria-label="Filtrar solicitudes por tipo">
+              <option value="todos">Todos los tipos</option>
+              <option value="contacto">Contacto</option>
+              <option value="quiero_vender">Quiero vender</option>
+              <option value="quiero_ser_asesor">Quiero ser asesor</option>
+              <option value="precalificacion">Precalificación</option>
+              <option value="hipoteca">Hipoteca</option>
+            </select>
+            <select class="admin-filter" id="leads-status-filter" aria-label="Filtrar solicitudes por estado">
+              <option value="todos">Todos los estados</option>
+              <option>Nuevo</option>
+              <option>En proceso</option>
+              <option>Atendida</option>
+              <option>Descartada</option>
+            </select>
+            <button class="secondary-btn" id="leads-export-btn" type="button">Descargar Excel</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Tipo</th>
+                <th>Asesor</th>
+                <th>Interés</th>
+                <th>Seguimiento</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="leads-table-body"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="leads-empty-state" hidden>No hay solicitudes registradas todavía.</div>
+      </section>
+
+      <section class="admin-panel module-panel" id="advisors-section" hidden>
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Red comercial</div>
+            <h2>Asesores</h2>
+          </div>
+          <div class="panel-actions">
+            <input class="admin-search" id="advisors-search" type="search" aria-label="Buscar asesores">
+            <select class="admin-filter" id="advisors-status-filter" aria-label="Filtrar asesores por estado">
+              <option value="todos">Todos los estados</option>
+              <option value="pendiente">Pendiente</option>
+              <option value="activo">Activo</option>
+              <option value="suspendido">Suspendido</option>
+              <option value="rechazado">Rechazado</option>
+            </select>
+            <button class="secondary-btn" id="create-advisor-btn" type="button">Crear asesor</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Asesor</th>
+                <th>Contacto</th>
+                <th>Estado</th>
+                <th>Comisión</th>
+                <th>Link</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="advisors-table-body"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="advisors-empty-state" hidden>No hay asesores registrados todavía.</div>
+      </section>
+    </main>
+  </div>
+
+  <div class="admin-modal" id="property-modal" role="dialog" aria-modal="true" aria-labelledby="property-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="property-modal-title">Crear propiedad</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="property-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="property-name">Nombre</label>
+            <input id="property-name" name="nombre" required>
+          </div>
+          <div class="field">
+            <label for="property-slug">Slug</label>
+            <input id="property-slug" name="slug">
+          </div>
+          <div class="field">
+            <label for="property-type">Tipo</label>
+            <input id="property-type" name="tipo" required>
+          </div>
+          <div class="field">
+            <label for="property-city">Ciudad</label>
+            <input id="property-city" name="ciudad" required>
+          </div>
+          <div class="field">
+            <label for="property-sector">Sector</label>
+            <input id="property-sector" name="sector">
+          </div>
+          <div class="field">
+            <label for="property-price">Precio</label>
+            <input id="property-price" name="precio">
+          </div>
+          <div class="field">
+            <label for="property-currency">Moneda</label>
+            <select id="property-currency" name="moneda">
+              <option value="DOP">DOP</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="property-status">Estado</label>
+            <select id="property-status" name="estado">
+              <option>Disponible</option>
+              <option>Reservado</option>
+              <option>Vendido</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="property-meterage">Metraje</label>
+            <input id="property-meterage" name="metraje">
+          </div>
+          <div class="field">
+            <label for="property-bedrooms">Habitaciones</label>
+            <input id="property-bedrooms" name="habitaciones">
+          </div>
+          <div class="field">
+            <label for="property-baths">Baños</label>
+            <input id="property-baths" name="banos">
+          </div>
+          <div class="field">
+            <label for="property-parking">Parqueos</label>
+            <input id="property-parking" name="parqueos">
+          </div>
+          <div class="field">
+            <label for="property-visible">Visibilidad</label>
+            <select id="property-visible" name="visible">
+              <option value="true">Visible</option>
+              <option value="false">Oculta</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="property-featured">Destacada</label>
+            <select id="property-featured" name="destacado">
+              <option value="false">No destacada</option>
+              <option value="true">Destacada</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="property-commission-percent">Comisión captación %</label>
+            <input id="property-commission-percent" name="comision_asesor_porcentaje" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="property-redex-commission-percent">% REDEX sobre comisión</label>
+            <input id="property-redex-commission-percent" name="comision_redex_porcentaje" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="property-commission-amount">Comisión captación fija</label>
+            <input id="property-commission-amount" name="comision_asesor_monto" inputmode="decimal">
+          </div>
+          <div class="field full">
+            <label for="property-commission-notes">Notas de comisión</label>
+            <textarea id="property-commission-notes" name="comision_asesor_notas"></textarea>
+          </div>
+          <div class="field full">
+            <label for="property-cover">Imagen de portada</label>
+            <input id="property-cover-url" name="imagen_portada" type="hidden">
+            <input id="property-cover" name="imagen_portada_file" type="file" accept="image/*">
+            <div class="media-manager" id="current-cover"></div>
+          </div>
+          <div class="field full">
+            <label for="property-gallery-files">Agregar imágenes a galería</label>
+            <input id="property-gallery-files" name="galeria_files" type="file" accept="image/*" multiple>
+          </div>
+          <div class="field full">
+            <label for="property-video-files">Agregar videos</label>
+            <input id="property-video-files" name="video_files" type="file" accept="video/*" multiple>
+          </div>
+          <div class="field full">
+            <label for="property-description">Descripción</label>
+            <textarea id="property-description" name="descripcion"></textarea>
+          </div>
+          <div class="field full">
+            <label for="property-features">Características</label>
+            <textarea id="property-features" name="caracteristicas"></textarea>
+          </div>
+          <div class="field full">
+            <label for="property-amenities">Amenidades</label>
+            <textarea id="property-amenities" name="amenidades"></textarea>
+          </div>
+          <div class="field full">
+            <label for="property-gallery">Galería</label>
+            <textarea id="property-gallery" name="galeria"></textarea>
+            <div class="media-manager media-grid" id="gallery-manager"></div>
+          </div>
+          <div class="field full">
+            <label for="property-videos">Videos</label>
+            <textarea id="property-videos" name="videos"></textarea>
+            <div class="media-manager media-list" id="videos-manager"></div>
+          </div>
+          <div class="field">
+            <label for="property-map-url">Mapa</label>
+            <input id="property-map-url" name="mapa_url">
+          </div>
+          <div class="field">
+            <label for="property-lat">Latitud</label>
+            <input id="property-lat" name="latitud">
+          </div>
+          <div class="field">
+            <label for="property-lng">Longitud</label>
+            <input id="property-lng" name="longitud">
+          </div>
+          <div class="field">
+            <label for="property-advisor-name">Asesor</label>
+            <input id="property-advisor-name" name="asesor_nombre">
+          </div>
+          <div class="field">
+            <label for="property-advisor-phone">Teléfono asesor</label>
+            <input id="property-advisor-phone" name="asesor_telefono">
+          </div>
+          <div class="field">
+            <label for="property-advisor-email">Correo asesor</label>
+            <input id="property-advisor-email" name="asesor_email" type="email">
+          </div>
+          <div class="field full">
+            <label for="property-whatsapp">WhatsApp</label>
+            <input id="property-whatsapp" name="whatsapp">
+          </div>
+          <div class="field full">
+            <label for="property-seo-title">Título SEO</label>
+            <input id="property-seo-title" name="seo_titulo">
+          </div>
+          <div class="field full">
+            <label for="property-seo-description">Descripción SEO</label>
+            <textarea id="property-seo-description" name="seo_descripcion"></textarea>
+          </div>
+          <div class="field full">
+            <label for="property-seo-keywords">Palabras clave SEO</label>
+            <textarea id="property-seo-keywords" name="seo_keywords"></textarea>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="preview-property-btn" type="button">Vista previa</button>
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar propiedad</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="advisor-modal" role="dialog" aria-modal="true" aria-labelledby="advisor-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="advisor-modal-title">Crear asesor</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="advisor-form">
+        <input name="id" type="hidden">
+        <div class="form-grid">
+          <div class="field">
+            <label for="advisor-name">Nombre</label>
+            <input id="advisor-name" name="nombre" required>
+          </div>
+          <div class="field">
+            <label for="advisor-slug">Slug</label>
+            <input id="advisor-slug" name="slug">
+          </div>
+          <div class="field">
+            <label for="advisor-role">Rol</label>
+            <input id="advisor-role" name="rol">
+          </div>
+          <div class="field">
+            <label for="advisor-status">Estado</label>
+            <select id="advisor-status" name="estado">
+              <option value="pendiente">Pendiente</option>
+              <option value="activo">Activo</option>
+              <option value="suspendido">Suspendido</option>
+              <option value="rechazado">Rechazado</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="advisor-phone">Teléfono</label>
+            <input id="advisor-phone" name="telefono">
+          </div>
+          <div class="field">
+            <label for="advisor-whatsapp">WhatsApp</label>
+            <input id="advisor-whatsapp" name="whatsapp">
+          </div>
+          <div class="field">
+            <label for="advisor-email">Correo</label>
+            <input id="advisor-email" name="email" type="email">
+          </div>
+          <div class="field">
+            <label for="advisor-instagram">Instagram</label>
+            <input id="advisor-instagram" name="instagram_url" placeholder="https://instagram.com/...">
+          </div>
+          <div class="field">
+            <label for="advisor-facebook">Facebook</label>
+            <input id="advisor-facebook" name="facebook_url" placeholder="https://facebook.com/...">
+          </div>
+          <div class="field">
+            <label for="advisor-tiktok">TikTok</label>
+            <input id="advisor-tiktok" name="tiktok_url" placeholder="https://tiktok.com/@...">
+          </div>
+          <div class="field">
+            <label for="advisor-linkedin">LinkedIn</label>
+            <input id="advisor-linkedin" name="linkedin_url" placeholder="https://linkedin.com/in/...">
+          </div>
+          <div class="field">
+            <label for="advisor-youtube">YouTube</label>
+            <input id="advisor-youtube" name="youtube_url" placeholder="https://youtube.com/...">
+          </div>
+          <div class="field">
+            <label for="advisor-web">Página o portafolio</label>
+            <input id="advisor-web" name="web_url" placeholder="https://...">
+          </div>
+          <div class="field">
+            <label for="advisor-password">Contraseña temporal</label>
+            <input id="advisor-password" name="password_temporal" type="text" autocomplete="off" placeholder="Redex2026">
+          </div>
+          <div class="field">
+            <label for="advisor-commission">Comisión %</label>
+            <input id="advisor-commission" name="porcentaje_comision" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="advisor-city">Ciudad</label>
+            <input id="advisor-city" name="ciudad">
+          </div>
+          <div class="field">
+            <label for="advisor-sector">Sector</label>
+            <input id="advisor-sector" name="sector">
+          </div>
+          <div class="field">
+            <label for="advisor-code">Código referido</label>
+            <input id="advisor-code" name="codigo_referido">
+          </div>
+          <div class="field">
+            <label for="advisor-visible">Visible público</label>
+            <select id="advisor-visible" name="visible_publico">
+              <option value="true">Visible</option>
+              <option value="false">Oculto</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="advisor-photo">Foto URL</label>
+            <input id="advisor-photo" name="foto_url">
+            <div class="advisor-photo-tools">
+              <div class="advisor-photo-preview" id="advisor-photo-preview">
+                <span>Sin foto</span>
+              </div>
+              <div class="advisor-photo-controls">
+                <label for="advisor-photo-file">Subir o reemplazar foto</label>
+                <input id="advisor-photo-file" name="foto_file" type="file" accept="image/*">
+                <label for="advisor-photo-position">Encuadre de la foto</label>
+                <select id="advisor-photo-position" name="foto_posicion">
+                  <option value="center 18%">Rostro centrado</option>
+                  <option value="center 8%">Más arriba</option>
+                  <option value="center 28%">Más cuerpo</option>
+                  <option value="center center">Centro completo</option>
+                </select>
+                <p class="preview-note">Este encuadre ayuda a que no se corte la cabeza en el CMS, portal y web pública.</p>
+              </div>
+            </div>
+          </div>
+          <div class="field full">
+            <label for="advisor-bio">Bio</label>
+            <textarea id="advisor-bio" name="bio"></textarea>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="preview-advisor-btn" type="button">Vista previa</button>
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar asesor</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="web-content-modal" role="dialog" aria-modal="true" aria-labelledby="web-content-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="web-content-modal-title">Editar sección</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="web-content-form">
+        <input name="id" type="hidden">
+        <div class="form-grid">
+          <div class="field">
+            <label for="web-section-title">Título</label>
+            <input id="web-section-title" name="titulo">
+          </div>
+          <div class="field">
+            <label for="web-section-subtitle">Subtítulo</label>
+            <input id="web-section-subtitle" name="subtitulo">
+          </div>
+          <div class="field full">
+            <label for="web-section-description">Descripción</label>
+            <textarea id="web-section-description" name="descripcion"></textarea>
+          </div>
+          <div class="field full">
+            <label for="web-section-texts">Textos adicionales</label>
+            <textarea id="web-section-texts" name="textos"></textarea>
+          </div>
+          <div class="field">
+            <label for="web-section-bg">Imagen de fondo</label>
+            <input id="web-section-bg" name="imagen_fondo">
+          </div>
+          <div class="field">
+            <label for="web-section-main-image">Imagen principal</label>
+            <input id="web-section-main-image" name="imagen_principal">
+          </div>
+          <div class="field full">
+            <label for="web-image-file">Subir imagen</label>
+            <input id="web-image-file" name="image_file" type="file" accept="image/*">
+          </div>
+          <div class="field">
+            <label for="web-section-video">Video</label>
+            <input id="web-section-video" name="video_url">
+          </div>
+          <div class="field full">
+            <label for="web-video-file">Subir video</label>
+            <input id="web-video-file" name="video_file" type="file" accept="video/*">
+          </div>
+          <div class="field">
+            <label for="web-button-text">Texto botón</label>
+            <input id="web-button-text" name="boton_texto">
+          </div>
+          <div class="field">
+            <label for="web-button-url">Enlace botón</label>
+            <input id="web-button-url" name="boton_url">
+          </div>
+          <div class="field">
+            <label for="web-whatsapp-url">WhatsApp</label>
+            <input id="web-whatsapp-url" name="whatsapp_url">
+          </div>
+          <div class="field">
+            <label for="web-section-order">Orden</label>
+            <input id="web-section-order" name="orden" type="number">
+          </div>
+          <div class="field">
+            <label for="web-section-visible">Visibilidad</label>
+            <select id="web-section-visible" name="visible">
+              <option value="true">Visible</option>
+              <option value="false">Oculta</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="preview-web-content-btn" type="button">Vista previa</button>
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar sección</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="sale-modal" role="dialog" aria-modal="true" aria-labelledby="sale-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="sale-modal-title">Registrar venta</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="sale-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="sale-asset-type">Tipo</label>
+            <select id="sale-asset-type" name="tipo_activo">
+              <option value="propiedad">Propiedad</option>
+              <option value="proyecto">Proyecto</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sale-asset">Inmueble</label>
+            <select id="sale-asset" name="activo_id" required></select>
+          </div>
+          <div class="field">
+            <label for="sale-date">Fecha de venta</label>
+            <input id="sale-date" name="fecha_venta" type="date" required>
+          </div>
+          <div class="field">
+            <label for="sale-currency">Moneda</label>
+            <select id="sale-currency" name="moneda">
+              <option value="DOP">DOP</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sale-list-price">Precio publicado</label>
+            <input id="sale-list-price" name="precio_publicado" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="sale-amount">Monto vendido</label>
+            <input id="sale-amount" name="monto_venta" inputmode="decimal" required>
+          </div>
+          <div class="field">
+            <label for="sale-company-percent">% REDEX sobre comisión</label>
+            <input id="sale-company-percent" name="porcentaje_empresa" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="sale-company-benefit">Beneficio REDEX</label>
+            <input id="sale-company-benefit" name="beneficio_empresa" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="sale-seller-percent">% Comisión captación</label>
+            <input id="sale-seller-percent" name="porcentaje_vendedor" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="sale-seller-benefit">Beneficio vendedor</label>
+            <input id="sale-seller-benefit" name="beneficio_vendedor" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="sale-costs">Impuestos y gastos</label>
+            <input id="sale-costs" name="impuestos_gastos" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="sale-sold-by">Vendido por</label>
+            <select id="sale-sold-by" name="vendido_por">
+              <option value="empresa">Empresa</option>
+              <option value="asesor">Asesor</option>
+              <option value="externo">Externo</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sale-advisor">Asesor REDEX</label>
+            <select id="sale-advisor" name="asesor_id">
+              <option value="">Sin asesor asignado</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sale-seller-name">Nombre vendedor</label>
+            <input id="sale-seller-name" name="vendedor_nombre">
+          </div>
+          <div class="field">
+            <label for="sale-seller-contact">Contacto vendedor</label>
+            <input id="sale-seller-contact" name="vendedor_contacto">
+          </div>
+          <div class="field">
+            <label for="sale-settlement">Liquidación</label>
+            <select id="sale-settlement" name="estado_liquidacion">
+              <option>Pendiente</option>
+              <option>Parcial</option>
+              <option>Liquidada</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="sale-notes">Notas</label>
+            <textarea id="sale-notes" name="notas"></textarea>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="preview-sale-btn" type="button">Vista previa</button>
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar venta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="sale-link-modal" role="dialog" aria-modal="true" aria-labelledby="sale-link-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="sale-link-modal-title">Generar link de venta</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="sale-link-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="sale-link-asset-type">Tipo</label>
+            <select id="sale-link-asset-type" name="tipo_activo">
+              <option value="propiedad">Propiedad</option>
+              <option value="proyecto">Proyecto</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sale-link-asset">Inmueble</label>
+            <select id="sale-link-asset" name="activo_id" required></select>
+          </div>
+          <div class="field">
+            <label for="sale-link-days">Vigencia en días</label>
+            <input id="sale-link-days" name="dias_vigencia" type="number" min="1" max="90" value="30">
+          </div>
+          <div class="field full">
+            <label for="sale-link-output">Link generado</label>
+            <input id="sale-link-output" readonly>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="copy-sale-link-btn" type="button">Copiar link</button>
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Generar link</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="project-modal-title">Crear proyecto</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="project-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="project-name">Nombre</label>
+            <input id="project-name" name="nombre" required>
+          </div>
+          <div class="field">
+            <label for="project-slug">Slug</label>
+            <input id="project-slug" name="slug">
+          </div>
+          <div class="field">
+            <label for="project-type">Tipo</label>
+            <input id="project-type" name="tipo" required>
+          </div>
+          <div class="field">
+            <label for="project-category">Categoría</label>
+            <input id="project-category" name="categoria_filtro">
+          </div>
+          <div class="field">
+            <label for="project-location">Ubicación</label>
+            <input id="project-location" name="ubicacion" required>
+          </div>
+          <div class="field">
+            <label for="project-city">Ciudad</label>
+            <input id="project-city" name="ciudad">
+          </div>
+          <div class="field">
+            <label for="project-sector">Sector</label>
+            <input id="project-sector" name="sector">
+          </div>
+          <div class="field">
+            <label for="project-price">Precio</label>
+            <input id="project-price" name="precio_texto">
+          </div>
+          <div class="field">
+            <label for="project-reservation">Reserva</label>
+            <input id="project-reservation" name="reserva">
+          </div>
+          <div class="field">
+            <label for="project-available">Disponibilidad</label>
+            <input id="project-available" name="cantidad_disponible">
+          </div>
+          <div class="field">
+            <label for="project-status">Estado</label>
+            <select id="project-status" name="estado">
+              <option>Disponible</option>
+              <option>Reservado</option>
+              <option>Vendido</option>
+              <option>En Construcción</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="project-visible">Visibilidad</label>
+            <select id="project-visible" name="visible">
+              <option value="true">Visible</option>
+              <option value="false">Oculto</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="project-featured">Destacado</label>
+            <select id="project-featured" name="destacado">
+              <option value="false">No destacado</option>
+              <option value="true">Destacado</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="project-label">Etiqueta</label>
+            <input id="project-label" name="etiqueta">
+          </div>
+          <div class="field">
+            <label for="project-label-color">Color etiqueta</label>
+            <input id="project-label-color" name="color_etiqueta">
+          </div>
+          <div class="field">
+            <label for="project-commission-percent">Comisión asesor %</label>
+            <input id="project-commission-percent" name="comision_asesor_porcentaje" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="project-commission-amount">Comisión asesor fija</label>
+            <input id="project-commission-amount" name="comision_asesor_monto" inputmode="decimal">
+          </div>
+          <div class="field full">
+            <label for="project-commission-notes">Notas de comisión</label>
+            <textarea id="project-commission-notes" name="comision_asesor_notas"></textarea>
+          </div>
+          <div class="field full">
+            <label for="project-cover">Imagen de portada</label>
+            <input id="project-cover-url" name="imagen_portada" type="hidden">
+            <input id="project-cover" name="imagen_portada_file" type="file" accept="image/*">
+            <div class="media-manager" id="project-current-cover"></div>
+          </div>
+          <div class="field full">
+            <label for="project-gallery-files">Agregar imágenes a galería</label>
+            <input id="project-gallery-files" name="galeria_files" type="file" accept="image/*" multiple>
+          </div>
+          <div class="field full">
+            <label for="project-video-files">Agregar videos</label>
+            <input id="project-video-files" name="video_files" type="file" accept="video/*" multiple>
+          </div>
+          <div class="field full">
+            <label for="project-description">Descripción</label>
+            <textarea id="project-description" name="descripcion"></textarea>
+          </div>
+          <div class="field full">
+            <label for="project-pills">Pills</label>
+            <textarea id="project-pills" name="pills"></textarea>
+          </div>
+          <div class="field full">
+            <label for="project-amenities">Amenidades</label>
+            <textarea id="project-amenities" name="amenidades"></textarea>
+          </div>
+          <div class="field full">
+            <label for="project-features">Características</label>
+            <textarea id="project-features" name="caracteristicas"></textarea>
+          </div>
+          <div class="field full">
+            <label for="project-gallery">Galería</label>
+            <textarea id="project-gallery" name="galeria"></textarea>
+            <div class="media-manager media-grid" id="project-gallery-manager"></div>
+          </div>
+          <div class="field full">
+            <label for="project-videos">Videos</label>
+            <textarea id="project-videos" name="videos"></textarea>
+            <div class="media-manager media-list" id="project-videos-manager"></div>
+          </div>
+          <div class="field">
+            <label for="project-map-url">Mapa</label>
+            <input id="project-map-url" name="mapa_url">
+          </div>
+          <div class="field">
+            <label for="project-lat">Latitud</label>
+            <input id="project-lat" name="latitud">
+          </div>
+          <div class="field">
+            <label for="project-lng">Longitud</label>
+            <input id="project-lng" name="longitud">
+          </div>
+          <div class="field full">
+            <label for="project-whatsapp">WhatsApp</label>
+            <input id="project-whatsapp" name="enlace_whatsapp">
+          </div>
+          <div class="field full">
+            <label for="project-seo-title">Título SEO</label>
+            <input id="project-seo-title" name="seo_titulo">
+          </div>
+          <div class="field full">
+            <label for="project-seo-description">Descripción SEO</label>
+            <textarea id="project-seo-description" name="seo_descripcion"></textarea>
+          </div>
+          <div class="field full">
+            <label for="project-seo-keywords">Palabras clave SEO</label>
+            <textarea id="project-seo-keywords" name="seo_keywords"></textarea>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="preview-project-btn" type="button">Vista previa</button>
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar proyecto</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="project-status-modal" role="dialog" aria-modal="true" aria-labelledby="project-status-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="project-status-modal-title">Cambiar estado de proyecto</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="project-status-form">
+        <div class="field">
+          <label for="project-status-select">Estado</label>
+          <select id="project-status-select" name="estado">
+            <option>Disponible</option>
+            <option>Reservado</option>
+            <option>Vendido</option>
+            <option>En Construcción</option>
+          </select>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar estado</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="status-modal" role="dialog" aria-modal="true" aria-labelledby="status-modal-title">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="status-modal-title">Cambiar estado</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <form class="modal-body admin-form" id="status-form">
+        <div class="field">
+          <label for="status-select">Estado</label>
+          <select id="status-select" name="estado">
+            <option>Disponible</option>
+            <option>Reservado</option>
+            <option>Vendido</option>
+          </select>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost-btn" type="button" data-close-modal>Cancelar</button>
+          <button class="primary-btn" type="submit">Guardar estado</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-modal-title">
+    <div class="modal-card preview-card">
+      <div class="modal-head">
+        <h2 id="preview-modal-title">Vista previa</h2>
+        <button class="ghost-btn" type="button" data-close-modal>Cerrar</button>
+      </div>
+      <div class="modal-body" id="preview-content"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script type="module" src="js/dashboard.js?v=20260813-commission-split"></script>
+</body>
+</html>

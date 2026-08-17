@@ -1,0 +1,25 @@
+{
+  "propiedades_iniciales": 148,
+  "proyectos_iniciales": 8,
+  "propiedades_crud": {
+    "crear": true,
+    "editar": true,
+    "duplicar": true,
+    "eliminar": true,
+    "estado": true,
+    "orden_galeria": true,
+    "whatsapp": true
+  },
+  "proyectos_crud": {
+    "crear": true,
+    "editar": true,
+    "duplicar": true,
+    "eliminar": true,
+    "estado": true,
+    "orden_galeria": true,
+    "whatsapp": true
+  },
+  "propiedades_finales": 148,
+  "proyectos_finales": 8,
+  "inventario_sin_cambios": true
+}

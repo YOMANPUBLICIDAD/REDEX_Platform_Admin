@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Profile - REDEX Inmobiliaria (Ultimate)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+    :root {
+      --g-dark: #060912;
+      --g-deep: #0a0f1d;
+      --gold: #c8a44a;
+      --wine: #8b1e2f;
+      --navy: #07246b;
+      --ww: #f5f2ee;
+      --ww80: rgba(245,242,238,0.8);
+      --ww40: rgba(245,242,238,0.4);
+      --dark-gray: #1a1f2e;
+      
+      --sans: 'Inter', sans-serif;
+      --display: 'Playfair Display', serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: var(--sans);
+      background-color: var(--g-dark);
+      color: var(--ww);
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* A4 Landscape is 297mm x 210mm */
+    .page {
+      width: 297mm;
+      height: 210mm;
+      position: relative;
+      background: var(--g-dark);
+      overflow: hidden;
+      page-break-after: always;
+      display: flex;
+    }
+    
+    .page.light { background: var(--ww); color: var(--g-dark); }
+    .page.deep { background: var(--g-deep); }
+    
+    /* Backgrounds & Overlays */
+    .bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 1; opacity: 0.4; }
+    .bg-full { opacity: 1; }
+    
+    .overlay-dark { position: absolute; inset: 0; background: rgba(6,9,18,0.8); z-index: 2; }
+    .overlay-gradient { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,9,18,0.95) 0%, rgba(6,9,18,0.2) 100%); z-index: 2; }
+    
+    /* Layout Patterns */
+    .content { position: relative; z-index: 3; padding: 50px 70px; width: 100%; display: flex; flex-direction: column; }
+    
+    .split { display: flex; width: 100%; height: 100%; }
+    .split-half { flex: 1; position: relative; display: flex; flex-direction: column; padding: 120px 80px 80px 80px; justify-content: center; }
+    .split-img { flex: 1; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .split-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    
+    /* Grid 3 Col & 2 Col */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px; }
+    
+    /* Typography */
+    h1 { font-family: var(--display); font-size: 72px; color: #fff; line-height: 1.1; margin-bottom: 20px; font-weight: 400; }
+    h2 { font-family: var(--display); font-size: 54px; color: var(--gold); line-height: 1.1; margin-bottom: 30px; font-weight: 400; }
+    .light h2 { color: var(--navy); }
+    h3 { font-family: var(--sans); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: var(--gold); margin-bottom: 15px; }
+    .light h3 { color: var(--gold); }
+    h4 { font-family: var(--display); font-size: 28px; margin-bottom: 15px; font-weight: 600; color: #fff; }
+    .light h4 { color: var(--navy); }
+    
+    p { font-size: 14px; line-height: 1.9; color: var(--ww80); margin-bottom: 20px; font-weight: 300; }
+    .light p { color: #555; font-weight: 400; }
+    
+    .accent-line { width: 80px; height: 1px; background: var(--gold); margin: 30px 0; }
+    .light .accent-line { background: var(--gold); }
+    
+    /* Headers & Footers */
+    .page-header { position: absolute; top: 40px; left: 70px; right: 70px; display: flex; justify-content: space-between; align-items: center; z-index: 10; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
+    .light .page-header { border-bottom: 1px solid rgba(0,0,0,0.1); }
+    .page-header img { width: 120px; }
+    .page-header .title { font-size: 10px; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); }
+    
+    .page-footer { position: absolute; bottom: 40px; left: 70px; right: 70px; display: flex; justify-content: space-between; z-index: 10; font-size: 9px; text-transform: uppercase; letter-spacing: 2px; color: var(--ww60); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px; }
+    .light .page-footer { color: #999; border-top: 1px solid rgba(0,0,0,0.1); }
+    
+    /* Components */
+    .stat-box { border-left: 2px solid var(--gold); padding-left: 20px; margin-bottom: 30px; }
+    .stat-num { font-family: var(--display); font-size: 48px; color: var(--gold); line-height: 1; margin-bottom: 5px; }
+    .stat-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ww); font-weight: 600; }
+    .light .stat-lbl { color: var(--navy); }
+    
+    .list-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px; }
+    .list-icon { color: var(--gold); font-size: 18px; margin-top: -2px; }
+    
+    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 40px; }
+    .light .card { background: #fff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
+
+    .proj-card { position: relative; height: 100%; border: 1px solid rgba(255,255,255,0.1); }
+    .proj-card img { width: 100%; height: 250px; object-fit: cover; object-position: center; }
+    .proj-card-body { padding: 30px; }
+    .proj-loc { font-size: 10px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; font-weight: 600;}
+    .proj-card p { font-size: 12px; margin-bottom: 0; }
+
+    .img-rounded { border-radius: 8px; width: 100%; object-fit: cover; object-position: center; margin-top: 20px;}
+
+    /* Custom Map Style */
+    .map-container { position: relative; width: 100%; height: 100%; background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Dominican_Republic_location_map.svg/1000px-Dominican_Republic_location_map.svg.png') center/contain no-repeat; opacity: 0.6; filter: invert(1) brightness(0.8) sepia(1) hue-rotate(180deg) saturate(2); }
+    
+    @page { size: A4 landscape; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- PÁGINA 1: PORTADA -->
+  <div class="page">
+    <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/vista-del-atlantico/main.jpg" class="bg-img bg-full" alt="Cover">
+    <div class="overlay-gradient" style="width: 70%;"></div>
+    <div class="content" style="justify-content: center; padding-left: 100px;">
+      <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" style="width: 250px; margin-bottom: 50px;" alt="REDEX">
+      <h3>Company Profile</h3>
+      <h1 style="max-width: 600px;">Invierte en<br>lo <em>Nuestro</em></h1>
+      <div class="accent-line"></div>
+      <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 11px; margin-top: 50px; color: var(--gold); font-weight: 600;">República Dominicana</p>
+    </div>
+  </div>
+
+  <!-- PÁGINA 2: FILOSOFÍA "INVIERTE EN LO NUESTRO" -->
+  <div class="page">
+    <div class="split">
+      <div class="split-half" style="padding-right: 60px;">
+        <h3>Visión y Compromiso</h3>
+        <h2 style="font-size: 48px;">Invierte en lo Nuestro:<br>Desarrollo Nacional</h2>
+        <div class="accent-line"></div>
+        <p>Más allá de vender propiedades, en REDEX asumimos un rol activo en el desarrollo sostenible de la República Dominicana. <strong>"Invierte en lo Nuestro"</strong> es el pilar que nos impulsa a elevar nuestra infraestructura, a retener el gran talento local y a demostrar que podemos ejecutar proyectos de clase mundial en nuestra propia tierra.</p>
+        <p>Al apostar por los desarrollos del país, no solo aseguramos la máxima rentabilidad para los inversionistas, sino que dinamizamos la economía nacional, generamos empleos de calidad y fortalecemos el tejido socioeconómico de nuestra nación.</p>
+      </div>
+      <div class="split-img">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/equipo_reunion.jpg" style="filter: grayscale(0.3);" alt="Compromiso">
+        <div class="overlay-dark" style="background: rgba(6,9,18,0.2);"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 3: NUESTRA HISTORIA -->
+  <div class="page light">
+    <div class="split">
+      <div class="split-img">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/office_la_vega_real.jpg" alt="Historia">
+      </div>
+      <div class="split-half" style="padding-left: 80px;">
+        <h3>Nuestra Historia</h3>
+        <h2>Evolución<br>y Liderazgo</h2>
+        <div class="accent-line"></div>
+        <p>Fundada en el corazón del Cibao con el objetivo de elevar el estándar del sector inmobiliario dominicano, REDEX inició operaciones para brindar seguridad y profesionalismo a inversionistas locales y extranjeros.</p>
+        <p>A lo largo de <strong>8 años de trayectoria ininterrumpida</strong>, nos hemos consolidado como una red corporativa integral, gestionando la comercialización de <strong>miles de propiedades y solares</strong> a nivel nacional. Hoy, somos el socio estratégico por excelencia para el desarrollo inmobiliario en el país.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 4: MISIÓN Y VISIÓN -->
+  <div class="page deep">
+    <div class="content" style="justify-content: center; align-items: center; text-align: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Norte Corporativo</div>
+      </div>
+      
+      <div class="grid-2" style="max-width: 1000px; gap: 80px; text-align: left;">
+        <div>
+          <h3>Misión</h3>
+          <h2 style="font-size: 40px; margin-bottom: 20px;">Conectar el futuro</h2>
+          <p>Conectar a familias e inversionistas con propiedades de alto valor y rentabilidad en República Dominicana, garantizando transacciones seguras mediante un respaldo legal robusto, procesos transparentes y asesoría experta.</p>
+        </div>
+        <div>
+          <h3>Visión</h3>
+          <h2 style="font-size: 40px; margin-bottom: 20px;">El Estándar Caribeño</h2>
+          <p>Consolidarnos como la firma líder en gestión y desarrollo inmobiliario del país, estableciendo el referente de excelencia comercial para fondos de inversión y constructores que buscan éxito en el mercado dominicano.</p>
+        </div>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>04</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 5: VALORES FUNDAMENTALES -->
+  <div class="page">
+    <div class="content" style="justify-content: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Filosofía Corporativa</div>
+      </div>
+      
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h3>Valores Fundamentales</h3>
+        <h2 style="margin-bottom: 60px;">El ADN de REDEX</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <svg width="32" height="32" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h4 style="margin-top: 20px; font-size: 22px;">Transparencia Total</h4>
+          <p style="font-size: 12px;">Operamos bajo los estándares más estrictos del mercado. Cada transacción es un proceso claro, avalado por nuestra división legal para proteger de manera absoluta su patrimonio.</p>
+        </div>
+        <div class="card">
+          <svg width="32" height="32" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <h4 style="margin-top: 20px; font-size: 22px;">Estándar Global, Trato Local</h4>
+          <p style="font-size: 12px;">Implementamos tecnología, agronomía e ingeniería de vanguardia, manteniendo siempre el servicio cercano y personalizado que nos caracteriza como profesionales dominicanos.</p>
+        </div>
+        <div class="card">
+          <svg width="32" height="32" fill="none" stroke="var(--gold)" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <h4 style="margin-top: 20px; font-size: 22px;">Visión a Largo Plazo</h4>
+          <p style="font-size: 12px;">Nuestro rol va más allá del cierre comercial; nos convertimos en sus asesores patrimoniales de confianza, acompañando su crecimiento de inversión en el país.</p>
+        </div>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>05</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 6: ¿POR QUÉ REDEX? (DIFERENCIADORES) -->
+  <div class="page light">
+    <div class="split">
+      <div class="split-half" style="padding-right: 80px;">
+        <h3>Ventaja Competitiva</h3>
+        <h2>¿Por qué elegir<br>a REDEX?</h2>
+        <div class="accent-line"></div>
+        <p>No somos simples intermediarios; somos <strong>desarrolladores y estrategas corporativos</strong> con pleno dominio del mercado nacional. Nuestra infraestructura integral nos permite gestionar todo el ciclo inmobiliario, asegurando el éxito de cada proyecto.</p>
+        
+        <div style="margin-top: 30px;">
+          <div class="list-item"><span class="list-icon">✓</span><p style="margin: 0;"><strong>Divisiones Especializadas:</strong> Ingeniería, Agronomía y Legal In-House.</p></div>
+          <div class="list-item"><span class="list-icon">✓</span><p style="margin: 0;"><strong>Fuerza de Ventas de Alto Nivel:</strong> +100 Asesores activos capacitados internamente.</p></div>
+          <div class="list-item"><span class="list-icon">✓</span><p style="margin: 0;"><strong>Marketing Inmobiliario Profesional:</strong> Producción audiovisual y pauta estratégica.</p></div>
+          <div class="list-item"><span class="list-icon">✓</span><p style="margin: 0;"><strong>Tecnología CRM y Automatización:</strong> Seguimiento eficiente y estructurado.</p></div>
+          <div class="list-item"><span class="list-icon">✓</span><p style="margin: 0;"><strong>Acompañamiento 360°:</strong> Desde el diseño del master plan hasta la entrega de la unidad.</p></div>
+        </div>
+      </div>
+      <div class="split-img">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/palmaretto/main.jpg" alt="Por qué REDEX">
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 7: AGRONOMÍA -->
+  <div class="page deep">
+    <div class="content">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Estructura Operativa</div>
+      </div>
+      
+      <div class="split" style="margin-top: 30px;">
+        <div class="split-img" style="border-radius: 8px;">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/el-molino/main.jpg" alt="Agronomía">
+        </div>
+        <div class="split-half" style="padding: 0 0 0 50px;">
+          <h3>Desarrollo de Tierras</h3>
+          <h2 style="font-size: 42px;">Estructura de<br>Agronomía</h2>
+          <div class="accent-line"></div>
+          <p>El éxito comercial de nuestros macrolotes y proyectos residenciales comienza desde el suelo. Nuestra <strong>División de Agronomía</strong> se encarga de realizar estudios topográficos y evaluar la verdadera vocación de los terrenos en diferentes zonas del país.</p>
+          <p>Garantizamos que cada desarrollo cuente con la factibilidad técnica y ambiental necesaria, asegurando proyectos viables, sostenibles y de alta plusvalía en el mercado inmobiliario dominicano.</p>
+        </div>
+      </div>
+      <div class="page-footer"><span>Company Profile</span><span>07</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 8: INGENIERÍA Y CONSTRUCCIÓN -->
+  <div class="page light">
+    <div class="content">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+        <div class="title">Estructura Operativa</div>
+      </div>
+      
+      <div class="split" style="margin-top: 30px;">
+        <div class="split-half" style="padding: 0 50px 0 0;">
+          <h3>Ejecución de Obra</h3>
+          <h2 style="font-size: 42px;">Ingeniería y<br>Construcción</h2>
+          <div class="accent-line"></div>
+          <p>No solo vendemos proyectos; los materializamos. REDEX cuenta con un equipo propio de <strong>ingenieros civiles y arquitectos dominicanos</strong> con probada experiencia estructural.</p>
+          <p>Desde el diseño arquitectónico hasta la supervisión y ejecución de la obra, garantizamos que cada desarrollo cumpla estrictamente con las normativas locales y los más altos estándares constructivos de la industria nacional.</p>
+        </div>
+        <div class="split-img" style="border-radius: 8px;">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/don-martin/main.jpg" alt="Construccion">
+        </div>
+      </div>
+      <div class="page-footer"><span>Company Profile</span><span>08</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 9: DIVISIÓN LEGAL -->
+  <div class="page">
+    <div class="content" style="justify-content: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Estructura Operativa</div>
+      </div>
+      
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h3>Seguridad Garantizada</h3>
+        <h2 style="margin-bottom: 50px;">División Legal In-House</h2>
+        <p style="font-size: 16px;">La protección del patrimonio de nuestros clientes es innegociable. Contamos con una división legal especializada en el sector nacional.</p>
+      </div>
+
+      <div class="grid-3" style="margin-top: 0;">
+        <div class="card">
+          <svg width="32" height="32" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h4 style="margin-top: 20px; font-size: 20px;">Auditoría Fiduciaria</h4>
+          <p style="font-size: 12px;">Depuración exhaustiva de títulos, contratos y estructuras fiduciarias antes de cualquier lanzamiento comercial, mitigando el riesgo al mínimo.</p>
+        </div>
+        <div class="card">
+          <svg width="32" height="32" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <h4 style="margin-top: 20px; font-size: 20px;">Leyes de Fomento</h4>
+          <p style="font-size: 12px;">Asesoría y gestión integral para asegurar el cumplimiento y maximizar los beneficios fiscales bajo la Ley CONFOTUR de la República Dominicana.</p>
+        </div>
+        <div class="card">
+          <svg width="32" height="32" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          <h4 style="margin-top: 20px; font-size: 20px;">Gestión de Títulos</h4>
+          <p style="font-size: 12px;">Acompañamiento completo en procesos de deslinde, transferencias y tramitación ágil ante la Jurisdicción Inmobiliaria del país.</p>
+        </div>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>09</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 10: ALCANCE (MAPA) -->
+  <div class="page light">
+    <div class="content" style="flex-direction: row; align-items: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+        <div class="title">Alcance Geográfico</div>
+      </div>
+      
+      <div style="flex: 1; padding-right: 60px;">
+        <h3>Presencia Nacional</h3>
+        <h2>Cobertura Estratégica</h2>
+        <div class="accent-line"></div>
+        <p>Contamos con una red comercial sólidamente posicionada en los principales polos económicos y turísticos de la República Dominicana, lo que nos permite atender eficazmente la creciente demanda local y el gran flujo de inversión extranjera.</p>
+        
+        <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">La Vega</h4><p style="font-size:12px; margin:0;">Sede corporativa y núcleo logístico central.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Santiago</h4><p style="font-size:12px; margin:0;">Hub comercial en el corazón financiero del Cibao.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Punta Cana</h4><p style="font-size:12px; margin:0;">Epicentro de inversión y desarrollo hotelero masivo.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Puerto Plata</h4><p style="font-size:12px; margin:0;">El polo inmobiliario en constante crecimiento de la costa norte.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Sto. Domingo</h4><p style="font-size:12px; margin:0;">Distrito metropolitano y sede de grandes capitales.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">+ Futura Expansión</h4><p style="font-size:12px; margin:0;">Valverde y áreas estratégicas para nuevos macro-proyectos.</p></div>
+        </div>
+      </div>
+      <div style="flex: 1; height: 100%;">
+        <div class="map-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 11: NUESTRAS OFICINAS -->
+  <div class="page deep">
+    <div class="content">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Infraestructura Física</div>
+      </div>
+      
+      <div style="display:flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+        <div>
+          <h3>Centros de Negocios</h3>
+          <h2 style="margin: 0;">Nuestras Oficinas</h2>
+        </div>
+        <div class="accent-line" style="margin: 0; width: 150px;"></div>
+      </div>
+      
+      <p style="max-width: 800px; margin-bottom: 40px;">Nuestras sedes no son simples locales; son centros de negocios de alto nivel. Espacios diseñados para que nuestros asesores, ingenieros e inversionistas planifiquen y ejecuten operaciones en un entorno profesional, seguro y acorde a los estándares corporativos.</p>
+      
+      <div class="grid-3" style="margin-top: 0;">
+        <div class="proj-card">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/office_la_vega_real.jpg" alt="Oficina La Vega">
+          <div class="proj-card-body" style="padding: 20px;">
+            <h4 style="font-size: 18px;">Sede La Vega</h4>
+            <p>Nuestro cuartel general (HQ). El cerebro operativo de nuestras estrategias de construcción, legal y ventas a nivel nacional.</p>
+          </div>
+        </div>
+        <div class="proj-card">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/office_puerto_plata_real.jpg" alt="Oficina Puerto Plata">
+          <div class="proj-card-body" style="padding: 20px;">
+            <h4 style="font-size: 18px;">Sucursal Puerto Plata</h4>
+            <p>Infraestructura diseñada estratégicamente para gestionar y liderar el desarrollo inmobiliario en la costa norte del país.</p>
+          </div>
+        </div>
+        <div class="proj-card">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/office_maizal_real.jpg" alt="Oficina Maizal">
+          <div class="proj-card-body" style="padding: 20px;">
+            <h4 style="font-size: 18px;">Punto Estratégico</h4>
+            <p>Instalaciones corporativas que facilitan el cierre exitoso de cada expediente con la mayor eficiencia comercial.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>11</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 12: PORTAFOLIO (PUNTA CANA) -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Portafolio Exclusivo</div>
+      </div>
+      
+      <div class="split" style="margin-top: 30px;">
+        <div class="split-half" style="padding: 0 40px 0 0;">
+          <h3>Costa Este - Punta Cana</h3>
+          <h2>Vista del Atlántico</h2>
+          <div class="accent-line"></div>
+          <p>Uno de nuestros desarrollos insignia en la principal zona turística del Caribe. Vista del Atlántico Residence redefine el diseño costero priorizando las vistas panorámicas al mar, acabados de primera y una alta rentabilidad para inversionistas.</p>
+          
+          <div class="grid-2" style="margin-top: 30px;">
+            <div class="stat-box" style="margin-bottom: 0;">
+              <div class="stat-num" style="font-size: 32px;">Master</div>
+              <div class="stat-lbl">Brokers del Proyecto</div>
+            </div>
+            <div class="stat-box" style="margin-bottom: 0;">
+              <div class="stat-num" style="font-size: 32px;">Lujo</div>
+              <div class="stat-lbl">Alta Plusvalía</div>
+            </div>
+          </div>
+        </div>
+        <div class="split-img" style="border-radius: 8px;">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/vista-del-atlantico/main.jpg" alt="Vista del Atlantico">
+        </div>
+      </div>
+      <div class="page-footer"><span>Company Profile</span><span>12</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 13: PORTAFOLIO (LA VEGA) -->
+  <div class="page light">
+    <div class="content">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+        <div class="title">Portafolio Exclusivo</div>
+      </div>
+      
+      <div class="split" style="margin-top: 30px;">
+        <div class="split-img" style="border-radius: 8px;">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/palmaretto/main.jpg" alt="Palmaretto">
+        </div>
+        <div class="split-half" style="padding: 0 0 0 40px;">
+          <h3>Valle de La Vega Real</h3>
+          <h2>Palmaretto Village</h2>
+          <div class="accent-line"></div>
+          <p>Una comunidad cerrada exclusiva con arquitectura mediterránea contemporánea. Espacios diseñados rigurosamente por nuestro equipo de ingenieros para garantizar la seguridad, la habitabilidad y el mayor retorno en el corazón del Cibao.</p>
+          
+          <div class="grid-2" style="margin-top: 30px;">
+            <div class="stat-box" style="margin-bottom: 0; border-color: var(--navy);">
+              <div class="stat-num" style="font-size: 32px; color: var(--navy);">Éxito</div>
+              <div class="stat-lbl" style="color: #666;">Gestión de Ventas</div>
+            </div>
+            <div class="stat-box" style="margin-bottom: 0; border-color: var(--navy);">
+              <div class="stat-num" style="font-size: 32px; color: var(--navy);">Premium</div>
+              <div class="stat-lbl" style="color: #666;">Proyecto Residencial</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>Company Profile</span><span>13</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 14: PORTAFOLIO (DIVERSO) -->
+  <div class="page">
+    <div class="content">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Proyectos Destacados</div>
+      </div>
+      
+      <div style="display:flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+        <div>
+          <h3>Desarrollos Consolidados</h3>
+          <h2 style="margin: 0;">Diversificación Inmobiliaria</h2>
+        </div>
+        <div class="accent-line" style="margin: 0; width: 150px;"></div>
+      </div>
+      
+      <div class="grid-3" style="margin-top: 0;">
+        <div class="proj-card">
+          <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/el-molino/main.jpg" alt="El Molino">
+          <div class="proj-card-body" style="padding: 20px;">
+            <h4 style="font-size: 18px;">Residencial El Molino</h4>
+            <p>Villas familiares que combinan amplitud, seguridad e integración estructural impecable con el entorno natural.</p>
+          </div>
+        </div>
+        <div class="proj-card" style="display:flex; flex-direction:column; justify-content:center; padding: 40px; background: rgba(255,255,255,0.02);">
+           <h4 style="font-size: 24px; color: var(--gold);">Lotificación Iris</h4>
+           <p style="margin-bottom: 20px;">Urbanización de solares residenciales aptos para construcción inmediata. Vías consolidadas y factibilidad técnica.</p>
+           <h4 style="font-size: 24px; color: var(--gold);">Residencial Santa Fe</h4>
+           <p>Viviendas funcionales de diseño contemporáneo orientadas a satisfacer la demanda habitacional del perfil profesional.</p>
+        </div>
+        <div class="proj-card" style="display:flex; flex-direction:column; justify-content:center; padding: 40px; background: rgba(255,255,255,0.02);">
+           <h4 style="font-size: 24px; color: var(--gold);">Res. Concepción</h4>
+           <p style="margin-bottom: 20px;">Unidades departamentales que optimizan la distribución del espacio y aseguran rentabilidad estructural.</p>
+           <h4 style="font-size: 24px; color: var(--gold);">Valle Verde</h4>
+           <p>Un modelo de convivencia sostenible, dotado de control de acceso riguroso y excelente planificación urbanística.</p>
+        </div>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>14</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 15: LIDERAZGO (SOCIOS/FUNDADORES) -->
+  <div class="page light">
+    <div class="page-header">
+      <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+      <div class="title">Dirección General</div>
+    </div>
+    <div class="split">
+      <div class="split-img" style="padding-top: 80px;">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/founder_team_hq.jpg" alt="Liderazgo REDEX">
+      </div>
+      <div class="split-half" style="padding-left: 80px;">
+        <h3>Directiva Corporativa</h3>
+        <h2>Capacidad Ejecutiva<br>y Experiencia</h2>
+        <div class="accent-line"></div>
+        <p>La dirección de REDEX está a cargo de un equipo multidisciplinario con vasta trayectoria en ventas corporativas, gestión de negocios, ingeniería y derecho inmobiliario.</p>
+        <p>Nuestros socios fundadores han implementado una cultura corporativa orientada puramente a los resultados, combinando el rigor gerencial internacional con un profundo conocimiento de la dinámica del mercado inmobiliario dominicano.</p>
+        <p style="margin-top: 30px; font-style: italic; color: var(--gold); font-family: var(--display); font-size: 22px; line-height: 1.3;">"Lideramos un ecosistema corporativo capaz de transformar visiones arquitectónicas en éxitos comerciales tangibles."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 16: EL EQUIPO CORPORATIVO Y REDEX ACADEMY (DISEÑO EXCLUSIVO) -->
+  <div class="page deep">
+    <div class="content" style="align-items: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Capital Humano & Academia</div>
+      </div>
+      
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h3>Fuerza Operativa</h3>
+        <h2 style="margin: 0; font-size: 54px;">Capital Humano & Formación</h2>
+        <div class="accent-line" style="margin: 20px auto;"></div>
+      </div>
+      
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 30px; height: 100%;">
+        
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/equipo_reunion.jpg" style="width: 100%; height: 350px; border-radius: 12px; object-fit: cover; object-position: center; border: 1px solid rgba(255,255,255,0.1);" alt="Staff de REDEX">
+        
+        <div class="grid-2" style="width: 100%; text-align: left; margin-top: 10px; gap: 60px;">
+          <div>
+            <h4 style="font-size: 22px; color: var(--gold); margin-bottom: 10px;">La Escuela de Ventas REDEX</h4>
+            <p style="font-size: 13px; line-height: 1.8;">Nuestra maquinaria comercial está impulsada por una fuerza de <strong>más de 100 asesores exclusivos</strong>, capacitados rigurosamente a través de REDEX Academy en normativas legales, financiamiento y estrategia de cierre corporativo.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 22px; color: var(--gold); margin-bottom: 10px;">Estructura de Back-Office</h4>
+            <p style="font-size: 13px; line-height: 1.8;">Este frente comercial es apoyado por un robusto equipo interno compuesto por analistas, contadores, abogados e ingenieros que auditan y agilizan cada expediente, asegurando procesos impecables desde el inicio de la venta.</p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>16</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 17: MARKETING -->
+  <div class="page">
+    <div class="content" style="justify-content: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Departamento Estratégico Visual</div>
+      </div>
+      
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h3>Agencia In-House</h3>
+        <h2 style="margin-bottom: 50px;">Marketing de Alto Impacto</h2>
+      </div>
+
+      <div class="grid-3" style="gap: 30px;">
+        <div class="card" style="padding: 30px;">
+          <h4 style="font-size: 20px; color: var(--gold);">Performance Marketing</h4>
+          <p style="font-size: 12px;">Ejecutamos campañas de alta conversión en <strong>Meta Ads y Google Ads</strong>, orientadas a captar perfiles de compradores calificados tanto en territorio nacional como en mercados internacionales estratégicos.</p>
+        </div>
+        <div class="card" style="padding: 30px;">
+          <h4 style="font-size: 20px; color: var(--gold);">Producción Audiovisual</h4>
+          <p style="font-size: 12px;">Creamos material fotográfico arquitectónico, renders y tomas aéreas de grado cinematográfico para posicionar cada desarrollo inmobiliario en el escalón más alto de su segmento.</p>
+        </div>
+        <div class="card" style="padding: 30px;">
+          <h4 style="font-size: 20px; color: var(--gold);">Sistemas Automatizados</h4>
+          <p style="font-size: 12px;">Implementamos embudos de venta (Funnels) apoyados por inteligencia artificial para garantizar el seguimiento constante y preciso de los prospectos durante las 24 horas del día.</p>
+        </div>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>17</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 18: TECNOLOGÍA (CSS FIXED) -->
+  <div class="page light">
+    <div class="page-header">
+      <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+      <div class="title">Infraestructura Digital</div>
+    </div>
+    <div class="split">
+      <div class="split-half" style="padding-right: 80px;">
+        <h3>Innovación y Datos</h3>
+        <h2>Tecnología al servicio<br>de los resultados</h2>
+        <div class="accent-line"></div>
+        <p>Utilizamos tecnología corporativa de punta para optimizar la gestión comercial en el país. En REDEX, la toma de decisiones está respaldada estrictamente por la medición y el análisis de datos concretos.</p>
+        
+        <div class="grid-2" style="margin-top: 30px; gap: 20px;">
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Plataforma Integrada</h4><p style="font-size: 12px;">Arquitectura web optimizada (UI/UX) capaz de soportar alto tráfico de prospectos globales.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">CRM Operativo</h4><p style="font-size: 12px;">Distribución inteligente de leads y auditoría rigurosa del avance de cada expediente de venta.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Inteligencia Comercial</h4><p style="font-size: 12px;">Monitoreo de métricas y KPIs en tiempo real para pivotar estrategias publicitarias eficientemente.</p></div>
+          <div><h4 style="font-size: 18px; color: var(--navy); margin-bottom:5px;">Omnicanalidad</h4><p style="font-size: 12px;">Despliegue de respuestas automatizadas para garantizar atención inmediata a inversionistas internacionales.</p></div>
+        </div>
+      </div>
+      <div class="split-img">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/don-martin/main.jpg" alt="Tecnología">
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 19: PROCESO COMERCIAL (Infografía) -->
+  <div class="page deep">
+    <div class="content" style="justify-content: center; align-items: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Flujo Operativo</div>
+      </div>
+      
+      <h3 style="text-align: center;">Nuestro Proceso Comercial</h3>
+      <h2 style="text-align: center; margin-bottom: 60px;">Control total desde la captación</h2>
+
+      <div style="width: 100%; display: flex; justify-content: space-between; position: relative; margin-top: 20px;">
+        <div style="position: absolute; top: 15px; left: 5%; right: 5%; height: 2px; background: rgba(200,164,74,0.3); z-index: 1;"></div>
+        
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--g-dark); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--gold); font-weight:bold; font-size:12px;">1</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Captación</h4>
+        </div>
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--g-dark); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--gold); font-weight:bold; font-size:12px;">2</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Auditoría</h4>
+        </div>
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--g-dark); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--gold); font-weight:bold; font-size:12px;">3</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Asignación</h4>
+        </div>
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--g-dark); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--gold); font-weight:bold; font-size:12px;">4</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Asesoría</h4>
+        </div>
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--g-dark); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--gold); font-weight:bold; font-size:12px;">5</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Gestión Legal</h4>
+        </div>
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--g-dark); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--gold); font-weight:bold; font-size:12px;">6</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Fideicomiso</h4>
+        </div>
+        <div style="width: 12%; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--gold); border: 2px solid var(--gold); margin: 0 auto 15px; display:flex; align-items:center; justify-content:center; color:var(--g-dark); font-weight:bold; font-size:12px;">7</div>
+          <h4 style="font-size: 14px; color: var(--gold);">Cierre <br>Comercial</h4>
+        </div>
+      </div>
+      
+      <p style="text-align: center; margin-top: 60px; max-width: 700px;">Nuestra estructura integral (Legal, Ingeniería, Ventas y Marketing) sincroniza meticulosamente cada etapa del proceso, garantizando a nuestros clientes un trámite seguro, ágil y transparente.</p>
+
+      <div class="page-footer"><span>Company Profile</span><span>19</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 20: ¿POR QUÉ INVERTIR EN RD? -->
+  <div class="page light">
+    <div class="page-header">
+      <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+      <div class="title">Análisis de Mercado</div>
+    </div>
+    <div class="split">
+      <div class="split-img">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/vista-del-atlantico/main.jpg" alt="RD">
+      </div>
+      <div class="split-half" style="padding-left: 80px;">
+        <h3>Destino Estratégico</h3>
+        <h2 style="font-size: 42px;">El clima de inversión<br>en la República Dominicana</h2>
+        <div class="accent-line"></div>
+        <p>El mercado inmobiliario nacional se encuentra en una etapa de madurez y crecimiento continuo, respaldado por la estabilidad macroeconómica y un sector turístico robusto que asegura la rentabilidad del capital extranjero.</p>
+        
+        <div class="grid-2" style="margin-top: 20px; gap: 20px;">
+          <div><h4 style="font-size: 16px; color: var(--navy); margin-bottom:5px;">Crecimiento Sólido</h4><p style="font-size: 12px;">Una de las economías líderes en crecimiento dentro de la región latinoamericana (PIB).</p></div>
+          <div><h4 style="font-size: 16px; color: var(--navy); margin-bottom:5px;">Seguridad Jurídica</h4><p style="font-size: 12px;">Leyes estratégicas orientadas a proteger y fomentar la inversión (Ley CONFOTUR).</p></div>
+          <div><h4 style="font-size: 16px; color: var(--navy); margin-bottom:5px;">Retorno de Inversión</h4><p style="font-size: 12px;">Altas tasas de ocupación y un ritmo de plusvalía constante en las áreas de desarrollo.</p></div>
+          <div><h4 style="font-size: 16px; color: var(--navy); margin-bottom:5px;">Posicionamiento Global</h4><p style="font-size: 12px;">El principal hub turístico, logístico y comercial del área del Caribe.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 21: RESULTADOS (MASIVOS) -->
+  <div class="page">
+    <div class="content" style="justify-content: center; align-items: center; text-align: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Indicadores de Desempeño</div>
+      </div>
+      
+      <h3>Nuestros Resultados</h3>
+      <h2 style="margin-bottom: 60px;">Capacidad de Desplazamiento</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 50px; width: 100%;">
+        <div class="stat-box" style="border-left: none; border-bottom: 2px solid var(--gold); padding: 0 0 20px 0; margin-bottom: 0;">
+          <div class="stat-num">Miles</div>
+          <div class="stat-lbl">De unidades residenciales y<br>solares comercializados</div>
+        </div>
+        <div class="stat-box" style="border-left: none; border-bottom: 2px solid var(--gold); padding: 0 0 20px 0; margin-bottom: 0;">
+          <div class="stat-num">+100</div>
+          <div class="stat-lbl">Asesores profesionales<br>activos en la estructura</div>
+        </div>
+        <div class="stat-box" style="border-left: none; border-bottom: 2px solid var(--gold); padding: 0 0 20px 0; margin-bottom: 0;">
+          <div class="stat-num">Alcance</div>
+          <div class="stat-lbl">Presencia y operaciones en<br>las principales provincias</div>
+        </div>
+        <div class="stat-box" style="border-left: none; border-bottom: 2px solid var(--gold); padding: 0 0 20px 0; margin-bottom: 0;">
+          <div class="stat-num">Solidez</div>
+          <div class="stat-lbl">Volumen constante de cierres<br>comerciales avalados</div>
+        </div>
+      </div>
+
+      <div class="page-footer"><span>Company Profile</span><span>21</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 22: ALIANZAS -->
+  <div class="page deep">
+    <div class="content" style="justify-content: center; text-align: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">Ecosistema Colaborativo</div>
+      </div>
+      
+      <h3>Sinergia Corporativa</h3>
+      <h2 style="margin-bottom: 50px;">Alianzas Institucionales</h2>
+      <p style="max-width: 700px; margin: 0 auto 60px;">El volumen de nuestras operaciones está respaldado por alianzas sólidas con los principales actores del sector financiero e inmobiliario del país, garantizando seguridad técnica y económica.</p>
+
+      <div class="grid-3">
+        <div class="card" style="padding: 20px; display:flex; align-items:center; justify-content:center; height: 120px;">
+          <h4 style="margin:0; font-size:18px; color:var(--ww80); letter-spacing:2px; text-transform:uppercase;">Banca Múltiple</h4>
+        </div>
+        <div class="card" style="padding: 20px; display:flex; align-items:center; justify-content:center; height: 120px;">
+          <h4 style="margin:0; font-size:18px; color:var(--ww80); letter-spacing:2px; text-transform:uppercase;">Empresas Fiduciarias</h4>
+        </div>
+        <div class="card" style="padding: 20px; display:flex; align-items:center; justify-content:center; height: 120px;">
+          <h4 style="margin:0; font-size:18px; color:var(--ww80); letter-spacing:2px; text-transform:uppercase;">Fondos de Inversión</h4>
+        </div>
+      </div>
+      <p style="font-size: 11px; margin-top: 40px; color: var(--ww40);">*Garantizamos gestión hipotecaria preferencial y aseguramiento fiduciario bajo el marco legal dominicano.</p>
+      
+      <div class="page-footer"><span>Company Profile</span><span>22</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 23: EXPERIENCIA DEL CLIENTE -->
+  <div class="page light">
+    <div class="page-header">
+      <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-color.png" alt="REDEX">
+      <div class="title">Garantía de Servicio</div>
+    </div>
+    <div class="split">
+      <div class="split-half" style="padding-right: 80px;">
+        <h3>Servicio Postventa</h3>
+        <h2>Acompañamiento<br>Integral</h2>
+        <div class="accent-line"></div>
+        <p>Nuestra responsabilidad corporativa continúa tras la firma del contrato. Gestionamos el financiamiento hipotecario, la tramitación legal y reportamos periódicamente el avance de obra a nuestros compradores.</p>
+        <p><strong>Custodia de la Inversión:</strong> Para nuestros clientes en el exterior, actuamos como sus representantes técnicos y legales en el país, asegurando que su inversión se desarrolle bajo los plazos y términos acordados, con total transparencia.</p>
+      </div>
+      <div class="split-img">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/el-molino/main.jpg" alt="Experiencia">
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 24: IDENTIDAD Y VALORES AGREGADOS -->
+  <div class="page">
+    <div class="content" style="justify-content: center;">
+      <div class="page-header">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" alt="REDEX">
+        <div class="title">El Sello REDEX</div>
+      </div>
+      
+      <div style="display:flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px;">
+        <div>
+          <h3>Valor Diferencial</h3>
+          <h2 style="margin: 0;">¿Por qué REDEX?</h2>
+        </div>
+        <div class="accent-line" style="margin: 0; width: 150px;"></div>
+      </div>
+      
+      <div class="grid-3" style="margin-top: 0; margin-bottom: 50px;">
+        <div>
+          <h4 style="font-size: 22px; color: var(--gold); margin-bottom: 10px;">Estructura In-House Integral</h4>
+          <p style="font-size: 13px;">Somos la única firma en el mercado nacional que integra Ingeniería, Agronomía, Asesoría Legal y Marketing Estratégico bajo una misma estructura operativa.</p>
+        </div>
+        <div>
+          <h4 style="font-size: 22px; color: var(--gold); margin-bottom: 10px;">Capacidad Masiva (Academy)</h4>
+          <p style="font-size: 13px;">Nuestra escuela de capacitación garantiza un batallón comercial corporativo dotado con las herramientas técnicas y analíticas para negociar a alto nivel.</p>
+        </div>
+        <div>
+          <h4 style="font-size: 22px; color: var(--gold); margin-bottom: 10px;">Cierres Comerciales Seguros</h4>
+          <p style="font-size: 13px;">Nuestra capacidad operativa masiva y control riguroso de procesos garantizan a los desarrolladores e inversionistas un volumen de ventas sostenido y estructurado.</p>
+        </div>
+      </div>
+      
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; align-items: center; gap: 40px;">
+        <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" style="width: 150px;" alt="REDEX">
+        <p style="margin: 0; font-size: 11px; color: var(--ww60);">La identidad corporativa de REDEX refleja de manera perpetua la solidez, el prestigio y la innovación técnica que aportamos al sector inmobiliario dominicano.</p>
+      </div>
+      
+      <div class="page-footer"><span>Company Profile</span><span>24</span></div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 25: INVITACION / CONTRAPORTADA -->
+  <div class="page">
+    <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/images/proyectos/vista-del-atlantico/main.jpg" class="bg-img bg-full" alt="Cover">
+    <div class="overlay-dark" style="background: rgba(6,9,18,0.85);"></div>
+    <div class="content" style="justify-content: center; align-items: center; text-align: center;">
+      
+      <img src="file:///Users/admin/Desktop/REDEX_Premium_Final/logo-redex-blanco.png" style="width: 250px; margin-bottom: 40px; opacity: 0.9;" alt="REDEX">
+      
+      <h2 style="font-size: 48px; max-width: 800px; margin-bottom: 20px;">Desarrollemos el próximo<br><em>gran proyecto.</em></h2>
+      <p style="font-size: 16px; max-width: 700px; margin-bottom: 50px;">Si busca un socio estratégico con la capacidad técnica, legal y comercial para garantizar el éxito rotundo y sostenido de su inversión en la República Dominicana, estamos preparados para respaldarlo.</p>
+      
+      <div style="display: flex; gap: 40px; padding: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(200,164,74,0.3); border-radius: 8px;">
+        <div style="font-size: 18px; color: var(--ww); display: flex; align-items: center; gap: 10px;">
+          <svg width="24" height="24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <strong>+1 (849) 518-0024</strong>
+        </div>
+        <div style="font-size: 18px; color: var(--ww); display: flex; align-items: center; gap: 10px;">
+          <svg width="24" height="24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <strong>www.redexinmobiliaria.com</strong>
+        </div>
+      </div>
+      
+      <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 10px; margin-top: 50px; color: var(--gold); font-weight: 600;">República Dominicana</p>
+    </div>
+  </div>
+
+</body>
+</html>

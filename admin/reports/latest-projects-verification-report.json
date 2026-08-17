@@ -1,0 +1,19 @@
+{
+  "proyectos_en_tabla": 8,
+  "proyectos_visibles": 8,
+  "portadas": 8,
+  "galerias": 29,
+  "videos": 0,
+  "urls_totales": 37,
+  "urls_unicas": 32,
+  "urls_publicas_ok": 32,
+  "urls_publicas_error": [],
+  "lectura_publica_publishable": 8,
+  "crud_crear": true,
+  "crud_editar": true,
+  "crud_estado": true,
+  "crud_ocultar_destacar": true,
+  "crud_duplicar": true,
+  "crud_eliminar": true,
+  "proyectos_finales": 8
+}

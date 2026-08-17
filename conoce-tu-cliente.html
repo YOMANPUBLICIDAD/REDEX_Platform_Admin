@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conoce tu Cliente | REDEX Inmobiliaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --g-deep:#030508;
+      --g-dark:#060912;
+      --panel:#111621;
+      --wine:#8B1E2F;
+      --gold:#C4A04A;
+      --ww:#fff;
+      --ww70:rgba(255,255,255,.7);
+      --ww60:rgba(255,255,255,.6);
+      --line:rgba(255,255,255,.1);
+      --field:rgba(255,255,255,.055);
+      --font-display:'Montserrat',sans-serif;
+      --font-body:'Barlow',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-body);background:radial-gradient(circle at top right,rgba(196,160,74,.09),transparent 28%),var(--g-dark);color:var(--ww);min-height:100vh}
+    header{position:sticky;top:0;z-index:5;background:rgba(3,5,8,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .head-inner{max-width:1120px;margin:0 auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{height:42px}
+    .advisor-chip{display:flex;align-items:center;gap:10px;color:var(--ww70);font-weight:700;text-align:right}
+    .advisor-chip strong{display:block;color:var(--gold);font-family:var(--font-display);font-size:13px}
+    main{max-width:1120px;margin:0 auto;padding:36px 22px 70px}
+    .intro{margin-bottom:24px}
+    .eyebrow{color:var(--gold);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+    h1{font-family:var(--font-display);font-size:clamp(30px,5vw,54px);line-height:.95;margin:10px 0 12px}
+    .intro p{max-width:720px;color:var(--ww70);line-height:1.6;font-size:17px}
+    form{display:grid;gap:18px}
+    .section{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:12px;padding:22px}
+    .section-title{font-family:var(--font-display);font-size:17px;margin-bottom:16px;color:var(--gold)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .span-2{grid-column:span 2}.span-3{grid-column:span 3}.full{grid-column:1/-1}
+    label{display:block;color:var(--ww70);font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
+    input,select,textarea{width:100%;border:1px solid rgba(255,255,255,.13);border-radius:8px;background:var(--field);color:var(--ww);padding:13px 14px;outline:none}
+    textarea{min-height:96px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:rgba(196,160,74,.72)}
+    .checks{display:flex;flex-wrap:wrap;gap:12px}
+    .check{display:flex;align-items:center;gap:8px;color:var(--ww70);font-weight:700}
+    .check input{width:auto}
+    .signature-box{background:#fff;border-radius:10px;border:2px solid rgba(196,160,74,.45);overflow:hidden}
+    canvas{display:block;width:100%;height:210px;touch-action:none}
+    .signature-actions{display:flex;justify-content:space-between;gap:10px;margin-top:10px;align-items:center}
+    .muted{color:var(--ww60);line-height:1.5}
+    .btn-primary,.btn-ghost{border:1px solid rgba(196,160,74,.3);border-radius:8px;padding:13px 18px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;font-size:12px;cursor:pointer}
+    .btn-primary{background:linear-gradient(135deg,#d1ad52,#9f7c28);color:#080b12}
+    .btn-primary:disabled{opacity:.55;cursor:wait}
+    .btn-ghost{background:rgba(255,255,255,.04);color:var(--ww)}
+    .status{min-height:22px;color:var(--ww60);font-weight:700}
+    .status.error{color:#ff9ca9}.status.success{color:#75e6a1}
+    .footer-actions{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:820px){.head-inner{align-items:flex-start}.advisor-chip{text-align:left}.grid{grid-template-columns:1fr}.span-2,.span-3{grid-column:auto}main{padding:26px 16px 50px}.section{padding:18px}canvas{height:180px}.footer-actions .btn-primary{width:100%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="head-inner">
+      <img class="logo" src="logo-redex-blanco.png" alt="REDEX Inmobiliaria">
+      <div class="advisor-chip">
+        <span>Asesor asignado<strong id="advisor-name">REDEX Inmobiliaria</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="eyebrow">Formulario Conoce tu Cliente</div>
+      <h1>Registro de cliente</h1>
+      <p>Completa la información solicitada para avanzar con el proceso de compra, separación o evaluación comercial de tu inmueble.</p>
+    </section>
+
+    <form id="kyc-form">
+      <section class="section">
+        <h2 class="section-title">Datos generales del cliente</h2>
+        <div class="grid">
+          <div class="span-2"><label>Nombre completo *</label><input name="nombre_completo" required autocomplete="name"></div>
+          <div><label>Cédula / Pasaporte *</label><input name="documento_identidad" required></div>
+          <div><label>Tipo cliente</label><select name="tipo_cliente"><option>Nacional</option><option>Extranjero</option></select></div>
+          <div><label>Sexo</label><select name="sexo"><option value="">Seleccionar</option><option>Masculino</option><option>Femenino</option></select></div>
+          <div><label>Estado civil</label><select name="estado_civil"><option value="">Seleccionar</option><option>Soltero</option><option>Casado</option><option>Divorciado</option><option>Viudo</option></select></div>
+          <div><label>Fecha nacimiento</label><input name="fecha_nacimiento" type="date"></div>
+          <div><label>Lugar nacimiento</label><input name="lugar_nacimiento"></div>
+          <div><label>Nacionalidad</label><input name="nacionalidad"></div>
+          <div><label>Constancia migratoria</label><input name="constancia_migratoria"></div>
+          <div><label>Nivel académico</label><select name="nivel_academico"><option value="">Seleccionar</option><option>Primaria</option><option>Secundaria</option><option>Universitario</option><option>Postgrado</option><option>Maestría</option></select></div>
+          <div class="span-2"><label>Profesión</label><input name="profesion"></div>
+          <div class="full"><label>Relación entre cliente e intermediario</label><input name="relacion_intermediario"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Datos del cónyuge si aplica</h2>
+        <div class="grid">
+          <div class="span-2"><label>Nombre completo</label><input name="conyuge_nombre"></div>
+          <div><label>Cédula / Pasaporte</label><input name="conyuge_documento"></div>
+          <div><label>Nacionalidad</label><input name="conyuge_nacionalidad"></div>
+          <div><label>Fecha nacimiento</label><input name="conyuge_fecha_nacimiento" type="date"></div>
+          <div class="span-2"><label>Lugar nacimiento</label><input name="conyuge_lugar_nacimiento"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Domicilio y contacto</h2>
+        <div class="grid">
+          <div class="span-2"><label>Calle</label><input name="calle"></div>
+          <div><label>Residencial / Condominio</label><input name="residencial"></div>
+          <div><label>No. casa / apto.</label><input name="numero_casa"></div>
+          <div><label>Sector</label><input name="sector"></div>
+          <div><label>Teléfono casa</label><input name="telefono_casa" inputmode="tel"></div>
+          <div><label>Celular / WhatsApp *</label><input name="telefono_celular" inputmode="tel" required></div>
+          <div><label>Correo electrónico *</label><input name="correo_electronico" type="email" required autocomplete="email"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Ocupación y datos laborales</h2>
+        <div class="grid">
+          <div class="full">
+            <label>Ocupación</label>
+            <div class="checks">
+              <label class="check"><input type="radio" name="ocupacion" value="Público"> Público</label>
+              <label class="check"><input type="radio" name="ocupacion" value="Privado"> Privado</label>
+              <label class="check"><input type="radio" name="ocupacion" value="Independiente/Empresario"> Independiente/Empresario</label>
+              <label class="check"><input type="radio" name="ocupacion" value="Retirado"> Retirado</label>
+              <label class="check"><input type="radio" name="ocupacion" value="Otro"> Otro</label>
+            </div>
+          </div>
+          <div class="span-2"><label>Nombre de la empresa</label><input name="empresa_nombre"></div>
+          <div class="span-2"><label>Dirección de la empresa</label><input name="empresa_direccion"></div>
+          <div><label>Cargo que ocupa</label><input name="cargo"></div>
+          <div><label>Fecha de ingreso</label><input name="fecha_ingreso" type="date"></div>
+          <div><label>Teléfono oficina</label><input name="telefono_oficina" inputmode="tel"></div>
+          <div><label>Email oficina</label><input name="email_oficina" type="email"></div>
+          <div><label>Ingresos anuales</label><input name="ingresos_anuales" inputmode="decimal"></div>
+          <div><label>Otros ingresos</label><input name="otros_ingresos" inputmode="decimal"></div>
+          <div class="span-2"><label>Distribución de ingresos</label><input name="distribucion_ingresos" placeholder="Rentas de trabajo, capital u otros"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Cuentas autorizadas</h2>
+        <div class="grid">
+          <div><label>Institución</label><input name="banco_1_institucion"></div>
+          <div><label>No. cuenta bancaria</label><input name="banco_1_cuenta"></div>
+          <div><label>Tipo de cuenta</label><input name="banco_1_tipo"></div>
+          <div><label>No. ABA o SWIFT</label><input name="banco_1_swift"></div>
+          <div><label>Institución 2</label><input name="banco_2_institucion"></div>
+          <div><label>No. cuenta 2</label><input name="banco_2_cuenta"></div>
+          <div><label>Tipo de cuenta 2</label><input name="banco_2_tipo"></div>
+          <div><label>No. ABA o SWIFT 2</label><input name="banco_2_swift"></div>
+          <div class="span-2"><label>Cuenta custodia de valores No.</label><input name="cuenta_custodia"></div>
+          <div class="span-2"><label>Nombre de la institución</label><input name="custodia_institucion"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Referencias personales y comerciales</h2>
+        <div class="grid">
+          <div class="span-2"><label>Referencia 1 nombre</label><input name="referencia_1_nombre"></div>
+          <div><label>Teléfono</label><input name="referencia_1_telefono" inputmode="tel"></div>
+          <div class="full"><label>Dirección</label><input name="referencia_1_direccion"></div>
+          <div class="span-2"><label>Referencia 2 nombre</label><input name="referencia_2_nombre"></div>
+          <div><label>Teléfono</label><input name="referencia_2_telefono" inputmode="tel"></div>
+          <div class="full"><label>Dirección</label><input name="referencia_2_direccion"></div>
+          <div class="span-2"><label>Referencia 3 nombre</label><input name="referencia_3_nombre"></div>
+          <div><label>Teléfono</label><input name="referencia_3_telefono" inputmode="tel"></div>
+          <div class="full"><label>Dirección</label><input name="referencia_3_direccion"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Documentación y firma</h2>
+        <div class="grid">
+          <div class="span-2"><label>Documentos nacionales o extranjeros</label><input name="documentos_cliente" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.doc,.docx"></div>
+          <div><label>Fecha</label><input name="fecha_firma" type="date"></div>
+          <div><label>Monto separación</label><input name="monto_separacion" inputmode="decimal"></div>
+          <div class="full"><label>Observaciones</label><textarea name="observaciones"></textarea></div>
+          <div class="full">
+            <label>Firma del cliente *</label>
+            <div class="signature-box"><canvas id="signature-pad" width="900" height="260"></canvas></div>
+            <div class="signature-actions">
+              <p class="muted">Firma con el dedo en teléfono o con el mouse en computadora.</p>
+              <button class="btn-ghost" id="clear-signature" type="button">Limpiar firma</button>
+            </div>
+          </div>
+          <div class="full">
+            <label class="check"><input type="checkbox" name="consentimiento" value="Aceptado" required> Confirmo que la información suministrada es correcta y autorizo a REDEX Inmobiliaria a validar la información para fines comerciales y de compra.</label>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-actions">
+        <p class="status" id="form-status"></p>
+        <button class="btn-primary" id="submit-btn" type="submit">Enviar formulario</button>
+      </div>
+    </form>
+  </main>
+
+  <script type="module" src="conoce-tu-cliente.js"></script>
+<script src="mobile-nav-fix.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+{
+  "created_at": "2026-08-13T01:08:35.112Z",
+  "backupRows": [
+    {
+      "phone": "8293584800",
+      "keep": {
+        "id": "53cdcbd7-0524-451a-8dc5-ea815068ed5d",
+        "user_id": "befa6fd2-cd1f-4b30-89f1-d04e12fb3da7",
+        "nombre": "José armando Valerio Batista",
+        "slug": "jose-armando-valerio-batista",
+        "rol": "Asesor de Ventas",
+        "telefono": "8293584800",
+        "whatsapp": "8293584800",
+        "email": "armandovalerio45@gmail.com",
+        "foto_url": "https://uwcxkwwtvvsplcnlncfd.supabase.co/storage/v1/object/public/propiedades/asesores/jose-armando-valerio-batista/perfil-1786459308154.jpeg",
+        "bio": "Soy Armando Valerio, agente inmobiliario enfocado en ofrecer una experiencia de alto nivel, basada en confianza, profesionalismo y atención personalizada.\n\nMi compromiso es conectar a cada cliente con oportunidades inmobiliarias que representen valor, seguridad y una visión inteligente de inversión.",
+        "ciudad": "La Vega",
+        "sector": "La Vega",
+        "codigo_referido": "jose-armando-valerio-batista",
+        "porcentaje_comision": null,
+        "meta_mensual": 0,
+        "estado": "activo",
+        "visible_publico": true,
+        "aprobado_por": null,
+        "aprobado_at": "2026-08-11T00:24:13.195+00:00",
+        "datos": {
+          "solicitud_id": "e7f9f375-afc7-48b6-acce-e4d1f5447304",
+          "redes_sociales": {
+            "web_url": "https://www.instagram.com/armandovalerio___redex?igsh=MXR0YWIyYTRnNGZleg%3D%3D&utm_source=qr",
+            "tiktok_url": "https://www.tiktok.com/@armandovalerio?_r=1&_t=ZS-98mLdRCr6nQ",
+            "facebook_url": "https://www.facebook.com/share/1BPutATZ6u/?mibextid=wwXIfr",
+            "linkedin_url": "https://www.instagram.com/armandovalerio___redex?igsh=MXR0YWIyYTRnNGZleg%3D%3D&utm_source=qr",
+            "instagram_url": "https://www.instagram.com/armandovalerio___redex?igsh=MXR0YWIyYTRnNGZleg%3D%3D&utm_source=qr"
+          },
+          "solicitud_tipo": "quiero_ser_asesor",
+          "solicitud_datos": {
+            "ciudad": "La Vega",
+            "cédula": "402-3420691-6",
+            "web_url": "https://www.instagram.com/armandovalerio___redex?igsh=MXR0YWIyYTRnNGZleg%3D%3D&utm_source=qr",
+            "archivos": [
+              "IMG_2140.jpeg"
+            ],
+            "whatsapp": "8293584800",
+            "provincia": "La Vega",
+            "teléfono": "8293584800",
+            "tiktok_url": "https://www.tiktok.com/@armandovalerio?_r=1&_t=ZS-98mLdRCr6nQ",
+            "youtube_url": "",
+            "facebook_url": "Armando Valerio ",
+            "linkedin_url": "https://www.instagram.com/armandovalerio___redex?igsh=MXR0YWIyYTRnNGZleg%3D%3D&utm_source=qr",
+            "instagram_url": "https://www.instagram.com/armandovalerio___redex?igsh=MXR0YWIyYTRnNGZleg%3D%3D&utm_source=qr",
+            "nombre completo": "José armando Valerio Batista",
+            "¿pc o celular?": "Sí",
+            "¿manejas redes?": "Sí",
+            "ocupación actual": "Vendedor ",
+            "_atribucion_asesor": {
+              "fuente": "link_asesor",
+              "asesor_slug": "solicitud",
+              "activa_hasta": "2026-11-08T23:21:00.884Z",
+              "asesor_nombre": "solicitud",
+              "primer_origen_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud",
+              "ultima_actividad_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud"
+            },
+            "correo electrónico": "armandovalerio45@gmail.com",
+            "¿tienes vehículo?": "Sí",
+            "tiempo de experiencia": "5 años ",
+            "ciudad o zona a trabajar": "La Vega",
+            "¿experiencia en ventas?": "Sí",
+            "¿experiencia inmobiliaria?": "Sí",
+            "disponibilidad para trabajar": "Tiempo completo",
+            "¿por qué quieres ser asesor redex?": "Quiero ser agente inmobiliario porque considero que tengo habilidades para las ventas, la comunicación y la negociación. Me gustan los retos y trabajar con metas. Quiero crecer dentro del sector, no solamente generar ventas, sino convertirme en un profesional que genere confianza, "
+          },
+          "solicitud_archivos": [
+            {
+              "path": "quiero-ser-asesor/1786404443537-db74f9ff-43b9-4aa7-9ed2-57d684e3ec5e.jpeg",
+              "tipo": "image/jpeg",
+              "campo": "archivos",
+              "bucket": "solicitudes",
+              "nombre": "IMG_2140.jpeg",
+              "tamano": 1899736
+            }
+          ],
+          "solicitud_origen_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud"
+        },
+        "created_at": "2026-08-11T00:24:15.216271+00:00",
+        "updated_at": "2026-08-11T15:59:30.244397+00:00"
+      },
+      "remove": {
+        "id": "f658ad3d-b046-4f44-9f71-eb780250bd37",
+        "user_id": "da5b0495-eb99-4b44-98c1-a4ceee4787bd",
+        "nombre": "Armando Valerio",
+        "slug": "armando-valerio",
+        "rol": "Asesor de Ventas",
+        "telefono": "+1 (829) 358-4800",
+        "whatsapp": "18293584800",
+        "email": "armando-valerio@redexasesores.com",
+        "foto_url": "https://redexinmobiliaria.com/images/asesores/armando_valerio.jpg",
+        "bio": null,
+        "ciudad": null,
+        "sector": null,
+        "codigo_referido": "armando-valerio",
+        "porcentaje_comision": null,
+        "meta_mensual": 0,
+        "estado": "activo",
+        "visible_publico": true,
+        "aprobado_por": null,
+        "aprobado_at": null,
+        "datos": {},
+        "created_at": "2026-07-28T15:50:15.550876+00:00",
+        "updated_at": "2026-07-28T17:12:50.323327+00:00"
+      },
+      "refs": {
+        "solicitudes": 0,
+        "ventas": 0,
+        "ventas_reportadas": 0
+      }
+    },
+    {
+      "phone": "8295914170",
+      "keep": {
+        "id": "459d1681-b8ab-4e6d-bd54-9c516a429c82",
+        "user_id": "531b4140-6a97-4f2a-a3e7-a8758d922e81",
+        "nombre": "Juan Jose Santana Colon",
+        "slug": "juan-jose-santana-colon",
+        "rol": "Asesor de Ventas",
+        "telefono": "(829) 591-4170",
+        "whatsapp": "(829) 591-4170",
+        "email": "juanjosesc6@gmail.com",
+        "foto_url": "",
+        "bio": "Gerente · Como gerente de Redex, busco consolidar mi liderazgo desde la base operativa, entendiendo a fondo el rol de asesor para potenciar el rendimiento del equipo, optimizar los procesos de compra y venta de propiedades, y garantizar un servicio de excelencia a nuestros clientes.",
+        "ciudad": "La Vega",
+        "sector": "La Vega",
+        "codigo_referido": "juan-jose-santana-colon",
+        "porcentaje_comision": null,
+        "meta_mensual": 0,
+        "estado": "activo",
+        "visible_publico": true,
+        "aprobado_por": null,
+        "aprobado_at": "2026-08-11T12:25:04.857+00:00",
+        "datos": {
+          "solicitud_id": "14f6369a-2435-4e6a-87f7-c18e9f6937e4",
+          "redes_sociales": {
+            "web_url": "",
+            "tiktok_url": "https://www.tiktok.com/@juanjosesc1117?_r=1&_t=ZS-98bSXVw4Mie",
+            "youtube_url": "",
+            "facebook_url": "https://facebook.com/profile.php?id=61568274113098&mibextid=LQQJ4d",
+            "linkedin_url": "",
+            "instagram_url": "https://www.instagram.com/redex_juan.jose?igsh=MXI0dG5wd3Awd3V5aA%3D%3D&utm_source=qr"
+          },
+          "solicitud_tipo": "quiero_ser_asesor",
+          "solicitud_datos": {
+            "ciudad": "La Vega",
+            "cédula": "0011655449-4",
+            "web_url": "",
+            "archivos": [
+              "WhatsApp Image 2026-08-07 at 11.31.26.jpeg"
+            ],
+            "whatsapp": "(829) 591-4170",
+            "provincia": "La Vega",
+            "teléfono": "(829) 591-4170",
+            "tiktok_url": "https://www.tiktok.com/@juanjosesc1117?_r=1&_t=ZS-98bSXVw4Mie",
+            "youtube_url": "",
+            "facebook_url": "facebook.com/profile.php?id=61568274113098&mibextid=LQQJ4d",
+            "linkedin_url": "",
+            "instagram_url": "https://www.instagram.com/redex_juan.jose?igsh=MXI0dG5wd3Awd3V5aA%3D%3D&utm_source=qr",
+            "nombre completo": "Juan Jose Santana Colon",
+            "¿pc o celular?": "Sí",
+            "¿manejas redes?": "Sí",
+            "ocupación actual": "Gerente",
+            "_atribucion_asesor": {
+              "fuente": "link_asesor",
+              "asesor_slug": "solicitud",
+              "activa_hasta": "2026-11-05T15:05:13.156Z",
+              "asesor_nombre": "solicitud",
+              "primer_origen_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud",
+              "ultima_actividad_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud"
+            },
+            "correo electrónico": "juanjosesc6@gmail.com",
+            "¿tienes vehículo?": "Sí",
+            "tiempo de experiencia": "15 años",
+            "ciudad o zona a trabajar": "La Vega",
+            "¿experiencia en ventas?": "Sí",
+            "¿experiencia inmobiliaria?": "Sí",
+            "disponibilidad para trabajar": "Tiempo completo",
+            "¿por qué quieres ser asesor redex?": "Como gerente de Redex, busco consolidar mi liderazgo desde la base operativa, entendiendo a fondo el rol de asesor para potenciar el rendimiento del equipo, optimizar los procesos de compra y venta de propiedades, y garantizar un servicio de excelencia a nuestros clientes."
+          },
+          "solicitud_archivos": [
+            {
+              "path": "quiero-ser-asesor/1786117647501-271ae2aa-709b-4440-84ce-be218a398838.jpeg",
+              "tipo": "image/jpeg",
+              "campo": "archivos",
+              "bucket": "solicitudes",
+              "nombre": "WhatsApp Image 2026-08-07 at 11.31.26.jpeg",
+              "tamano": 60616
+            }
+          ],
+          "solicitud_origen_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud"
+        },
+        "created_at": "2026-08-11T12:25:05.810972+00:00",
+        "updated_at": "2026-08-13T00:55:01.397681+00:00"
+      },
+      "remove": {
+        "id": "a560c5c1-a96e-493e-9971-fc13bc3219e1",
+        "user_id": "90cefcd9-9cd9-407d-9607-c133f95576a0",
+        "nombre": "Juan José Santana",
+        "slug": "juan-jose-santana",
+        "rol": "Asesor de Ventas",
+        "telefono": "+1 (829) 591-4170",
+        "whatsapp": "18295914170",
+        "email": "juan-jose-santana@redexasesores.com",
+        "foto_url": "https://redexinmobiliaria.com/images/asesores/c_5.jpg",
+        "bio": null,
+        "ciudad": null,
+        "sector": null,
+        "codigo_referido": "juan-jose-santana",
+        "porcentaje_comision": null,
+        "meta_mensual": 0,
+        "estado": "activo",
+        "visible_publico": true,
+        "aprobado_por": null,
+        "aprobado_at": null,
+        "datos": {},
+        "created_at": "2026-07-28T15:50:15.550876+00:00",
+        "updated_at": "2026-07-28T17:12:54.805941+00:00"
+      },
+      "refs": {
+        "solicitudes": 0,
+        "ventas": 0,
+        "ventas_reportadas": 0
+      }
+    },
+    {
+      "phone": "8099185915",
+      "keep": {
+        "id": "1c7cf8e4-f682-4780-9e92-81602cb88eca",
+        "user_id": "58e386fa-f0fd-4d64-b954-b087c1fa9cb6",
+        "nombre": "Yonelvy Moices Gómez Bonilla",
+        "slug": "yonelvy-moices-gomez-bonilla",
+        "rol": "Asesor de Ventas",
+        "telefono": "8099185915",
+        "whatsapp": "8099185915",
+        "email": "jonelvis100@gmail.com",
+        "foto_url": "",
+        "bio": "Asesor Inmobiliario en REDEX · Crecimiento profesional",
+        "ciudad": "La Vega",
+        "sector": "La Vega",
+        "codigo_referido": "yonelvy-moices-gomez-bonilla",
+        "porcentaje_comision": null,
+        "meta_mensual": 0,
+        "estado": "activo",
+        "visible_publico": true,
+        "aprobado_por": null,
+        "aprobado_at": "2026-08-11T12:23:24.364+00:00",
+        "datos": {
+          "solicitud_id": "f914ffb2-18ef-4814-bfd8-b2fe6aa13624",
+          "redes_sociales": {
+            "web_url": "",
+            "tiktok_url": "https://www.tiktok.com/@asesor.yonelvyredex?_r=1&_t=ZS-98lmJZb5aCL",
+            "youtube_url": "",
+            "facebook_url": "https://www.facebook.com/share/1GyfaDzhbF/?mibextid=wwXIfr",
+            "linkedin_url": "",
+            "instagram_url": "https://www.instagram.com/yonelvymoicesredex?igsh=NXUweDZzYWU4djN3&utm_source=qr"
+          },
+          "solicitud_tipo": "quiero_ser_asesor",
+          "solicitud_datos": {
+            "ciudad": "La Vega",
+            "cédula": "40208797965",
+            "web_url": "",
+            "archivos": [
+              "IMG-20260810-WA0037.jpg",
+              "IMG-20260810-WA0039.jpg"
+            ],
+            "whatsapp": "8099185915",
+            "provincia": "La Vega",
+            "teléfono": "8099185915",
+            "tiktok_url": "https://www.tiktok.com/@asesor.yonelvyredex?_r=1&_t=ZS-98lmJZb5aCL",
+            "youtube_url": "",
+            "facebook_url": "https://www.facebook.com/share/1GyfaDzhbF/?mibextid=wwXIfr",
+            "linkedin_url": "",
+            "instagram_url": "https://www.instagram.com/yonelvymoicesredex?igsh=NXUweDZzYWU4djN3&utm_source=qr",
+            "nombre completo": "Yonelvy Moices Gómez Bonilla",
+            "¿pc o celular?": "Sí",
+            "¿manejas redes?": "Sí",
+            "ocupación actual": "Asesor Inmobiliario en REDEX",
+            "_atribucion_asesor": {
+              "fuente": "link_asesor",
+              "asesor_slug": "solicitud",
+              "activa_hasta": "2026-11-08T15:05:09.776Z",
+              "asesor_nombre": "solicitud",
+              "primer_origen_url": "https://redexinmobiliaria.com/",
+              "ultima_actividad_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud"
+            },
+            "correo electrónico": "jonelvis100@gmail.com",
+            "¿tienes vehículo?": "No",
+            "tiempo de experiencia": "1 año",
+            "ciudad o zona a trabajar": "La Vega",
+            "¿experiencia en ventas?": "Sí",
+            "¿experiencia inmobiliaria?": "Sí",
+            "disponibilidad para trabajar": "Tiempo completo",
+            "¿por qué quieres ser asesor redex?": "Crecimiento profesional "
+          },
+          "solicitud_archivos": [
+            {
+              "path": "quiero-ser-asesor/1786375594119-cc1b206b-e29a-4e4d-841f-75a2fde41ef4.jpg",
+              "tipo": "image/jpeg",
+              "campo": "archivos",
+              "bucket": "solicitudes",
+              "nombre": "IMG-20260810-WA0037.jpg",
+              "tamano": 1378076
+            },
+            {
+              "path": "quiero-ser-asesor/1786375595848-11d0b315-d0b6-4379-b319-92a9efdb2357.jpg",
+              "tipo": "image/jpeg",
+              "campo": "archivos",
+              "bucket": "solicitudes",
+              "nombre": "IMG-20260810-WA0039.jpg",
+              "tamano": 1357290
+            }
+          ],
+          "solicitud_origen_url": "https://redexinmobiliaria.com/quiero-ser-asesor?asesor=solicitud"
+        },
+        "created_at": "2026-08-11T12:23:25.417008+00:00",
+        "updated_at": "2026-08-13T00:55:03.424123+00:00"
+      },
+      "remove": {
+        "id": "e6fd8595-35d1-4ee7-b081-fc2adc54b7cd",
+        "user_id": "81c28e9f-112c-49a6-8a1c-3c4803136f86",
+        "nombre": "Yonelvi Moises",
+        "slug": "jonelvi-moises",
+        "rol": "Asesor de Ventas",
+        "telefono": "+1 (809) 918-5915",
+        "whatsapp": "809-918-5915",
+        "email": "jonelvi-moises@redexasesores.com",
+        "foto_url": "https://redexinmobiliaria.com/images/asesores/jonelvi_moises.jpg",
+        "bio": "",
+        "ciudad": "",
+        "sector": "",
+        "codigo_referido": "jonelvi-moises",
+        "porcentaje_comision": null,
+        "meta_mensual": 0,
+        "estado": "activo",
+        "visible_publico": true,
+        "aprobado_por": null,
+        "aprobado_at": "2026-08-06T17:28:51.365+00:00",
+        "datos": {
+          "redes_sociales": {
+            "web_url": "",
+            "tiktok_url": "",
+            "youtube_url": "",
+            "facebook_url": "",
+            "linkedin_url": "",
+            "instagram_url": ""
+          }
+        },
+        "created_at": "2026-07-28T15:50:15.550876+00:00",
+        "updated_at": "2026-08-06T17:28:51.543961+00:00"
+      },
+      "refs": {
+        "solicitudes": 0,
+        "ventas": 0,
+        "ventas_reportadas": 0
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action": "asesor_eliminado",
+      "remove": "Armando Valerio",
+      "email": "armando-valerio@redexasesores.com",
+      "keep": "José armando Valerio Batista"
+    },
+    {
+      "action": "auth_eliminado",
+      "email": "armando-valerio@redexasesores.com",
+      "user_id": "da5b0495-eb99-4b44-98c1-a4ceee4787bd"
+    },
+    {
+      "action": "asesor_eliminado",
+      "remove": "Juan José Santana",
+      "email": "juan-jose-santana@redexasesores.com",
+      "keep": "Juan Jose Santana Colon"
+    },
+    {
+      "action": "auth_eliminado",
+      "email": "juan-jose-santana@redexasesores.com",
+      "user_id": "90cefcd9-9cd9-407d-9607-c133f95576a0"
+    },
+    {
+      "action": "asesor_eliminado",
+      "remove": "Yonelvi Moises",
+      "email": "jonelvi-moises@redexasesores.com",
+      "keep": "Yonelvy Moices Gómez Bonilla"
+    },
+    {
+      "action": "auth_eliminado",
+      "email": "jonelvi-moises@redexasesores.com",
+      "user_id": "81c28e9f-112c-49a6-8a1c-3c4803136f86"
+    }
+  ]
+}

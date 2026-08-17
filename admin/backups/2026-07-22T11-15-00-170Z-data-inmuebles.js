@@ -1,0 +1,6645 @@
+const inmueblesData = [
+  {
+    "id": "vista-del-atlantico",
+    "nombre": "Vista del Atlántico Residence",
+    "precio": "USD $185,000",
+    "tipo": "Proyecto Residencial",
+    "ciudad": "Puerto Plata",
+    "sector": "Costa Dorada",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/vista-del-atlantico/main.jpg",
+    "descripcion": "Residencias de lujo frente al Atlántico con piscina infinita, diseño arquitectónico premium y retorno de inversión garantizado.",
+    "detalles": {
+      "desc_corta": "Residencias de lujo frente al Atlántico con piscina infinita, diseño arquitectónico premium y retorno de inversión garantizado.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Seguridad 24/7",
+        "Áreas Verdes",
+        "Control de Acceso",
+        "Calles Asfaltadas"
+      ],
+      "amenidades": [
+        "Agua Potable",
+        "Energía Eléctrica",
+        "Iluminación",
+        "Tranquilidad"
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    },
+    "galeria": [
+      "images/proyectos/vista-del-atlantico/gal1.jpg",
+      "images/proyectos/vista-del-atlantico/gal2.jpg",
+      "images/proyectos/vista-del-atlantico/gal3.jpg",
+      "images/proyectos/vista-del-atlantico/gal4.jpg",
+      "images/proyectos/vista-del-atlantico/main.jpg"
+    ]
+  },
+  {
+    "id": "palmaretto-golden-village",
+    "nombre": "Palmaretto Golden Village",
+    "precio": "RD$15,000 por m²",
+    "tipo": "Proyecto Residencial",
+    "ciudad": "La Vega",
+    "sector": "Centro",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/palmaretto/main.jpg",
+    "descripcion": "Palmaretto Golden Village es un proyecto residencial ubicado en La Vega, diseñado para familias e inversores exigentes.",
+    "detalles": {
+      "desc_corta": "Palmaretto Golden Village es un proyecto residencial ubicado en La Vega, diseñado para familias e inversores exigentes.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Seguridad 24/7",
+        "Áreas Verdes",
+        "Control de Acceso",
+        "Calles Asfaltadas"
+      ],
+      "amenidades": [
+        "Agua Potable",
+        "Energía Eléctrica",
+        "Iluminación",
+        "Tranquilidad"
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    },
+    "galeria": [
+      "images/proyectos/palmaretto/gal1.jpg",
+      "images/proyectos/palmaretto/gal2.jpg",
+      "images/proyectos/palmaretto/gal3.jpg",
+      "images/proyectos/palmaretto/gal4.jpg",
+      "images/proyectos/palmaretto/main.jpg"
+    ]
+  },
+  {
+    "id": "residencial-don-martin",
+    "nombre": "Residencial Don Martín",
+    "precio": "Reserva con DOP $10,000",
+    "tipo": "Lotificación",
+    "ciudad": "Moca",
+    "sector": "Cabirmota",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/don-martin/main.jpg",
+    "descripcion": "Hogar, aire puro y tranquilidad en un solo lugar. Ubicado en Cabirmota, la subida de Don Martín. Solares disponibles listos para construir. Separa con $10,000 pesos, 45 días para completar el 20% de inicial y financiamiento hasta 5 años con una tasa del 18% anual. Oferta especial: 5% de descuento al contado o 2% de descuento por pago del inicial inmediato.",
+    "detalles": {
+      "desc_corta": "Hogar, aire puro y tranquilidad. Solares ubicados en Cabirmota, la subida de Don Martín. Separa con $10,000 pesos.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Título deslindado",
+        "Calles imprimadas",
+        "Contenes",
+        "Entrada controlada con garita de seguridad"
+      ],
+      "amenidades": [
+        "Agua potable",
+        "Energía eléctrica"
+      ],
+      "terminaciones": [],
+      "observaciones": [
+        "Separa con $10,000 pesos",
+        "45 días para completar el 20% de inicial",
+        "Financiamiento hasta 5 años",
+        "Tasa de interés de un 18% anual",
+        "5% de descuento al contado",
+        "2% de descuento por pago del inicial inmediato"
+      ]
+    },
+    "galeria": [
+      "images/proyectos/don-martin/gal1.jpg",
+      "images/proyectos/don-martin/gal2.jpg",
+      "images/proyectos/don-martin/gal3.jpg",
+      "images/proyectos/don-martin/main.jpg"
+    ]
+  },
+  {
+    "id": "residencial-el-molino",
+    "nombre": "Residencial El Molino",
+    "precio": "Reserva con DOP $10,000",
+    "tipo": "Lotificación",
+    "ciudad": "Laguna Salada",
+    "sector": "Cruce de Guayacanes",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/el-molino/main.jpg",
+    "descripcion": "Solares listos para construir. Ubicado en Calle Los Hidalgos, Cruce de Guayacanes, Laguna Salada, Rep. Dom. Separa con $10,000 pesos, 45 días para completar el 20% de inicial y financiamiento hasta 7 años con una tasa del 18% anual.",
+    "detalles": {
+      "desc_corta": "Solares listos para construir. Ubicado en Calle Los Hidalgos, Cruce de Guayacanes, Laguna Salada. Separa con $10,000 pesos.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Título deslindado",
+        "Calles imprimadas",
+        "Contenes",
+        "Entrada controlada y vigilada"
+      ],
+      "amenidades": [
+        "Agua",
+        "Energía Eléctrica",
+        "Cámara de Seguridad"
+      ],
+      "terminaciones": [],
+      "observaciones": [
+        "Separa con $10,000 pesos",
+        "45 días para completar el 20% de inicial",
+        "Financiamiento hasta 7 años",
+        "Tasa de interés de un 18% anual"
+      ]
+    },
+    "galeria": [
+      "images/proyectos/el-molino/gal1.jpg",
+      "images/proyectos/el-molino/gal2.jpg",
+      "images/proyectos/el-molino/gal3.jpg",
+      "images/proyectos/el-molino/gal4.jpg",
+      "images/proyectos/el-molino/gal5.jpg",
+      "images/proyectos/el-molino/gal6.jpg",
+      "images/proyectos/el-molino/gal7.jpg",
+      "images/proyectos/el-molino/main.jpg"
+    ]
+  },
+  {
+    "id": "lotificacion-iris",
+    "nombre": "Lotificación Iris",
+    "precio": "Separación RD$10,000",
+    "tipo": "Lotificación",
+    "ciudad": "Maizal",
+    "sector": "Provincia Valverde",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/iris/main.jpg",
+    "descripcion": "Un proyecto pensado para crecer contigo. Solares desde 200 m², a partir de RD$2,000 por metro. Ubicado en Calle Magdalena Zapata, entrando por el ayuntamiento, Maizal. Excelente oportunidad para construir tu hogar o invertir en una zona en crecimiento. Separa con tan solo RD$10,000, 45 días para completar el 20% de inicial y financiamiento disponible hasta 7 años.",
+    "detalles": {
+      "desc_corta": "Solares desde 200 m² en Maizal, Provincia Valverde. Un proyecto con visión de futuro. Separa con RD$10,000.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Solares desde 200 m²",
+        "Entrada moderna y organizada",
+        "Diseñado para brindar comodidad",
+        "Visión de futuro y valorización"
+      ],
+      "amenidades": [
+        "Zona en crecimiento",
+        "Proyección garantizada"
+      ],
+      "terminaciones": [],
+      "observaciones": [
+        "Desde RD$2,000 por metro",
+        "Separa con RD$10,000",
+        "Completa el 20% del inicial en 45 días",
+        "Financiamiento disponible hasta 7 años"
+      ]
+    },
+    "galeria": [
+      "images/proyectos/iris/gal1.jpg",
+      "images/proyectos/iris/gal2.jpg",
+      "images/proyectos/iris/main.jpg"
+    ]
+  },
+  {
+    "id": "residencial-santa-fe",
+    "nombre": "Residencial Santa Fe",
+    "precio": "Separación RD$12,000",
+    "tipo": "Lotificación",
+    "ciudad": "Villa Tapia",
+    "sector": "Sabana De Los Jiménez",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/santa-fe/main.jpg",
+    "descripcion": "Inversión segura y bien planificada. Solares desde 220 m², con fácil acceso y en un proyecto cerrado con acceso controlado y puerta eléctrica. Cuenta con servicio continuo de luz y agua 24/7.",
+    "detalles": {
+      "desc_corta": "Solares desde 220 m² en Sabana De Los Jiménez. Inversión segura con acceso controlado y puerta eléctrica. Separación RD$12,000.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Solares desde 220 m²",
+        "Proyecto cerrado",
+        "Acceso controlado y puerta eléctrica",
+        "Calles imprimadas y contenes"
+      ],
+      "amenidades": [
+        "Luz y agua 24/7",
+        "Áreas verdes",
+        "Sistema de recogida de basura",
+        "Mantenimiento común"
+      ],
+      "terminaciones": [],
+      "observaciones": [
+        "Separación: RD$12,000 (incluye contrato)",
+        "Inicial: 25% (45 días para completar)",
+        "Financiamiento por hasta 10 años",
+        "Tasa de interés de un 18% anual",
+        "Opcional: 6 meses sin interés (separando con 25%)",
+        "1.5% DE DESCUENTO POR COMPRAS AL CONTADO"
+      ]
+    },
+    "galeria": [
+      "images/proyectos/santa-fe/gal1.jpg",
+      "images/proyectos/santa-fe/gal2.jpg",
+      "images/proyectos/santa-fe/gal3.jpg",
+      "images/proyectos/santa-fe/main.jpg"
+    ]
+  },
+  {
+    "id": "residencial-valle-verde",
+    "nombre": "Residencial Valle Verde",
+    "precio": "Solares desde RD$2,500 por metro",
+    "tipo": "Lotificación",
+    "ciudad": "La Vega",
+    "sector": "Maguey, Las Uvas",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/valle-verde/main.jpg",
+    "descripcion": "Venta de solares con pocas unidades disponibles. Ubicado en Maguey, Las Uvas, La Vega. Solares desde RD$2,500 por metro, con título deslindado y todos los servicios incluidos. Separa con $10,000.",
+    "detalles": {
+      "desc_corta": "Venta de solares. Maguey, Las Uvas. Solares desde RD$2,500 por metro, título deslindado y todos los servicios. Separa con $10,000.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Título deslindado",
+        "Alta demanda",
+        "Pocas unidades disponibles"
+      ],
+      "amenidades": [
+        "Todos los servicios incluidos"
+      ],
+      "terminaciones": [],
+      "observaciones": [
+        "Separa con $10,000 DOP",
+        "Desde RD$2,500 por metro"
+      ]
+    },
+    "galeria": [
+      "images/proyectos/valle-verde/gal1.jpg",
+      "images/proyectos/valle-verde/gal2.jpg",
+      "images/proyectos/valle-verde/gal3.jpg",
+      "images/proyectos/valle-verde/main.jpg"
+    ]
+  },
+  {
+    "id": "residencial-concepcion",
+    "nombre": "Residencial Concepción",
+    "precio": "Separación RD$20,000",
+    "tipo": "Lotificación",
+    "ciudad": "La Vega",
+    "sector": "Cruce de Controva",
+    "estado": "Disponible",
+    "imagenPrincipal": "images/proyectos/concepcion/main.jpg",
+    "descripcion": "Invierte en tu Futuro. Solares con acceso moderno y ubicación estratégica en Cruce de Controva, San Francisco de Macorís - La Vega. Tranquilidad, proyección y seguridad. Separa con RD$20,000 y financia hasta 5 años sin interés.",
+    "detalles": {
+      "desc_corta": "Solares con acceso moderno en Cruce de Controva. Separa con RD$20,000 y financia hasta 5 años sin interés.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Solares disponibles",
+        "Acceso moderno",
+        "Ubicación estratégica"
+      ],
+      "amenidades": [
+        "Tranquilidad",
+        "Proyección",
+        "Seguridad"
+      ],
+      "terminaciones": [],
+      "observaciones": [
+        "Separa con RD$20,000",
+        "Financiamiento hasta 5 años sin interés"
+      ]
+    },
+    "galeria": [
+      "images/proyectos/concepcion/gal1.jpg",
+      "images/proyectos/concepcion/gal2.jpg",
+      "images/proyectos/concepcion/gal3.jpg",
+      "images/proyectos/concepcion/main.jpg"
+    ]
+  },
+  {
+    "id": 1,
+    "nombre": "Apartamentos Vista Sol Proyecto (Nuevo) ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Vistasol Centro, Urb. Don Nicolás, a 2 minutos del centro de la ciudad. (85 metros) CARACTERÍSTICAS: PROYECTO - Cerrado con Verja Perimetral - Seguridad 24 horas - Caseta de Vigilancia - Portón Eléctrico a control - Piscina - Kiosco para Actividades - Área de Juegos Infantiles - Un (1) Parqueo Asignado DISTRIBUCIÓN DEL APARTAMENTO. - Sala - Balcón ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /050f10bf-31d1-4df5-a5e6-ee4e63801003.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /050f10bf-31d1-4df5-a5e6-ee4e63801003.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /06e25c1f-1f91-4265-b698-1797812d56d6.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /08a82451-9083-49bd-b7ff-ce09e0add326.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /3701bbe9-f802-4151-9fdc-41ec2a0aa4e2.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /81db0f27-b100-4523-a13b-fdc41b8fe382.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /893e966e-91d0-4daf-ae10-6245899273c1.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /9a5d33c3-c4cc-4dc0-b44a-529834ea4c1f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /a38f3b25-dd3c-4ae3-af08-da6212968aff.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /af88060a-bb98-418b-8d34-ee206e306541.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /b16aace0-bdf4-46b7-8697-1690254d3c58.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /c4d768cc-715c-4651-bad1-0b9eb7b1ca35.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /c6369800-ad0a-4a2e-b5e8-d99fc314c53f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /d0edd34d-526d-472c-a46a-4b2ae27d1c1e.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /d9648386-e691-49e0-88d1-5044cfbf6f48.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /dfc7ba3a-935a-464a-93f6-b32879c4c396.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /eb66be4c-07d5-4bd4-a3eb-0a73e1f916c7.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos vista sol proyecto (NUEVO) /f443f91f-dbcc-4399-9a62-6f34121c3531.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamentos%20Vista%20Sol%20Proyecto%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ÓN DEL APARTAMENTO. - Sala - Balcón ..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Solar La Avenida Paseo De Choferes",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende solar en Santiago de los caballeros🤩 📍Residencial Jardines del retoño en la Av paseo de los chóferes, Santiago.  ✅219.97 m² ✅Título Deslindado  ✅Residencial cerrado $6,000 pesos por M2 $1,319,820 precio total",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar la avenida paseo de choferes/WhatsApp Image 2024-07-26 at 11.19.48 AM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar la avenida paseo de choferes/WhatsApp Image 2024-07-26 at 11.19.48 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar la avenida paseo de choferes/WhatsApp Image 2024-07-26 at 11.19.48 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar la avenida paseo de choferes/WhatsApp Image 2024-07-26 at 11.19.49 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar la avenida paseo de choferes/WhatsApp Image 2024-07-26 at 11.19.49 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20La%20Avenida%20Paseo%20De%20Choferes",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende solar en Santiago de los caballeros Residencial Jardines del retoño en la Av paseo de los chóferes, Santiago.  219.97 m² Título Deslindado  Residencial cerrado $6,000 pesos por M2 $1,319,820 precio total",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Residencial Don Rafael ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 Urb. “Don Rafael E. Peña” Un exclusivo proyecto de solares ubicado en la calle Brígida detrás de la urbanización Thomen, Santiago de los Caballeros, ideal para construir la casa de tus sueños. A solo 10 minutos del área Monumental, 15 minutos del centro de la ciudad y 10 minutos del Aeropuerto Internacional del Cibao. Amenidades y facilidades de...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /09c067dd-8a22-4301-a314-764891ce06e4.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /09c067dd-8a22-4301-a314-764891ce06e4.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /10715593-269e-4ece-909f-68cc40bef766.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /1ab3fccc-bc29-4129-85e9-5cbc53d53130.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /1e85f244-d939-437e-9398-2eae8c8b5ad8.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /44d3ec80-4bd8-4843-894d-81dbf524eb34.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /4fef128d-4324-4e00-9dc1-eac9a15874bd.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /70b9f902-0fc5-4cc8-b622-0916d626bf9f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /9113524f-b7e5-463b-93dc-24031d6a81c7.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /97312bfd-c6f2-41a0-b5d6-2baaa6bd354d.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /a2c87dc4-7d10-4dbf-b26d-cfb4e53a6f3a.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /abfd4b40-e502-41b9-818e-47d1e252ed0d.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /bc237d0d-7be9-49a9-910b-535fd012c244.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /ce095c08-32ec-4744-a91e-342699517924.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Residencial Don Rafael /dc71410a-1886-4d5e-a4eb-25dc85aaa34b.jpg"
+    ],
+    "amenidades": [
+      "y facilidades del proyecto:",
+      "•\tCasa club con piscina y área de BBQ",
+      "•\t4,000 m² de área verde",
+      "•\tÁrea infantil",
+      "•\tCancha deportiva",
+      "•\tVerja perimetral",
+      "•\tControl de acceso",
+      "•\tSeguridad 24 horas",
+      "•\tSistema de alarma de seguridad en las viviendas",
+      "•\tCalles asfaltadas",
+      "•\tAceras",
+      "•\tContenes",
+      "•\tCloacas",
+      "•\tElectricidad soterrada"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Residencial%20Don%20Rafael%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "y facilidades del proyecto:",
+        "Casa club con piscina y área de BBQ",
+        "4,000 m² de área verde",
+        "Área infantil",
+        "Cancha deportiva",
+        "Verja perimetral",
+        "Control de acceso",
+        "Seguridad 24 horas",
+        "Sistema de alarma de seguridad en las viviendas",
+        "Calles asfaltadas",
+        "Aceras",
+        "Contenes",
+        "Cloacas",
+        "Electricidad soterrada"
+      ],
+      "amenidades": [
+        "es y facilidades de..."
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Solares Vista Sol Proyecto (Nuevo) ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "RD,000 por metro",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "DEJA DE PAGAR ALQUILER Y EMPIEZA A CONSTRUIR TU FUTURO! 🏗️✨ ¿Sabías que puedes tener tu propio solar con cuotas cómodas y sin complicaciones? Tenemos el espacio ideal para ti. 📍 Detalles del proyecto: • Solares: Desde 200m² en adelante. • Precios: ¡Desde solo RD$5,000 el metro! 💸 • Facilidad de pago: Sistema tipo SAN (cómodas cuotas mensuales). ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /039e8be3-45b5-4acd-9d42-b0d33d850169.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /039e8be3-45b5-4acd-9d42-b0d33d850169.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /06d30c70-f663-4577-95e7-a204cce503a5.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /2586e90b-af9b-4df3-adf0-5202e07b237f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /3fa366e1-be5e-45de-800c-7677a5c4d704.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /6d02e029-a904-4092-8e78-cbcfd37c658f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /6f7d88cc-37f3-4749-bc5e-a54c842e5445.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /97f191a7-0a82-476c-9029-16a393f83a5c.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /d53bb734-574b-450c-a059-35e643d73ceb.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solares vista sol proyecto (NUEVO) /e0ab5456-0ae0-4824-83b8-da25433ff98e.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solares%20Vista%20Sol%20Proyecto%20(Nuevo)%20",
+    "forma_pago": "Separa con RD,000 o US,000. Inicial 30% con 18 meses para completar sin intereses. Financiamiento hasta 10 años.",
+    "detalles": {
+      "desc_corta": "DEJA DE PAGAR ALQUILER Y EMPIEZA A CONSTRUIR TU FUTURO!  ¿Sabías que puedes tener tu propio solar con cuotas cómodas y sin complicaciones? Tenemos el espacio ideal para ti.  Detalles del proyecto: • Solares: Desde 200m² en adelante. • Precios: ¡Desde solo RD$5,000 el metro!  • Facilidad de pago: Sistema tipo SAN (cómodas cuotas mensuales). ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Casa De Dos Niveles (Nuevo)",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente oportunidad de inversión en Santiago! Esta propiedad destaca por su versatilidad y ubicación estratégica, ideal para quienes buscan amplitud y cercanía al centro de la ciudad. Aquí tienes una propuesta de texto lista para tus redes sociales o portales inmobiliarios: 🏠 ¡TU HOGAR IDEAL EN SANTIAGO! AMPLITUD Y UBICACIÓN PRIVILEGIADA ¿Buscas...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/014dd8e4-320e-40f0-9da9-9621683b3ada.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/014dd8e4-320e-40f0-9da9-9621683b3ada.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/024e726a-f27b-4068-a5ed-1486fc79a871.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/110865ac-2d5b-4d96-b476-520c8bdc6ca9.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/13950a22-da80-4488-900c-383489a3e96d.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/1beaed72-20a0-49d4-b47a-2cb84588ed8c.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/21ef0317-9013-4343-9fd3-d927191c1831.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/2865fc01-4afb-467b-ba02-eb7fb7f184c7.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/3f6438d4-a726-49c4-96dc-0df40f255199.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/448ae5a6-6c08-4989-b7f6-822b6e859dc8.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/466da11d-a22c-417f-9225-95fad9b4db2e.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/48c2e247-a927-45d0-bf45-88ba53ef27a3.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/4d1d81e0-d192-489f-8417-c2ea6d43cae2.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/4facc31c-350b-4d90-b1e7-4b713a3f38d5.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/5296688f-dc16-4e65-8618-0daaef55c3e2.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/55b32ccb-2dd2-43c9-8231-2d20eeb28603.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/63cf6b2e-2d14-45f5-a56f-0037639205db.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/74b2bdcd-a15b-4823-845d-b5adb93429f9.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/77865c00-ade9-4dc8-a5ee-faaaea04e8b9.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/79593813-a634-4ee4-af3b-b40f28acdb43.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/7b2f8490-4f20-43e0-ab6f-9aac8a5ce474.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/8325db13-8d53-4a43-9e37-ce05eb131b04.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/898cfe4c-6ef8-4170-8195-6b74aa32d1c5.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/97811535-0aff-4e0c-b235-cac60507c886.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/9d71d2de-d1a7-4470-8752-0c7c549bb083.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/af0d8353-e792-425d-9309-0ff0f10c01b5.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/be54a475-de01-45c1-b171-b37bc19d4599.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/c90506ce-e862-4d49-b159-889fc5715805.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/d3f02ce5-eb78-4b1e-b178-50ef32b033af.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/e14d9e50-6e50-4f9f-8233-63bc48f17229.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/e227c625-ddd1-40bb-bc88-f57239dee363.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/e9747bb2-d019-4a7b-8e1f-c96334049154.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa de dos niveles (NUEVO)/f948f6ca-c561-45f4-9424-37b7507ab2dc.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20De%20Dos%20Niveles%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Excelente oportunidad de inversión en Santiago! Esta propiedad destaca por su versatilidad y ubicación estratégica, ideal para quienes buscan amplitud y cercanía al centro de la ciudad. Aquí tienes una propuesta de texto lista para tus redes sociales o portales inmobiliarios:  ¡TU HOGAR IDEAL EN SANTIAGO! AMPLITUD Y UBICACIÓN PRIVILEGIADA ¿Buscas...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Apartamento En Guayabal (Nuevo)",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "USD$180,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Apartamento en venta ⬇️ 📍Residencial, Grácil 1 puñal, Santiago De Los Caballeros.  4TO NIVEL  ⁠*Características del inmueble:* 🎯Tres habitaciones (la principal con su baño) 🎯5 baños en total 🎯Cocina 🎯Área de lavado 🎯Balcon  🎯Sala  🎯seguridad 24/7 🎯Piscina en el área común 🎯Dos parqueos 🎯Metraje: de construcción 130.16  Terraza : 76.18  P...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/0518cc9a-8ea7-4ba5-a414-087c0f0dd960.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/0518cc9a-8ea7-4ba5-a414-087c0f0dd960.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/08aa89a6-7787-4fec-afd4-09801ab8a4c2.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/3b852d24-3aba-4ad5-90bd-04fa00fb77b2.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/450c84cd-5b21-4856-b3e2-5c12b2b51b6c.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/47bd8f09-2927-4084-ad04-426636d281dc.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/528b855b-5aa0-41d5-a097-4c2c4da44ae6.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/614641fb-28e3-4116-b549-257b6041ae70.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/7614f2ee-8075-4a23-8a3e-d18705927d10.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/78d023e4-8053-49f9-a658-babf10a11b39.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/7e3657d7-1210-4fd3-9aa6-8ac147f3d180.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/831929e5-6238-4748-88b5-75f03e2493cb.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/8da26539-337d-4f59-a41c-76111deefc35.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/93775874-dbd6-42c6-a311-152a87c7f39d.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/98a36bb1-de79-48c4-995d-22c79032bfa8.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/9b586237-7060-490d-af1f-e01e3f8b71a6.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/IMG_4806.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/aadd4ccf-da8f-4f49-8729-d80476ab4539.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamento en Guayabal (NUEVO)/de34127c-1c03-4676-83d9-be55a3ab943c.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Guayabal%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del inmueble:* Tres habitaciones (la principal con su baño) 5 baños en total Cocina Área de lavado Balcon  Sala  seguridad 24/7 Piscina en el área común Dos parqueos Metraje: de construcción 130.16  Terraza : 76.18  P..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Apartamentos En Plano (Nuevo) ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Residencial Viena. Separa con tan solo: USD$3,000.00  Inicial de un: 20 % del valor del inmueble, el otro 80% en contra entrega. Terminaciones:  1. Revestimiento en estuco en todo el interior del apartamento,  2. ⁠Sherock, facias y luces encrustadas en la sala, comedor y cocina. 3. ⁠madera JEQUITIVA en todo el interior, closet, cocina, puertas, etc...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /0b422d2a-5cb5-477f-bce8-e0a113c4d4d0.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /0b422d2a-5cb5-477f-bce8-e0a113c4d4d0.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /4b138c6b-4cb2-4e36-b13b-c3a950d444ab(1).jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /4b138c6b-4cb2-4e36-b13b-c3a950d444ab.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /84f4f084-eb25-4700-ba87-feabdd7d9d91.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /a992262b-06fc-4986-b097-ed4fa6671f3f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /c26d8922-e4db-402b-9781-6507ec5f5189.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /e293330e-4c22-4266-9c65-f03fbff33d1c(1).jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /e293330e-4c22-4266-9c65-f03fbff33d1c.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /f04c400e-7394-40df-bd5e-54d14dac8406.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /f670746a-21b0-482f-ae57-6aa6fdfe9911.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Apartamentos en plano (NUEVO) /fed947c8-8735-4c48-bc52-40c875c71dd2.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamentos%20En%20Plano%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [
+        "ones:  1. Revestimiento en estuco en todo el interior del apartamento,  2. ⁠Sherock, facias y luces encrustadas en la sala, comedor y cocina. 3. ⁠madera JEQUITIVA en todo el interior, closet, cocina, puertas, etc..."
+      ],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Solar Detras De Cerro Alto",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende solar IDEAL PARA INVERSIÓN O VIVIENDA PROPIA🌟 📍Santiago de los caballeros, detrás del cerro alto.  529.48 M2  Título deslindado 📃 Sistema cloacal, agua y energía eléctrica ✅ ¡Financiamiento disponible! Precio por metro: RD$6,500 pesos ‼️",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar detras de cerro alto/WhatsApp Image 2024-12-13 at 8.56.20 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar detras de cerro alto/WhatsApp Image 2024-12-13 at 8.56.20 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar detras de cerro alto/WhatsApp Image 2024-12-13 at 8.56.21 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/solar detras de cerro alto/WhatsApp Image 2024-12-13 at 8.56.21 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20Detras%20De%20Cerro%20Alto",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende solar IDEAL PARA INVERSIÓN O VIVIENDA PROPIA Santiago de los caballeros, detrás del cerro alto.  529.48 M2  Título deslindado  Sistema cloacal, agua y energía eléctrica  ¡Financiamiento disponible! Precio por metro: RD$6,500 pesos ‼",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Solar En JardíN Del Retorno ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "RD$10,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "230.38 m²",
+    "descripcion": "🏡 ¡Oportunidad de inversión en Gurabo, Santiago! Solar disponible en Residencial Jardín Retorno, una zona tranquila y de gran crecimiento en Gurabo, Santiago de los Caballeros. 📐 Área: 230.38 m² 💰 Precio: RD$10,000 por metro cuadrado 🔧 Servicios disponibles: ✔ Calles imprimadas ✔ Contenes ✔ Energía eléctrica ✔ Agua ✔ Cloaca 📍 Ideal para constr...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /08bdd3d3-67bf-4eb3-abac-ab2afa6aa1e7.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /08bdd3d3-67bf-4eb3-abac-ab2afa6aa1e7.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /67dd472a-faf8-41bd-b8ac-78fa09878f53.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /95355e17-a68a-4fbc-a9de-c5d6b31b8592.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /b59abf7a-6b79-43bf-b47e-5f9c725eec37.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /c034febb-a4df-4d95-a21b-392d1dd393d6.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /c5a9076a-50ff-4d8d-965f-aadf0b4dd46f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Solar en jardín del retorno /fa0c34b4-c0c8-417c-a197-ba49e93fe6a3.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20JardíN%20Del%20Retorno%20",
+    "detalles": {
+      "desc_corta": "¡Oportunidad de inversión en Gurabo, Santiago! Solar disponible en Residencial Jardín Retorno, una zona tranquila y de gran crecimiento en Gurabo, Santiago de los Caballeros.  Área: 230.38 m²  Precio: RD$10,000 por metro cuadrado  Servicios disponibles:  Calles imprimadas  Contenes  Energía eléctrica  Agua  Cloaca  Ideal para constr...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Casa En Valle Universitario (Nuevo)",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Santiago De Los Caballeros",
+    "sector": "Varias Zonas",
+    "precio": "RD$12,500,000.00",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Casa en Valle Universitario, Santiago ✨🏡   Espaciosa, cómoda y ubicada en una de las zonas más demandadas 🌟   🔹 Sala & comedor   🔹 3 habitaciones   🔹 Cocina   🔹 Marquesina   🔹 Área de lavado   🔹 Área de estar   🔹 Terraza   🔹 2.5 baños   🔹 Balcón   📍 Zona tranquila, ideal para disfrutar en familia o como inversión segura.   PRECIO: R...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/05166ce8-56a9-492d-b0fe-e7d3435cb6e6.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/05166ce8-56a9-492d-b0fe-e7d3435cb6e6.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/0ded2789-ec1d-4e03-a14b-e0f2604bc581.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/16befce2-3651-4f87-ae93-31f729ddd020.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/2d530fe8-969c-47b4-973f-e4e8f431fbe2.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/35aacf92-916f-4639-852d-3bf73dc0d02a.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/3eef1308-455e-4ae3-b54b-f266bcc327c4.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/420d5104-dcd8-43c2-a75e-d7fe353b5861.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/4d9660dc-5b58-41e6-b79d-45986da97d7c.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/5719700c-ed0f-43f4-aa78-e8481363766e.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/642e8bf1-3f64-408a-b5ed-71a335096cfd.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/785cf246-32ee-476f-b014-577052985a1f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/88f96a77-4c03-42a6-87af-e71884d33cc7.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/9a948ced-888e-47f6-a45b-a59060300463.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/a60db2cf-edef-4394-bedd-37fdadc75449.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/ac08f60d-a2a7-41d5-a4ad-3e997b67ef5c.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/ac730668-99e6-4db5-bbe5-5f61ca044a01.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/be80af6a-c9fd-42c8-9f55-e0e08d629c82.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/dfa0e658-5fed-415c-ad9b-84d79260e67f.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/e0d48c6b-38b8-4871-bfaf-dfbfbeba68ad.jpg",
+      "images/inmuebles/INMUEBLES EN SANTIAGO DE LOS CABALLEROS/Casa en Valle universitario (NUEVO)/f0f289f7-557a-4084-aae4-687d9c2b68af.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Valle%20Universitario%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Casa en Valle Universitario, Santiago    Espaciosa, cómoda y ubicada en una de las zonas más demandadas     Sala & comedor    3 habitaciones    Cocina    Marquesina    Área de lavado    Área de estar    Terraza    2.5 baños    Balcón    Zona tranquila, ideal para disfrutar en familia o como inversión segura.   PRECIO: R...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Villa En Residencial Colorao ",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "✨ Exclusividad que se siente en cada detalle. Una villa donde el diseño atemporal y los materiales nobles se fusionan para crear una experiencia única de residencia. 🏡 4 habitaciones 🛋 Sala, comedor, cocina y celería integradas con elegancia 🌿 2 terrazas privadas + balcón con vista 🛁 3.5 baños de lujo 🌲 Techo en madera de pino tratado 🪨 Piso ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.30 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.30 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.30 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.30 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.31 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.31 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.31 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.31 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.31 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.32 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.32 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.33 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.33 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en residencial colorao /WhatsApp Image 2025-07-24 at 5.01.33 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Residencial%20Colorao%20",
+    "detalles": {
+      "desc_corta": "Exclusividad que se siente en cada detalle. Una villa donde el diseño atemporal y los materiales nobles se fusionan para crear una experiencia única de residencia.  4 habitaciones  Sala, comedor, cocina y celería integradas con elegancia  2 terrazas privadas + balcón con vista  3.5 baños de lujo  Techo en madera de pino tratado  Piso ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Villa En Mata De Platano",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "USD$250,000,",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria te trae esta maravillosa propuesta, si lo que buscas es invertir en la ciudad de la eterna primavera o desconectarte de vez en cuando de la ciudad con tus seres queridos, esto es para tí 📌🤩 📍Ubicado en la calle La Nuez S/N, Mata de Plátano, Jarabacoa, La Vega. CARACTERÍSTICAS: 7 habitaciones 🛌 1 cuarto de servicio🚪 Dos cocin...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/villa en mata de platano/WhatsApp Image 2024-08-24 at 12.43.38 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en mata de platano/WhatsApp Image 2024-08-24 at 12.43.38 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en mata de platano/WhatsApp Image 2024-08-24 at 12.43.39 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en mata de platano/WhatsApp Image 2024-08-24 at 12.43.39 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en mata de platano/WhatsApp Image 2024-08-24 at 12.43.40 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/villa en mata de platano/WhatsApp Image 2024-08-24 at 12.43.40 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Mata%20De%20Platano",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "7 habitaciones  1 cuarto de servicio Dos cocin..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Solares Buena Vista Hill ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "¡Invierte hoy donde tu futuro crece! 🌿🏡 Solares desde 400 m² a partir de RD$2,000 por metro cuadrado, en un complejo cerrado con todo lo que necesitas para vivir o invertir con seguridad. ✨ Características del proyecto: 🔹 Electricidad 🔹 Planta de tratamiento 🔹 Agua potable 🔹 Calles compactadas 🔹 Terrenos con vistas 🔹 Título deslindado 🔹 Fá...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /29374ccd-1dea-4e98-a235-20251c09e77d.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /29374ccd-1dea-4e98-a235-20251c09e77d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /492ed815-8c9a-4dee-acda-4c835edbed72.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /6d587401-1569-4e0a-84f0-99c4a2dca8c1.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /80252f59-eafd-40f3-83e0-fbe2148cc31a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /83acec88-e857-4842-ab4d-755104c81493.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /8af522ab-d93c-42bf-b725-598a06f2e107.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /9ef94bc3-4a23-4219-b3ce-5837826dab6f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /a827a0ab-6438-43f0-ab0b-5bf4e5fe3023.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /c425c78a-848f-4691-8238-95b5aced2750.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /c9de676b-8751-4cef-aec5-0a64c40b885c.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /cca058ff-86e3-4326-a59e-df8292f3ccbc.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /ccc5e5c6-3acc-4a1c-82c5-5c5e496f616e.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /d4141f7b-f242-4777-978f-92100aeba63e.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solares Buena vista hill /ff99bfc9-ca7b-45f8-9918-9db91f3c9832.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solares%20Buena%20Vista%20Hill%20",
+    "forma_pago": "US,000 de separación. 35% a la firma del contrato. 45% durante el desarrollo.",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del proyecto:  Electricidad  Planta de tratamiento  Agua potable  Calles compactadas  Terrenos con vistas  Título deslindado  Fá..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Villa Las Palmas (Nuevo) ",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "260 m²",
+    "descripcion": "Villas Las Palmas | Piedra Blanca, Jarabacoa 📍 A 10 min del Salto de Jimenoa Datos clave \t•\tTerreno: 420 m² \t•\tConstrucción: 260 m² \t•\t4 habitaciones | 6 baños \t•\tSala principal + estar familiar \t•\tCocina amplia \t•\tÁrea de lavado interior \t•\tMarquesina \t•\tBalcón y terraza Terminaciones y amenidades \t•\tPiscina privada + kiosco \t•\tRoble, porcelanato...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /0673d32e-bdec-480e-97c2-5dd74954cd8d.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /0673d32e-bdec-480e-97c2-5dd74954cd8d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /17c28e17-48d3-4e49-965f-fc3815acfa40.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /331d12d7-55f0-4b36-8b2b-97f3e58da8a8.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /34004771-3517-4bc8-9e0b-77220dbeccd4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /46b22ae1-6232-430e-ad88-f38298541b8f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /56725bf2-ae02-4e19-8e5e-513015afaf64.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /64069d0b-5422-4d2e-a447-c06a92bee554.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /65bf4c85-04e1-4aab-981b-d4cc5ee05dad.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /6ce566a2-dea2-44b3-93bb-d3b3fb724267.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /7aa696d8-9b6e-41b0-8bd6-a7a2e561e5b7.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /7ee157dd-dc93-41ab-a2ce-799f619d2adc.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /8012668a-c92d-43c3-bcd8-564b22130ea4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /8f8fe944-a51f-4582-8ee2-232c3070cd97.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /90165f43-5745-4dd4-b8ab-c0ed854a345a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /ac6ddc95-1f7a-4a57-bbaf-8fc4d4ea101e.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /b9fff4c1-fd54-4ba3-ba93-3fbee5e9ad6d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /bbd686cf-a6d0-41f5-aad9-ba88ee81c7ae.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /c04c3b60-7163-4d62-bc76-0ef023db6cb4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /d28036c7-20c1-492c-ad7e-71b23b585cc5.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /d6a101ca-2dd5-4f53-8318-b0bb3a44e724.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /f2149d47-1ef1-4bb0-a5cc-83353767d59a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa Las Palmas (NUEVO) /f6bdc343-37da-4258-b03d-733a6deb7d12.jpg"
+    ],
+    "amenidades": [
+      "•\tPiscina privada + kiosco",
+      "•\tRoble, porcelanato y madera tratada",
+      "•\tCisterna",
+      "•\tSeguridad 24/7",
+      "•\tServicios completos"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20Las%20Palmas%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Piscina privada + kiosco",
+        "Roble, porcelanato y madera tratada",
+        "Cisterna",
+        "Seguridad 24/7",
+        "Servicios completos"
+      ],
+      "amenidades": [
+        "es \t•\tPiscina privada + kiosco \t•\tRoble, porcelanato..."
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 15,
+    "nombre": "Proyecto De Solares En Colinas (Nuevo)",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "US por metro",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌿✨ Vive rodeado de naturaleza en Colinas del Yaque ✨🌿   📍 Veras del Yaque, Pinar Quemado, Jarabacoa   Un proyecto pensado para tu tranquilidad y comodidad, con todos los servicios incluidos:   ✅ Calles asfaltadas   ✅ Luz   ✅ Agua   ✅ Garita de seguridad   ✅ Solares con título deslindado   💰 Desde US$90 por metro   📌 Separa con solo el 50%   📅...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/08cc7430-4c88-423c-ad64-f47cd5bf226a.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/08cc7430-4c88-423c-ad64-f47cd5bf226a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/277826ca-03c9-4580-8977-482d75e2bfbd.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/28128540-584c-487d-9ae4-30325113dd53.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/2d2a594f-b1c4-411c-80c6-b770b9ef6d16.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/2e86cb8f-aad6-43ae-b4bb-6f29eefa0f28.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/3fafe25b-4d17-42de-bd8d-aca7d62165d6.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/4e2aa1ea-2d76-470e-9bb1-f272c2d53992.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/65b810fb-f4d8-4b4b-a7fc-135e22a798ec.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/6da5dfbb-63ee-4b0d-9dab-a49e3f7566c4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/73628f6a-efff-40fa-acef-d9d46c8cd3c0.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/76f55aac-6c01-4770-88b1-35789f80e65d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/801406ed-91cb-4e33-873b-8ea5c854cec4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/8ae875ba-9683-4e7b-91c3-22e936e2d8a8.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Proyecto de solares en Colinas (NUEVO)/9871561e-8788-4405-a175-4295eb5808a8.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Solares%20En%20Colinas%20(Nuevo)",
+    "forma_pago": "Separa con solo el 50%. Y paga el restante hasta en 1 año y medio.",
+    "detalles": {
+      "desc_corta": "Vive rodeado de naturaleza en Colinas del Yaque     Veras del Yaque, Pinar Quemado, Jarabacoa   Un proyecto pensado para tu tranquilidad y comodidad, con todos los servicios incluidos:    Calles asfaltadas    Luz    Agua    Garita de seguridad    Solares con título deslindado    Desde US$90 por metro    Separa con solo el 50%   ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Casa En La Federico Basilis",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex Inmobiliaria vende casa contemporánea tipo cabaña con vista a las montañas, JARABACOA 🔐🥇 📍Carretera Federico Basilis, JARABACOA  Agua 🚿  Energía eléctrica ⚡️  Galeria 3 habitaciones primer nivel 2 baños primer nivel Parque Sala Comedor Lavadero Cisterna Portón eléctrico  Doble acceso 369M2 de construcción Título al día 📃 2do Nivel 2 apar...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en la Federico Basilis/WhatsApp Image 2025-07-24 at 2.53.59 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20La%20Federico%20Basilis",
+    "detalles": {
+      "desc_corta": "Redex Inmobiliaria vende casa contemporánea tipo cabaña con vista a las montañas, JARABACOA  Carretera Federico Basilis, JARABACOA  Agua   Energía eléctrica   Galeria 3 habitaciones primer nivel 2 baños primer nivel Parque Sala Comedor Lavadero Cisterna Portón eléctrico  Doble acceso 369M2 de construcción Título al día  2do Nivel 2 apar...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Villa En Piedra Blanca",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "260 m²",
+    "descripcion": "Villas Las Palmas | Piedra Blanca, Jarabacoa 📍 A 10 min del Salto de Jimenoa Datos clave \t•\tTerreno: 420 m² \t•\tConstrucción: 260 m² \t•\t4 habitaciones | 6 baños \t•\tSala principal + estar familiar \t•\tCocina amplia \t•\tÁrea de lavado interior \t•\tMarquesina \t•\tBalcón y terraza Terminaciones y amenidades \t•\tPiscina privada + kiosco \t•\tRoble, porcelanato...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/0673d32e-bdec-480e-97c2-5dd74954cd8d.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/0673d32e-bdec-480e-97c2-5dd74954cd8d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/17c28e17-48d3-4e49-965f-fc3815acfa40.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/331d12d7-55f0-4b36-8b2b-97f3e58da8a8.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/34004771-3517-4bc8-9e0b-77220dbeccd4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/46b22ae1-6232-430e-ad88-f38298541b8f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/56725bf2-ae02-4e19-8e5e-513015afaf64.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/64069d0b-5422-4d2e-a447-c06a92bee554.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/65bf4c85-04e1-4aab-981b-d4cc5ee05dad.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/6ce566a2-dea2-44b3-93bb-d3b3fb724267.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/7aa696d8-9b6e-41b0-8bd6-a7a2e561e5b7.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/7ee157dd-dc93-41ab-a2ce-799f619d2adc.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/8012668a-c92d-43c3-bcd8-564b22130ea4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/8f8fe944-a51f-4582-8ee2-232c3070cd97.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/90165f43-5745-4dd4-b8ab-c0ed854a345a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/ac6ddc95-1f7a-4a57-bbaf-8fc4d4ea101e.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/b9fff4c1-fd54-4ba3-ba93-3fbee5e9ad6d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/bbd686cf-a6d0-41f5-aad9-ba88ee81c7ae.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/c04c3b60-7163-4d62-bc76-0ef023db6cb4.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/d28036c7-20c1-492c-ad7e-71b23b585cc5.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/d6a101ca-2dd5-4f53-8318-b0bb3a44e724.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/f2149d47-1ef1-4bb0-a5cc-83353767d59a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en piedra blanca/f6bdc343-37da-4258-b03d-733a6deb7d12.jpg"
+    ],
+    "amenidades": [
+      "•\tPiscina privada + kiosco",
+      "•\tRoble, porcelanato y madera tratada",
+      "•\tCisterna",
+      "•\tSeguridad 24/7",
+      "•\tServicios completos"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Piedra%20Blanca",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Piscina privada + kiosco",
+        "Roble, porcelanato y madera tratada",
+        "Cisterna",
+        "Seguridad 24/7",
+        "Servicios completos"
+      ],
+      "amenidades": [
+        "es \t•\tPiscina privada + kiosco \t•\tRoble, porcelanato..."
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 18,
+    "nombre": "Casa En Calle Flor, El Mirador",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "RD$14",
+    "habitaciones": "2 habs.",
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende casa de oportunidad 3 habitaciones  2 baños 🚻  Cocina caliente 🔥  Sala de estar  Portón  Marquesina para dos vehículos 🚗 Balcón 🌄 Área de lavado 🧼  agua, sistema de bomba de agua y tinaco ✅ Piso porcelana 1ra  Piso cerámica 2da Terminación de primera ✅ JARABACOA Calle flor de pascua  Sector EL MIRADOR. Precio: RD$14 mi...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM (7).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en calle flor, el mirador/WhatsApp Image 2025-07-24 at 2.53.59 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Calle%20Flor,%20El%20Mirador",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [
+        "ón de primera  JARABACOA Calle flor de pascua  Sector EL MIRADOR. Precio: RD$14 mi..."
+      ],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 19,
+    "nombre": "Villa PróXimo Al Salto Jimenoa",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "RD$15,000,000.00",
+    "habitaciones": "3 habs.",
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 Villa en Venta 📍Ubicada próximo al salto Jiménoa, Jarabacoa.  Hermosa villa de 3 niveles, diseñada para brindar confort, amplitud y un estilo de vida exclusivo. 📐 Características Generales: 174 m² de terreno 180 m² de construcción 3 niveles 🛏️ Distribución: 3 habitaciones 3 baños Sala con chimenea Cocina Área de lavado 🌿 Áreas Exteriores y S...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/0d27aa7a-4bae-4cdf-8391-d9bc9b42e511.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/0d27aa7a-4bae-4cdf-8391-d9bc9b42e511.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/176f58ce-923f-4cf5-b26d-39558fbaaf3b.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/2134e97e-88a6-4429-86dc-be035987b4e6.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/2541c85d-8085-4298-b7d4-e128d6788e4f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/28d13e88-7120-49fc-908a-7ed218893887.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/4ab314e6-afa6-4746-b986-f0d454a74d18.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/5a26515c-7355-4dfc-b092-3253b683b32a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/654db3ce-dbd3-44ec-882c-a3b621f012db.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/718b07d7-d8dd-45d6-90e3-47bce1c23288.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/7c2988be-7b0a-4f7e-b2cf-639efc6a1475.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/7ea795cc-9fe6-4392-8d1e-d3d3bd980c29.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/84353ad6-5c01-4226-ad0d-bc2127eb9b62.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/8c8f576b-af33-47b5-a391-eac02acae75c.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/8ccb5126-cf2c-4cb8-b9b5-372d954942df.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/9f257caf-5105-4cdc-a913-39d037d5ee61.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/a229a8bd-4646-4c29-8d29-27a32ce867d8.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/a9924af4-d41b-4f88-ad70-033aa36b485e.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/c6b4a847-e9a2-40c8-9be6-52cd2ae4f776.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/cff9a9c3-032b-433a-9544-5cc6fc7c236d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa próximo al salto Jimenoa/dcae79d9-bb30-4730-a2bf-f9b3ac96479b.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20PróXimo%20Al%20Salto%20Jimenoa",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón: 3 habitaciones 3 baños Sala con chimenea Cocina Área de lavado  Áreas Exteriores y S..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 20,
+    "nombre": "Solar En Alpes",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌿 ¡Oportunidad en Jarabacoa, La Vega! 🏡 Se vende hermoso solar ubicado en Alpes Dominicanos, una zona tranquila, fresca y en pleno desarrollo. ✨ Características: ✔️ Todos los servicios disponibles ✔️ Área social con piscina para tu disfrute ✔️ Entorno natural ideal para descansar o invertir ✔️ A solo minutos de las principales atracciones de Jara...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Solar en Alpes/03176025-d5f4-4777-aa64-55f0f50854a6.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solar en Alpes/03176025-d5f4-4777-aa64-55f0f50854a6.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solar en Alpes/0a8b54b0-1ae9-4350-a453-44cdce904f0b.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solar en Alpes/39ea388a-b58a-4b10-a655-c326b683bdd3.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solar en Alpes/a0dd7cce-7e2f-47dd-b343-bc2b8527af07.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Solar en Alpes/de8cd535-cfbf-4743-a6cc-bc38f91e2368.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Alpes",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Todos los servicios disponibles  Área social con piscina para tu disfrute  Entorno natural ideal para descansar o invertir  A solo minutos de las principales atracciones de Jara..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 21,
+    "nombre": "Solar Al Lado De La Parada Corazon De JesúS",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "$2,500",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende lote de tierra en el lugar ideal para vivir tranquilo, con el contacto directo de la naturaleza 🍃🌲  📍Ubicado en los Pinos del puerto, Jarabacoa, al lado de corazón de Jesús.  ✅2,286.65 metros. ✅Título deslindado. ✅seguridad 24 horas. ✅Todos los servicios de la zona. Precio: $2,500 pesos por metro (ligeramente negociable)",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/solar al lado de la parada corazon de Jesús/WhatsApp Image 2024-08-05 at 5.18.17 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar al lado de la parada corazon de Jesús/WhatsApp Image 2024-08-05 at 5.18.17 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar al lado de la parada corazon de Jesús/WhatsApp Image 2024-08-05 at 5.18.17 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar al lado de la parada corazon de Jesús/WhatsApp Image 2024-08-05 at 5.18.18 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar al lado de la parada corazon de Jesús/WhatsApp Image 2024-08-05 at 5.18.18 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar al lado de la parada corazon de Jesús/WhatsApp Image 2024-08-05 at 5.18.19 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20Al%20Lado%20De%20La%20Parada%20Corazon%20De%20JesúS",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende lote de tierra en el lugar ideal para vivir tranquilo, con el contacto directo de la naturaleza   Ubicado en los Pinos del puerto, Jarabacoa, al lado de corazón de Jesús.  2,286.65 metros. Título deslindado. seguridad 24 horas. Todos los servicios de la zona. Precio: $2,500 pesos por metro (ligeramente negociable)",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 22,
+    "nombre": "Terreno En Villas Del Salto, Mata De Platano (Nuevo)",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "📍Ubicado en Villas del salto, Mata de plátano, Jarabacoa. 1478.62 metros cuadrados Título deslindado 📃  Garita de control 🚨 Calles imprimidas 🏘️ Energía eléctrica ⚡️  Agua 💧  Planta de tratamiento ⚫️ USD$85 por metro cuadrado  Total USD$125,683",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.56 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/terreno en villas del salto, mata de platano (NUEVO)/WhatsApp Image 2025-07-24 at 4.19.57 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Terreno%20En%20Villas%20Del%20Salto,%20Mata%20De%20Platano%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Ubicado en Villas del salto, Mata de plátano, Jarabacoa. 1478.62 metros cuadrados Título deslindado   Garita de control  Calles imprimidas  Energía eléctrica   Agua   Planta de tratamiento  USD$85 por metro cuadrado  Total USD$125,683",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 23,
+    "nombre": "Solar PróXimo A Parada Corazon De JesúS",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende solar en la ciudad de la eterna primavera, donde tu inversión está asegurada 🤩🌄 📍Proximo a la parada corazón de jesús, Jarabacoa. Energía eléctrica y agua 🚿 ⚡️ A 2 kilómetros del río 🏞️ A 5 minutos del centro de la ciudad 📊 1250 metros 📐 $4,500 pesos por metro cuadrado ✅ Título deslindado 📄",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.47 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.47 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.48 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.48 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.49 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.49 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/solar próximo a parada corazon de Jesús/WhatsApp Image 2024-12-23 at 9.16.50 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20PróXimo%20A%20Parada%20Corazon%20De%20JesúS",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende solar en la ciudad de la eterna primavera, donde tu inversión está asegurada  Proximo a la parada corazón de jesús, Jarabacoa. Energía eléctrica y agua   A 2 kilómetros del río  A 5 minutos del centro de la ciudad  1250 metros  $4,500 pesos por metro cuadrado  Título deslindado",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 24,
+    "nombre": "Villa En Pinar Quemado",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "✨ Vive la tranquilidad de la montaña en Jarabacoa ✨ Ubicada en Palo Blanco, Pinar Quemado, esta hermosa villa combina comodidad, naturaleza y estilo en un solo lugar 🌿🏡 📐 593.84 m² de terreno   🏠 217.50 m² de construcción   Construida en dos niveles, con materiales de alta calidad: blocks de hormigón, revestimiento en madera y piedra, pisos de ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6068.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6068.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6070.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6082.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6084.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6085.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6086.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6087.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6089.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6090.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6091.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6092.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6093.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6094.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6095.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6096.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6097.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6099.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6101.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6102.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6103.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6107.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6109.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en Pinar Quemado/IMG_6110.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Pinar%20Quemado",
+    "detalles": {
+      "desc_corta": "Vive la tranquilidad de la montaña en Jarabacoa  Ubicada en Palo Blanco, Pinar Quemado, esta hermosa villa combina comodidad, naturaleza y estilo en un solo lugar   593.84 m² de terreno    217.50 m² de construcción   Construida en dos niveles, con materiales de alta calidad: blocks de hormigón, revestimiento en madera y piedra, pisos de ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 25,
+    "nombre": "Apartamento En Buena Vista ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 Apartamento en Venta - Buenavista, Jarabacoa 🏡 Precio base: USD 125,000 Opción con mobiliario: USD 135,000 Descubre esta excelente oportunidad de inversión en el corazón de Jarabacoa. Ubicado en la zona céntrica de Buenavista, este amplio y moderno apartamento en 3er nivel ofrece comodidad, estilo y una ubicación inmejorable. ✨ Características ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /2356ba05-f37a-4cda-a6b6-d7cc3457d163.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /2356ba05-f37a-4cda-a6b6-d7cc3457d163.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /4f00cb5d-189e-4429-a3e3-c7ff798de229.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /65836055-4eab-4c4e-8007-aa075f71bb23.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /66be4598-c10d-4ec1-b472-cb7325075ef2.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /6d2b62f7-62ec-494b-a2bf-2d8145d41514.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /aadfe6c0-4e8e-4c56-af21-122ec5367fe1.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/apartamento en buena vista /e2661b4e-e415-4fee-9459-08e3002b83b2.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Buena%20Vista%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 26,
+    "nombre": "Casa En El Mirador",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "RD$22.5",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende casa de oportunidad. 3 habitaciones en el primer nivel 🛌 2 habitaciones en el segundo nivel 🛏️ 4 baños 🚻  Cocina caliente 🔥  Sala de estar  Portón  Marquesina para dos vehículos 🚗 Balcón 🌄 Área de lavado 🧼  Alambrado eléctrico en el perímetro, sistema de agua, sistema de bomba de agua y tinaco ✅ Cisterna amplia ✅ Pis...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.41 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.41 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.42 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.42 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/casa en el mirador/WhatsApp Image 2025-06-03 at 10.14.43 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20El%20Mirador",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende casa de oportunidad. 3 habitaciones en el primer nivel  2 habitaciones en el segundo nivel  4 baños   Cocina caliente   Sala de estar  Portón  Marquesina para dos vehículos  Balcón  Área de lavado   Alambrado eléctrico en el perímetro, sistema de agua, sistema de bomba de agua y tinaco  Cisterna amplia  Pis...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 27,
+    "nombre": "Car Wash En Pinar Quemado (Nuevo) ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🎉🏢 Oportunidad de inversión – Local totalmente equipado   📍 Ubicación: Pinar Quemado, al lado de La Bomba   🚪 Acceso por dos calles   💰 Ideal para eventos, negocios o salón multifuncional   🔹 Equipamiento incluido:   • 3 aires inverter de 5 toneladas ❄️   • Freezer inverter   • Inversor con 4 baterías   • Sistema de cámaras de seguridad 📹   ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /1555912e-f98e-4474-a06c-8d62c8481a41.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /1555912e-f98e-4474-a06c-8d62c8481a41.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /1c594063-d909-4ee0-afd5-ffc89060c538.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /457de071-8f81-4abb-ad4e-b04d1ce67eae.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /513ae547-ead6-4765-ad6b-427f426e28f0.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /5676490e-fb23-437c-8c31-e4d4c7d133fb.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /5ae03a58-b31c-4643-b45b-47c69550ce3d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /5b5cdd10-e76f-48bf-a8d7-4fef7f96631d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /5cc6775c-7bd7-4466-9c74-f933d3931f5b.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /895783f6-d490-4255-b8f9-56c558c83da9.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /a1c44c94-3d19-4e74-8e74-8ddb6f243005.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /abe30361-fcb0-431a-9b71-339983479b37.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /b14d01f6-f142-4cfd-bb5b-e7e3296bdd1f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /cd276cef-883a-4530-b98c-e9d5c894753b.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /d3dd2c7e-7e17-4722-90eb-da3c3e8aee7c.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /f4248fd9-8ec3-4707-9071-9674dedb3931.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Car Wash en Pinar Quemado (NUEVO) /f75ff2d9-f6f8-4130-88bb-fece29f6ba51.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Car%20Wash%20En%20Pinar%20Quemado%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "Oportunidad de inversión – Local totalmente equipado    Ubicación: Pinar Quemado, al lado de La Bomba    Acceso por dos calles    Ideal para eventos, negocios o salón multifuncional    Equipamiento incluido:   • 3 aires inverter de 5 toneladas    • Freezer inverter   • Inversor con 4 baterías   • Sistema de cámaras de seguridad    ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 28,
+    "nombre": "Villa En Regazo De Paz",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Jarabacoa",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Villa Regazo de Paz – Jarabacoa ✨🏡 Un verdadero paraíso en la montaña, ideal para inversión, vacaciones familiares o retiros en grupo. 🌿 Distribución del complejo: ▪️ 2 villas con 3 habitaciones + 2 baños cada una ▪️ 1 villa con 1 habitación + 1 baño ▪️ 2 habitaciones independientes equipadas con baño y camas ▪️ Terraza amplia, balcón y áreas...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/00c261ea-d88b-4c5c-8b9d-f62ea7682154.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/00c261ea-d88b-4c5c-8b9d-f62ea7682154.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/015ef247-4f8e-46a0-bfc2-8c7fbbac3977.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/028067bd-7abf-4858-95b0-b9d87ed2d0be.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/0441524a-353f-407e-a5e1-40632053e4b0.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/09c1b9d3-9b1d-4f80-8c9a-d8a64e386aa1.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/198750d8-a0fc-4fe3-8096-6c8c0b8dad0b.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/26dc5c79-99e3-4374-991f-96209eb6b336.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/30f4e1d9-af59-4eee-a05e-5cfba4b2e58d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/31e4cc08-1d97-4929-b4bd-56fcc39b6a75.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/3256b981-9cf2-4863-9c00-07362cf23c33.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/4c1c21c9-172c-4f5c-97f9-511c93fd614c.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/513602f9-9c4b-4090-b432-3b26422669b9.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/53e58e19-8318-4236-8439-dff0efe5e41f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/617688c8-481b-476f-bdf9-59f3a7fbfcbf.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/65fa9581-b863-46e6-89f0-b31d534f78b8.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/70075375-2b3b-412c-9500-fbf86d27fb65.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/77d1d9cb-d988-4942-b4a9-c9798754d613.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/8add321f-735d-482f-83d2-c44701eef5bf.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/95533adc-16e2-4c98-a15b-17c53cbdac4d.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/9a79ca1f-3f3c-4bce-8e4f-9b253bc91910.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/9a7bc4a5-3f11-4236-bd96-6f715fc77399.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/a2417c18-feb3-48e4-85a1-ce7decd0e92f.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/ad2b5afa-7ce9-4c87-89d3-d36a3a8ada2e.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/bace4ab5-e2b1-4c58-92f7-7f748bb72b0c.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/cff06292-6146-46ed-96d4-a74a5584e513.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/d8d19850-37fd-4d4a-8586-f507c648776a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/dd21e105-3b82-4917-92be-e878a841104b.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/df131a05-c081-4e56-a3f7-f740c9c2a7c3.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/dfba6f8b-ee63-4e9b-82c5-bc4f0689a2cc.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/e0850c7b-e00e-4bd3-a933-5986de88a911.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/ef915a05-43f9-4a94-9cd6-58493c91f05a.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/f77e1ba3-a261-45ed-b557-12a4f403a724.jpg",
+      "images/inmuebles/INMUEBLES EN JARABACOA/Villa en regazo de paz/f81ece5f-346b-482f-8bd1-f492f9dc5642.jpg"
+    ],
+    "amenidades": [
+      "exclusivas:",
+      "💠 Piscina y jacuzzi",
+      "💠 Área de BBQ",
+      "💠 Kiosco con mesa de billar",
+      "💠 Seguridad 24/7 con cámaras de vigilancia",
+      "💠 Complejo cerrado y privado"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Regazo%20De%20Paz",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón del complejo:  2 villas con 3 habitaciones + 2 baños cada una  1 villa con 1 habitación + 1 baño  2 habitaciones independientes equipadas con baño y camas  Terraza amplia, balcón y áreas..."
+      ],
+      "caracteristicas": [
+        "exclusivas:",
+        "Piscina y jacuzzi",
+        "Área de BBQ",
+        "Kiosco con mesa de billar",
+        "Seguridad 24/7 con cámaras de vigilancia",
+        "Complejo cerrado y privado"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 29,
+    "nombre": "Apartamento En Puerto Plata ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Ocean Palms – Cabarete 🌴 Vive la experiencia de disfrutar el paraíso en Ocean Palms, un hermoso apartamento ubicado en una de las zonas más atractivas de Cabarete. ✨ Características del apartamento: ✔️ 2 habitaciones amplias y confortables ✔️ 2 baños completos ✔️ Sala espaciosa y acogedora ✔️ Cocina funcional y moderna ✔️ Balcón privado con agrada...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /4192c757-cea5-4a98-8ece-25316c483a5f.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /4192c757-cea5-4a98-8ece-25316c483a5f.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /597f8289-13d3-4a38-af89-1f0d551e7de2.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /5c5352f5-afcf-4b30-b7fd-bf6546b3e46e.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /89e2642a-a909-4b5d-b14b-92be924890d3.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /8a7cd19b-821b-41b2-aec6-999bbeabd586.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /b18f4dd8-6263-4f05-bdaa-edf69b7d8983.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /ba6cc74d-6708-44d2-b253-a52574cedd99.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /ce8fbd9a-16b8-47f9-bcde-79614b62c189.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /f9d3c8e3-54f1-4b28-aefe-bcb7661a59ea.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Apartamento en Puerto Plata /fc96bc3c-6c9f-472b-9d0d-96118a256538.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Puerto%20Plata%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del apartamento:  2 habitaciones amplias y confortables  2 baños completos  Sala espaciosa y acogedora  Cocina funcional y moderna  Balcón privado con agrada..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 30,
+    "nombre": "Proyecto De Apartamentos En Puerto Plata (Nuevo)",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente apartamento disponible en Zonas Turisticas. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/032a82f6-3d4e-4bb0-9493-7341a9520bde.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/032a82f6-3d4e-4bb0-9493-7341a9520bde.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/03d8c9fa-55bb-452c-935d-98514220b889.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/2fa8cbfb-f149-40d7-b574-0b6d66725e22.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/9e191a49-1375-4ba4-9058-b11d9677b0ee.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/aee0e1f9-74b1-45a3-b5d2-fbec580a89b6.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/ee76b91a-ee25-4368-a353-5dec79eee882.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de apartamentos en Puerto Plata (NUEVO)/f5497019-50cf-44f4-9f25-3ca6a0d0ecd9.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Apartamentos%20En%20Puerto%20Plata%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Excelente apartamento disponible en Zonas Turisticas. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 31,
+    "nombre": "Supermercado Y Apartamentos (Nuevo) ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Supermercado y apartamentos a en venta  📍Ubicada en Nagua. ✅ Características:  216.02 metros de terreno  Amplia área comercial en la primera planta  Área de parqueo  1 apartamento amplio en la parte baja  2 apartamentos en la segunda planta Cada apartamento cuenta con:  • 2 habitaciones amplias  • Balcón Cisterna  Sistema de cámaras de seguridad",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /0e146e64-e182-432c-819a-23d7168d50ec.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /0e146e64-e182-432c-819a-23d7168d50ec.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /121ad151-28ec-481a-ab4b-dcbd4d5e1130.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /16212c5d-3ab0-4c18-83f0-24b3d667feae.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /2c53fe53-1f7f-4471-ba6a-10e4dd84b709.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /39957ea6-b9c1-45c5-af31-2dfefffaf4a2.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /3c9e181e-cd42-4657-8b25-d13e1a599073.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /3e5dfb12-3b4c-47de-aa48-c4e00ecd853a.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /46cf86ab-3c22-44c5-9633-7791ef247786.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /49d7743c-f6f5-4ad0-8bc4-2c2a3246301a.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /5c59abe4-7c63-4a5a-887b-d02689d5e551.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /5ed2d867-6cdd-4b0f-b0a6-99f82ea8e6d0.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /837c2b34-9710-4285-adb5-0214e7cb88cb.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /85cd8204-9ec6-4059-a379-d740ee12da90.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /8fc7d35c-6935-4ffe-954d-715cd581e7e0.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /9a1a4b65-82ef-43be-9a92-fbf8135bd8a0.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /9ab5d782-ff85-4869-b1ce-e7caafbca659.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /cfca7318-e0d9-4304-bbea-e260f1de08c9.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /da9d06bd-623d-4b0a-8a56-c3a6b387f3f0.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Supermercado y apartamentos (NUEVO) /ebca7097-3f8a-4177-8653-54ca01fe4d28.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Supermercado%20Y%20Apartamentos%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "216.02 metros de terreno  Amplia área comercial en la primera planta  Área de parqueo  1 apartamento amplio en la parte baja  2 apartamentos en la segunda planta Cada apartamento cuenta con:  • 2 habitaciones amplias  • Balcón Cisterna  Sistema de cámaras de seguridad"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 32,
+    "nombre": "Terreno En Cabrera, Rio San Juan",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende terreno ideal para inversión 🌊🌴🤩 📍 El bretón, autopista Cabrera, Rio San Juan.  Residencial Palma Real * Terreno: 592m2º * Vista al mar  * Precio por metro cuadrado:  * ⁠110 USD/m2º * Precio total: USD$65,120      •  Titulo Disponible  * Financiamiento Disponible  * Beneficios del proyecto: 1. Ubicación estratégica ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/terreno en cabrera, rio san juan/WhatsApp Image 2024-12-05 at 10.52.33 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/terreno en cabrera, rio san juan/WhatsApp Image 2024-12-05 at 10.52.33 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/terreno en cabrera, rio san juan/WhatsApp Image 2024-12-05 at 10.52.34 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/terreno en cabrera, rio san juan/WhatsApp Image 2024-12-05 at 10.52.34 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/terreno en cabrera, rio san juan/WhatsApp Image 2024-12-05 at 10.52.35 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/terreno en cabrera, rio san juan/WhatsApp Image 2024-12-05 at 10.52.35 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Terreno%20En%20Cabrera,%20Rio%20San%20Juan",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende terreno ideal para inversión   El bretón, autopista Cabrera, Rio San Juan.  Residencial Palma Real * Terreno: 592m2º * Vista al mar  * Precio por metro cuadrado:  * ⁠110 USD/m2º * Precio total: USD$65,120      •  Titulo Disponible  * Financiamiento Disponible  * Beneficios del proyecto: 1. Ubicación estratégica ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 33,
+    "nombre": "Proyecto Tropical Breeze ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "US$200",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🌴✨ TROPICAL BREEZE: Un mundo de amenidades a tu alcance ✨🌴 Descubre un proyecto diseñado para brindarte bienestar, comodidad y conexión con la naturaleza en un solo lugar 🌿🏡 🔐 Seguridad y tranquilidad Garita de seguridad con acceso controlado y vigilancia permanente para tu paz mental y la de tu familia. 🏀 Para los amantes del deporte • Canch...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /0e9c082c-4288-40aa-9e58-64f4cf9b44fa.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /0e9c082c-4288-40aa-9e58-64f4cf9b44fa.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /1480d289-f1b1-44d1-867a-d596fd8c4d35.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /64d7042c-198d-47b0-96fe-b7cd98f31a5d.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /6bf85f12-1bb8-4452-939a-c78f7dc9b349.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /72b6f17f-2d27-49ee-b6c1-90784624013c.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /951e498b-dfc8-406f-b043-c9b3f5b68020.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /9bafb12b-007b-4391-bca5-47d0b22de3c2.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /c2110f47-fc04-44a3-9c54-e4ad85126fbb.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /c675c39d-c87b-43ee-93e2-6d7764df3d67.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto Tropical Breeze /dcdbc2f8-3857-46f0-ad6c-a8511c30fd8e.jpg"
+    ],
+    "amenidades": [
+      "a tu alcance ✨🌴"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20Tropical%20Breeze%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "a tu alcance"
+      ],
+      "amenidades": [
+        "es a tu alcance  Descubre un proyecto diseñado para brindarte bienestar, comodidad y conexión con la naturaleza en un solo lugar   Seguridad y tranquilidad Garita de seguridad con acceso controlado y vigilancia permanente para tu paz mental y la de tu familia.  Para los amantes del deporte • Canch..."
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 34,
+    "nombre": "Casa En Nagua El Factor",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "RD$11,000,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Casa en Venta  📍Ubicada en El Factor, Nagua.  Precio: RD$11,000,000 Terreno: 357.49 m² Características: 4 habitaciones Habitación principal con baño Sala y antesala Cisterna Parqueo para 2 vehículos Lista para construir un segundo nivel Una propiedad amplia y con excelente potencial de expansión, ubicada en una zona tranquila de Nagua. Ideal para ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/0305b527-e91a-433f-bd06-3c163431d1ca.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/0305b527-e91a-433f-bd06-3c163431d1ca.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/0415bd70-8dcc-4fa9-9c41-638af7c3b092.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/133fb95a-3d39-4f44-ae77-ade429f4f8a9.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/1a3dde42-51bb-434e-8668-4ea412026ee7.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/2c6afab2-c3e7-4520-9faa-808cf19dacc5.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/36ecf97e-4a1b-447d-9145-d06ab1491ae8.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/3e382e2f-03e6-4118-9c52-a325bb56547a.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/4424e581-2855-4cb0-b4d2-880a2bbc8827.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/4d345a65-b070-4054-981c-62cbca15fe7c.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/524c2739-b233-4166-b479-daf0dbb564b5.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/628e4f41-273a-4f63-9ee5-cc35eedd8731.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/6da23606-f52e-4722-bcfb-657b22652094.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/7f04f18a-5570-432c-ac19-b6fc97afe988.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/7fc12b56-58dc-4f19-9e86-f0786f2a8bfd.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/83a6c47a-5c11-42ea-8cc4-1f922ecdc357.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/86fa2a21-8409-48ec-ac33-7ee9376a394c.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/8c5dd92d-693b-4bf5-90bf-5e0a450b6872.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/8d055232-963c-4627-a4d9-c48803533984.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/9a7bca51-23be-4e52-a95e-921ad62c709e.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/b3882ffe-5c80-4dc0-a82e-67e863a86641.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/b713ca40-2f92-4a54-b4d8-8f96b3a80b2d.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/b9cad9b0-8ab9-4055-8338-ee69a74d3a9d.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/bc2b6e8f-5de9-40c3-b82a-5ee2871372b1.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/c4c6456f-ce63-4bbb-bfea-6584e20e11d1.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/cab8337a-bf73-4504-a3fd-11edcc85862f.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/ce0cb214-261c-4611-bd61-320dd241eb36.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/d257e7f2-2a88-4c7c-b833-9c55cb718aab.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/d2e0aa25-c6ae-4dfa-b199-fd99cb15f43e.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/d9d7b1f0-cb1f-42ad-8a33-b4eaa81e465d.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/e1020f4b-f22a-456e-bf69-3f3666a179b6.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/e65c4364-1e9d-4b87-ae53-f7f5fde68905.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/e7490b04-6a74-4932-8d60-fc14148c7907.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/e8acd3e2-8ae1-4449-b2cc-944ced7ab6df.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/f187ff5b-825f-4ff2-97a6-bc0bbdbd6315.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/f606546c-2730-4d53-87d7-f20e5f6ef217.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Nagua el factor/fe40e72b-0ef0-4dd5-8546-ffb41e4b4769.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Nagua%20El%20Factor",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "4 habitaciones Habitación principal con baño Sala y antesala Cisterna Parqueo para 2 vehículos Lista para construir un segundo nivel Una propiedad amplia y con excelente potencial de expansión, ubicada en una zona tranquila de Nagua. Ideal para ..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 35,
+    "nombre": "Villa 01",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Proyecto De Cuatro Tipos De Villas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5483.PNG",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5483.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5484.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5485.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5486.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5487.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5488.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 01/IMG_5489.PNG"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%2001",
+    "detalles": {
+      "desc_corta": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 36,
+    "nombre": "Villa 02",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Proyecto De Cuatro Tipos De Villas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5477.PNG",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5477.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5478.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5479.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5480.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5481.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 02/IMG_5482.PNG"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%2002",
+    "detalles": {
+      "desc_corta": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 37,
+    "nombre": "Villa 04",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Proyecto De Cuatro Tipos De Villas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5471.PNG",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5471.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5472.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5473.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5474.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5475.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 04/IMG_5476.PNG"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%2004",
+    "detalles": {
+      "desc_corta": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 38,
+    "nombre": "Villa 03",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Proyecto De Cuatro Tipos De Villas",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5490.PNG",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5490.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5491.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5492.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5493.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5494.PNG",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Proyecto de cuatro tipos de villas/Villa 03/IMG_5495.PNG"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%2003",
+    "detalles": {
+      "desc_corta": "Excelente villa disponible en Proyecto De Cuatro Tipos De Villas. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 39,
+    "nombre": "Casa En Marapica Puerto Plata (Nuevo)",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Zonas Turisticas",
+    "sector": "Varias Zonas",
+    "precio": "USD$1,100,000.00",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Exclusiva vivienda unifamiliar en Urbanización Marapica, Puerto Plata 🇩🇴 💰 Precio: USD$1,100,000.00 Hermosa propiedad de dos niveles con gazebo en un tercer nivel, ubicada en una de las zonas de mayor crecimiento y desarrollo de Puerto Plata. 📍 Ubicación privilegiada:  • A solo 8 minutos del centro de la ciudad y del malecón  • Cerca de Cos...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/10c3361a-eef6-4b3f-9c06-ec372643217b.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/10c3361a-eef6-4b3f-9c06-ec372643217b.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/69b9da72-67af-4b87-9a5a-c41e4526d477.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/939d4114-f1cb-4798-9df2-c44a9afa1ec5.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7569.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7572.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7573.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7578.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7579.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7580.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7583.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7585.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7586.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7588.jpg",
+      "images/inmuebles/INMUEBLES EN ZONAS TURISTICAS/Casa en Marapica Puerto Plata (NUEVO)/IMG_7589.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Marapica%20Puerto%20Plata%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Exclusiva vivienda unifamiliar en Urbanización Marapica, Puerto Plata 🇩🇴  Precio: USD$1,100,000.00 Hermosa propiedad de dos niveles con gazebo en un tercer nivel, ubicada en una de las zonas de mayor crecimiento y desarrollo de Puerto Plata.  Ubicación privilegiada:  • A solo 8 minutos del centro de la ciudad y del malecón  • Cerca de Cos...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 40,
+    "nombre": "Solar En Los Laureles, Salcedo",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Excelente solar disponible en Salcedo Y Villa Tapia. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en los laureles, Salcedo/WhatsApp Image 2025-01-12 at 12.19.52 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en los laureles, Salcedo/WhatsApp Image 2025-01-12 at 12.19.52 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en los laureles, Salcedo/WhatsApp Image 2025-01-12 at 12.19.53 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Los%20Laureles,%20Salcedo",
+    "detalles": {
+      "desc_corta": "Excelente solar disponible en Salcedo Y Villa Tapia. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 41,
+    "nombre": "Solar En Residencial Guanabano, Salcedo",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende solar en residencial cerrado y exclusivo de Salcedo 🥇 📍Ubicado en Residencial Guanábano. Palmar abajo, carretera sabana de los Jiménez, Salcedo. Solar de 216.03 M2 📐 Garita de control 🔐🚨 Servicios de agua, energía eléctrica, contenes, calles imprimidas y área verde 🚿⚡️ Acto de venta (certificado de título deslinda...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano, salcedo/WhatsApp Image 2024-12-24 at 6.05.09 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano, salcedo/WhatsApp Image 2024-12-24 at 6.05.09 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano, salcedo/WhatsApp Image 2024-12-24 at 6.05.09 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano, salcedo/WhatsApp Image 2024-12-24 at 6.05.10 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano, salcedo/WhatsApp Image 2024-12-24 at 6.05.10 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Residencial%20Guanabano,%20Salcedo",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende solar en residencial cerrado y exclusivo de Salcedo  Ubicado en Residencial Guanábano. Palmar abajo, carretera sabana de los Jiménez, Salcedo. Solar de 216.03 M2  Garita de control  Servicios de agua, energía eléctrica, contenes, calles imprimidas y área verde  Acto de venta (certificado de título deslinda...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 42,
+    "nombre": "Solar En Palma Real 1 (Nuevo) ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌳¡Solar disponible en RESIDENCIAL Palma Real 1, Villa Tapia-Salcedo!🏡 CARACTERÍSTICAS DEL RESIDENCIAL: ✅ Entrada controlada ✅ Calles imprimadas ✅ Contenes terminados ✅ Energía eléctrica ✅ Agua disponible ✅ Parque privado ✅ Título deslindado (¡listo para traspaso!) 175.23 metros cuadrados por RD$543,213",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /126439a3-06bd-499b-acfc-4f06bca22a32.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /126439a3-06bd-499b-acfc-4f06bca22a32.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /15f188b0-4e8a-4af5-9e55-fb8b41befbd2.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /6ad4a643-0f54-4d3e-8145-7e2778833c22.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /778f14c9-be79-4051-97f6-32d048e22557.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /93f1d4dd-c0b6-4a39-94cc-469704fb95c2.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /e9d1cf23-8750-4f93-ae16-d30cd9d7359a.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en palma real 1 (NUEVO) /fbc93ff2-d209-4582-8a39-133f7e06bc71.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Palma%20Real%201%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "DEL RESIDENCIAL:  Entrada controlada  Calles imprimadas  Contenes terminados  Energía eléctrica  Agua disponible  Parque privado  Título deslindado (¡listo para traspaso!) 175.23 metros cuadrados por RD$543,213"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 43,
+    "nombre": "Edificio De Dos Niveles ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "RD$12,000,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "CASA DE DOS NIVELES ENM ESQUINA CON 120 METROS DE TERRENO. Posee una edificación de dos niveles para un local comercial en el primer nivel y vivienda unifamiliar en el segundo nivel: 1ER. NIVEL. Con un total de 103.00 m² de construcción distribuidos en un local comercial con baño (externur, debajo de la escalera). 2DO. NIVEL: Vivienda unifamiliar c...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de dos niveles /WhatsApp Image 2025-08-06 at 9.00.11 AM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de dos niveles /WhatsApp Image 2025-08-06 at 9.00.11 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de dos niveles /WhatsApp Image 2025-08-06 at 9.00.11 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de dos niveles /WhatsApp Image 2025-08-06 at 9.00.11 AM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de dos niveles /WhatsApp Image 2025-08-06 at 9.00.11 AM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de dos niveles /WhatsApp Image 2025-08-06 at 9.00.11 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Edificio%20De%20Dos%20Niveles%20",
+    "detalles": {
+      "desc_corta": "CASA DE DOS NIVELES ENM ESQUINA CON 120 METROS DE TERRENO. Posee una edificación de dos niveles para un local comercial en el primer nivel y vivienda unifamiliar en el segundo nivel: 1ER. NIVEL. Con un total de 103.00 m² de construcción distribuidos en un local comercial con baño (externur, debajo de la escalera). 2DO. NIVEL: Vivienda unifamiliar c...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 44,
+    "nombre": "Solar En Residencial Guanabano",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende solar en proyecto cerrado listo para construir ✅ 📍Carretera sabana de los Jiménez, palmar abajo, Salcedo.  Solar 15 manzana Ñ  216 metros cuadrados  Agua 🚿  Contenes 🛤️ Energía eléctrica 💡 Calles imprimidas 🚗 Garita de control 🚧 Precio por metro $2,500 pesos",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.23 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.23 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.23 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.24 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.24 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.25 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en residencial guanabano/WhatsApp Image 2024-08-27 at 2.22.25 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Residencial%20Guanabano",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende solar en proyecto cerrado listo para construir  Carretera sabana de los Jiménez, palmar abajo, Salcedo.  Solar 15 manzana Ñ  216 metros cuadrados  Agua   Contenes  Energía eléctrica  Calles imprimidas  Garita de control  Precio por metro $2,500 pesos",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 45,
+    "nombre": "Solar En Villa Tapia ",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "RD$10,500,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "📍Ubicado en Villa Tapia, carretera principal la Vega-Villa Tapia.  785 M2 total de terreno  Calle principal  Asfaltada  Todos los servicios  Título deslindado  Financiamiento disponible  Precio: RD$10,500,000",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en Villa Tapia /10552f40-0aa1-4ff0-a2c1-d7b084e3f0f2.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en Villa Tapia /10552f40-0aa1-4ff0-a2c1-d7b084e3f0f2.jpg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/solar en Villa Tapia /a23f6055-2e39-441e-9d54-f579ce273ddf.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Villa%20Tapia%20",
+    "detalles": {
+      "desc_corta": "Ubicado en Villa Tapia, carretera principal la Vega-Villa Tapia.  785 M2 total de terreno  Calle principal  Asfaltada  Todos los servicios  Título deslindado  Financiamiento disponible  Precio: RD$10,500,000",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 46,
+    "nombre": "Edificio De Apartamentos ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "Salcedo Y Villa Tapia",
+    "sector": "Varias Zonas",
+    "precio": "RD$15,000,000.00",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende edificio en OPORTUNIDAD 📍Ubicado en Salcedo, provincia hermanas Mirabal. Título deslindado 📃✅ 142.25 metros de solar  PRIMER NIVEL CON 3 negocios: Tienda de tenis con ropa: $30,000 ganacias al mes  Banca de lotería: $70,000 al mes  tienda de vape : $30,000 al mes  Primer apartamento de $5,000 Segundo apartamento de $5,000...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de apartamentos /WhatsApp Image 2024-10-01 at 8.39.00 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de apartamentos /WhatsApp Image 2024-10-01 at 8.39.00 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de apartamentos /WhatsApp Image 2024-10-01 at 8.39.00 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN SALCEDO Y VILLA TAPIA/edificio de apartamentos /WhatsApp Image 2024-10-01 at 8.39.01 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Edificio%20De%20Apartamentos%20",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende edificio en OPORTUNIDAD Ubicado en Salcedo, provincia hermanas Mirabal. Título deslindado  142.25 metros de solar  PRIMER NIVEL CON 3 negocios: Tienda de tenis con ropa: $30,000 ganacias al mes  Banca de lotería: $70,000 al mes  tienda de vape : $30,000 al mes  Primer apartamento de $5,000 Segundo apartamento de $5,000...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 47,
+    "nombre": "Solar En El Corozo, Moca ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Moca",
+    "sector": "Varias Zonas",
+    "precio": "RD$6,500",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌳 ¡Terreno disponible en El Corozo, Moca! 🌳 Ubicado a solo 2 minutos de la Autopista Ramón Cáceres, este solar es una excelente oportunidad para construir la casa de tus sueños o invertir en una zona en pleno desarrollo. 📐 Superficie: 207.65 m² 💵 Precio: RD$6,500 por metro cuadrado 📄 Título deslindado ✨ Servicios disponibles: 🚗 Calles con imp...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2927.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2927.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2928.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2929.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2930.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2931.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2932.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en el Corozo, Moca /IMG_2933.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20El%20Corozo,%20Moca%20",
+    "detalles": {
+      "desc_corta": "¡Terreno disponible en El Corozo, Moca!  Ubicado a solo 2 minutos de la Autopista Ramón Cáceres, este solar es una excelente oportunidad para construir la casa de tus sueños o invertir en una zona en pleno desarrollo.  Superficie: 207.65 m²  Precio: RD$6,500 por metro cuadrado  Título deslindado  Servicios disponibles:  Calles con imp...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 48,
+    "nombre": "Solar En Residencial Los Laureles",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Moca",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐂𝐈𝐀𝐋 𝐋𝐎𝐒 𝐋𝐀𝐔𝐑𝐄𝐋𝐄𝐒 📍ℤ𝕒𝕗𝕒𝕣𝕣𝕒𝕪𝕒, 𝔾𝕦𝕒𝕟𝕒𝕓𝕒𝕟𝕠  Atención! mucha atención!!! Solares disponibles para venta!!! ✅️Solar #73       Manzana 4     metros = 194.08 💰Precio / metro =  $3,700 ✅️Solar #117     Manzana  8     metros =  214.29 💰Precio / metro = $3,300 ✅️Solar #124     Manzana 9     metros =  181.12 💰...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.05 PM (3).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.05 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.05 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.05 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.06 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.06 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.06 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.07 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.07 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en residencial los Laureles/WhatsApp Image 2025-02-18 at 2.35.07 PM (5).jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Residencial%20Los%20Laureles",
+    "detalles": {
+      "desc_corta": "𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐂𝐈𝐀𝐋 𝐋𝐎𝐒 𝐋𝐀𝐔𝐑𝐄𝐋𝐄𝐒 ℤ𝕒𝕗𝕒𝕣𝕣𝕒𝕪𝕒, 𝔾𝕦𝕒𝕟𝕒𝕓𝕒𝕟𝕠  Atención! mucha atención!!! Solares disponibles para venta!!! Solar #73       Manzana 4     metros = 194.08 Precio / metro =  $3,700 Solar #117     Manzana  8     metros =  214.29 Precio / metro = $3,300 Solar #124     Manzana 9     metros =  181.12 ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 49,
+    "nombre": "Solar En Los Laureles ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Moca",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐂𝐈𝐀𝐋 𝐋𝐎𝐒 𝐋𝐀𝐔𝐑𝐄𝐋𝐄𝐒 📍ℤ𝕒𝕗𝕒𝕣𝕣𝕒𝕪𝕒, 𝔾𝕦𝕒𝕟𝕒𝕓𝕒𝕟𝕠  Solares  111 ( 188.65m) 112 ( 195.31m) 113 ( 195.31m) Características  *Agua *Energía eléctrica  *Calles afirmadas  *Contenes *Entrada controlada  *Área verde   *Título deslindado",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.05 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.05 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.05 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.05 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.06 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.06 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.06 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.07 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.07 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN MOCA/solar en los laureles /WhatsApp Image 2025-02-18 at 2.35.07 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Los%20Laureles%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Agua *Energía eléctrica  *Calles afirmadas  *Contenes *Entrada controlada  *Área verde   *Título deslindado"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 50,
+    "nombre": "Solar En Res. GuanáBano ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Moca",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "RESIDENCIAL GUANABANO 📍 Carretera Palmar Abajo, Salcedo Solar de 252 metros cuadrados Precio por metro: $2,500 Título deslindado 📃 CARACTERÍSTICAS: • Calles imprimadas • Contenes • Energía eléctrica • Agua • Proyecto urbanizado • Título deslindado • Garita de seguridad",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /304a0c93-3315-4f04-bf1a-fe0f2998609e.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /304a0c93-3315-4f04-bf1a-fe0f2998609e.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /31709445-c2bf-47d4-bf34-fda54bdcff2d.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /4ed9d942-4ffd-4f0f-ba86-dbada40ad643.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /523d325a-8a35-491f-a46b-ebef54765729.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /8a871322-3a1d-47b0-aee9-293c3a3ce2d2.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /afacd111-2022-4291-af08-f78867b4b3d1.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /b38f104a-27a8-4e24-a428-24da5270461b.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/Solar en Res. Guanábano /c92e2cdf-b90b-48cc-8e3e-4303da3b2b69.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Res.%20GuanáBano%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Calles imprimadas • Contenes • Energía eléctrica • Agua • Proyecto urbanizado • Título deslindado • Garita de seguridad"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 51,
+    "nombre": "14 Solares En DoñA Antonia",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Moca",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Residencial Doña Antonia 📍carretera cacique las lagunas, Moca. Solares 𝘥𝘦𝘴𝘥𝘦 2oo 𝘮𝘦𝘵𝘳𝘰𝘴 𝘦𝘯 𝘢𝘥𝘦𝘭𝘢𝘯𝘵𝘦 donde 𝑪𝒐𝒏𝒕𝒂𝒓𝒆𝒎𝒐𝒔 𝒄𝒐𝒏: Garita de seguridad  𝘈𝘨𝘶𝘢  𝘓𝘶𝘻 𝘊𝘰𝘯𝘵𝘦𝘯𝘦𝘴  Energía Eléctrica  Título deslindado  𝑪𝒐𝒎𝒐 𝒊𝒏𝒗𝒆𝒓𝒕𝒊𝒓: 𝘚𝘦𝘱𝘢𝘳𝘢 𝘤𝘰𝘯 𝘙𝘋$10,000. 𝘓𝘶𝘦𝘨𝘰 𝘤𝘰𝘮𝘱𝘭𝘦𝘵𝘢𝘳 𝘦𝘭 25% ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/33c0fa7d-af97-4b03-a9dc-61a78525a055.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/33c0fa7d-af97-4b03-a9dc-61a78525a055.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/819d8e0d-9f84-486b-b79e-b32dd52ed694.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/981d5807-4c50-4218-9a39-7bb117827344(1).jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/981d5807-4c50-4218-9a39-7bb117827344.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/af7e5454-899f-4071-a162-67630f104938(1).jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/af7e5454-899f-4071-a162-67630f104938.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/b344b1f8-0bd6-46e8-8aee-7b0242b328c4(1).jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/b344b1f8-0bd6-46e8-8aee-7b0242b328c4.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/f93d4272-4c91-47e5-9b95-8b783821a26b(1).jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/14 solares en Doña Antonia/f93d4272-4c91-47e5-9b95-8b783821a26b.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%2014%20Solares%20En%20DoñA%20Antonia",
+    "detalles": {
+      "desc_corta": "Residencial Doña Antonia carretera cacique las lagunas, Moca. Solares 𝘥𝘦𝘴𝘥𝘦 2oo 𝘮𝘦𝘵𝘳𝘰𝘴 𝘦𝘯 𝘢𝘥𝘦𝘭𝘢𝘯𝘵𝘦 donde 𝑪𝒐𝒏𝒕𝒂𝒓𝒆𝒎𝒐𝒔 𝒄𝒐𝒏: Garita de seguridad  𝘈𝘨𝘶𝘢  𝘓𝘶𝘻 𝘊𝘰𝘯𝘵𝘦𝘯𝘦𝘴  Energía Eléctrica  Título deslindado  𝑪𝒐𝒎𝒐 𝒊𝒏𝒗𝒆𝒓𝒕𝒊𝒓: 𝘚𝘦𝘱𝘢𝘳𝘢 𝘤𝘰𝘯 𝘙𝘋$10,000. 𝘓𝘶𝘦𝘨𝘰 𝘤𝘰𝘮𝘱𝘭𝘦𝘵𝘢𝘳 𝘦𝘭 25% ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 52,
+    "nombre": "Casa En Moca ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Moca",
+    "sector": "Varias Zonas",
+    "precio": "RD$ 4,200,000",
+    "habitaciones": "4 habs.",
+    "banos": "2 baños",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 ¡Casa en venta en Moca! ✨ Precio: RD$ 4,200,000 📋 Características del inmueble: \t•\t🛏 Habitaciones: 4  \t•\t🛋 Salas: 2  \t•\t🍳 Cocinas: 2  \t•\t🍽 Comedores: 2  \t•\t🚗 Marquesinas: 2  \t•\t🧺 Área de lavado: 1  \t•\t⭐ Star: 1  \t•\t🚿 Baños: 2  \t•\t🌿 Otros: Galería, Terraza, Estudio, Balcón  📌 Observación: Sala amplia, cocina moderna y pisos en porcelana...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN MOCA/casa en moca /0565081b-523d-4877-8d28-fe768ecba431.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /0565081b-523d-4877-8d28-fe768ecba431.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /1e72ff91-2a1f-4e50-b18b-3e58680599a0.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /2fa1dc92-aa31-4c1d-913f-9afce390cb06.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /451a85d5-534d-453d-bf5e-e6ff73ee4486.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /6a0a441c-2176-4d7c-a8ed-d90aaa590842.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /a0faa153-9222-45c2-8af0-0626a96922dc.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /a69bcfe7-f078-48a4-9d60-1dd56df2cfe2.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /ab8ffd78-777d-447f-9025-93bcc35de770.jpg",
+      "images/inmuebles/INMUEBLES EN MOCA/casa en moca /b76f1c9f-d6a5-4d1d-99e5-cef6f88b0766.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Moca%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del inmueble: \t•\t Habitaciones: 4  \t•\t Salas: 2  \t•\t Cocinas: 2  \t•\t Comedores: 2  \t•\t Marquesinas: 2  \t•\t Área de lavado: 1  \t•\t Star: 1  \t•\t Baños: 2  \t•\t Otros: Galería, Terraza, Estudio, Balcón   Observación: Sala amplia, cocina moderna y pisos en porcelana..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 53,
+    "nombre": "Cuatro Almacenes (Nuevo) ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Valverde Mao",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "532.60 m²",
+    "descripcion": "🚛 ALMACENES INDUSTRIALES LISTOS PARA TU NEGOCIO 📍Cruce de Guayacanes, carretera mamey  Invierte en espacios diseñados para optimizar tus operaciones, con excelente acceso y características industriales de alto nivel. 🧱 CARACTERÍSTICAS GENERALES ✔️ Construcción en cemento y estructura metálica ✔️ Piso de cemento industrial ✔️ Techo de aluzinc ✔️ ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /039de11e-9937-413c-992a-4166e3c32f02.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /039de11e-9937-413c-992a-4166e3c32f02.jpg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /495082dc-96d5-4554-a087-173aa5f8253d.jpg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /7432075f-71d0-4f70-855e-b78268bdaaee.jpg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /793428df-bec4-4981-9060-ea47ab0ffe43.jpg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /acc6a50c-452a-46b4-8daf-72d39ff92294.jpg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/Cuatro almacenes (NUEVO) /dcf2b7a0-62c8-422f-8e77-0ad82b592e59.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Cuatro%20Almacenes%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "industriales de alto nivel.  CARACTERÍSTICAS GENERALES  Construcción en cemento y estructura metálica  Piso de cemento industrial  Techo de aluzinc  ..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 54,
+    "nombre": "Taller Automotrix ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Valverde Mao",
+    "sector": "Varias Zonas",
+    "precio": "RD$8,500,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Se vende taller automotriz de reparación y mantenimiento   📍Ubicación : Avenida Monseñor Tomas Abreu KM 3 ½, Valverde Mao  La Propiedad tiene 486 mts de solar - oficina equipada con baño dentro  - 1 almacén para guardar piezas  - 1 Segundo nivel tiene con un pequeño departamento con su baño dentro que sirve como vivienda  - Fosa electrificada con ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.54 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.54 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.55 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.56 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.56 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN VALVERDE MAO/taller automotrix /WhatsApp Image 2025-07-10 at 7.34.56 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Taller%20Automotrix%20",
+    "detalles": {
+      "desc_corta": "Se vende taller automotriz de reparación y mantenimiento   Ubicación : Avenida Monseñor Tomas Abreu KM 3 ½, Valverde Mao  La Propiedad tiene 486 mts de solar - oficina equipada con baño dentro  - 1 almacén para guardar piezas  - 1 Segundo nivel tiene con un pequeño departamento con su baño dentro que sirve como vivienda  - Fosa electrificada con ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 55,
+    "nombre": "Solar 10 Manzana P Fatima 2",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Solar en venta. El lugar perfecto para comenzar tu proyecto 🤍 🌿 Residencial Nuestra Señora de Fátima 1. 📍 Jima abajo, La Frontera. 🏡 solar 10 manzana P tiene 216.16 m²  💰Precio por metro RD$1,750 ✨ Invierte hoy, disfruta mañana ✨",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/37ea3063-c5da-43fa-b481-dbf6c6393fd2.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/37ea3063-c5da-43fa-b481-dbf6c6393fd2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/8f87a4e3-9ecb-47c2-9d82-e45b6a4def52.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/a714cf28-dcee-4f68-85da-1ee620be0e1a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/d8e30cd5-32e5-4357-b4f3-3222ab3424ed.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/ec6f7bbe-f1d0-40a3-8841-f0075476797c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 10 manzana P Fatima 2/f85a064e-2621-4f7a-a7ae-91ca66f9fbbf.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%2010%20Manzana%20P%20Fatima%202",
+    "detalles": {
+      "desc_corta": "Solar en venta. El lugar perfecto para comenzar tu proyecto   Residencial Nuestra Señora de Fátima 1.  Jima abajo, La Frontera.  solar 10 manzana P tiene 216.16 m²  Precio por metro RD$1,750  Invierte hoy, disfruta mañana",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 56,
+    "nombre": "Apartamentos En Don Persio",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "203.06 m²",
+    "descripcion": "Te presentamos este moderno edificio de 4 apartamentos en 2 niveles, diseñado para brindarte confort, amplitud y excelente ubicación.   📍 Ubicación: Residencial Clarinel III, Don Persio, La Vega   📐 Área: 203.06 m²   🔹 Primer nivel:   • 🅿️ Apto con parqueo para 2 vehículos — RD$9,500,000.00   • 🅿️ Apto con parqueo para 1 vehículo — RD$9,000,00...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/05cdee60-7e76-45f0-9490-4fc963de5fbf.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/05cdee60-7e76-45f0-9490-4fc963de5fbf.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/0c99d171-1d74-4b9c-b233-fbdb580aeccd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/4d01e2e9-1fcc-4182-924f-f08b4b37b9e6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/a1ed9e44-d66b-4d88-bb9f-d71432607c36.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/a2344a80-c66c-4677-8455-3daf55bd4811.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos en Don Persio/c2dc7450-6ab2-4228-aae5-c50c9589d3f6.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamentos%20En%20Don%20Persio",
+    "detalles": {
+      "desc_corta": "Te presentamos este moderno edificio de 4 apartamentos en 2 niveles, diseñado para brindarte confort, amplitud y excelente ubicación.    Ubicación: Residencial Clarinel III, Don Persio, La Vega    Área: 203.06 m²    Primer nivel:   • 🅿 Apto con parqueo para 2 vehículos — RD$9,500,000.00   • 🅿 Apto con parqueo para 1 vehículo — RD$9,000,00...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 57,
+    "nombre": "Solar 12 Manzana J Compres",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "📍Cutupu, la Vega, carretera profesor Juan Bosch. Solar 12 manzana J de 216 metros cuadrados  PRECIO POR METRO $3,500 SERVICIOS Y AMENIDADES: - Garita de seguridad  - Agua. - Energía eléctrica. - Calles imprimadas. - Contenes. - Fácil acceso. - Areas verdes.  - Area para caminar. - Título deslindado.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/4ce4eca2-e276-4906-9e39-267342a38123.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/4ce4eca2-e276-4906-9e39-267342a38123.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/8abc9a48-2b90-48ca-aacb-18fb1252214a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/a100d6d5-5a24-4860-852d-e62a0512f703.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/a245a71b-3118-4e55-911d-4f1e235bbde5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/e0d56187-11db-4a1b-ac0d-dec42886d719.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/ecb865be-0874-4940-a4e8-e502b3c1d12b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 12 manzana J Compres/edf92113-7b4e-48a3-9a68-9798fa99d348.jpg"
+    ],
+    "amenidades": [
+      "Garita de seguridad",
+      "Agua.",
+      "Energía eléctrica.",
+      "Calles imprimadas.",
+      "Contenes.",
+      "Fácil acceso.",
+      "Areas verdes.",
+      "Area para caminar.",
+      "Título deslindado."
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%2012%20Manzana%20J%20Compres",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Garita de seguridad",
+        "Agua.",
+        "Energía eléctrica.",
+        "Calles imprimadas.",
+        "Contenes.",
+        "Fácil acceso.",
+        "Areas verdes.",
+        "Area para caminar.",
+        "Título deslindado."
+      ],
+      "amenidades": [
+        "ES: - Garita de seguridad  - Agua. - Energía eléctrica. - Calles imprimadas. - Contenes. - Fácil acceso. - Areas verdes.  - Area para caminar. - Título deslindado."
+      ],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 58,
+    "nombre": "Casa En El EnsueñO (Nuevo) ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$12,300,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ ¡Casa en Venta! Seguridad, confort y excelente distribución en un solo lugar. Si buscas un hogar listo para mudarte, con amplios espacios y modernos sistemas de seguridad, esta propiedad es para ti. 🔹 Distribución:  ✅ 3 habitaciones  ✅ 2 baños  ✅ Sala  ✅ Comedor  ✅ Cocina  ✅ Terraza  ✅ Área de lavado  ✅ Cuarto de servicio con baño  ✅ Marquesin...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /06a37708-9307-4f68-bebe-2f63ac39f39a.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /06a37708-9307-4f68-bebe-2f63ac39f39a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /0a627e58-c4ee-4e7c-8f3d-7680fa412d2b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /1ed3bff7-9a5f-4e67-8cae-bdb76ddeb055.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /29b6a600-010e-420f-86f0-127051c10bcf.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /2ea79ff7-dd62-45dc-9152-6596532b0b8d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /386637e1-d895-41d7-986c-96fb60ca9950.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /5935e148-634c-4159-8f0f-401176c0d51f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /5950faf2-10f1-4520-b790-b5f31d36b9a4.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /5a2538b4-0cf3-413b-aff9-d26e3602a227.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /63248b57-3ebc-4f28-a1e7-36282a743b68.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /6ac61319-493e-4b23-ad67-36abf1f80c51.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /6ce1883b-cb4f-4992-bf9b-b2952bf67db4.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /6fdff28d-c430-49c1-9e92-443d1c3f6982.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /70f02347-271e-4ecc-85d9-2a5837be4b1b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /736e3046-12cd-4ef8-97e0-2ec446ed3155.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /7f735cef-389f-429f-a4a5-c130134f7edd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /988f6771-dd4c-4f62-9e86-0f7744b41db6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /9ba4584c-5693-402d-9913-86eb174fab8e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /a63cefb3-b01a-469a-aa6d-8da9681f2bb3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /b2482291-eee4-4d06-985e-5faf80de675a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /bbdd05b0-2c72-4bd6-9cba-0b8707901baa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /c905f5c4-6eb6-4cfe-b1c8-9ccddb3a8857.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /cfcd8e30-9044-441e-b3ba-cb8c48be9438.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /d5465ef7-9ab9-4c2b-b54f-2f73e38d70d1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /e5ab473e-5a95-4a0a-abbd-3baed9c6336d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /efdb863d-02e9-47fe-b116-a42abf458dff.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /f17f7066-f312-4cc3-ab55-0b184a3c9bbc.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /f4c0a079-9a41-4035-b4b1-8aa59849eb90.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en el ensueño (NUEVO) /f5502b30-87b7-46cb-a201-f73bd7a3a3e4.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20El%20EnsueñO%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón en un solo lugar. Si buscas un hogar listo para mudarte, con amplios espacios y modernos sistemas de seguridad, esta propiedad es para ti.  Distribución:   3 habitaciones   2 baños   Sala   Comedor   Cocina   Terraza   Área de lavado   Cuarto de servicio con baño   Marquesin..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 59,
+    "nombre": "Apartamento En El Cora 8 (Nuevo) ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US$89,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 RESIDENCIAL CORA 8 ✨ Por fin llegó la oportunidad de adquirir el apartamento de tus sueños 📍 Ubicación Exclusiva Prolongación Joaquín Gómez, La Vega 🔐 Proyecto cerrado con garita de seguridad 🏢 Apartamentos desde 92.60 m² de construcción 💵DESDE US$89,000 en adelante  🔹 3 Dormitorios 🔹 2 Baños 🔹 Sala amplia 🔹 Comedor 🔹 Cocina moderna 🔹 ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /015037ed-ae18-4c24-a31f-666d5a5edd46.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /015037ed-ae18-4c24-a31f-666d5a5edd46.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /116d81b8-1540-437c-b9a1-3b6e5f5a37aa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /32e28b0a-dfab-4e3e-a246-5b7ef24a39b0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /7517a087-1ce5-493e-8d6a-904cc2c8a8b8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /7c7b4747-c20f-412c-936e-723200a74f98.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /86b49d64-2d4b-4b86-b1cf-920c7cf8e18f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /8e6608f8-ee4c-40a3-b8a9-3580e98d5e14.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /ccfdddfe-91d4-4089-b648-85db9a424fa0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /cfd9571d-5613-4a81-a9b6-2d130f8deb47.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /d23134ac-ca16-49b9-8453-7d3953efa75c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /d6ac0af0-bda6-4c66-9631-29e8903aa3e0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /df3dd62e-517f-497f-83eb-75351f6bdff2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en el cora 8 (NUEVO) /dff8fb08-e627-4f15-ad33-e12de0e9eb19.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20El%20Cora%208%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "RESIDENCIAL CORA 8  Por fin llegó la oportunidad de adquirir el apartamento de tus sueños  Ubicación Exclusiva Prolongación Joaquín Gómez, La Vega  Proyecto cerrado con garita de seguridad  Apartamentos desde 92.60 m² de construcción DESDE US$89,000 en adelante   3 Dormitorios  2 Baños  Sala amplia  Comedor  Cocina moderna  ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 60,
+    "nombre": "Villa Pedacito De Cielo (Nuevo) ",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$13,000,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Se vende Villa “Pedacito de Cielo”  📍 Guanábano, Guaigüí, La Vega Hermosa y amplia villa ideal para disfrutar en familia, rodeada de tranquilidad, naturaleza y confort. Una propiedad con espacios cómodos, excelentes terminaciones y áreas recreativas para el disfrute total. ✨ Características de la propiedad:  ✔ Solar de 876.28 m²  ✔ Construcció...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /1590de69-7358-4a29-baca-2707a5837ace.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /1590de69-7358-4a29-baca-2707a5837ace.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /1eecde2c-3a65-4230-b11f-851ab0118f68.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /3122922e-3482-4313-a346-993349ee56fb.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /4c9fafb9-28f6-41ff-b786-51b56e3bf9c0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /54d85f02-0076-4834-bd0c-cb9d4bfc3c4f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /5b91e1f0-7169-4bff-aebf-76261a078c54.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /6a4f5bb9-f32c-4284-a4d9-d90becf4ee10.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /a382f98e-d991-40cd-91b3-5db26fb7f328.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa pedacito de cielo (NUEVO) /dd39f3a4-e7ce-4e1f-86f7-bca31cc2d673.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20Pedacito%20De%20Cielo%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "de la propiedad:   Solar de 876.28 m²   Construcció..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 61,
+    "nombre": "Dos Solares En Fabio Fiallo",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.51 AM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.51 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.51 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.51 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.52 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.52 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/dos solares en Fabio Fiallo/WhatsApp Image 2025-08-24 at 10.54.52 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Dos%20Solares%20En%20Fabio%20Fiallo",
+    "detalles": {
+      "desc_corta": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 62,
+    "nombre": "Solar En Urb. Fiallo, JeremíAs",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$7,700",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🔥 ¡Oportunidad de inversión en Jeremías, La Vega! 🔥 Disponible solar de 335.42 m² en la exclusiva Urb. Fiallo, sector Jeremías. ✅ Título deslindado ✅ Agua potable ✅ Energía eléctrica ✅ Calles asfaltadas ✅ Contenes construidos 📍 Ubicación estratégica con excelente proyección 💰 Precio: RD$7,700 por m² Ideal para construir la casa de tus sueños o ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Urb. Fiallo, Jeremías/2279f90f-af29-4328-86d3-07bccb0382a0.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Urb. Fiallo, Jeremías/2279f90f-af29-4328-86d3-07bccb0382a0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Urb. Fiallo, Jeremías/6ecc4404-007b-4826-a9c9-aa500b1dd909.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Urb. Fiallo, Jeremías/815888f2-13a7-4c0d-b32b-ea062ab89ee8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Urb. Fiallo, Jeremías/9c3bdaef-e224-4e50-a93e-02eef3f5c932.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Urb. Fiallo, Jeremías/ecd86974-a151-40b0-a89e-2f3c43fadf81.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Urb.%20Fiallo,%20JeremíAs",
+    "detalles": {
+      "desc_corta": "¡Oportunidad de inversión en Jeremías, La Vega!  Disponible solar de 335.42 m² en la exclusiva Urb. Fiallo, sector Jeremías.  Título deslindado  Agua potable  Energía eléctrica  Calles asfaltadas  Contenes construidos  Ubicación estratégica con excelente proyección  Precio: RD$7,700 por m² Ideal para construir la casa de tus sueños o ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 63,
+    "nombre": "Solar Proximo Al Colegio Cristian Scholl",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende solar de oportunidad para inversión, justo en una calle principal y a tan solo 5 minutos del centro de la ciudad.  📍Ubicado en el paraíso, calle Joaquín Gómez. 505 metros 📏 Constancia anotada (en proceso de deslinde) 📜 Todos los servicios de la zona ✅ Precio por metro $7,500 pesos 📌",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.43 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.43 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.43 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.44 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.44 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.45 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar proximo al colegio cristian scholl/WhatsApp Image 2024-08-23 at 6.42.45 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20Proximo%20Al%20Colegio%20Cristian%20Scholl",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende solar de oportunidad para inversión, justo en una calle principal y a tan solo 5 minutos del centro de la ciudad.  Ubicado en el paraíso, calle Joaquín Gómez. 505 metros  Constancia anotada (en proceso de deslinde)  Todos los servicios de la zona  Precio por metro $7,500 pesos",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 64,
+    "nombre": "Solar En Colinas, La Frontera",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🏡 ¡Oportunidad en Residencial Colinas, La Vega! Disponibles 3 solares en excelente ubicación: 📐 2 solares de 200 m²   📐 1 solar de 211 m²   ✅ Se venden juntos o individuales   $2,800 pesos por metro ‼️ 📑 Título en proceso   💡 Servicios básicos disponibles   📍 Ubicado en Jima Abajo, La Frontera   Ideal para inversión o construir tu hogar 🏠   ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Colinas, La frontera/57ac7c57-5323-4186-890e-86850495a1e5.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Colinas, La frontera/57ac7c57-5323-4186-890e-86850495a1e5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Colinas, La frontera/58e7995e-b033-407b-bc60-f1823c1e6031.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Colinas, La frontera/9aac9ce5-7bce-444a-86c6-dec397eb6f50.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Colinas, La frontera/d3d1b58d-db7d-4ee4-b5ea-fd85090306c1.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Colinas,%20La%20Frontera",
+    "detalles": {
+      "desc_corta": "¡Oportunidad en Residencial Colinas, La Vega! Disponibles 3 solares en excelente ubicación:  2 solares de 200 m²    1 solar de 211 m²    Se venden juntos o individuales   $2,800 pesos por metro ‼  Título en proceso    Servicios básicos disponibles    Ubicado en Jima Abajo, La Frontera   Ideal para inversión o construir tu hogar    ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 65,
+    "nombre": "Solar En Cutupu Compres ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$1,027,712",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende solar en Residencial Compres, Cutupu. 321.16 M2 Agua  Energía eléctrica Calles imprimadas Contenes Garita de seguridad Titulo deslindado Precio: RD$1,027,712",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu compres /WhatsApp Image 2025-05-30 at 5.33.32 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu compres /WhatsApp Image 2025-05-30 at 5.33.32 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu compres /WhatsApp Image 2025-05-30 at 5.33.35 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu compres /WhatsApp Image 2025-05-30 at 5.33.41 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu compres /WhatsApp Image 2025-05-31 at 12.26.04 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu compres /WhatsApp Image 2025-05-31 at 12.26.04 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Cutupu%20Compres%20",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende solar en Residencial Compres, Cutupu. 321.16 M2 Agua  Energía eléctrica Calles imprimadas Contenes Garita de seguridad Titulo deslindado Precio: RD$1,027,712",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 66,
+    "nombre": "Apartamento En Residencial Don Persio ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$8,300,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL sigue sorprendiendo con esta oportunidad de inversión. También si deseas adquirirlo como vivienda propia. Este grandioso apartamento cuenta con las siguientes características: 📍Ubicado en Residencial Don Persio 1, La Vega. Tercer nivel con terraza  3 habitaciones 🛌 3 baños 🛀 Sala 🛋️ Cocina🛎️ Comedor🪑 2 parqueos🚗 Sala d...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.16 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.16 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.16 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.16 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (10).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (11).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (7).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (8).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.17 PM (9).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.18 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.18 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en residencial don persio /WhatsApp Image 2025-01-20 at 9.11.18 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Residencial%20Don%20Persio%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Ubicado en Residencial Don Persio 1, La Vega. Tercer nivel con terraza  3 habitaciones  3 baños  Sala  Cocina Comedor 2 parqueos Sala d..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 67,
+    "nombre": "Casa De Dos Niveles PróXimo Al Dosa (Nuevo) ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US$380,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 Espectacular casa de 2 niveles en venta    Una propiedad amplia, cómoda y con todo lo que necesitas para vivir con estilo y disfrutar en familia 🌿   🔹 1er Nivel:   • Sala   • Comedor   • Terraza   • 1 habitación con baño   • ½ baño para visitas   • Marquesina doble   • Piscina 🏊‍♂️   • Cuarto de herramientas   • Amplio patio   • Árboles fruta...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /226664ae-8e71-42a2-9e93-166f2e7f98c7.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /226664ae-8e71-42a2-9e93-166f2e7f98c7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /321d4092-f94c-4798-ac69-0b918fa96ac0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /6981415d-b702-494d-8f56-13839ad02adf.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /6e6ad3ee-6f9b-4837-8202-608735a7216d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /74dbf3fd-5aac-4fb5-8a46-b6a0f2d3b7fa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /7eb4857e-7af8-4eca-b77a-97a579f56f1a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /82caa9d5-6ebd-43a5-9c68-bf55ebc722e7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /8ba773f0-aabc-4452-89f4-b1549715a374.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /a64a8b7d-e955-4474-9c64-42b8a14db8bf.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /aaa72dbc-75f6-4f7c-9af7-dd4658e2c0de.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /abfc6fb8-3a2b-4a46-9657-c5989b947630.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /dd752082-9456-4d6c-9352-c6a6fac5f058.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /e505effd-cf65-42bb-af9d-44a921104c31.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /edcf7474-70b6-4fd9-a2eb-a7a8a7b88db2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa de dos niveles próximo al Dosa (NUEVO) /f3d50b8e-f568-41bb-91cd-541ba9e90c66.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20De%20Dos%20Niveles%20PróXimo%20Al%20Dosa%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "Espectacular casa de 2 niveles en venta    Una propiedad amplia, cómoda y con todo lo que necesitas para vivir con estilo y disfrutar en familia     1er Nivel:   • Sala   • Comedor   • Terraza   • 1 habitación con baño   • ½ baño para visitas   • Marquesina doble   • Piscina ‍   • Cuarto de herramientas   • Amplio patio   • Árboles fruta...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 68,
+    "nombre": "Casa En Pie Del Cerro",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$5,600,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ ¡Oportunidad única en La Vega! ✨🏡   Propiedad ideal para familias grandes o inversión, ¡dos casas en una!   📍 Ubicada en Pie del Cerro, La Vega   🔹 5 habitaciones   🔹 2 salas   🔹 2 cocinas   🔹 2 comedores   🔹 Marquesina   🔹 2 áreas de lavado   🔹 3 baños   🔹 2 terrazas   📐 Solar: 444.47 m²   💡 Perfecta para vivir y generar ingresos a...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/1a7f50ac-7896-49b4-b426-246176ea9083.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/1a7f50ac-7896-49b4-b426-246176ea9083.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/2a9177f8-54c9-48a6-8701-ea708df9a5e6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/40165302-abb7-4f07-a11e-1ec25089f6e0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/7471e086-96cd-4603-837e-4e37e38c97a8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/962efe0e-b738-4ec9-baec-4c10890ce493.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/ac41f334-65b9-4dc2-a2b5-e24f933ae207.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/b28e7f76-8fed-49b2-8a6a-b699657e5208.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/c7784e30-afe4-419d-9b32-7c58937ef706.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Pie del Cerro/ca931ab8-1756-451e-9cbf-fb4d44a41ed8.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Pie%20Del%20Cerro",
+    "detalles": {
+      "desc_corta": "¡Oportunidad única en La Vega!    Propiedad ideal para familias grandes o inversión, ¡dos casas en una!    Ubicada en Pie del Cerro, La Vega    5 habitaciones    2 salas    2 cocinas    2 comedores    Marquesina    2 áreas de lavado    3 baños    2 terrazas    Solar: 444.47 m²    Perfecta para vivir y generar ingresos a...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 69,
+    "nombre": "Casa En Plano El Vedado ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "230 m²",
+    "descripcion": "🏡 Hermosa Casa en Venta – Amplios Espacios y Excelentes Terminaciones Esta espectacular propiedad combina comodidad, diseño y calidad en cada detalle. 📐 Características generales: 🔹 Construcción: 230 m² 🔹 Solar: 250 m² 🛏 Distribución: ✔️ 3 habitaciones amplias ✔️ Habitación principal con baño privado y walking closet ✔️ Sala, cocina y comedor ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /00240244-c492-4f9b-8391-a2ee6b674c98.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /00240244-c492-4f9b-8391-a2ee6b674c98.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /165a5668-f063-4a24-b710-69cc06c50d8b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /2338f962-7137-49c3-b076-4f03a3decfad.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /3b402a6c-a9cf-41ff-a798-5f25bc26f3a5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /4136e90e-6fc8-48b8-98f3-d380c47b9a5b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /639c5565-38c5-4143-bec1-702ee1471177.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /6e7bdca3-0ce8-4dda-b056-4d24d3048f35.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /784d1d4f-862a-4237-999b-7b9a96872307.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /7aa46366-c1f5-43df-b427-219349d7c649.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /7da1ba4a-2866-4510-93e8-0c64a3d3a76b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /7e7fcbf9-189c-4f9f-bced-92a412654231.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /a1ebf946-edcb-4031-974d-e52c83dd3fbe.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /c09bd2da-c23f-4fbd-9bcd-23fa2038d36d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /ca7657d0-14a7-428d-8618-fa729cddd323.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /d3344b87-2495-4562-90a9-69dc98a7ae78.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en plano el Vedado /e646a873-0bc1-4b83-bdf0-43325309b55a.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Plano%20El%20Vedado%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón:  3 habitaciones amplias  Habitación principal con baño privado y walking closet  Sala, cocina y comedor ..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 70,
+    "nombre": "Proyecto De Solares En Bayacanes",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Lotificación Francisco Mota* 📍UBICACIÓN. Bayacanes, La Vega.  ✅ Solares a partir de 190M2 en adelante. ✅ Separa con $25,000 ✅ 30 días para completar el 30% inicial. ✅ Financiamiento disponible a 5 años ✅️Tasa 1.5% mensual $5,000 pesos por metro! OTRAS INFORMACIONES: 🔷Calles imprimadas  🔷Energía eléctrica. 🔷Contenes 🔷️Porton Eléctrico 🔷️Proyec...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en bayacanes/WhatsApp Image 2024-10-09 at 12.01.44 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en bayacanes/WhatsApp Image 2024-10-09 at 12.01.44 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en bayacanes/WhatsApp Image 2024-10-09 at 12.01.44 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en bayacanes/WhatsApp Image 2024-10-09 at 12.01.45 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en bayacanes/WhatsApp Image 2024-10-09 at 12.01.45 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en bayacanes/WhatsApp Image 2024-10-09 at 12.01.46 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Solares%20En%20Bayacanes",
+    "forma_pago": "Separa con ,000. 30 días para completar el 30% inicial. Financiamiento disponible a 5 años.",
+    "detalles": {
+      "desc_corta": "Lotificación Francisco Mota* UBICACIÓN. Bayacanes, La Vega.   Solares a partir de 190M2 en adelante.  Separa con $25,000  30 días para completar el 30% inicial.  Financiamiento disponible a 5 años Tasa 1.5% mensual $5,000 pesos por metro! OTRAS INFORMACIONES: Calles imprimadas  Energía eléctrica. Contenes Porton Eléctrico Proyec...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 71,
+    "nombre": "Casa PróXimo Al Dosa ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US$380,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Hermosa casa en venta – ¡Espaciosa, cómoda y lista para disfrutar!   📐 Terreno: 468 m²   💰 Precio: US$380,000 (Negociable)   🔹 1er Nivel:   • Sala amplia   • Comedor   • Terraza   • 1 habitación con baño   • ½ baño para visitas   • Marquesina doble   • Piscina   • Cuarto para herramientas   • Área de lavado   • Patio grande con árboles fruta...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /226664ae-8e71-42a2-9e93-166f2e7f98c7.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /226664ae-8e71-42a2-9e93-166f2e7f98c7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /321d4092-f94c-4798-ac69-0b918fa96ac0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /6981415d-b702-494d-8f56-13839ad02adf.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /6e6ad3ee-6f9b-4837-8202-608735a7216d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /74dbf3fd-5aac-4fb5-8a46-b6a0f2d3b7fa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /7eb4857e-7af8-4eca-b77a-97a579f56f1a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /82caa9d5-6ebd-43a5-9c68-bf55ebc722e7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /8ba773f0-aabc-4452-89f4-b1549715a374.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /a64a8b7d-e955-4474-9c64-42b8a14db8bf.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /aaa72dbc-75f6-4f7c-9af7-dd4658e2c0de.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /abfc6fb8-3a2b-4a46-9657-c5989b947630.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /dd752082-9456-4d6c-9352-c6a6fac5f058.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /e505effd-cf65-42bb-af9d-44a921104c31.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /edcf7474-70b6-4fd9-a2eb-a7a8a7b88db2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa próximo al Dosa /f3d50b8e-f568-41bb-91cd-541ba9e90c66.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20PróXimo%20Al%20Dosa%20",
+    "detalles": {
+      "desc_corta": "Hermosa casa en venta – ¡Espaciosa, cómoda y lista para disfrutar!    Terreno: 468 m²    Precio: US$380,000 (Negociable)    1er Nivel:   • Sala amplia   • Comedor   • Terraza   • 1 habitación con baño   • ½ baño para visitas   • Marquesina doble   • Piscina   • Cuarto para herramientas   • Área de lavado   • Patio grande con árboles fruta...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 72,
+    "nombre": "Solar De 538.36 M2 En Compres",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$3,700",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "538.36 m²",
+    "descripcion": "📍 Ubicación privilegiada en Cutupú, La Vega   🏡 Residencial Comprés   ✨ Solar de esquina disponible   📐 Área: 538.36 m²   💰 Precio: RD$3,700 por metro cuadrado   Ideal para construir la casa de tus sueños o realizar una excelente inversión en una zona tranquila y de crecimiento. 🌿   📲 Contáctame para más información o para agendar una visita.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/2E499E52-2021-4319-86A8-DF8FD449F06F.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/2E499E52-2021-4319-86A8-DF8FD449F06F.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/433d6dc7-38de-461a-bb71-02548b438b95.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/8888227B-D19A-4896-8471-FF6EA230729C.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/A3B343C1-3D00-45CF-AE57-D9FC9F86F138.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/b9d90783-f1f7-4c96-9181-66426afbf708.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/d081194a-9c3d-44ea-aadf-c5970ef050b1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar de 538.36 M2 en Compres/fa5ec6ac-8a2d-4081-8bb8-922694447097.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20De%20538.36%20M2%20En%20Compres",
+    "detalles": {
+      "desc_corta": "Ubicación privilegiada en Cutupú, La Vega    Residencial Comprés    Solar de esquina disponible    Área: 538.36 m²    Precio: RD$3,700 por metro cuadrado   Ideal para construir la casa de tus sueños o realizar una excelente inversión en una zona tranquila y de crecimiento.     Contáctame para más información o para agendar una visita.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 73,
+    "nombre": "Proyecto De Solares En Res. Omelia (Nuevo)",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Ubicado próximo a Cerimas, Residencial Omelia, La Vega 📍   Proyecto exclusivo de solo 50 solares. Desde 300 metros cuadrados  - Residencial cerrado - Acceso controlado - ⁠ - Sistema eléctrico  soterrado - Áreas verdes - Parque interior y gimnasio  Se entrega con su calle en hormigón, aceras y contenedores hechos.  Tienen su título deslindado listo...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.31 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.31 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.31 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.32 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.32 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.33 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.44.33 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.45.09 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.45.09 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.45.09 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de solares en Res. Omelia (NUEVO)/WhatsApp Image 2025-09-12 at 4.45.09 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Solares%20En%20Res.%20Omelia%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Ubicado próximo a Cerimas, Residencial Omelia, La Vega    Proyecto exclusivo de solo 50 solares. Desde 300 metros cuadrados  - Residencial cerrado - Acceso controlado - ⁠ - Sistema eléctrico  soterrado - Áreas verdes - Parque interior y gimnasio  Se entrega con su calle en hormigón, aceras y contenedores hechos.  Tienen su título deslindado listo...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 74,
+    "nombre": "Casa En Don Persio ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$10,500,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ ¡Tu nuevo hogar te espera en Residencial Don Persio! ✨🏡 Imagina vivir en una hermosa casa de dos niveles con terraza, diseñada para brindarte comodidad, espacio y ese toque especial que tu familia merece 💫 🔑 Características que enamoran: 🚗 Marquesina doble 🛋 Sala 🍽 Comedor 🍳 Cocina funcional 🌿 Patio recreativo ideal para momentos en fam...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /32790d06-489d-4b6d-8ea1-f189b7cca746.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /32790d06-489d-4b6d-8ea1-f189b7cca746.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /4b4dfda9-dcb4-46e1-895b-02457da56fef.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /7246382d-80de-4dd7-8238-c0d18d850442.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /90d78fca-a454-4973-b12e-d544f2a8f842.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /9d4f85c8-42ec-425c-a392-8f0e35c14b46.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /aa97f056-b5db-429a-985d-5794f49b7ee0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /c841de1f-5a24-49ca-82ce-e26ba2f31ae9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /e075d450-1df5-4f92-b1ce-beef21828893.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Persio /e0c2dc87-e0fd-428c-af13-2a08df0e3c92.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Don%20Persio%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "que enamoran:  Marquesina doble  Sala  Comedor  Cocina funcional  Patio recreativo ideal para momentos en fam..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 75,
+    "nombre": "Solar De 250 M2 Compres ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /0a262ece-7e98-4eed-b158-6101c837768c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /0a262ece-7e98-4eed-b158-6101c837768c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /40bd1155-9832-4dd0-a5f2-52078837bf80(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /40bd1155-9832-4dd0-a5f2-52078837bf80.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /6b38eb7d-4537-4d68-b5a6-edc4c4631283.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /aa22d603-48ea-4757-907e-fb1811a3ff99.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /b4536c20-0a31-465b-b26b-55efe94b1df0(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 250 M2 Compres /b4536c20-0a31-465b-b26b-55efe94b1df0.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20De%20250%20M2%20Compres%20",
+    "detalles": {
+      "desc_corta": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 76,
+    "nombre": "Plaza En El Centro De La Ciudad",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$9,300,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende casa (mejora) de OPORTUNIDAD para cualquier tipo de negocio en el mismo centro de la ciudad de La Vega 📍Centro de la ciudad, calle señoritas Villa con Benito Monción, La Vega.  6 locales comerciales  Dos niveles  115.90 metros de terreno  204.37 metros de construcción Título deslindado 📄 Precio: RD$9,300,000",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.22 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.22 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.22 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/plaza en el centro de la ciudad/WhatsApp Image 2025-03-14 at 9.22.23 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Plaza%20En%20El%20Centro%20De%20La%20Ciudad",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende casa (mejora) de OPORTUNIDAD para cualquier tipo de negocio en el mismo centro de la ciudad de La Vega Centro de la ciudad, calle señoritas Villa con Benito Monción, La Vega.  6 locales comerciales  Dos niveles  115.90 metros de terreno  204.37 metros de construcción Título deslindado  Precio: RD$9,300,000",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 77,
+    "nombre": "Solar En Compres Etapa 1 ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "$4,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "REDEX INMOBILIARIA VENDE        ✅Listo para hacer tu casa!! 🏡    📍Ubicado en carretera Juan Bosch , Cutupu, La Vega.  ✅347.76metros. ✅Título deslindado. ✅Garita de seguridad.  ✅Todos los servicios de la zona. Precio: $4,000 pesos por metro",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Compres etapa 1 /74083006-9946-4568-88d8-1a03fe99c07c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Compres etapa 1 /74083006-9946-4568-88d8-1a03fe99c07c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Compres etapa 1 /96204914-d82b-479b-9358-40fb4349dbb9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Compres etapa 1 /b600bfd0-a67f-4520-b72c-0ffc8cc37a53.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Compres etapa 1 /da14f2b2-e9af-4b7e-bb1c-94775c7a9527.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Compres etapa 1 /ff722932-0ecb-4cec-bbbf-bdf53c1c1445.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Compres%20Etapa%201%20",
+    "detalles": {
+      "desc_corta": "REDEX INMOBILIARIA VENDE        Listo para hacer tu casa!!     Ubicado en carretera Juan Bosch , Cutupu, La Vega.  347.76metros. Título deslindado. Garita de seguridad.  Todos los servicios de la zona. Precio: $4,000 pesos por metro",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 78,
+    "nombre": "Solar En Lotificacion El Rio ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "📍Ubicación: Lotificación el Río, Cutupu, La Vega. 316 metros cuadrados  Título deslindado",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en lotificacion el rio /WhatsApp Image 2025-07-19 at 2.14.25 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en lotificacion el rio /WhatsApp Image 2025-07-19 at 2.14.25 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en lotificacion el rio /WhatsApp Image 2025-07-19 at 2.14.26 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en lotificacion el rio /WhatsApp Image 2025-07-19 at 2.14.27 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en lotificacion el rio /WhatsApp Image 2025-07-19 at 2.14.27 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en lotificacion el rio /WhatsApp Image 2025-07-19 at 2.14.28 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Lotificacion%20El%20Rio%20",
+    "detalles": {
+      "desc_corta": "Ubicación: Lotificación el Río, Cutupu, La Vega. 316 metros cuadrados  Título deslindado",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 79,
+    "nombre": "Solar Residencial Las Praderas ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$5,200",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌿 ¡Excelente oportunidad en La Vega! 🏡 Solares disponibles en Residencial Las Praderas, sector Jeremías, La Vega, una zona tranquila y con gran potencial residencial. 📐 Disponibilidad: 🔹 2 solares de 350 m² cada uno 💰 Precio: RD$5,200 por metro cuadrado 🔧 Servicios incluidos: ✔ Calles imprimadas ✔ Energía eléctrica ✔ Agua potable ✔ Contenes \ud83d...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar residencial las praderas /0591e41e-cf30-4b9d-a554-50c1cb0e797b.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar residencial las praderas /0591e41e-cf30-4b9d-a554-50c1cb0e797b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar residencial las praderas /439b7914-73da-4a20-8760-5001a9da2d58.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar residencial las praderas /99b3f9fc-560e-48be-b519-7b7684a4402f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar residencial las praderas /d0eda7c5-a37e-4322-aa4b-ed2921587290.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar residencial las praderas /e32fe857-0876-4619-82b1-e4de604e972f.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20Residencial%20Las%20Praderas%20",
+    "detalles": {
+      "desc_corta": "¡Excelente oportunidad en La Vega!  Solares disponibles en Residencial Las Praderas, sector Jeremías, La Vega, una zona tranquila y con gran potencial residencial.  Disponibilidad:  2 solares de 350 m² cada uno  Precio: RD$5,200 por metro cuadrado  Servicios incluidos:  Calles imprimadas  Energía eléctrica  Agua potable  Contenes \ud83d...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 80,
+    "nombre": "Solar En Amada 1 ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Se vende solar estratégicamente ubicado para inversión ✅🤑 📍 Ubicado próximo a coraavega, calle principal de Amada 1, La Vega. Solar de esquina  715.78 M2  Precio por metro $8,900  Título deslindado",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en amada 1 /WhatsApp Image 2025-05-29 at 6.07.18 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en amada 1 /WhatsApp Image 2025-05-29 at 6.07.18 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en amada 1 /WhatsApp Image 2025-05-29 at 6.07.18 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en amada 1 /WhatsApp Image 2025-05-29 at 6.07.18 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en amada 1 /WhatsApp Image 2025-05-29 at 6.07.19 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en amada 1 /WhatsApp Image 2025-05-29 at 6.07.19 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Amada%201%20",
+    "detalles": {
+      "desc_corta": "Se vende solar estratégicamente ubicado para inversión   Ubicado próximo a coraavega, calle principal de Amada 1, La Vega. Solar de esquina  715.78 M2  Precio por metro $8,900  Título deslindado",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 81,
+    "nombre": "Proyecto De Solares El Quemado",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD,750 por m²",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🏡 URBANIZACIÓN CAMINO AL REYNO  📍 Ubicado en el Quemado  la Vega, Conectando con la ciudad de Moca y Santiago . 🔥A Tan Solo 8 minutos del Aeropuerto Internacional de Santiago.  🌴PROYECTO ideal para Vivir o Invertir , con Excelentes Facilidades de Pago . 🍀Disponibilidad de Solares  🔹 Desde 248  hasta 526  m²  🔹  DESDE RD$4,750 el m²  💰 Separ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/030cfbc8-a657-4eb4-a0be-60c704824dde.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/030cfbc8-a657-4eb4-a0be-60c704824dde.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/0618026a-58cc-41dc-8899-9efdabb35501.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/4d1a29d7-419d-4890-bbed-e3615a674a20.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/57406469-4934-4d5c-9f99-5e72f3f32761.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/59a9a0b7-93ec-483e-bd02-d12e46f9ba9d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/81c18494-de5d-4f1a-a04b-4a02044c6241.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/994e32f6-6626-4309-87e5-e3148a18cdf7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/CA368500-9B6E-4E27-86FB-7E464203233C.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/ba5e5fc4-d503-4b74-9528-e8a02a85fd11.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/ce33cbef-cbc0-4cb3-9a30-575128cf1423.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/e2b7649b-d71f-4860-81d7-f737808a66df.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de solares el Quemado/fa97faa2-765c-4f22-b3db-dd5403708d7a.jpg"
+    ],
+    "amenidades": [
+      "🌲Cancha de Basketball🌲",
+      "⁠Parque Recreativo",
+      "⁠Casa Club",
+      "⁠Plaza Comercial",
+      "⁠Parqueos Paralelos",
+      "⁠Portón Eléctrico",
+      "⁠Area de juego para niños",
+      "⁠Gym al Aire Libre"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Solares%20El%20Quemado",
+    "forma_pago": "Separa con RD,000. 45 días para completar el 20% inicial. Financiamiento hasta 5 años.",
+    "detalles": {
+      "desc_corta": "URBANIZACIÓN CAMINO AL REYNO   Ubicado en el Quemado  la Vega, Conectando con la ciudad de Moca y Santiago . A Tan Solo 8 minutos del Aeropuerto Internacional de Santiago.  PROYECTO ideal para Vivir o Invertir , con Excelentes Facilidades de Pago . Disponibilidad de Solares   Desde 248  hasta 526  m²    DESDE RD$4,750 el m²   Separ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Cancha de Basketball",
+        "⁠Parque Recreativo",
+        "⁠Casa Club",
+        "⁠Plaza Comercial",
+        "⁠Parqueos Paralelos",
+        "⁠Portón Eléctrico",
+        "⁠Area de juego para niños",
+        "⁠Gym al Aire Libre"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 82,
+    "nombre": "Solar En Bayacanes (Nuevo) ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "SE VENDE ESTE SOLAR  📍UBICADO EN LAS GUARANITAS DE BAYACANES,LA VEGA 1,756.34 m²  💰US 70 Dólares POR m² 📚TÍTULO DESLINDADO  🏠 EL SOLAR IDEAL PARA CONSTRUIR LA VILLA DE TU SUEÑOS,CON UNA VISTA ESPECTACULAR  🛣️ CALLE ASFALTADA FRENTE DEL SOLAR. 🏕️ ZONA TOTALMENTE URBANIZADA. 💡 LUZ 💧 AGUA ⚡️ ELECTICIDAD",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /0e95e169-04c9-4ab7-9582-e121651f72db.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /0e95e169-04c9-4ab7-9582-e121651f72db.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /1425e1c6-332c-4fdf-94ed-422f54a6aefb.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /5db5df87-b8fa-4cf2-a0d5-1b906af0ef24.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /aa2cefed-b99b-4af2-8f8b-fa09f14ad004.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /c9c57bc3-3215-4417-ac51-4d93033ea4e7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /dac6ed24-d3d3-45c8-9758-ae0cb677c8d9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /e56b78f2-d0d8-4aef-b924-521880533247.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Bayacanes (NUEVO) /e9f80c2e-4559-4d53-8468-a34f4bf5c468.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Bayacanes%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "SE VENDE ESTE SOLAR  UBICADO EN LAS GUARANITAS DE BAYACANES,LA VEGA 1,756.34 m²  US 70 Dólares POR m² TÍTULO DESLINDADO   EL SOLAR IDEAL PARA CONSTRUIR LA VILLA DE TU SUEÑOS,CON UNA VISTA ESPECTACULAR   CALLE ASFALTADA FRENTE DEL SOLAR.  ZONA TOTALMENTE URBANIZADA.  LUZ  AGUA  ELECTICIDAD",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 83,
+    "nombre": "Casa En Residencial Gamundi ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "DOP$14,500,000.00",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "✨ Tu nuevo hogar te espera en Residencial Gamundi, La Vega ✨ Imagina despertar cada día en una casa diseñada para el confort y la elegancia. Con 300 m² de solar y 173.90 m² de construcción, esta propiedad ofrece espacios amplios y detalles que marcan la diferencia: 🏡 Sala, comedor y cocina moderna con meseta en granito y gabinetes de roble. 🛏️ 3 ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.32.54 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.32.54 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.05 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.12 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.14 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.20 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.21 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en Residencial Gamundi /WhatsApp Image 2025-09-16 at 10.33.21 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Residencial%20Gamundi%20",
+    "detalles": {
+      "desc_corta": "Tu nuevo hogar te espera en Residencial Gamundi, La Vega  Imagina despertar cada día en una casa diseñada para el confort y la elegancia. Con 300 m² de solar y 173.90 m² de construcción, esta propiedad ofrece espacios amplios y detalles que marcan la diferencia:  Sala, comedor y cocina moderna con meseta en granito y gabinetes de roble.  3 ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 84,
+    "nombre": "Solares En Don Fausto ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "📍Don Fausto, La Vega En el corazón de La Vega, tenemos tres solares disponibles.  #1: 352 metros cuadrados #2: 355 metros cuadrados  #3: 421 metros cuadrados.  Servicios:  Agua   Luz  Calles asfaltadas  Contenes Totalmente planos  Cuentan con su título deslindado, listos para que empieces un nuevo trayecto para tu futuro. Precio por metro: $6,500 ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0048.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0048.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0050.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0051.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0052.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0053.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0054.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0055.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0056.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0057.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0059.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0060.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0061.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0062.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0063.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solares en Don Fausto /IMG_0064.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solares%20En%20Don%20Fausto%20",
+    "detalles": {
+      "desc_corta": "Don Fausto, La Vega En el corazón de La Vega, tenemos tres solares disponibles.  #1: 352 metros cuadrados #2: 355 metros cuadrados  #3: 421 metros cuadrados.  Servicios:  Agua   Luz  Calles asfaltadas  Contenes Totalmente planos  Cuentan con su título deslindado, listos para que empieces un nuevo trayecto para tu futuro. Precio por metro: $6,500 ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 85,
+    "nombre": "Casa En Don Zoilo ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US$580,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "✨ CASA DE LUJO EN DON ZOILO ✨ 📍 Ubicación privilegiada, próximo al Estadio Olímpico, frente a Pancho Motor 🏡 Características Generales • Solar de 1,300 m² • Construcción de 310 m² • Precio: US$580,000 🛏️ Distribución Interior • 3 habitaciones amplias • 2 baños y medio • Cuarto de servicio con su baño • Sala espaciosa y bien iluminada • Cocina fu...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /092ab986-d1c4-4198-a4ed-6ebd419dd488.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /092ab986-d1c4-4198-a4ed-6ebd419dd488.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /46192c1e-9111-4a71-9e02-ca9f8b1e0181.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /6a67ea1a-de41-40bb-8a39-2ff3a6cce5a2(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /6a67ea1a-de41-40bb-8a39-2ff3a6cce5a2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /7972c830-71c8-4b6f-b4e0-53cb23fe0b71(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /7972c830-71c8-4b6f-b4e0-53cb23fe0b71.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /7a9aa8c8-2fa3-4d74-bd49-5fdd35865998(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /7a9aa8c8-2fa3-4d74-bd49-5fdd35865998.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /9218f6bb-2b11-4d07-ad2c-105fa8fe565e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /ac193392-08cd-446c-9333-d55e5238e492(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /ac193392-08cd-446c-9333-d55e5238e492.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /c2d994b5-ff26-4747-a6a4-6b3153c27a86(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /c2d994b5-ff26-4747-a6a4-6b3153c27a86.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /fec162fa-583f-498b-beae-7b11553f9ec5(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Don Zoilo /fec162fa-583f-498b-beae-7b11553f9ec5.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Don%20Zoilo%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón Interior • 3 habitaciones amplias • 2 baños y medio • Cuarto de servicio con su baño • Sala espaciosa y bien iluminada • Cocina fu..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 86,
+    "nombre": "Solar En Ciudad Ciudad Universitaria (Nuevo)",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US$7,800",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "📍 Oportunidad de Inversión en Ciudad Universitaria Solar disponible al lado del Estadio Olímpico, en una de las zonas con mayor proyección y demanda. 🔹 Superficie: 308 m² 🔹 Precio: US$7,800 por metro cuadrado 🔹 Uso flexible: Ideal para apartamentos o cualquier proyecto que el cliente desee desarrollar Cuenta con todos los servicios: ✅ Agua pota...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en ciudad ciudad universitaria (NUEVO)/176b58fa-a989-4238-b6f8-b29db2736ba5.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en ciudad ciudad universitaria (NUEVO)/176b58fa-a989-4238-b6f8-b29db2736ba5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en ciudad ciudad universitaria (NUEVO)/4ddba6ac-776e-4d8c-bba5-cbfb3c23d353.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en ciudad ciudad universitaria (NUEVO)/cddfd928-47ab-4cdc-b030-33c19d05492e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en ciudad ciudad universitaria (NUEVO)/dc29d7ab-c442-4aab-952a-49262ed7b8ae.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Ciudad%20Ciudad%20Universitaria%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Oportunidad de Inversión en Ciudad Universitaria Solar disponible al lado del Estadio Olímpico, en una de las zonas con mayor proyección y demanda.  Superficie: 308 m²  Precio: US$7,800 por metro cuadrado  Uso flexible: Ideal para apartamentos o cualquier proyecto que el cliente desee desarrollar Cuenta con todos los servicios:  Agua pota...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 87,
+    "nombre": "Solar 16 Manzana U Compres ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "$3,500",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Aprovecha esta oportunidad de invertir en una de las zonas con mayor crecimiento de La Vega. Este solar está ubicado en el exclusivo Residencial Compres, ideal para construir la casa de tus sueños o asegurar una inversión inteligente. ✨ CARACTERÍSTICAS DEL RESIDENCIAL: ✅ Entrada controlada ✅ Calles imprimadas ✅ Contenes terminados ✅ Energía eléctri...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /4075fa20-9d89-47cd-96ed-d6c0a034e052.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /4075fa20-9d89-47cd-96ed-d6c0a034e052.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /6bf66139-1ce9-47ed-bb1c-7f14e3d15504.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /7796fc4a-7e2d-4417-8da1-f3751f637527.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /9ade0459-479c-441d-b837-024ff8526f9a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /c0c5c343-4c28-4e3b-9ade-aceef7728191.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /cbb9bac0-d269-413a-89a7-b334969ee335.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 16 manzana U Compres /d048be56-24bc-4ef9-9da5-d0b0794848be.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%2016%20Manzana%20U%20Compres%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "DEL RESIDENCIAL:  Entrada controlada  Calles imprimadas  Contenes terminados  Energía eléctri..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 88,
+    "nombre": "Casa En Residencial HernáNdez ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$1,300,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 CASA INTELIGENTE DE LUJO – EN VENTA ✨ Tecnología, comodidad y diseño moderno en un solo lugar. 📐 680 m² de construcción 🌿 500 m² de solar 🏘️ 2 niveles 🔹 Distribución general: 🛏️ 4 habitaciones (cada una con baño privado y walking closet) 📚 1 cuarto de estudio con baño (opción a habitación adicional) 🛀 7 baños completos 🍽️ 2 cocinas total...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /06eaaf64-5b8e-41da-b673-ddccf275c5c8.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /06eaaf64-5b8e-41da-b673-ddccf275c5c8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /5e03badd-1154-4e46-bc63-e4d13d7b170b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /60e5aa7f-85a4-4f17-946e-92757874c274.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /7701fed5-f5fc-4712-959a-fea169980dcb.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /85793f1e-3bf1-4858-8e45-50a0ffafdce7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /bd8660ef-ce7e-4099-9447-4d8e817cece7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /eb335648-1801-498a-9327-bfd1a67caa2b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en residencial Hernández /f144c2cf-411d-4b92-9835-7aceb27e155f.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Residencial%20HernáNdez%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón general:  4 habitaciones (cada una con baño privado y walking closet)  1 cuarto de estudio con baño (opción a habitación adicional)  7 baños completos  2 cocinas total..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 89,
+    "nombre": "Solares En Pueblo Viejo ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "RESIDENCIAL VISTA DEL CERRO 📍Pueblo Viejo, La Vega, Rep. Dom. 🔹SOLAR DE 260.12 metros cuadrados. 🔹SOLAR DE 260.68 metros cuadrados 🔹SOLAR DE 297.74 metros cuadrados ⬇️PRECIO POR METRO:  5,500$  ✅ Garita de seguridad ✅ Título deslindado.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solares en pueblo viejo /0d99f146-241d-46f9-bba4-59cc9f14039c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares en pueblo viejo /0d99f146-241d-46f9-bba4-59cc9f14039c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares en pueblo viejo /b08868ac-14a8-476a-b453-ce6af44d015a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares en pueblo viejo /b1816d22-4dfc-4dfb-90a9-5ef0fc75ae2d.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solares%20En%20Pueblo%20Viejo%20",
+    "detalles": {
+      "desc_corta": "RESIDENCIAL VISTA DEL CERRO Pueblo Viejo, La Vega, Rep. Dom. SOLAR DE 260.12 metros cuadrados. SOLAR DE 260.68 metros cuadrados SOLAR DE 297.74 metros cuadrados ⬇PRECIO POR METRO:  5,500$   Garita de seguridad  Título deslindado.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 90,
+    "nombre": "Solar 17 Manzana A Compres",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar 17 manzana A Compres/2995ca70-2c78-4ee9-a966-55713c6ff038.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 17 manzana A Compres/2995ca70-2c78-4ee9-a966-55713c6ff038.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 17 manzana A Compres/48369edb-debc-4633-9511-4f6d555f2fb8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 17 manzana A Compres/5fcd95e2-08be-478e-b314-5b3673809aa5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 17 manzana A Compres/92a8285c-ec59-4347-a413-545d81c42b64.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar 17 manzana A Compres/f5b6de0e-5f37-460b-9173-7e24eb55e9e0.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%2017%20Manzana%20A%20Compres",
+    "detalles": {
+      "desc_corta": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 91,
+    "nombre": "Tres Terrenos En Cabirmota (Nuevo) ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌳🏡 ¡Solares en venta en Cabirmota, La Vega! 🏡🌳 Excelente oportunidad para construir la casa de tus sueños o realizar una inversión segura en una zona de gran crecimiento. 📍 Ubicación: Cabirmota, La Vega 🔹 Disponibles:  ✅ 407 m² – RD$4,500 por metro  ✅ 373 m² – RD$4,500 por metro  ✅ 4,230 m² – RD$5,000 por metro 📄 Constancia anotada  💡 Servi...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /095c7a43-9dbd-4b47-b593-16bb3faa8682.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /095c7a43-9dbd-4b47-b593-16bb3faa8682.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /2a6a90fd-d3d5-4c0b-af8f-a74a086d50c2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /6a7a51e6-d022-497e-bc77-1d2a332babf1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /8d22cb9d-013a-4817-af41-d97ef49c9f02.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /8f52cc65-e2b9-4484-acb3-98782e46839f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /ce8625f4-07fe-4bc8-94a4-86d8aae24c29.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en Cabirmota (NUEVO) /f16a2cba-563e-49ae-ac5e-bab34dde3d54.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Tres%20Terrenos%20En%20Cabirmota%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "¡Solares en venta en Cabirmota, La Vega!  Excelente oportunidad para construir la casa de tus sueños o realizar una inversión segura en una zona de gran crecimiento.  Ubicación: Cabirmota, La Vega  Disponibles:   407 m² – RD$4,500 por metro   373 m² – RD$4,500 por metro   4,230 m² – RD$5,000 por metro  Constancia anotada   Servi...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 92,
+    "nombre": "Casas En Cutupu (Nuevo) ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$34,500,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Se vende hermosa propiedad en Cutupú, La Vega 🇩🇴  📍 Ubicada después de Residencial Compres 💰 Precio: RD$34,500,000 Amplia propiedad con 2,783.99 m² de solar, ideal para vivir con comodidad y seguridad en una zona tranquila y de fácil acceso. La propiedad cuenta con dos viviendas:  🏠 Casa principal de 209 m²  🏠 Casa secundaria de 196 m² Ca...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /03a052e2-1ce3-4719-b86d-3a84140dd38b.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /03a052e2-1ce3-4719-b86d-3a84140dd38b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /09ccf474-7877-48a2-9a28-f7d993e6630b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /10e5973c-ecd3-42b2-b96c-a1a7009903e5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /1204d808-6780-4c20-bdb1-c0e80e3d35af.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /1479cec6-7103-44c7-a5f0-3e66d4930a51.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /183fa361-1ac7-4d0c-9035-0ea545789ba0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /23cf3d6a-c52c-485f-a478-b648f8997567.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /2b986d58-90a3-4297-b383-44ff4f764aca.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /377bc888-8f2f-4249-878d-7a4e1032cff5.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /59d32484-aae7-49bc-b6ff-045d70c1a80c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /660c52d1-02e4-47e1-90ca-65f60d912fff.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /6a66f1df-7ed2-4e0f-994c-b663c6286862.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /6c873763-c6f9-43aa-9f70-557198d28610.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /6ff81d5d-4dad-4da4-bea1-9a9a4019bd13.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /74cef1e5-f6fa-4328-b608-a5139f69a8d6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /9390ab1b-e82e-4abd-b5a2-04c9e034b240.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /94c82477-e9af-455b-a64a-74748ddd3336.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /a544b1e7-9e4e-4476-bf3f-93ceb29c2ac2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /ac996613-9629-425c-801d-4bea57751236.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /addb198e-cf3c-4490-ac6b-d4907c7e0fa9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /c55989a8-63a0-41a3-be8b-7bf6b12de548.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /cd300c16-bb01-4063-97e7-a4c7fb17729d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /cd82e989-c9ff-4eaa-815b-aa45591afcd3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /d98f6528-ed2b-4fe1-95ad-c7c1cf7a1814.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /e104a5ff-b6ad-4217-91d0-f54e81746aa1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /e78dccdc-7a68-4cae-8bfc-d2f09c96ff40.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /f18144db-2551-4f22-8c9e-cba66139cca9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /f4f148cc-eede-4bb0-bbf4-31c585c706d7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casas en Cutupu (NUEVO) /f6a89841-a96e-4d6f-a25b-ede7efefd0ba.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casas%20En%20Cutupu%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "Se vende hermosa propiedad en Cutupú, La Vega 🇩🇴   Ubicada después de Residencial Compres  Precio: RD$34,500,000 Amplia propiedad con 2,783.99 m² de solar, ideal para vivir con comodidad y seguridad en una zona tranquila y de fácil acceso. La propiedad cuenta con dos viviendas:   Casa principal de 209 m²   Casa secundaria de 196 m² Ca...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 93,
+    "nombre": "36 Tareas En Jimayaco",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "📍 ¡Oportunidad única de inversión! 🌱🏡 Se vende terreno de 36 tareas de tierra, ideal para tu proyecto de vivienda, finca o inversión. ✨ Características destacadas: ✔️ A solo 100 metros de la calle principal ✔️ Cuenta con servicio de luz ⚡ ✔️ Disponibilidad de agua 💧 ✔️ Se entrega con título deslindado 📄 Ubicación estratégica, fácil acceso y li...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/1265b46a-feeb-424c-b0ae-32fac4d3e46c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/1265b46a-feeb-424c-b0ae-32fac4d3e46c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/1eb31d0f-9f04-4bb7-9f0b-5f877d6d6f58.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/2bb7549b-4af4-42a7-95da-245b36b9b290.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/3e659fbe-d8d8-4661-8b6f-bfd5e88f80db.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/7fe4cbc7-343d-4727-867f-1335dfbbfff6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/cd3b2f94-779c-4d76-86fa-55baf603d468.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/e5a83e17-a664-4b97-b549-7e8c2365f650.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/36 tareas en Jimayaco/fc0d75b9-985e-4e62-bb4f-9c68a34675c1.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%2036%20Tareas%20En%20Jimayaco",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "destacadas:  A solo 100 metros de la calle principal  Cuenta con servicio de luz   Disponibilidad de agua   Se entrega con título deslindado  Ubicación estratégica, fácil acceso y li..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 94,
+    "nombre": "Renders Del Proyecto ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Proyecto De Apartamentos Tropics (Nuevo) ",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Excelente inmueble disponible en Proyecto De Apartamentos Tropics (Nuevo) . Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /Apartamentos desde 156,450US.PNG",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /Apartamentos desde 156,450US.PNG",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1710.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1711.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1720.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1721.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1722.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1723.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1724.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1725.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1727.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1728.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1729.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /IMG_1730.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Proyecto de apartamentos Tropics (NUEVO) /Renders del proyecto /Separa con 1,000.PNG"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Renders%20Del%20Proyecto%20",
+    "detalles": {
+      "desc_corta": "Excelente inmueble disponible en Proyecto De Apartamentos Tropics (Nuevo) . Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 95,
+    "nombre": "Local Comercial En Cutupu",
+    "tipo": "Local Comercial",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende locales comerciales. 📍 Rio verde arriba, Cutupu, La Vega.  Tres locales comerciales  Uno tiene un colmado. Una Banca. Y un comedor. 300 M2 de terreno.  128 M2 de construcción. RD$13,000,000",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/local comercial en cutupu/WhatsApp Image 2024-07-11 at 10.11.25 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/local comercial en cutupu/WhatsApp Image 2024-07-11 at 10.11.25 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/local comercial en cutupu/WhatsApp Image 2024-07-11 at 10.11.26 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/local comercial en cutupu/WhatsApp Image 2024-07-11 at 10.11.27 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/local comercial en cutupu/WhatsApp Image 2024-07-11 at 10.11.27 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Local%20Comercial%20En%20Cutupu",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende locales comerciales.  Rio verde arriba, Cutupu, La Vega.  Tres locales comerciales  Uno tiene un colmado. Una Banca. Y un comedor. 300 M2 de terreno.  128 M2 de construcción. RD$13,000,000",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 96,
+    "nombre": "Casa En La Vega ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$9,500,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "190 m²",
+    "descripcion": "🏡 CASA EN VENTA – LISTA PARA MUDARTE 💰 Precio: RD$9,500,000 ✨ Ligeramente negociable 📐 Terreno: 240 m² 🏗️ Construcción: 190 m² aprox. 📄 Título deslindado 🔹 Distribución y espacios: \t•\t🛏️ 3 dormitorios  \t•\t🛁 Habitación principal con baño privado y walking closet  \t•\t🚿 1 baño común  \t•\t🛋️ Sala  \t•\t🍽️ Comedor  \t•\t🍳 Cocina  \t•\t🌿 Galería  \t...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /08702982-adc8-41e4-bb27-a53d3ea3eddc.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /08702982-adc8-41e4-bb27-a53d3ea3eddc.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /0c03dbd6-886e-4729-a759-90b95dd8037b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /0cc59475-6c0b-4ce5-976e-ceb1510337e9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /1f5b20f5-5811-4393-aa15-11c1448cb129.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /33c3293c-b261-4d09-8612-1df2fc0b738b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /5c3ca4eb-26a5-4ff5-ab64-9bd55d55d61f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /5c4cca8f-c904-475f-a04f-617005f09e84.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /6ac6ac39-2c75-4955-bf7c-5d43b6020602.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /7555e261-cec5-439a-a06c-052be94493a1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /815d3b7a-ea14-4850-8c60-e895cdcc421e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /9c83397d-d545-4395-a04c-be97ade2bfb0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /ab993f46-4c23-4ecf-ae2f-4d327bc5eb31.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /bcb7a1c1-0e4c-4dda-a7c7-770ac62c7ac2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /c1079d14-3f11-4307-b294-b116c24f01ff.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /cdb12dde-3db5-401c-9a77-a76d392bd645.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /e5d6bd84-dad2-40ca-95db-6cafad328075.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /f242daf2-c4b9-42f4-bd0c-ac29a9d43a55.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en La Vega /feeb4e62-fd08-4cf2-979f-ab8eb2751a58.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20La%20Vega%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón y espacios: \t•\t 3 dormitorios  \t•\t Habitación principal con baño privado y walking closet  \t•\t 1 baño común  \t•\t Sala  \t•\t Comedor  \t•\t Cocina  \t•\t Galería  \t..."
+      ],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 97,
+    "nombre": "Villa DoñA Tana (Nuevo)",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$19,000,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ Se vende Villa Doña Tana  📍 Guanábano, Guaigüí, La Vega Exclusiva y espaciosa villa diseñada para el confort, la privacidad y el disfrute familiar. Ubicada en una zona tranquila y rodeada de naturaleza, esta propiedad combina amplitud, elegancia y áreas recreativas ideales para vivir o invertir. ✨ Características de la propiedad:  ✔ Solar de 6...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/1590de69-7358-4a29-baca-2707a5837ace.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/1590de69-7358-4a29-baca-2707a5837ace.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/187b3428-0001-4391-b42a-cefb6a160a74.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/28fd2f82-1f73-4b7a-8868-a33a5d25e35d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/3122922e-3482-4313-a346-993349ee56fb.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/4c9fafb9-28f6-41ff-b786-51b56e3bf9c0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/57741890-4c72-4d95-a39c-224b8f016098.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/64865613-70bd-428a-a89e-ab3df4157b16.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/69c653a1-f542-4e40-aff8-a987155c8c9f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/7f9bf620-b9ff-426b-b7c9-26742afaa1fd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/9ba5f0b7-e822-418f-8831-e9002ba9152c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/a382f98e-d991-40cd-91b3-5db26fb7f328.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/a73ec9ca-9686-409d-9130-27bf8e263d59.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/ac319702-90c4-4696-b128-a8a158f7dd69.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/b0c6cb8c-7475-49b9-9b89-3a4a81736849.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/c2d2d616-9787-43e3-a209-d645c7c58345.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/dd39f3a4-e7ce-4e1f-86f7-bca31cc2d673.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa Doña Tana (NUEVO)/edcdac0a-e8f2-419b-bd36-e2967b535d42.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20DoñA%20Tana%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "de la propiedad:   Solar de 6..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 98,
+    "nombre": "Hotel En Venta (Nuevo)",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$25,000,000.00",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏢 ¡Oportunidad de inversión inmobiliaria! Se vende amplio inmueble comercial de 3 niveles, ubicado en una zona estratégica con rápido acceso a las principales vías de la ciudad. Ideal para negocios, oficinas, plaza comercial o proyecto de inversión. 📍Ubicado en la avenida imbert, La Vega. ✨ Características:  ✔ Solar de 178 m²  ✔ Construcción de 1...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Hotel en venta (NUEVO)/2ee6062b-7996-4fb8-b9c4-f43848fd5e84.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Hotel en venta (NUEVO)/2ee6062b-7996-4fb8-b9c4-f43848fd5e84.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Hotel en venta (NUEVO)/73f06edf-9a53-468e-ac58-327ecaf02467.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Hotel en venta (NUEVO)/a8599ca4-872a-4c1b-94e4-a736b4e50a7b.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Hotel%20En%20Venta%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Solar de 178 m²   Construcción de 1..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 99,
+    "nombre": "Solar En Residencial Omelia Ii",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "¡Haz realidad tu proyecto ideal en La Vega! ¿Buscas invertir en una zona tranquila, segura y con todo lo que necesitas a tu alcance? Este terreno de 239.96 metros cuadrados en el exclusivo Residencial Omelia II, entrando por la avenida Pedro A. Rivera, La Vega, es tu oportunidad perfecta. Cuenta con todos los servicios básicos disponibles y título ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en residencial omelia II/WhatsApp Image 2025-04-30 at 7.59.23 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en residencial omelia II/WhatsApp Image 2025-04-30 at 7.59.23 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en residencial omelia II/WhatsApp Image 2025-04-30 at 7.59.31 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en residencial omelia II/WhatsApp Image 2025-04-30 at 7.59.31 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en residencial omelia II/WhatsApp Image 2025-04-30 at 7.59.31 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en residencial omelia II/WhatsApp Image 2025-04-30 at 7.59.32 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Residencial%20Omelia%20Ii",
+    "detalles": {
+      "desc_corta": "¡Haz realidad tu proyecto ideal en La Vega! ¿Buscas invertir en una zona tranquila, segura y con todo lo que necesitas a tu alcance? Este terreno de 239.96 metros cuadrados en el exclusivo Residencial Omelia II, entrando por la avenida Pedro A. Rivera, La Vega, es tu oportunidad perfecta. Cuenta con todos los servicios básicos disponibles y título ...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 100,
+    "nombre": "Casa En El Centro De La Ciudad ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "¡OPORTUNIDAD ÚNICA EN EL CORAZÓN DE LA VEGA! 🏢 ¿Buscas una propiedad con excelente potencial comercial? ¡Esta es la indicada! Ubicada en pleno centro de La Vega, en la esquina de la calle Padre Billini con calle Mella, esta propiedad esquinera está en una zona altamente transitada, perfecta para establecer tu negocio o inversión. ✨ Características...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.42 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.42 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.43 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.48 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.48 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.51 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.52 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.52 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa en el centro de la ciudad /WhatsApp Image 2025-08-12 at 11.11.52 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20El%20Centro%20De%20La%20Ciudad%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 101,
+    "nombre": "Apartamento En Don Juan ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$4,700,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende apartamento 🏢 📍La Vega, el paraíso, Residencial Don Juan  Entrada controlada 🕹️ Apartamento primer nivel ✅ Sala 🛋️ Cocina 🛎️ Tres habitaciones 🛌 Dos baños 🛀 Ares de lavado 🧼 Dos parqueos y para uno para visitantes 🚗 Título deslindado 📃 Precio: RD$4,700,000",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.08 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.08 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.08 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.09 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.09 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.10 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.10 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en Don Juan /WhatsApp Image 2024-10-22 at 8.01.11 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Don%20Juan%20",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende apartamento  La Vega, el paraíso, Residencial Don Juan  Entrada controlada  Apartamento primer nivel  Sala  Cocina  Tres habitaciones  Dos baños  Ares de lavado  Dos parqueos y para uno para visitantes  Título deslindado  Precio: RD$4,700,000",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 102,
+    "nombre": "CabañA En Santo Cerro ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$16,000,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Espectacular cabaña en el Santo Cerro, La Vega.   Ubicada en una zona privilegiada, esta hermosa cabaña ofrece una impresionante vista 360° a la ciudad y total tranquilidad. Características: • Terreno de 2,457 m² • 302 metros de construcción  • 2 niveles • 4 habitaciones • 3 baños • Jacuzzi • Título deslindado y al día 🔌 Cuenta con todos los servi...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /0095b6d0-06ca-4e6b-b8b6-c8007a31188c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /0095b6d0-06ca-4e6b-b8b6-c8007a31188c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /1521de2e-ff5f-4d5a-a7bb-54f159d81db9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /1876c570-debb-43ff-8657-5916844e0847.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /2bc175ae-0d8e-4848-9d77-a5c3ef589bf0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /2c5ec387-031d-4a66-a8ed-64f7a0656412.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /3d180f29-c09c-4b93-b6b2-b6c9e94182cd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /5e9f6b76-860d-44f2-9a91-1e2c7d0b441f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /694bc71d-a477-40ce-8523-100e80d11a1e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /9f3adf1f-107c-4590-9677-e1ff39953882.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /b36b50f4-aa0f-4748-89c5-44dd470f7ebd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /b86db478-1c5d-43ab-ba89-91ee46ebfcfa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /bf12afb5-3051-460c-a03e-e72d547957c2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /c9831ab5-f407-405e-9fd2-ba30eb148e78.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /d68221e0-8baf-4eaf-8110-bc77859386c3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Cabaña en santo cerro /e716355f-f090-4c56-9ab1-0a6ee9eee139.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20CabañA%20En%20Santo%20Cerro%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Terreno de 2,457 m² • 302 metros de construcción  • 2 niveles • 4 habitaciones • 3 baños • Jacuzzi • Título deslindado y al día  Cuenta con todos los servi..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 103,
+    "nombre": "Terreno En Guagui ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende terreno 🏞️🌳 📍Ubicado en el faro, guarey, Guagüi.  Servicios de energía eléctrica y agua. 19 tareas (Se venden 5 tareas mínimo) Titulo deslindado RD$600,000 pesos por tarea ✅",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /47f84d05-2836-42a7-9b33-c7b22338ddc6.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /47f84d05-2836-42a7-9b33-c7b22338ddc6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /6a8c988f-66a5-4197-b1e4-a779e3cfdaca.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /85f2d923-8f67-4400-919b-6403361c3f5c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /971ba12a-0e06-4887-a410-9c16a91e1ddc.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /WhatsApp Image 2024-10-22 at 8.08.03 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /WhatsApp Image 2024-10-22 at 8.08.04 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /WhatsApp Image 2024-10-22 at 8.08.05 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/terreno en guagui /f1e0b4ae-af23-48ad-907f-0bba3a8bed2c.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Terreno%20En%20Guagui%20",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende terreno  Ubicado en el faro, guarey, Guagüi.  Servicios de energía eléctrica y agua. 19 tareas (Se venden 5 tareas mínimo) Titulo deslindado RD$600,000 pesos por tarea",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 104,
+    "nombre": "Tres Terrenos En GuagüI",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "REDEX INMOB SRL vende tres lotes en proyecto cerrado de villas y cabañas en La Vega. 📍Ubicados en Brisas de Guagüi, guagüi, La Vega. Vistas a la ciudad de la Vega  1,600 metros $5,000,000 1,300 metros $4,200,000 1,583 metros $4,000,000 (es el más económico) 12 meses para pagar sin intereses  24 meses de financiamiento 12% de intereses fijos anuale...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/0ae4a1bc-c9db-40cd-accb-5993225ec37c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/0ae4a1bc-c9db-40cd-accb-5993225ec37c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/108b7e77-ba29-4f3f-84a0-f4f1ad19733c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/17e9c7aa-8f6d-4f79-ab48-a928b822e145.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/2789f0d2-0650-4ab2-b63c-76e4948759bb.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/2dfb817f-0fbd-42bd-8a1b-12b4af876f6a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/3659d5ea-ad11-4c62-85e0-ea7a7dddaa75.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/41d8281f-1fb8-4eba-99d0-ce2ed50fa9b1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/55a56b0b-e1c4-4bd7-8b9e-4f6d6ff2fb70.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/6c3377c4-4866-448a-bf7f-3ff77c96b8b3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/8d7cd894-cd37-4667-9bce-c7e7abf307fa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/8e6cc16f-beca-4860-b1af-76329a831d91.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/abc2b982-0c5f-4272-a0cd-53011c2abe72.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Tres terrenos en guagüi/d2e7af50-627b-497f-a064-1f67af9f97f6.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Tres%20Terrenos%20En%20GuagüI",
+    "detalles": {
+      "desc_corta": "REDEX INMOB SRL vende tres lotes en proyecto cerrado de villas y cabañas en La Vega. Ubicados en Brisas de Guagüi, guagüi, La Vega. Vistas a la ciudad de la Vega  1,600 metros $5,000,000 1,300 metros $4,200,000 1,583 metros $4,000,000 (es el más económico) 12 meses para pagar sin intereses  24 meses de financiamiento 12% de intereses fijos anuale...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 105,
+    "nombre": "Solar En Cutupu, Residencial Juan Taveras (Nuevo)",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "📍Ubicación: Residencial Juan Taveras, cutupu, La Vega. Solar de 299.94 metros cuadrados  Calles imprimadas 🚗 Energía eléctrica ⚡️  Contenes ✅ Agua 💧  Fácil acceso 🏘️ Título deslindado 📃 $4,900 pesos por metro",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu, residencial juan taveras (NUEVO)/WhatsApp Image 2025-07-15 at 3.09.25 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu, residencial juan taveras (NUEVO)/WhatsApp Image 2025-07-15 at 3.09.25 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu, residencial juan taveras (NUEVO)/WhatsApp Image 2025-07-15 at 3.09.26 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu, residencial juan taveras (NUEVO)/WhatsApp Image 2025-07-15 at 3.09.26 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu, residencial juan taveras (NUEVO)/WhatsApp Image 2025-07-15 at 3.09.26 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en cutupu, residencial juan taveras (NUEVO)/WhatsApp Image 2025-07-15 at 3.09.26 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Cutupu,%20Residencial%20Juan%20Taveras%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Ubicación: Residencial Juan Taveras, cutupu, La Vega. Solar de 299.94 metros cuadrados  Calles imprimadas  Energía eléctrica   Contenes  Agua   Fácil acceso  Título deslindado  $4,900 pesos por metro",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 106,
+    "nombre": "Casa En Soto ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$12,000,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "240 m²",
+    "descripcion": "🏡🔥 Propiedad con Alto Potencial de Inversión en Soto, La Vega 🔥🏡   ¡Ideal para vivir y generar ingresos al mismo tiempo!   Propiedad con 2 casas y 2 apartamentos, ubicada en zona estratégica frente al Play de Soto, en calle principal. 📍 Ubicación: Soto, La Vega   📐 Solar: 314 m²   🏗️ Construcción: 240 m²   💰 Precio: RD$12,000,000   ✨ Perfec...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /03f75150-d86d-4f3a-97e8-775178ee3cdd.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /03f75150-d86d-4f3a-97e8-775178ee3cdd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /14a1a71a-da2e-488b-baab-5e62547e416d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /45e067f7-a0e7-4bff-b042-1890be4174de.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /8defc53e-2570-4cfa-8868-c9986a036cbd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /904f8447-2acf-48df-8747-2b0e4d52cf0b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /c170e610-dc54-4e6d-9ff9-e5861cba420b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /d47ae3ed-7087-4ff6-9a02-a968a6575da8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /d59c4d6e-f71b-4916-a625-880ceb59408b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /dd95f2e5-1904-4de7-b71c-8dcfef4f38a9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /e3d05d52-19e7-4f49-add8-42553a2e1a91.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Soto /f2493b56-6e94-4ce5-96a6-0768df819214.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Soto%20",
+    "detalles": {
+      "desc_corta": "Propiedad con Alto Potencial de Inversión en Soto, La Vega    ¡Ideal para vivir y generar ingresos al mismo tiempo!   Propiedad con 2 casas y 2 apartamentos, ubicada en zona estratégica frente al Play de Soto, en calle principal.  Ubicación: Soto, La Vega    Solar: 314 m²    Construcción: 240 m²    Precio: RD$12,000,000    Perfec...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 107,
+    "nombre": "Apartamentos En Pinar Del Jara",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US$135,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "¡Tu nuevo hogar te espera! Descubre este moderno y espacioso apartamento diseñado para brindarte comodidad, estilo y calidad de vida. Características del apartamento: \t•\t3 habitaciones \t•\t2 baños y medio \t•\tSala amplia y acogedora \t•\tComedor elegante \t•\tBalcón con excelente ventilación \t•\tÁrea común ideal para compartir en familia \t•\tÁrea de lavado...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.35 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM (6).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamentos en pinar del jara/WhatsApp Image 2025-05-04 at 12.22.36 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamentos%20En%20Pinar%20Del%20Jara",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del apartamento: \t•\t3 habitaciones \t•\t2 baños y medio \t•\tSala amplia y acogedora \t•\tComedor elegante \t•\tBalcón con excelente ventilación \t•\tÁrea común ideal para compartir en familia \t•\tÁrea de lavado..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 108,
+    "nombre": "Casa En Villa Olga (Nuevo) ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ ¡Se vende hermosa casa en La Vega! ✨🏡 📍 Residencial El Paraíso, La Vega Haz realidad el sueño de tener tu hogar propio en una zona tranquila y de excelente ubicación. 🔹 Características:  ✅ Sala  ✅ Cocina  ✅ Comedor  ✅ 3 habitaciones  ✅ 2 baños  ✅ Terraza  ✅ Área de lavado  ✅ Marquesina  ✅ Título deslindado 💰 Precio de venta: RD$5,500,000 (N...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /2361650b-92f6-4f54-820b-47110b7edb17.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /2361650b-92f6-4f54-820b-47110b7edb17.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /3097ae58-f9a8-433e-8866-2a79bd135522.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /318b33a1-c47a-45ac-adb8-b05e9f4d3b2b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /35af2ed7-e620-4737-83ab-60ae9e89740f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /365f0517-149f-4dc6-8ede-e22d38221587.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /3d8f455a-ee84-49db-aed3-9ec4d5787338.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /4a206a67-9db0-4d46-aa2b-3403a82cd89d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /6146a7ab-f95f-4d09-98b2-5ca6f00d205f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /69ebb995-784f-47f7-8e4c-1e012ca28ef1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /9a19912b-9b3e-44c4-89c0-ca2ad6f78537.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /d10dce86-4537-4a75-8c1f-d804267b0184.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Villa Olga (NUEVO) /e9648887-6ecc-4a5b-b290-9b7c89428ec8.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Villa%20Olga%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Sala   Cocina   Comedor   3 habitaciones   2 baños   Terraza   Área de lavado   Marquesina   Título deslindado  Precio de venta: RD$5,500,000 (N..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 109,
+    "nombre": "Solar En Residencial Compres",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "$3,750",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌳 ¡Solar disponible en RESIDENCIAL COMPRES, Cutupú – La Vega!🏡 Aprovecha esta oportunidad de invertir en una de las zonas con mayor crecimiento de La Vega. Este solar está ubicado en el exclusivo Residencial Compres, ideal para construir la casa de tus sueños o asegurar una inversión inteligente. ✨ CARACTERÍSTICAS DEL RESIDENCIAL: ✅ Entrada contr...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Residencial Compres/13104a46-8a7a-4ec8-ad17-b93f2611ed05.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Residencial Compres/13104a46-8a7a-4ec8-ad17-b93f2611ed05.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Residencial Compres/713dece0-0475-4ac1-a64c-9f7a5b207d65.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Residencial Compres/75e48a6f-14e1-4a01-a23e-ce6c1044fc88.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Residencial Compres/ca472c1b-aa7c-4281-80b9-e1f5991eb49d.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Residencial%20Compres",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "DEL RESIDENCIAL:  Entrada contr..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 110,
+    "nombre": "Proyecto De Apartamentos Palmaretto Gardens",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria te trae esta oportunidad de adquirir ese apartamento tan soñado en un proyecto único y exclusivo en la zona de Pontón de esta ciudad de La Vega!📍🤩🏢 RESIDENCIAL PALMARETTO GARDENS 🔐🏡 Características y amenidades: Piscina 🏊  Gimnasio 🏋️  Terraza 🪴 Área de juegos infantil 🎯🛝 Proyecto cerrado con acceso controlado 🕹️ Apart...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.14 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.14 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.15 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.15 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.15 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.16 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.17 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.17 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.18 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.18 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 6.57.19 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 7.01.28 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/proyecto de apartamentos palmaretto gardens/WhatsApp Image 2024-11-28 at 7.02.04 PM.jpeg"
+    ],
+    "amenidades": [
+      "Piscina 🏊",
+      "Gimnasio 🏋️",
+      "Terraza 🪴",
+      "Área de juegos infantil 🎯🛝",
+      "Proyecto cerrado con acceso controlado 🕹️",
+      "Apartamentos de 100 metros cuadrados Ⓜ️",
+      "3 habitaciones 🛌🛌",
+      "2 baños 🚻",
+      "1 parqueo 🚗",
+      "4tos niveles gozarán de azotea privada 🔝"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Apartamentos%20Palmaretto%20Gardens",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "y amenidades: Piscina   Gimnasio   Terraza  Área de juegos infantil  Proyecto cerrado con acceso controlado  Apart..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 111,
+    "nombre": "Apartamentos Entrada De Ucateci (Nuevo) ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$8.3",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 APARTAMENTO EN VENTA – PRÓXIMO A UCATECI Primer y segundo nivel disponible  ✨ Características: • 118 metros  • 3 habitaciones • 2 baños • Sala, comedor y cocina con excelente distribución • Excelente terminación 💧 Amenidades y servicios: • Agua potable de acueducto • Cisterna • Tinaco • Pozo tubular de emergencia • Intercom 📌 Ubicación privile...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /05095655-0b29-455b-9256-73aa77a48c5d(1).jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /05095655-0b29-455b-9256-73aa77a48c5d(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /05095655-0b29-455b-9256-73aa77a48c5d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /063236f3-ddb7-4147-a9a9-7f63cfaba7d1(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /063236f3-ddb7-4147-a9a9-7f63cfaba7d1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /141aec10-9d81-4052-ade2-b60e16f0cc4d(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /141aec10-9d81-4052-ade2-b60e16f0cc4d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /373f0fd6-2d85-4f10-a8bd-d07c3f5c6df8(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /373f0fd6-2d85-4f10-a8bd-d07c3f5c6df8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /452c7448-2302-4d7d-a448-b19aac5c411d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /4f18ac68-2860-4b9e-b981-68bf2e09e916(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /4f18ac68-2860-4b9e-b981-68bf2e09e916.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /686d8477-acf1-40d9-827c-8462b4891721(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /686d8477-acf1-40d9-827c-8462b4891721.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /6f8220e2-5173-4cb2-a6a7-c83bfb52b263.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /71352dcb-a551-475a-853b-7068c3e353d3(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /71352dcb-a551-475a-853b-7068c3e353d3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /78be5c1c-51f1-4639-9a8f-dbf60b36b380(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /78be5c1c-51f1-4639-9a8f-dbf60b36b380.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /d90a6733-55ab-4a05-ae35-640bc1f7df4a.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /e92bcfea-00c1-4d4c-a79d-aae4a083b1f3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /f7babcfd-308b-4557-b78a-aab7579fe3da(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /f7babcfd-308b-4557-b78a-aab7579fe3da.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamentos entrada de UCATECI (NUEVO) /ff7e4016-9970-4fbb-b0ca-fa1c837699db.jpg"
+    ],
+    "amenidades": [
+      "y servicios:",
+      "Agua potable de acueducto",
+      "Cisterna",
+      "Tinaco",
+      "Pozo tubular de emergencia",
+      "Intercom"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamentos%20Entrada%20De%20Ucateci%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón • Excelente terminación  Amenidades y servicios: • Agua potable de acueducto • Cisterna • Tinaco • Pozo tubular de emergencia • Intercom  Ubicación privile..."
+      ],
+      "caracteristicas": [
+        "y servicios:",
+        "Agua potable de acueducto",
+        "Cisterna",
+        "Tinaco",
+        "Pozo tubular de emergencia",
+        "Intercom"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 112,
+    "nombre": "Penthouse En Hamaca Iii (Nuevo)",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$6,700,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Penthouse en 4to Nivel – Residencial Hamaca III  ¡Más espacio, más privacidad y una terraza para disfrutar cada momento! 🏡 Características: • 3 habitaciones • 2 baños • Sala • Comedor • Cocina • Área de lavado • Galería • 2 parqueos • Piscina en el residencial • Seguridad 24/7 🌟 Nivel Superior Exclusivo: • Amplia terraza privada de aproximadament...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/1c2ef908-0d97-4447-923c-52e0a7117239.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/1c2ef908-0d97-4447-923c-52e0a7117239.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/1fa9f4ce-878e-4757-bb58-a357d52bb3dd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/2db177e7-afad-421a-a1b9-a0ae9f61b30e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/5c7f72db-a76b-4830-8dd1-1042a71f0c05.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/5cc48271-086e-40a9-b2c9-b0d6dd1c3116.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/603dacd9-4b65-461e-b8e1-35691590c061.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/6483dc1a-86d9-4f7b-a282-1c6ad8a57ec7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/66a05916-f8b7-4b37-b7d4-b2d4885755f3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/67b970e5-ffbd-48e3-9b00-e80a7b10e081.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/85bff023-f036-4c92-b424-cf9b155e9e49.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/8b266c8e-3741-44c7-915c-2711bce67705.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/94189b3d-cea8-4368-af4a-beeb51fe3d9d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/947a426e-0e2e-431c-a959-017e06150e20.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/C2076E39-C2DE-4AA3-8016-86A8424A1A08.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/ad1b7f3c-b5dc-41e0-b89e-218c3509eada.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/b6c8c4cb-e655-43ae-98e8-4839d0fa0479.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/c90ee524-89d3-4b05-9b30-8ef5f3d1762c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/cb4e1c2f-ed2a-44e1-81b0-49107046558b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/e1df43e2-4bda-4ab1-a74a-2afef3373453.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Penthouse en hamaca III (NUEVO)/f8e0bac9-fda8-460f-b55c-9308069fb84e.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Penthouse%20En%20Hamaca%20Iii%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "3 habitaciones • 2 baños • Sala • Comedor • Cocina • Área de lavado • Galería • 2 parqueos • Piscina en el residencial • Seguridad 24/7  Nivel Superior Exclusivo: • Amplia terraza privada de aproximadament..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 113,
+    "nombre": "Villa En Bayacanes (Nuevo) ",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 ESPECTACULAR VILLA EN VENTA  📍 El Higüerito de Bayacanes , La Vega Una propiedad amplia, cómoda y totalmente Equípada , ideal para Disfrutar en Familia , Vacacionar  o Invertir 🌿✨ 🔹 Características: ✅ 9 habitaciones ✅ 8 baños ✅ 2 Cocinas Totalmente Equipadas  ✅ Gazebo ✅ Área de BBQ y Asadero  ✅ Piscina 🏊‍♂️ ✅ Área de juegos para niños ✅ Canc...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /0ef4858d-cd07-475c-bd07-9e9ca1eaef86(1).jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /0ef4858d-cd07-475c-bd07-9e9ca1eaef86(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /0ef4858d-cd07-475c-bd07-9e9ca1eaef86.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /104617ef-ca12-441d-a00f-4bf61a097b26(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /104617ef-ca12-441d-a00f-4bf61a097b26.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /2551fcc2-80b1-4381-8899-08c4a49dc172.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /37d7d390-239f-4bb7-bb1f-bec05ae3af18(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /37d7d390-239f-4bb7-bb1f-bec05ae3af18.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /3a2eea73-29e3-49ef-8f1f-f675e28835f0(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /3a2eea73-29e3-49ef-8f1f-f675e28835f0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /3b6c029b-5ca4-4269-bd17-c72b3d8b12d0(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /3b6c029b-5ca4-4269-bd17-c72b3d8b12d0.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /487bb92a-076a-438a-9eef-c6f05099eb1e(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /487bb92a-076a-438a-9eef-c6f05099eb1e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /4e3189c2-bab3-4617-8844-c364e399b9a2(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /4e3189c2-bab3-4617-8844-c364e399b9a2.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /506f7530-8644-424f-b272-215308385dbd(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /506f7530-8644-424f-b272-215308385dbd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /52ce429a-c329-4d63-8854-011b4cb875db(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /52ce429a-c329-4d63-8854-011b4cb875db.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /8d949c62-1472-4046-9b4e-d1850894a397.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /918c3f39-24b4-46c8-905a-068e4638dba7(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /918c3f39-24b4-46c8-905a-068e4638dba7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /c31407ea-67a1-4201-b011-3961bb12d787(1).jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /c31407ea-67a1-4201-b011-3961bb12d787.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Villa en Bayacanes (NUEVO) /d58a0188-7958-46c9-be79-9d40bc4f6845.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Bayacanes%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "9 habitaciones  8 baños  2 Cocinas Totalmente Equipadas   Gazebo  Área de BBQ y Asadero   Piscina ‍  Área de juegos para niños  Canc..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 114,
+    "nombre": "Plaza Guarionex En Arenoso ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$18,000,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏢 ¡Gran oportunidad de inversión en La Vega! 🏢 Se vende propiedad en 📍Carretera Profesor Juan Bosch, Arenoso, La Vega, ideal para generar ingresos desde el primer día. 💰 Precio: RD$18,000,000 451.10 metros cuadrados de solar  Características del inmueble: ✨ 5 locales comerciales — cada uno con su baño 🏠 5 apartamentos de 1 habitación con baño ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /0725c194-75ea-406c-aa3a-864afe54425d.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /0725c194-75ea-406c-aa3a-864afe54425d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /3b2897bf-d3a7-451c-bebc-46d95b3561c4.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /4a01644e-2744-492a-8e6e-96c918f9c861.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /6ab03368-3b33-4718-a0da-8b7aa1c7d469.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /b6a654d3-6521-4e0b-b490-8a5767d297fe.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /b830aa2d-e5af-4ae6-b82d-5a7b0d7fbb42.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /c0ca52bf-16a1-49fd-a1e2-564e87440b60.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /e25ab0dc-a805-41b5-b2ab-659c5f9ea831.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Plaza guarionex en arenoso /ef667722-ef12-4902-b87c-7c4e3ff7e014.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Plaza%20Guarionex%20En%20Arenoso%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del inmueble:  5 locales comerciales — cada uno con su baño  5 apartamentos de 1 habitación con baño ..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 115,
+    "nombre": "Solar De 216 Metros En Res. Compres",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Solar en venta, Residencial Compres 2da etapa🟢 📍Cutupu, La Vega, carretera profesor Juan Bosch. Solar 3 manzana G ✅ 216 metros ✅ Todos los servicios de la zona ✅  $3,500 pesos por metro cuadrado ✅",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar de 216 metros en Res. compres/WhatsApp Image 2024-12-23 at 9.11.40 PM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 216 metros en Res. compres/WhatsApp Image 2024-12-23 at 9.11.40 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 216 metros en Res. compres/WhatsApp Image 2024-12-23 at 9.11.40 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar de 216 metros en Res. compres/WhatsApp Image 2024-12-23 at 9.11.41 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20De%20216%20Metros%20En%20Res.%20Compres",
+    "detalles": {
+      "desc_corta": "Solar en venta, Residencial Compres 2da etapa Cutupu, La Vega, carretera profesor Juan Bosch. Solar 3 manzana G  216 metros  Todos los servicios de la zona   $3,500 pesos por metro cuadrado",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 116,
+    "nombre": "Solar En El Cruce De Controba",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria te trae esta oportunidad de inversión 📍Ubicado en el cruce de controba, el pino, La Vega.  Es un terreno de 1,886.17 metros cuadrados. Tiene una casa incluida con tres habitaciones y un anexo de dos habitaciones sala, cocina y un kiosco. También tiene un garaje. $5,500 pesos por metro cuadrado.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en el cruce de controba/WhatsApp Image 2024-09-05 at 2.03.39 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en el cruce de controba/WhatsApp Image 2024-09-05 at 2.03.39 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20El%20Cruce%20De%20Controba",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria te trae esta oportunidad de inversión Ubicado en el cruce de controba, el pino, La Vega.  Es un terreno de 1,886.17 metros cuadrados. Tiene una casa incluida con tres habitaciones y un anexo de dos habitaciones sala, cocina y un kiosco. También tiene un garaje. $5,500 pesos por metro cuadrado.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 117,
+    "nombre": "Solar En Pinal Deljara ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende solar en La Vega ideal para inversión o construir viviendas. 📍Ubicado en Pinar Deljara, Pontón, La Vega. 253.29 metros  $7,000 por metro  Título deslindado ✅ Todos los servicios de la zona",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /53016d64-7445-41f8-b004-a30006d2853d.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /53016d64-7445-41f8-b004-a30006d2853d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /6157eab6-6b63-4be1-a6f3-849b9a62bd9e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /7b57aa82-da67-4304-a5ec-6fd2e76ba9fa.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /7db391e2-8258-4d3d-b67a-315fc83f6e05.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /b4917392-bafb-4f97-adc7-07d49560ad78.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /b8383909-c910-484f-b4f3-13206fd38af3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /ca2e2993-2051-45cb-93c6-ecc971598cf9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Pinal Deljara /cc7654d8-54ec-45d7-9093-e59cd6292368.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Pinal%20Deljara%20",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende solar en La Vega ideal para inversión o construir viviendas. Ubicado en Pinar Deljara, Pontón, La Vega. 253.29 metros  $7,000 por metro  Título deslindado  Todos los servicios de la zona",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 118,
+    "nombre": "Solar En Jima Abajo ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌳¡Solar disponible en Urbanización nuestra señora del Fátima, Jima Abajo– La Vega!🏡 CARACTERÍSTICAS: ✅ Calles imprimadas ✅ Contenes terminados ✅ Energía eléctrica 180 metros cuadrados  $1,700 pesos por metro",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en Jima abajo /0df24b4e-8590-4943-b833-e0c02384d0b6.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en Jima abajo /0df24b4e-8590-4943-b833-e0c02384d0b6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en Jima abajo /330ad06d-9169-435c-a8b8-a3e7de292c32.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en Jima abajo /6da6f8e9-dc3e-4e67-b0fe-d05a832087ba.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en Jima abajo /ece26505-e094-45ec-9453-c62eb036fe45.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Jima%20Abajo%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Calles imprimadas  Contenes terminados  Energía eléctrica 180 metros cuadrados  $1,700 pesos por metro"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 119,
+    "nombre": "Terreno En GuagüI PróXimo PróXimo A La Casa De Balaguer (Nuevo)",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🌄 Terreno en venta en Guagüi, La Vega. Si lo que buscas es invertir en un espacio con potencial y rodeado de naturaleza, este terreno es la oportunidad ideal: 📐1,886.7 (3 tareas) 📍 Ubicado en Guagüi, a solo 6 minutos del centro de La Vega 🚗 Fácil acceso con 3 entradas diferentes, a tan solo 1 minuto de la carretera principal 🌿 Vistas 360° impr...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/433d6dc7-38de-461a-bb71-02548b438b95.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/433d6dc7-38de-461a-bb71-02548b438b95.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/98bcf9f4-194c-4f9f-8c6b-9d096203f37c.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/b9d90783-f1f7-4c96-9181-66426afbf708.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/c9df2f92-6f3b-44ea-be17-09ca8d2a5ed7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/d081194a-9c3d-44ea-aadf-c5970ef050b1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Terreno en Guagüi próximo próximo a la casa de Balaguer (NUEVO)/fa5ec6ac-8a2d-4081-8bb8-922694447097.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Terreno%20En%20GuagüI%20PróXimo%20PróXimo%20A%20La%20Casa%20De%20Balaguer%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Terreno en venta en Guagüi, La Vega. Si lo que buscas es invertir en un espacio con potencial y rodeado de naturaleza, este terreno es la oportunidad ideal: 1,886.7 (3 tareas)  Ubicado en Guagüi, a solo 6 minutos del centro de La Vega  Fácil acceso con 3 entradas diferentes, a tan solo 1 minuto de la carretera principal  Vistas 360° impr...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 120,
+    "nombre": "Solar En La Entrada De La Vega",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria SRL vende solar en La Vega ideal para inversión o construir viviendas. 📍Ubicado en Pinar Deljara, Pontón, La Vega. 371.72 M2  Título deslindado ✅ Todos los servicios de la zona  RD$2,700,000 negociable",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/solar en la entrada de la vega/WhatsApp Image 2024-07-04 at 11.14.25 AM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en la entrada de la vega/WhatsApp Image 2024-07-04 at 11.14.25 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en la entrada de la vega/WhatsApp Image 2024-07-04 at 11.14.26 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en la entrada de la vega/WhatsApp Image 2024-07-04 at 11.14.26 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/solar en la entrada de la vega/WhatsApp Image 2024-07-04 at 11.14.27 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20La%20Entrada%20De%20La%20Vega",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria SRL vende solar en La Vega ideal para inversión o construir viviendas. Ubicado en Pinar Deljara, Pontón, La Vega. 371.72 M2  Título deslindado  Todos los servicios de la zona  RD$2,700,000 negociable",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 121,
+    "nombre": "Casa De Dos Niveles Y Un Solar En Las Maras",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$15,000,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏠 Residencia de Dos Niveles ✨ Diseño moderno, terminaciones finas y espacios perfectamente distribuidos. 👉 Primer Nivel (Vivienda Principal) 🌿 Galería / Balcón 🚗 Marquesina 🛋️ Sala y Comedor 🍽️ Cocina con gabinetes en caoba 🛏️ Habitación principal con baño y walking closet 🛌 2 habitaciones comunes 🚿 1 baño común 🧺 Área de lavado 🌤️ Terra...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/casa de dos niveles y un solar en las maras/IMG_2845.JPG",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa de dos niveles y un solar en las maras/IMG_2845.JPG",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa de dos niveles y un solar en las maras/IMG_2848.JPG",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa de dos niveles y un solar en las maras/IMG_2857(1).JPG",
+      "images/inmuebles/INMUEBLES EN LA VEGA/casa de dos niveles y un solar en las maras/IMG_2857.JPG"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20De%20Dos%20Niveles%20Y%20Un%20Solar%20En%20Las%20Maras",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [
+        "ones finas y espacios perfectamente distribuidos.  Primer Nivel (Vivienda Principal)  Galería / Balcón  Marquesina  Sala y Comedor  Cocina con gabinetes en caoba  Habitación principal con baño y walking closet  2 habitaciones comunes  1 baño común  Área de lavado  Terra..."
+      ],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 122,
+    "nombre": "Solar En Don Persio ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$15,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🌿 ¡Oportunidad de inversión en La Vega! 🌿 Disponible solar en Residencial Don Persio, ideal para construir la casa de tus sueños o desarrollar tu próximo proyecto. 📍 Ubicación privilegiada: • A pocos minutos del centro de la ciudad   • Cerca de los principales comercios   📐 Características: • 300 metros de solar   • Título deslindado   • Todos ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Don Persio /IMG_7088.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Don Persio /IMG_7088.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Don Persio /IMG_7089.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Don Persio /IMG_7090.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en Don Persio /b0196bbb-0893-4673-ae88-054746e2034f.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Don%20Persio%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "300 metros de solar   • Título deslindado   • Todos ..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 123,
+    "nombre": "15 Tareas En GuagüI ",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🌄 Terreno en venta en Guagüi, La Vega. Si lo que buscas es invertir en un espacio con potencial y rodeado de naturaleza, este terreno es la oportunidad ideal: 📐 9,766.99 m² (15 tareas) 📍 Ubicado en Guagüi, a solo 6 minutos del centro de La Vega 🚗 Fácil acceso con 3 entradas diferentes, a tan solo 1 minuto de la carretera principal 🌿 Vistas 360...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.48 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.48 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.49 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.49 PM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.49 PM (3).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.49 PM (4).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.49 PM (5).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.49 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/15 tareas en Guagüi /WhatsApp Image 2025-09-16 at 10.32.50 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%2015%20Tareas%20En%20GuagüI%20",
+    "detalles": {
+      "desc_corta": "Terreno en venta en Guagüi, La Vega. Si lo que buscas es invertir en un espacio con potencial y rodeado de naturaleza, este terreno es la oportunidad ideal:  9,766.99 m² (15 tareas)  Ubicado en Guagüi, a solo 6 minutos del centro de La Vega  Fácil acceso con 3 entradas diferentes, a tan solo 1 minuto de la carretera principal  Vistas 360...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 124,
+    "nombre": "Solares 11 Y 12 G Compres 2",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/2906f7e7-8959-49ab-95dc-37973f771a5b.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/2906f7e7-8959-49ab-95dc-37973f771a5b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/30a751ef-286a-4672-9199-cc815922114f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/717938ad-389d-4b63-a4a9-2a9d955c506d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/80328bd9-63cf-467f-8b65-1b63598616d1.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/d42754fc-cfe1-4145-88a3-15ecf53cc7b6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/dc98a94d-60b4-4b9d-83a7-5aead171ddb3.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solares 11 y 12 G Compres 2/f5743678-2423-4208-90ae-67a29505d76f.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solares%2011%20Y%2012%20G%20Compres%202",
+    "detalles": {
+      "desc_corta": "Excelente solar disponible en La Vega. Contáctanos para conocer todos los detalles de esta propiedad.",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 125,
+    "nombre": "Apartamento Tercer Nivel En Hamaca 3 (Nuevo)",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$5,800,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "✨ Apartamento en 3er Nivel – Residencial Hamaca IIl✨ ¡Ideal para vivir o invertir! 🏡 Características: • 3 habitaciones • 2 baños • Sala • Comedor • Cocina • Área de lavado • Galería • 2 parqueo • Piscina en el residencial • ⁠Seguridad 24/7 💰 Precio: RD$5,800,000 Un espacio cómodo, funcional y listo para que lo hagas tuyo. Perfecto para familias q...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/02abea8d-3c57-4354-887a-94ce053546a6.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/02abea8d-3c57-4354-887a-94ce053546a6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/2495e2cd-4bf9-46be-b41d-f04992a732fb.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/30a0f96f-a445-4554-8f6d-a05a2eb021c4.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/8ced1f36-e4c0-47bf-95a2-ebbc97427028.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/9d703e86-8750-49c5-bbf7-ee326123b9fd.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/a88a8df5-d007-4d9c-bc31-37f063443631.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/a9463f02-2d72-4b27-bc68-30620cf74d13.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/ae5d6cb7-df7e-4ac4-a75c-283c0beb25ca.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/b55f61bd-39f2-4aa6-8be2-6b694aee2434.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/c1e64849-53d4-47d8-a656-95dfe0d5b79d.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/d8d776aa-0dc2-4e7c-8118-6d6707e2b446.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento tercer nivel en Hamaca 3 (NUEVO)/e17ab88b-fff6-4c1e-97c7-08f7e767c200.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20Tercer%20Nivel%20En%20Hamaca%203%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "3 habitaciones • 2 baños • Sala • Comedor • Cocina • Área de lavado • Galería • 2 parqueo • Piscina en el residencial • ⁠Seguridad 24/7  Precio: RD$5,800,000 Un espacio cómodo, funcional y listo para que lo hagas tuyo. Perfecto para familias q..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 126,
+    "nombre": "Solar En Residencial HernáNdez",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "📐 METRAJE Y PRECIOS DE LOS SOLARES 🔹 Metraje total (solares unidos): 880 m² 💲 Precio por metro (totalidad): US$510/m² 🔹 Metraje de los solares por separado: • Solar 1: 467 m² • Solar 2: 413 m² 💲 Precio por metro (por separado): US$525/m²",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar en residencial Hernández/5244afda-0be5-4896-a94c-d8b5c7522698.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar en residencial Hernández/5244afda-0be5-4896-a94c-d8b5c7522698.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Residencial%20HernáNdez",
+    "detalles": {
+      "desc_corta": "METRAJE Y PRECIOS DE LOS SOLARES  Metraje total (solares unidos): 880 m²  Precio por metro (totalidad): US$510/m²  Metraje de los solares por separado: • Solar 1: 467 m² • Solar 2: 413 m²  Precio por metro (por separado): US$525/m²",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 127,
+    "nombre": "Solar PróXimo A GuagüI ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🏡 Solar disponible en excelente ubicación 📐 410.54 metros   📑 Título deslindado   💡 Todos los servicios disponibles   📍 Calle Juan José Ayala   ⏱️ A solo 10 minutos del centro   🎓 Próximo a centro educativo   $4,500 por metro cuadrado  Ideal para construir o invertir 📈   📲 Escríbeme para más información",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Solar próximo a Guagüi /2d2a9345-6190-44d1-a56f-7b5b6946fa60.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar próximo a Guagüi /2d2a9345-6190-44d1-a56f-7b5b6946fa60.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar próximo a Guagüi /6ecc1411-6b9e-4f04-8261-85766216a9d6.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar próximo a Guagüi /D6D4CD44-E3BB-4294-98DD-E3C2EAF55125.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Solar próximo a Guagüi /df7d6d69-9744-4c15-840b-cf6a96086be1.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20PróXimo%20A%20GuagüI%20",
+    "detalles": {
+      "desc_corta": "Solar disponible en excelente ubicación  410.54 metros    Título deslindado    Todos los servicios disponibles    Calle Juan José Ayala    A solo 10 minutos del centro    Próximo a centro educativo   $4,500 por metro cuadrado  Ideal para construir o invertir     Escríbeme para más información",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 128,
+    "nombre": "Residencial Villas Palmeras Solares (Nuevo) ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "US,500 por metro",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Descripción – Villa Palmeras 🌴✨ Villa Palmeras está ubicado en la carretera La Vega–Villa Tapia 🛣️, ofreciendo un proyecto completo y listo para invertir: \t•\t💧 Agua \t•\t🔌 Luz eléctrica \t•\t⚡ Electricidad instalada \t•\t🚧 Contenes \t•\t🛣️ Calles imprimadas \t•\t🛑 Garita de seguridad \t•\t📄 Título deslindado 💵 Precio: US$4,500 por metro 📌 Facilidades...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Residencial Villas Palmeras solares (NUEVO) /2c43a244-a5f5-4fba-9618-838c5cb97be9.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Residencial Villas Palmeras solares (NUEVO) /2c43a244-a5f5-4fba-9618-838c5cb97be9.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Residencial Villas Palmeras solares (NUEVO) /4f2c4964-f51b-4a5c-a52f-3366eaf001e8.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Residencial Villas Palmeras solares (NUEVO) /5798ca02-df45-4870-a221-f272f1531b53.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Residencial Villas Palmeras solares (NUEVO) /d286fd3e-91a3-4006-b575-57aede7e06d4.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Residencial%20Villas%20Palmeras%20Solares%20(Nuevo)%20",
+    "forma_pago": "Separa con US,000. Completa 10% inicial en 30 días. Financiamiento hasta 10 años.",
+    "detalles": {
+      "desc_corta": "Descripción – Villa Palmeras  Villa Palmeras está ubicado en la carretera La Vega–Villa Tapia , ofreciendo un proyecto completo y listo para invertir: \t•\t Agua \t•\t Luz eléctrica \t•\t Electricidad instalada \t•\t Contenes \t•\t Calles imprimadas \t•\t Garita de seguridad \t•\t Título deslindado  Precio: US$4,500 por metro  Facilidades...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 129,
+    "nombre": "Apartamento En Omelia (Vendido) ",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$5,800,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "92 m²",
+    "descripcion": "🏢 Edificio Kapesa II – Apartamento en venta 📍 Residencial Omelia, La Vega.  ✨ Características del inmueble: \t•\t🛏 Tres habitaciones (la principal con su baño)  \t•\t🚿 Dos baños en total  \t•\t🍳 Cocina  \t•\t🧺 Área de lavado  \t•\t🪵 Revestimientos en madera  \t•\t🧱 Sheetrock  \t•\t🔒 Hierros en todas las ventanas y en la puerta trasera  \t•\t🏊 Piscina en ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /1fa69d10-c4d4-43a7-a09c-0ce3cea9a696.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /1fa69d10-c4d4-43a7-a09c-0ce3cea9a696.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /9959cfc5-40fb-4652-9e2b-322b4a756fb7.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /9f2038b7-4320-4cd8-bccd-fe4e26d51f54.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1637.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1639.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1641.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1644.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1645.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1650.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1651.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1652.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1653.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1654.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1655.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1656.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1657.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1661.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1664.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1668.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /IMG_1670.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /ae398c45-5bab-4ffb-8218-cd45e7b32c76.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Apartamento en Omelia (VENDIDO) /aec9df44-2133-44d7-b859-5b1c32591222.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Omelia%20(Vendido)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "del inmueble: \t•\t Tres habitaciones (la principal con su baño)  \t•\t Dos baños en total  \t•\t Cocina  \t•\t Área de lavado  \t•\t Revestimientos en madera  \t•\t Sheetrock  \t•\t Hierros en todas las ventanas y en la puerta trasera  \t•\t Piscina en ..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 130,
+    "nombre": "Apartamento En Res. Carrera De Palmas",
+    "tipo": "Apartamento",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$9,200,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende apartamento totalmente espacioso y radiante, para que tú y tu familia lo conviertan en un hermoso hogar 📍Residencial Carrera de Palmas, rio seco, La vega.  4 habitaciones 🛏️ 4 baños 🛀 Sala 🛋️ Balcón 🖼️ Cocina 🛎️ Comedor 🪑 Área de lavado 🧼 Dos parqueos 🚘 321.62 metros de construcción 🏗️  Terminaciones en primera, m...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.33 PM.jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.33 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.34 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.34 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.35 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.35 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.36 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.36 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.37 PM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.37 PM.jpeg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/apartamento en res. carrera de palmas/WhatsApp Image 2024-08-16 at 12.42.38 PM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Apartamento%20En%20Res.%20Carrera%20De%20Palmas",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [
+        "ones en primera, m..."
+      ],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 131,
+    "nombre": "Casa En Las Carolinas (Nuevo) ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "La Vega",
+    "sector": "Varias Zonas",
+    "precio": "RD$12,000,000.00",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 Casa en Venta en Las Carolinas, La Vega 🏡 Tu nuevo hogar te espera en una de las zonas más tranquilas y exclusivas de La Vega. Una propiedad amplia, elegante y con excelentes terminaciones. ✨ 🔹 Características:  ✔️ 3 habitaciones  ✔️ 2 baños  ✔️ 2 salas  ✔️ Cocina  ✔️ Comedor  ✔️ Sala de estar  ✔️ Galería  ✔️ Área de lavado  ✔️ Marquesina dobl...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Las Carolinas (NUEVO) /a166dc13-f3ca-4c3f-a9bd-87a9e85c434f.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Las Carolinas (NUEVO) /a166dc13-f3ca-4c3f-a9bd-87a9e85c434f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Las Carolinas (NUEVO) /d7e14a19-9e71-415c-a629-f23b6bbc4a4e.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Las Carolinas (NUEVO) /e7291a56-7d2a-4cb1-99fb-9886962eca7b.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Las Carolinas (NUEVO) /e8a413ab-ba9a-42e8-9032-a2dd2d694e9f.jpg",
+      "images/inmuebles/INMUEBLES EN LA VEGA/Casa en Las Carolinas (NUEVO) /f1799c3d-6585-40c4-bc02-fe95ca8cd059.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Las%20Carolinas%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "3 habitaciones   2 baños   2 salas   Cocina   Comedor   Sala de estar   Galería   Área de lavado   Marquesina dobl..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 132,
+    "nombre": "Solar En La Salvia, Los Quemados",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "RD$1,950,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "Redex inmobiliaria vende solar en Bonao 📍carretera la salvia, los quemados, Bonao. Título deslindado ✅ 313.45 M2 Ⓜ️ SERVICIOS: Agua 🚿  Energía eléctrica ⚡️  Calle asfaltada 🪨 Línea de teléfono y telecable ☎️ Contenes 🏘️ A 6 minutos del centro de Bonao ⏰ Próximo al campo de golf/barrio los gringos ⛳️ PRECIO: RD$1,950,000",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en la salvia, los quemados/WhatsApp Image 2024-10-10 at 11.48.16 AM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en la salvia, los quemados/WhatsApp Image 2024-10-10 at 11.48.16 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en la salvia, los quemados/WhatsApp Image 2024-10-10 at 11.48.16 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20La%20Salvia,%20Los%20Quemados",
+    "detalles": {
+      "desc_corta": "Redex inmobiliaria vende solar en Bonao carretera la salvia, los quemados, Bonao. Título deslindado  313.45 M2 Ⓜ SERVICIOS: Agua   Energía eléctrica   Calle asfaltada  Línea de teléfono y telecable  Contenes  A 6 minutos del centro de Bonao  Próximo al campo de golf/barrio los gringos  PRECIO: RD$1,950,000",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 133,
+    "nombre": "Solar En Juma Bejucal, Bonao",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "🏡 ¡Atención inversionistas y futuros propietarios! En Redex Inmobiliaria tenemos disponible un solar de 411.30 m² en el exclusivo Residencial Jade, ubicado en Juma Bejucal , Bonao. Este residencial lo tiene todo para tu comodidad y seguridad: ✅ Calles imprimadas ✅ Contenes y acometida de agua ✅ Potes de luz y tendido eléctrico ✅ Garita de segurida...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.51 AM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.51 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.51 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.51 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.52 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.52 AM (2).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.52 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/solar en juma bejucal, bonao/WhatsApp Image 2025-06-05 at 7.11.53 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Juma%20Bejucal,%20Bonao",
+    "detalles": {
+      "desc_corta": "¡Atención inversionistas y futuros propietarios! En Redex Inmobiliaria tenemos disponible un solar de 411.30 m² en el exclusivo Residencial Jade, ubicado en Juma Bejucal , Bonao. Este residencial lo tiene todo para tu comodidad y seguridad:  Calles imprimadas  Contenes y acometida de agua  Potes de luz y tendido eléctrico  Garita de segurida...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 134,
+    "nombre": "Casa En Sector Quisqueya (Nuevo)",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "RD$9,500,000",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "270 m²",
+    "descripcion": "🏡✨ ¡Casa en venta en San Francisco de Macorís! ✨🏡 Ubicada en la Urbanización San Francisco, sector Quisqueya, esta hermosa propiedad es perfecta para quienes buscan comodidad, espacio y una excelente inversión.   📐 Terreno: 576 m²   🏠 Construcción: 270 m² aprox.   🔹 3 habitaciones   🔹 2 baños   🔹 Sala amplia   🔹 Cocina funcional   🔹 Comedo...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/14E4F380-40B0-4010-98D9-62136BBEFE9F.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/14E4F380-40B0-4010-98D9-62136BBEFE9F.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/1E931F32-8475-4367-A0DF-687BEEEEF631.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/2D7E8660-5227-43C8-8077-EC1D36553D65.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/3552F059-D89B-4601-8CA8-5AE906534654.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/6D2909FC-257E-4F99-B214-6051EE1F642F.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/9DFE7BAD-E484-4ED8-B0B9-B14282057B47.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/B1C0129E-1782-43B9-AF66-28EB60E18661.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/BE9D7EB3-4E72-4B0D-B533-7E12A3E981D1.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/C4F7EB83-F6C8-4A10-AF0B-EBA8C4A00CF0.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/D0E0A293-8CE0-43E9-87B7-526CC0D77C53.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/D3E7C533-157F-42A4-9A60-22DD9456AA62.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/E308B4DF-2F76-47EA-ABD7-3417A573C3AD.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/E3B1E023-C9A2-44C1-AECD-A17A260473A3.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en sector Quisqueya (NUEVO)/FEA4B566-5299-44FD-BB75-7B244D1B5A47.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Sector%20Quisqueya%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "¡Casa en venta en San Francisco de Macorís!  Ubicada en la Urbanización San Francisco, sector Quisqueya, esta hermosa propiedad es perfecta para quienes buscan comodidad, espacio y una excelente inversión.    Terreno: 576 m²    Construcción: 270 m² aprox.    3 habitaciones    2 baños    Sala amplia    Cocina funcional    Comedo...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 135,
+    "nombre": "Solar En Rincon De Yuboa ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "N/A",
+    "descripcion": "¡Atención inversionistas y amantes de la naturaleza! En Redex Inmobiliaria tenemos el terreno perfecto para ti: 📍 2,833.16 m² por tan solo RD$3,300,000. Ubicado en Rincón de Yuboa, Bonao, una de las zonas más encantadoras de la ciudad, rodeada de naturaleza, ríos cristalinos y un ambiente ideal para vivir o vacacionar. Ya sea que estés buscando co...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en Rincon de yuboa /044a6ec2-596b-479a-b417-5e4285e8feb1.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en Rincon de yuboa /044a6ec2-596b-479a-b417-5e4285e8feb1.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en Rincon de yuboa /159f961e-5ffb-441b-afd0-d2345972cf94.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en Rincon de yuboa /2fa0240c-899b-4bb4-960e-f3ebb001b905.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en Rincon de yuboa /fe1007ca-8bdc-418a-ad68-32132243701b.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Rincon%20De%20Yuboa%20",
+    "detalles": {
+      "desc_corta": "¡Atención inversionistas y amantes de la naturaleza! En Redex Inmobiliaria tenemos el terreno perfecto para ti:  2,833.16 m² por tan solo RD$3,300,000. Ubicado en Rincón de Yuboa, Bonao, una de las zonas más encantadoras de la ciudad, rodeada de naturaleza, ríos cristalinos y un ambiente ideal para vivir o vacacionar. Ya sea que estés buscando co...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 136,
+    "nombre": "Solar En Sfm Por La Sirena (Nuevo) ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "RD$2,300,000",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": "N/A",
+    "metros": "300.21 m²",
+    "descripcion": "📍 ¡Oportunidad de inversión en San Francisco de Macorís! Solar disponible en la Urbanización Carmen Añil, con excelente ubicación y documentación al día. 🔹 Metraje: 300.21 m² 🔹 Título: Deslindado 🔹 Ubicación: A solo 800 metros de La Sirena de SFM 🔹 Zona: Urbanización Carmen Añil 💰 Precio: RD$2,300,000 (negociable) Ideal para construir la casa...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /76892a3f-b0b7-4364-8495-b78cb34f1e6c.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /76892a3f-b0b7-4364-8495-b78cb34f1e6c.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /78e52a26-619f-479f-86d7-0cc221098495.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /7f86a130-6fe8-4dce-aeb5-7370534e05b4.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /a8f67637-ce16-40d9-9088-0807585b09a1.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /b02c7610-ab7a-4272-81eb-7bdf54d93831(1).jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Solar en SFM por la Sirena (NUEVO) /b02c7610-ab7a-4272-81eb-7bdf54d93831.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Solar%20En%20Sfm%20Por%20La%20Sirena%20(Nuevo)%20",
+    "detalles": {
+      "desc_corta": "¡Oportunidad de inversión en San Francisco de Macorís! Solar disponible en la Urbanización Carmen Añil, con excelente ubicación y documentación al día.  Metraje: 300.21 m²  Título: Deslindado  Ubicación: A solo 800 metros de La Sirena de SFM  Zona: Urbanización Carmen Añil  Precio: RD$2,300,000 (negociable) Ideal para construir la casa...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 137,
+    "nombre": "Proyecto De Lotes Las Quintas Del Prado (Nuevo)",
+    "tipo": "Inmueble",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "N/A",
+    "banos": "N/A",
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "Las Quintas del Prado está ubicado en la carretera La Ceiba en la Provincia Monseñor Nouel (Bonao) A un minuto de la Autopista Duarte. A cinco minutos del centro de la ciudad de Bonao. A una hora de Santo Domingo. A veinte minutos de la ciudad de La Vega. A treinta minutos de San Francisco de Macorís. A cuarenta minutos de la ciudad de Santiago. Un...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.54 AM (1).jpeg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.54 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.54 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.55 AM (1).jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.55 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.56 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.57 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.22.58 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.24.00 AM.jpeg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/proyecto de lotes las quintas del prado (NUEVO)/WhatsApp Image 2025-07-18 at 9.24.01 AM.jpeg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Proyecto%20De%20Lotes%20Las%20Quintas%20Del%20Prado%20(Nuevo)",
+    "detalles": {
+      "desc_corta": "Las Quintas del Prado está ubicado en la carretera La Ceiba en la Provincia Monseñor Nouel (Bonao) A un minuto de la Autopista Duarte. A cinco minutos del centro de la ciudad de Bonao. A una hora de Santo Domingo. A veinte minutos de la ciudad de La Vega. A treinta minutos de San Francisco de Macorís. A cuarenta minutos de la ciudad de Santiago. Un...",
+      "distribucion": [],
+      "caracteristicas": [
+        "Excelente ubicación",
+        "Fácil acceso",
+        "Oportunidad de inversión"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 138,
+    "nombre": "Villa En Bonao",
+    "tipo": "Villa",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "RD$37,000,000.00",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡✨ VILLA EN VENTA EN BONAO ✨🏡 Disfruta de confort, amplitud y privacidad en esta hermosa villa ideal para vivir o invertir 🌿 📐 Características generales: • Terreno de 2,190 m² • 450 m² de construcción 🛏️ Distribución: • 5 habitaciones (principal ubicada en el primer nivel) • 5 baños • 2 cocinas • Sala principal en el primer nivel y otra en el ...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6730.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6730.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6731.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6732.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6733.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6734.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6735.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6736.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6737.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6738.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6739.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6740.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6741.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6742.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6743.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6744.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6745.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Villa en Bonao/IMG_6746.jpg"
+    ],
+    "amenidades": [
+      "y extras:",
+      "Piscina",
+      "Parqueo para 3 vehículos",
+      "Sistema de cámaras de vigilancia",
+      "Internet y cable instalados",
+      "Inversor con 2 baterías"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Villa%20En%20Bonao",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [
+        "ón: • 5 habitaciones (principal ubicada en el primer nivel) • 5 baños • 2 cocinas • Sala principal en el primer nivel y otra en el ..."
+      ],
+      "caracteristicas": [
+        "y extras:",
+        "Piscina",
+        "Parqueo para 3 vehículos",
+        "Sistema de cámaras de vigilancia",
+        "Internet y cable instalados",
+        "Inversor con 2 baterías"
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 139,
+    "nombre": "Casa En Bonao, Barrio San José ",
+    "tipo": "Solar",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": 3,
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "N/A",
+    "descripcion": "🏡 ¡Atención Bonao! ¿Estás buscando una casa cómoda, completa y lista para mudarte? ¡Esta es tu oportunidad! 📍 Ubicación: Calle Profesor Durán, casa #12, Barrio San José, Bonao.  Tiene: 500m2 de terreno 117.00m2  del Interior 💰RD$ 6,46,112.000 💫 Características de la propiedad: Acogedora galería para disfrutar al aire libre Espaciosa sala y come...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /229ff59c-bf14-46c6-8a95-c6c8ab8e69d7.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /229ff59c-bf14-46c6-8a95-c6c8ab8e69d7.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /39ec5238-d0d7-4838-a74a-d06ce0fc6a44.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /5050f7ec-8d7f-4852-91df-946c6a0f00fc.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /5708cec9-1bfe-4613-9c5b-41f1ba1dd021.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /929c2f78-4e3b-4a59-9546-d856cba67395.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /939b4b0e-6c25-44df-930f-1a52b2d7fccf.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /9d58373e-3293-483b-8e42-a9a848ca8784.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /e68ea8dd-cc70-4f94-93e9-f3610a047804.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio San José /fffc4441-5de9-4f82-b0e8-e485c46b47a9.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Bonao,%20Barrio%20San%20José%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "de la propiedad: Acogedora galería para disfrutar al aire libre Espaciosa sala y come..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  },
+  {
+    "id": 140,
+    "nombre": "Casa En Bonao, Barrio Santa Rosa ",
+    "tipo": "Casa",
+    "estado": "Disponible",
+    "ciudad": "Bonao Y San Francisco De Macoris",
+    "sector": "Varias Zonas",
+    "precio": "Consultar precio",
+    "habitaciones": "1 habs.",
+    "banos": 2,
+    "parqueos": 1,
+    "metros": "300 m2",
+    "descripcion": "🏡 ¡Llegó lo que tanto has buscado en Bonao! Tenemos en venta una hermosa casa a un precio súper económico, ideal para ti y tu familia. 📍 Ubicación privilegiada: Calle Central, Barrio Santa Rosa, casa No. 55, Bonao. ¡A solo 1 minuto de la Autopista Duarte! Desde aquí llegas fácil tanto a La Vega como a Santo Domingo. ✨ Características de la propie...",
+    "imagenPrincipal": "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /0ac4c7c5-c12e-4bad-99cc-1ea647959c85.jpg",
+    "galeria": [
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /0ac4c7c5-c12e-4bad-99cc-1ea647959c85.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /108b8888-7644-4397-aaad-613e15a60cdc.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /265ef883-298f-4169-b0d1-f02fe22c098a.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /5a154c52-b22d-426d-bf38-0933c884cd16.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /62ebcda6-8c4c-4487-bac2-2623fc45325b.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /7c5954c5-4a23-485d-aa73-6e4edc211315.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /7f8f2f71-6506-4ef9-8105-10abc87b160f.jpg",
+      "images/inmuebles/INMUEBLES EN BONAO Y SAN FRANCISCO DE MACORIS/Casa en Bonao, barrio santa rosa /e3a5a070-1fae-496a-b918-3530e7302d0d.jpg"
+    ],
+    "amenidades": [
+      "Excelente ubicación",
+      "Fácil acceso",
+      "Oportunidad de inversión"
+    ],
+    "whatsapp": "https://wa.me/18495180024?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20Casa%20En%20Bonao,%20Barrio%20Santa%20Rosa%20",
+    "detalles": {
+      "desc_corta": "",
+      "distribucion": [],
+      "caracteristicas": [
+        "de la propie..."
+      ],
+      "amenidades": [],
+      "terminaciones": [],
+      "observaciones": []
+    }
+  }
+];
