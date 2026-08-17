@@ -3030,7 +3030,8 @@ function leadTypeLabel(type) {
     precalificacion: 'Precalificación',
     hipoteca: 'Hipoteca',
     propuesta_asesor: 'Propuesta asesor',
-    conoce_tu_cliente: 'Conoce tu cliente'
+    conoce_tu_cliente: 'Conoce tu cliente',
+    captacion_inmueble: 'Captación de inmueble'
   };
   return labels[type] || type || 'Solicitud';
 }

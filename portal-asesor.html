@@ -269,7 +269,7 @@
     .lead-actions { display: flex; flex-wrap: wrap; gap: 8px; }
     .quick-actions {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
       margin-bottom: 24px;
     }
@@ -310,8 +310,9 @@
       font-size: 16px;
     }
     .quick-actions .quick-action:nth-child(1)::before { content: '□'; }
-    .quick-actions .quick-action:nth-child(2)::before { content: '↗'; }
-    .quick-actions .quick-action:nth-child(3)::before { content: '☎'; }
+    .quick-actions .quick-action:nth-child(2)::before { content: '+'; }
+    .quick-actions .quick-action:nth-child(3)::before { content: '↗'; }
+    .quick-actions .quick-action:nth-child(4)::before { content: '☎'; }
     .quick-action strong { color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
     .quick-action span { color: var(--ww60); font-size: 13px; line-height: 1.35; }
     .lead-detail {
@@ -767,6 +768,7 @@
       </div>
       <div class="topbar-actions">
         <button class="btn-ghost" type="button" id="copy-kyc-link">Copiar Conoce tu cliente</button>
+        <button class="btn-ghost" type="button" id="copy-capture-link">Copiar Captación</button>
         <button class="btn-ghost" type="button" id="copy-main-link">Copiar mi link</button>
       </div>
     </header>
@@ -777,6 +779,10 @@
           <button class="quick-action" type="button" id="dashboard-copy-kyc">
             <strong>Conoce tu cliente</strong>
             <span>Copiar formulario para enviarlo por WhatsApp.</span>
+          </button>
+          <button class="quick-action" type="button" id="dashboard-copy-capture">
+            <strong>Captación de inmueble</strong>
+            <span>Formulario para propietarios con firma digital.</span>
           </button>
           <button class="quick-action" type="button" id="dashboard-copy-main">
             <strong>Mi link personal</strong>

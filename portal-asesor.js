@@ -48,7 +48,9 @@ const els = {
   pageTitle: document.getElementById('page-title'),
   copyMainLink: document.getElementById('copy-main-link'),
   copyKycLink: document.getElementById('copy-kyc-link'),
+  copyCaptureLink: document.getElementById('copy-capture-link'),
   dashboardCopyKyc: document.getElementById('dashboard-copy-kyc'),
+  dashboardCopyCapture: document.getElementById('dashboard-copy-capture'),
   dashboardCopyMain: document.getElementById('dashboard-copy-main'),
   dashboardWhatsappLink: document.getElementById('dashboard-whatsapp-link'),
   avatar: document.getElementById('u-avatar'),
@@ -338,6 +340,10 @@ function advisorLink(path = '/') {
 
 function kycLink() {
   return advisorLink('/conoce-tu-cliente.html');
+}
+
+function captureLink() {
+  return advisorLink('/captacion.html');
 }
 
 function itemLink(item) {
@@ -857,7 +863,8 @@ function leadTypeLabel(type) {
     precalificacion: 'Precalificación',
     hipoteca: 'Hipoteca',
     propuesta_asesor: 'Propuesta asesor',
-    conoce_tu_cliente: 'Conoce tu cliente'
+    conoce_tu_cliente: 'Conoce tu cliente',
+    captacion_inmueble: 'Captación de inmueble'
   };
   return labels[type] || type || 'Solicitud';
 }
@@ -1731,7 +1738,9 @@ function bindEvents() {
   });
   els.copyMainLink?.addEventListener('click', () => copyText(advisorLink('/')));
   els.copyKycLink?.addEventListener('click', () => copyText(kycLink()));
+  els.copyCaptureLink?.addEventListener('click', () => copyText(captureLink()));
   els.dashboardCopyKyc?.addEventListener('click', () => copyText(kycLink()));
+  els.dashboardCopyCapture?.addEventListener('click', () => copyText(captureLink()));
   els.dashboardCopyMain?.addEventListener('click', () => copyText(advisorLink('/')));
   els.catalogSearch?.addEventListener('input', event => {
     state.catalogSearch = event.target.value.trim();
