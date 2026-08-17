@@ -49,7 +49,12 @@ function storedAttribution() {
 }
 
 function advisorValue(advisor, keys) {
-  const sources = [advisor, advisor?.datos, advisor?.solicitud_datos].filter(Boolean);
+  const sources = [
+    advisor,
+    advisor?.datos,
+    advisor?.datos?.solicitud_datos,
+    advisor?.solicitud_datos
+  ].filter(Boolean);
   for (const source of sources) {
     for (const key of keys) {
       const value = source?.[key];
@@ -61,17 +66,19 @@ function advisorValue(advisor, keys) {
 
 function advisorDocument(advisor) {
   return advisorValue(advisor, [
+    'cedula',
+    'cédula',
+    'cedula_rnc',
+    'cedula_identidad',
+    'cédula_identidad',
     'documento',
     'documento_identidad',
     'numero_documento',
     'no_documento',
-    'cedula',
-    'cédula',
-    'cedula_rnc',
     'identificacion',
     'identificación',
     'rnc'
-  ]) || advisor?.codigo_referido || 'Pendiente';
+  ]) || 'Cédula pendiente';
 }
 
 function saveAttribution(advisor) {

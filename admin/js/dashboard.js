@@ -3260,6 +3260,7 @@ function advisorPayloadFromLead(lead) {
   const email = leadValue(lead, ['email', 'correo', 'correo electronico'], '');
   const telefono = leadValue(lead, ['telefono', 'teléfono', 'celular'], '');
   const whatsapp = leadValue(lead, ['whatsapp'], telefono);
+  const cedula = leadValue(lead, ['cedula', 'cédula', 'documento', 'identificacion', 'identificación'], '');
   const ciudad = leadValue(lead, ['ciudad', 'zona a trabajar'], '');
   const sector = leadValue(lead, ['provincia', 'sector'], '');
   const ocupacion = leadValue(lead, ['ocupacion actual', 'ocupación actual'], '');
@@ -3284,6 +3285,7 @@ function advisorPayloadFromLead(lead) {
     aprobado_at: new Date().toISOString(),
     datos: {
       redes_sociales: advisorSocialsFromLead(lead),
+      cedula,
       solicitud_id: lead.id,
       solicitud_tipo: lead.tipo,
       solicitud_origen_url: lead.origen_url || '',
