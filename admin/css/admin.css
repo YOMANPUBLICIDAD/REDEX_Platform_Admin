@@ -1649,7 +1649,36 @@ body {
   border-radius: 18px;
   border: 1px solid rgba(245, 242, 238, 0.08);
   background: rgba(4, 7, 14, 0.32);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.leads-table {
+  min-width: 980px;
+}
+
+.lead-actions-inline {
+  display: block;
+  margin-top: 12px;
+}
+
+.leads-table th:nth-child(8),
+.leads-table td:nth-child(8) {
+  display: none;
+}
+
+.leads-table .table-actions,
+.lead-actions-inline .table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.leads-table .table-actions button,
+.lead-actions-inline .table-actions button {
+  min-height: 36px;
+  padding: 0 12px;
+  white-space: nowrap;
 }
 
 thead {

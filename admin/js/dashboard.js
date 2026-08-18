@@ -3178,12 +3178,25 @@ function renderLeads() {
   els.leadsTable.innerHTML = state.filteredLeads.map(lead => {
     const date = lead.created_at ? new Date(lead.created_at).toLocaleDateString('es-DO') : '';
     const canApproveAdvisor = lead.tipo === 'quiero_ser_asesor' && lead.estado !== 'Atendida';
+    const leadActions = `
+      <div class="table-actions">
+        <button class="ghost-btn" data-lead-action="view" data-id="${lead.id}">Ver</button>
+        ${canApproveAdvisor ? `<button class="secondary-btn" data-lead-action="approve-advisor" data-id="${lead.id}">Aprobar asesor</button>` : ''}
+        <button class="ghost-btn" data-lead-action="process" data-id="${lead.id}">Proceso</button>
+        <button class="ghost-btn" data-lead-action="done" data-id="${lead.id}">Atendida</button>
+        <button class="ghost-btn" data-lead-action="discard" data-id="${lead.id}">Descartar</button>
+        <button class="danger-btn" data-lead-action="delete" data-id="${lead.id}">Eliminar</button>
+      </div>
+    `;
     return `
       <tr>
         <td>
           <div>
             <strong>${escapeHtml(lead.nombre || 'Sin nombre')}</strong>
             <span>${escapeHtml(lead.telefono || lead.email || 'Sin contacto')}</span>
+            <div class="lead-actions-inline">
+              ${leadActions}
+            </div>
           </div>
         </td>
         <td>${escapeHtml(leadTypeLabel(lead.tipo))}</td>
@@ -3201,14 +3214,7 @@ function renderLeads() {
         <td><span class="status-pill ${statusClass(lead.estado || 'Nuevo')}">${escapeHtml(lead.estado || 'Nuevo')}</span></td>
         <td>${escapeHtml(date)}</td>
         <td>
-          <div class="table-actions">
-            <button class="ghost-btn" data-lead-action="view" data-id="${lead.id}">Ver</button>
-            ${canApproveAdvisor ? `<button class="secondary-btn" data-lead-action="approve-advisor" data-id="${lead.id}">Aprobar asesor</button>` : ''}
-            <button class="ghost-btn" data-lead-action="process" data-id="${lead.id}">Proceso</button>
-            <button class="ghost-btn" data-lead-action="done" data-id="${lead.id}">Atendida</button>
-            <button class="ghost-btn" data-lead-action="discard" data-id="${lead.id}">Descartar</button>
-            <button class="danger-btn" data-lead-action="delete" data-id="${lead.id}">Eliminar</button>
-          </div>
+          ${leadActions}
         </td>
       </tr>
     `;
