@@ -133,6 +133,22 @@ function setAdvisorUi(advisor) {
   if (advisorDocumentEl) advisorDocumentEl.textContent = documentValue;
   if (advisorNameInput) advisorNameInput.value = name;
   if (advisorDocumentInput) advisorDocumentInput.value = documentValue;
+  syncAdvisorLegalText();
+}
+
+function currentAdvisorName() {
+  return String(advisorNameInput?.value || advisorNameEl?.textContent || context.advisor?.nombre || context.attribution?.asesor_nombre || context.slug || 'REDEX Inmobiliaria').trim();
+}
+
+function currentAdvisorDocument() {
+  return String(advisorDocumentInput?.value || advisorDocumentEl?.textContent || advisorDocument(context.advisor)).trim();
+}
+
+function syncAdvisorLegalText() {
+  const name = currentAdvisorName();
+  const documentValue = currentAdvisorDocument();
+  if (advisorNameEl) advisorNameEl.textContent = name;
+  if (advisorDocumentEl) advisorDocumentEl.textContent = documentValue;
   if (legalAdvisorName) legalAdvisorName.textContent = name;
   if (legalAdvisorDocument) legalAdvisorDocument.textContent = documentValue;
   if (legalAdvisorPrint) legalAdvisorPrint.textContent = `${name} · Cédula No. ${documentValue}`;
@@ -281,8 +297,8 @@ async function submitCapture(event) {
 
     const data = collectData(formData);
     const attribution = context.attribution || storedAttribution();
-    const advisorName = context.advisor?.nombre || attribution?.asesor_nombre || context.slug || null;
-    const advisorDoc = advisorDocument(context.advisor);
+    const advisorName = currentAdvisorName() || context.advisor?.nombre || attribution?.asesor_nombre || context.slug || null;
+    const advisorDoc = currentAdvisorDocument() || advisorDocument(context.advisor);
     const payload = {
       tipo: 'captacion_inmueble',
       pagina: 'captacion.html',
@@ -341,4 +357,6 @@ function bindSignature() {
 
 bindSignature();
 loadAdvisor().catch(() => setAdvisorUi(null));
+advisorNameInput?.addEventListener('input', syncAdvisorLegalText);
+advisorDocumentInput?.addEventListener('input', syncAdvisorLegalText);
 form?.addEventListener('submit', submitCapture);
