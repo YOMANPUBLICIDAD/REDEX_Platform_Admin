@@ -2796,7 +2796,10 @@ async function createAdvisorAuthAccess(email, password) {
         message: 'El asesor ya tenía un acceso creado en Supabase Auth.'
       };
     }
-    throw error;
+    return {
+      userId: null,
+      message: `Asesor aprobado. Supabase Auth no confirmó el acceso automáticamente: ${error.message || 'revisar usuario manualmente'}.`
+    };
   }
 
   return {
