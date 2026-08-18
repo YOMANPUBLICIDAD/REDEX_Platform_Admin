@@ -9,6 +9,9 @@ const advisorNameEl = document.getElementById('advisor-name');
 const advisorDocumentEl = document.getElementById('advisor-document');
 const advisorNameInput = document.getElementById('advisor-name-input');
 const advisorDocumentInput = document.getElementById('advisor-document-input');
+const legalAdvisorName = document.getElementById('legal-advisor-name');
+const legalAdvisorDocument = document.getElementById('legal-advisor-document');
+const legalAdvisorPrint = document.getElementById('legal-advisor-print');
 const ATTRIBUTION_KEY = 'redex_advisor_attribution';
 
 const context = {
@@ -130,6 +133,9 @@ function setAdvisorUi(advisor) {
   if (advisorDocumentEl) advisorDocumentEl.textContent = documentValue;
   if (advisorNameInput) advisorNameInput.value = name;
   if (advisorDocumentInput) advisorDocumentInput.value = documentValue;
+  if (legalAdvisorName) legalAdvisorName.textContent = name;
+  if (legalAdvisorDocument) legalAdvisorDocument.textContent = documentValue;
+  if (legalAdvisorPrint) legalAdvisorPrint.textContent = `${name} · Cédula No. ${documentValue}`;
 }
 
 function resizeCanvas() {
